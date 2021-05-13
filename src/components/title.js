@@ -34,7 +34,7 @@ export default function Title() {
     <div style={{ position: "relative" }}>
       {/* title video */}
       <video style={{ width: "100%", top:0, left:0 }} className='videoTag m-0' muted autoPlay loop playsInline>
-        <source src={sample} type='video/mp4' />
+        <source src={sample} type='video/mp4' crossOrigin="anonymous"/>
       </video>
       {/* fallback image */}
       <StaticImage style={{
