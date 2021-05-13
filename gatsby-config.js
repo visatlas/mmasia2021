@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `ACM Multimedia Asia 2021`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `ACM Multimedia Asia`,
+      summary: `ACM Multimedia Asia.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `ACM Multimedia Asia 2021, Gold Coast, Australia`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    // social: {
+    //   twitter: `kylemathews`,
+    // },
   },
   plugins: [
     `gatsby-plugin-image`,
