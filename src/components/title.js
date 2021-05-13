@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import sample from '../images/GC.mp4';
+import sample from '../images/GC_low.mp4';
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Title() {
