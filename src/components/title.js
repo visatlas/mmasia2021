@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import sample from '../images/GC_low.mp4';
+// import sample from '../images/GC_low.mp4';
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Title() {
@@ -38,8 +38,10 @@ export default function Title() {
     <div style={{ position: "relative" }}>
       {/* title video */}
       <video style={{ width: "100%", top: 0, left: 0 }} className='videoTag m-0' autoPlay muted loop playsInline>
-        <source src={sample} type='video/mp4' crossOrigin="anonymous" />
-        <source src={sample} type="video/ogg" crossOrigin="anonymous" />
+        {/* <source src={sample} type='video/mp4' crossOrigin="anonymous" />
+        <source src={sample} type="video/ogg" crossOrigin="anonymous" /> */}
+        <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type='video/mp4' crossOrigin="anonymous" />
+        <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type="video/ogg" crossOrigin="anonymous" />
       </video>
       {/* fallback image */}
       <StaticImage style={{
