@@ -30,7 +30,7 @@ const BlogPostTemplate = ({ data, location }) => {
           />
         </article>
 
-        <nav className="blog-post-nav">
+        {/* <nav className="blog-post-nav">
           <ul className="flex flex-wrap justify-between list-none p-0">
             <li>
               {previous && (
@@ -47,7 +47,7 @@ const BlogPostTemplate = ({ data, location }) => {
               )}
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <footer>
           <p className="text-xs mt-8">Last Updated on {post.frontmatter.date}</p>
