@@ -23,17 +23,13 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <header>
             <h1 className="text-3xl font-bold" itemProp="headline">{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
           </header>
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
           />
-          {/* <hr /> */}
-          {/* <footer>
-            <Bio />
-          </footer> */}
         </article>
+
         <nav className="blog-post-nav">
           <ul className="flex flex-wrap justify-between list-none p-0">
             <li>
@@ -52,6 +48,10 @@ const BlogPostTemplate = ({ data, location }) => {
             </li>
           </ul>
         </nav>
+
+        <footer>
+          <p className="text-xs mt-8">Last Updated on {post.frontmatter.date}</p>
+        </footer>
       </div>
     </Layout>
   )
