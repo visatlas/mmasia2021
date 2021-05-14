@@ -45,12 +45,12 @@ export default function Title() {
       </video>
 
       {/* fallback image */}
-      <StaticImage className="absolute m-0 w-full top-0 left-0"
-        style={{ maxWidth: "1920px", maxHeight: "1080px", zIndex: "-9999" }}
+      <StaticImage className="m-0 w-full top-0 left-0"
+        style={{ position: "absolute", maxWidth: "1920px", maxHeight: "1080px", zIndex: "-9999" }}
         src="../images/GC.png" alt="Gold Coast" />
 
-      <div className="absolute px-12 py-8 d-flex flex-column justify-content-center align-items-start"
-        style={{ top: "0%", right: "20%", backgroundColor: "rgba(255, 255, 255, 0.9)" }}> {/* transform: "translate(-50%, -50%)" */}
+      <div className="px-12 py-8 d-flex flex-column justify-content-center align-items-start"
+        style={{ position: "absolute", top: "0%", right: "20%", backgroundColor: "rgba(255, 255, 255, 0.9)" }}> {/* transform: "translate(-50%, -50%)" */}
         <h1 className="mb-2 font-extrabold tracking-wide text-titleBig leading-titleBig">
           <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
         <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
