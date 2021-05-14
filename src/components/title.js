@@ -49,7 +49,7 @@ export default function Title() {
         left: 0,
         zIndex: "-9999"
       }} src="../images/GC.png" alt="Gold Coast" className="m-0" />
-      <div className="px-5 py-4 d-flex flex-column justify-content-center align-items-start" style={{
+      <div className="px-12 py-8 d-flex flex-column justify-content-center align-items-start" style={{
         position: "absolute",
         top: "40%",
         left: "50%",
@@ -60,8 +60,8 @@ export default function Title() {
           <span style={{ color: "#51247a" }}>ACM</span> <br />Multimedia <br />Asia 2021</h1>
         <p className="mb-3" style={{ fontSize: "1.1em", fontWeight: "600" }}>Gold Coast, Australia</p>
         <p className="mb-2" style={{ fontSize: "1.5em", fontWeight: "700", color: "#51247a" }}>1 - 3 December, 2021</p>
-        <p className="mb-4" style={{ fontWeight: "600", fontSize: "1.1em", marginBottom: "0" }} id="demo">{count}</p>
-        <p className="mb-0" style={{ fontSize: "1.1em", fontWeight: "600" }}>Learn More</p>
+        <p className="" style={{ fontWeight: "600", fontSize: "1.1em"}} id="demo">{count}</p>
+        <p className="mt-8" style={{ fontSize: "1.1em", fontWeight: "600" }}>Learn More</p>
       </div>
     </div>
   )

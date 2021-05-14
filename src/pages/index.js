@@ -7,7 +7,6 @@ import Seo from "../components/seo"
 
 import Title from "../components/title"
 import highlights from "../data/highlights"
-import "bootstrap/dist/css/bootstrap.min.css"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -19,14 +18,14 @@ const BlogIndex = ({ data, location }) => {
       {/* <Bio /> */}
       <Title />
       <div className="global-wrapper">
-        <h2 className="mb-3" style={{ fontWeight: 800, color: "#51247a" }}>Welcome to ACMMM Asia 2021!</h2>
+        <h2 className="mb-6 text-3xl" style={{ fontWeight: 800, color: "#51247a" }}>Welcome to ACMMM Asia 2021!</h2>
         {highlights.map((content, index) => {
           return (
-            <p key={index}>{content}</p>
+            <p className="mb-4" key={index}>{content}</p>
           );
         })
         }
-        <h2 className="mt-5" style={{ fontWeight: 800, color: "#51247a" }}>Latest News</h2>
+        <h2 className="mt-10 text-3xl" style={{ fontWeight: 800, color: "#51247a" }}>Latest News</h2>
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
@@ -39,11 +38,11 @@ const BlogIndex = ({ data, location }) => {
                   itemType="http://schema.org/Article"
                 >
                   <header>
-                    <h4 style={{ fontWeight: 700 }}>
-                      <Link to={post.fields.slug} itemProp="url">
+                    <h3 className="mt-6 text-xl font-bold">
+                      <Link to={post.fields.slug.slice(0, -1)} itemProp="url">
                         <span itemProp="headline">{title}</span>
                       </Link>
-                    </h4>
+                    </h3>
                     <small>{post.frontmatter.date}</small>
                   </header>
                   <section>
