@@ -6,7 +6,7 @@ module.exports = {
       summary: `ACM Multimedia Asia.`,
     },
     description: `ACM Multimedia Asia 2021, Gold Coast, Australia`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://mmasia2021.uqcloud.net/`,
     // social: {
     //   twitter: `kylemathews`,
     // },
