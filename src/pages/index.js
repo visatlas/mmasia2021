@@ -17,15 +17,15 @@ const BlogIndex = ({ data, location }) => {
       {/* <Bio /> */}
       <Title />
       <div className="global-wrapper">
-        <h2 className="mb-6 text-3xl" style={{ fontWeight: 800, color: "#51247a" }}>Welcome to ACMMM Asia 2021!</h2>
+        <h2 className="mb-6 text-3xl text-mainPurple font-extrabold">Welcome to ACMMM Asia 2021!</h2>
         {highlights.map((content, index) => {
           return (
             <p className="mb-4" key={index}>{content}</p>
           );
         })
         }
-        <h2 className="mt-10 text-3xl" style={{ fontWeight: 800, color: "#51247a" }}>Latest News</h2>
-        <ol style={{ listStyle: `none` }}>
+        <h2 className="mt-10 text-3xl text-mainPurple font-extrabold">Latest News</h2>
+        <ol className="list-none">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
 

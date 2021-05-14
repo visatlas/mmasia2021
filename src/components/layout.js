@@ -29,10 +29,10 @@ const Layout = ({ location, title, children }) => {
 
   return (
     // <div className="global-wrapper" data-is-root-path={isRootPath}>
-    <div data-is-root-path={isRootPath}>
+    <div className="min-h-screen flex flex-col" data-is-root-path={isRootPath}>
       {/* <header className="global-header">{header}</header> */}
       <header>{header}</header>
-      <div style={{ height: "80px", width: "100vw", backgroundColor: "#51247a" }}></div>
+      <div className="bg-mainPurple w-screen h-20" />
       <main>{children}</main>
       <Footer />
     </div>

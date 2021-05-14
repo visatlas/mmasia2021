@@ -37,35 +37,26 @@ export default function Title() {
   });
 
   return (
-    <div className="" style={{ position: "relative" }}>
+    <div className="relative">
       {/* title video */}
-      <video style={{ width: "100%", maxHeight: "1080px", top: 0, left: 0 }} className='videoTag m-0' autoPlay muted loop playsInline>
+      <video className='w-full top-0 left-0 videoTag m-0' style={{ maxHeight: "1080px" }} autoPlay muted loop playsInline>
         <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type='video/mp4' crossOrigin="anonymous" />
         <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type="video/ogg" crossOrigin="anonymous" />
       </video>
+
       {/* fallback image */}
-      <StaticImage style={{
-        position: "absolute",
-        width: "100%",
-        maxWidth: "1920px",
-        maxHeight: "1080px",
-        top: 0,
-        left: 0,
-        zIndex: "-9999"
-      }} src="../images/GC.png" alt="Gold Coast" className="m-0" />
-      <div className="px-12 py-8 d-flex flex-column justify-content-center align-items-start" style={{
-        position: "absolute",
-        top: "0%",
-        right: "20%",
-        // transform: "translate(-50%, -50%)",
-        backgroundColor: "rgba(255, 255, 255, 0.9)"
-      }}>
-        <h1 className="mb-2" style={{ fontWeight: 800, fontSize: "2.4em", lineHeight: "2.8rem", letterSpacing: "1px" }}>
-          <span style={{ color: "#51247a" }}>ACM</span> <br />Multimedia <br />Asia 2021</h1>
-        <p className="mb-4" style={{ fontSize: "1.1em", fontWeight: "600" }}>Gold Coast, Australia</p>
-        <p className="mb-1" style={{ fontSize: "1.5em", fontWeight: "700", color: "#51247a" }}>1 - 3 December, 2021</p>
-        <p className="" style={{ fontWeight: "600", fontSize: "1.1em" }} id="demo">{count}</p>
-        <p className="mt-8" style={{ fontSize: "1.1em", fontWeight: "600" }}>Learn More</p>
+      <StaticImage className="absolute m-0 w-full top-0 left-0"
+        style={{ maxWidth: "1920px", maxHeight: "1080px", zIndex: "-9999" }}
+        src="../images/GC.png" alt="Gold Coast" />
+
+      <div className="absolute px-12 py-8 d-flex flex-column justify-content-center align-items-start"
+        style={{ top: "0%", right: "20%", backgroundColor: "rgba(255, 255, 255, 0.9)" }}> {/* transform: "translate(-50%, -50%)" */}
+        <h1 className="mb-2 font-extrabold tracking-wide text-titleBig leading-titleBig">
+          <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
+        <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
+        <p className="mb-1 font-bold text-mainPurple text-titleMedium">1 - 3 December, 2021</p>
+        <p className="font-semibold text-titleSmall">{count}</p>
+        <p className="mt-8 font-semibold text-titleSmall">Learn More</p>
       </div>
     </div>
   )

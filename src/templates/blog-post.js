@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data, location }) => {
           itemType="http://schema.org/Article"
         >
           <header>
-            <h1 itemProp="headline" style={{fontWeight: 700}}>{post.frontmatter.title}</h1>
+            <h1 className="text-3xl font-bold" itemProp="headline">{post.frontmatter.title}</h1>
             <p>{post.frontmatter.date}</p>
           </header>
           <section
@@ -35,15 +35,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </footer> */}
         </article>
         <nav className="blog-post-nav">
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
+          <ul className="flex flex-wrap justify-between list-none p-0">
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">

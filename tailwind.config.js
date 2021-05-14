@@ -10,6 +10,14 @@ module.exports = {
       colors: {
         mainPurple: '#51247a',
       },
+      fontSize: {
+        titleSmall: '1.1rem',
+        titleMedium: '1.5rem',
+        titleBig: '2.4rem',
+      },
+      lineHeight: {
+        titleBig: '2.8rem',
+      },
     },
   }
 }
