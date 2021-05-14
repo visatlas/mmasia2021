@@ -4,7 +4,7 @@ workbox.routing.registerRoute(
   new workbox.strategies.CacheFirst({
     plugins: [
       new workbox.cacheableResponse.CacheableResponsePlugin({
-        statuses: [200],
+        statuses: [206],
       }),
       new workbox.rangeRequests.RangeRequestsPlugin(),
     ],
