@@ -7,6 +7,7 @@ export default function Title() {
 
   // calculate countdown time
   useEffect(() => {
+    let mounted = true;
     let countDownDate = new Date("Dec 1, 2021 00:00:00").getTime();
     let x = setInterval(function () {
       let now = new Date().getTime();
@@ -16,16 +17,19 @@ export default function Title() {
       let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      setCount(days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s");
+      if (mounted) {
+        setCount(days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s");
 
-      if (distance < 0) {
-        clearInterval(x);
-        setCount("Event Closed");
+        if (distance < 0) {
+          clearInterval(x);
+          setCount("Event Closed");
+        }
       }
     }, 1000);
 
     return () => {
+      mounted = false;
       clearInterval(x);
     };
   });
@@ -33,8 +37,9 @@ export default function Title() {
   return (
     <div style={{ position: "relative" }}>
       {/* title video */}
-      <video style={{ width:"100%", top:0, left:0 }} className='videoTag m-0' muted autoPlay loop playsInline>
-        <source src={sample} type='video/mp4' crossOrigin="anonymous"/>
+      <video style={{ width: "100%", top: 0, left: 0 }} className='videoTag m-0' autoPlay muted loop playsInline>
+        <source src={sample} type='video/mp4' crossOrigin="anonymous" />
+        <source src={sample} type="video/ogg" crossOrigin="anonymous" />
       </video>
       {/* fallback image */}
       <StaticImage style={{

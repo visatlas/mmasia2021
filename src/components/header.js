@@ -22,7 +22,7 @@ export default function Header({ activePage }) {
         <div className="container-fluid">
           <Link to="/">
             <div className="navbar-brand mx-5">
-              {/* <StaticImage src="../images/Logo.png" alt="Logo" width="160" /> */}
+              {/* <StaticImage src="../images/Logo.png" alt="Logo" width={160} /> */}
               <img src={logo} alt="Logo" width="160" />
             </div>
           </Link>
