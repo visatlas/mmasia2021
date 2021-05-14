@@ -57,11 +57,11 @@ export default function Header({ activePage }) {
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                   {/* <a href="#" className="bg-gray-100 text-gray-800 px-3 py-2 rounded-md text-sm font-bold" aria-current="page">Home</a> */}
                   <NavLink to="/dates" title="Important Dates" selected={activePage === "/dates"}>Important Dates</NavLink>
-                  <NavLink to="/" title="Important Dates" selected={activePage === "/program"}>Program</NavLink>
-                  <NavLink to="/" title="Important Dates" selected={activePage === "/attend"}>Attend</NavLink>
-                  <NavLink to="/calls" title="Important Dates" selected={activePage === "/calls"}>Calls</NavLink>
-                  <NavLink to="/" title="Important Dates" selected={activePage === "/organisation"}>Organisation</NavLink>
-                  <NavLink to="/" title="Important Dates" selected={activePage === "/sponsors"}>Sponsors</NavLink>
+                  <NavLink to="/" title="Program" selected={activePage === "/program"}>Program</NavLink>
+                  <NavLink to="/" title="Attend" selected={activePage === "/attend"}>Attend</NavLink>
+                  <NavLink to="/calls" title="Calls" selected={activePage === "/calls"}>Calls</NavLink>
+                  <NavLink to="/organisation" title="Organisation" selected={activePage === "/organisation"}>Organisation</NavLink>
+                  <NavLink to="/" title="Sponsors" selected={activePage === "/sponsors"}>Sponsors</NavLink>
                 </div>
               </div>
             </div>

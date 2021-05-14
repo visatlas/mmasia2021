@@ -45,7 +45,7 @@ export default function Title() {
       </video>
 
       {/* fallback image */}
-      <StaticImage className="m-0 w-full top-0 left-0"
+      <StaticImage className="m-0 w-full top-0 left-0" placeholder="blurred" 
         style={{ position: "absolute", maxWidth: "1920px", maxHeight: "1080px", zIndex: "-9999" }}
         src="../images/GC.png" alt="Gold Coast" />
 
