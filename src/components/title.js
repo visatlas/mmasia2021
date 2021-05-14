@@ -9,7 +9,8 @@ export default function Title() {
   useEffect(() => {
     let mounted = true;
     let countDownDate = new Date("Dec 1, 2021 00:00:00").getTime();
-    let x = setInterval(function () {
+
+    let x = setInterval(function tick() {
       let now = new Date().getTime();
       let distance = countDownDate - now;
       let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -26,7 +27,8 @@ export default function Title() {
           setCount("Event Closed");
         }
       }
-    }, 1000);
+      return tick;
+    }(), 1000);
 
     return () => {
       mounted = false;
@@ -35,11 +37,9 @@ export default function Title() {
   });
 
   return (
-    <div style={{ position: "relative" }}>
+    <div className="" style={{ position: "relative" }}>
       {/* title video */}
-      <video style={{ width: "100%", top: 0, left: 0 }} className='videoTag m-0' autoPlay muted loop playsInline>
-        {/* <source src={sample} type='video/mp4' crossOrigin="anonymous" />
-        <source src={sample} type="video/ogg" crossOrigin="anonymous" /> */}
+      <video style={{ width: "100%", maxHeight: "1080px", top: 0, left: 0 }} className='videoTag m-0' autoPlay muted loop playsInline>
         <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type='video/mp4' crossOrigin="anonymous" />
         <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type="video/ogg" crossOrigin="anonymous" />
       </video>
@@ -47,22 +47,24 @@ export default function Title() {
       <StaticImage style={{
         position: "absolute",
         width: "100%",
+        maxWidth: "1920px",
+        maxHeight: "1080px",
         top: 0,
         left: 0,
         zIndex: "-9999"
       }} src="../images/GC.png" alt="Gold Coast" className="m-0" />
       <div className="px-12 py-8 d-flex flex-column justify-content-center align-items-start" style={{
         position: "absolute",
-        top: "40%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
+        top: "0%",
+        right: "20%",
+        // transform: "translate(-50%, -50%)",
         backgroundColor: "rgba(255, 255, 255, 0.9)"
       }}>
-        <h1 className="mb-2" style={{ fontWeight: 800, fontSize: "2.4em", letterSpacing: "1px" }}>
+        <h1 className="mb-2" style={{ fontWeight: 800, fontSize: "2.4em", lineHeight: "2.8rem", letterSpacing: "1px" }}>
           <span style={{ color: "#51247a" }}>ACM</span> <br />Multimedia <br />Asia 2021</h1>
-        <p className="mb-3" style={{ fontSize: "1.1em", fontWeight: "600" }}>Gold Coast, Australia</p>
-        <p className="mb-2" style={{ fontSize: "1.5em", fontWeight: "700", color: "#51247a" }}>1 - 3 December, 2021</p>
-        <p className="" style={{ fontWeight: "600", fontSize: "1.1em"}} id="demo">{count}</p>
+        <p className="mb-4" style={{ fontSize: "1.1em", fontWeight: "600" }}>Gold Coast, Australia</p>
+        <p className="mb-1" style={{ fontSize: "1.5em", fontWeight: "700", color: "#51247a" }}>1 - 3 December, 2021</p>
+        <p className="" style={{ fontWeight: "600", fontSize: "1.1em" }} id="demo">{count}</p>
         <p className="mt-8" style={{ fontSize: "1.1em", fontWeight: "600" }}>Learn More</p>
       </div>
     </div>

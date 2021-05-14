@@ -42,7 +42,7 @@ export default function Header({ activePage }) {
                 </svg>
               </button>
             </div>
-            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
 
               <Link to="/">
                 <div className="flex-shrink-0 flex items-center ml-8">
