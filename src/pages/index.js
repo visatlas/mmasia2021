@@ -36,12 +36,10 @@ const Index = ({ data, location }) => {
                   itemScope
                   itemType="http://schema.org/Article"
                 >
-                  <header>
-                    <h3 className="mt-6 text-xl font-bold">
-                      <Link to={post.fields.slug.slice(0, -1)} itemProp="url">
-                        <span itemProp="headline">{title}</span>
-                      </Link>
-                    </h3>
+                  <header className="flex flex-col">
+                    <Link className="w-90 text-xl font-bold font-headingStyle tracking-semiWide hover:text-blue-600" to={post.fields.slug.slice(0, -1)} itemProp="url">
+                      <span itemProp="headline">{title}</span>
+                    </Link>
                     <small>{post.frontmatter.date}</small>
                   </header>
                   <section>

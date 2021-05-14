@@ -1,7 +1,7 @@
 ---
-title: Important Dates
+title: Key Dates
 date: "2021-05-14T10:00:00.000Z"
-description: Information on the important dates.
+description: View the submission deadlines and other key dates.
 ---
 
 **Workshop Proposals Submission:** 28 Jun 2021

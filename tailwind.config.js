@@ -10,6 +10,12 @@ module.exports = {
       colors: {
         mainPurple: '#51247a',
       },
+      backgroundImage: _ => ({
+        uqStyle: "linear-gradient(90deg, #51247a 0%, #56247a 60%, #61257d 80%, #962a8b 100%)",
+      }),
+      fontFamily: {
+        headingStyle: ["'Roboto'", "'Helvetica Neue'", 'Helvetica', 'Arial', 'sans-serif'],
+      },
       fontSize: {
         titleSmall: '1.1rem',
         titleMedium: '1.5rem',
@@ -17,6 +23,12 @@ module.exports = {
       },
       lineHeight: {
         titleBig: '2.8rem',
+      },
+      letterSpacing: {
+        semiWide: '0.01em',
+      },
+      screens: {
+        bp3: "864px",
       },
     },
   }

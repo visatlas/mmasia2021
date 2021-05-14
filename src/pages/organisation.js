@@ -20,11 +20,11 @@ const Organisation = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Organisation" />
       <div className="global-wrapper">
-        <h1 className="text-3xl font-bold">Key Organisors</h1>
+        <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide">Key Organisors</h1>
         {committee.map((roles, index) => {
           return (
             <div key={index}>
-              <h2 className="text-2xl font-bold mt-10 mb-8 text-mainPurple">{roles["role"]}</h2>
+              <h2 className="text-2xl font-bold mt-6 mb-8 text-mainPurple">{roles["role"]}</h2>
               <div className="flex flex-row flex-wrap">
                 {roles["list"].map((person, index) => {
 
@@ -35,8 +35,8 @@ const Organisation = ({ data, location }) => {
                   }
                   const image = getImage(imageName)
                   return (
-                    <div className="mr-20 mb-10 flex flex-col items-center" key={index} style={{ width: "200px" }}>
-                      <div style={{ width: "200px", height: "200px" }}>
+                    <div className="mr-6 mb-10 flex flex-col items-center" key={index} style={{ width: "180px" }}>
+                      <div style={{ width: "150px", height: "150px" }}>
                         <GatsbyImage image={image} alt={person["name"]} />
                       </div>
 
@@ -71,7 +71,7 @@ export const pageQuery = graphql`
         node {
           name
           childImageSharp {
-            gatsbyImageData(width: 200, placeholder: BLURRED)
+            gatsbyImageData(width: 150, placeholder: BLURRED)
           }
         }
       }
