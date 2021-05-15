@@ -51,12 +51,12 @@ export const committee = [
       {
         name: "Wu Liu",
         institution: "JD.com",
-        imageUrl: "",
+        imageUrl: "Wu Liu",
       },
       {
         name: "Dong Xu",
         institution: "The University of Sydney, Australia",
-        imageUrl: "",
+        imageUrl: "Dong Xu",
       },
     ],
   },
