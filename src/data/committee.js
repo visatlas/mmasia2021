@@ -121,12 +121,12 @@ export const committee = [
       {
         name: "Jiebo Luo",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Jiebo Luo",
       },
       {
         name: "Liqiang Nie",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Liqiang Nie",
       },
     ],
   },
@@ -136,12 +136,12 @@ export const committee = [
       {
         name: "Chua Tat Seng",
         institution: "National University of Singapore, Singapore",
-        imageUrl: "",
+        imageUrl: "Tat-Seng Chua",
       },
       {
         name: "Susanne Boll",
         institution: "University of Oldenburg, Germany",
-        imageUrl: "",
+        imageUrl: "Susanne Boll",
       },
     ],
   },
@@ -151,12 +151,12 @@ export const committee = [
       {
         name: "Lei Zhu",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Lei Zhu",
       },
       {
         name: "Zhineng Chen",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Zhineng Chen",
       },
       {
         name: "Min Xu",
@@ -171,7 +171,7 @@ export const committee = [
       {
         name: "Yanli Ji",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Yanli Ji",
       },
       {
         name: "Zheng Wang",
@@ -186,12 +186,12 @@ export const committee = [
       {
         name: "Liang Zheng",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Liang Zheng",
       },
       {
         name: "Xin Yu",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Xin Yu",
       },
     ],
   },
@@ -201,17 +201,17 @@ export const committee = [
       {
         name: "Chee Seng Chan",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Chee Seng Chan",
       },
       {
         name: "Ichiro Ide",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Ichiro_Ide2",
       },
       {
         name: "Quanzeng You",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Quanzeng You",
       },
     ],
   },
@@ -221,12 +221,12 @@ export const committee = [
       {
         name: "Shin'ichi Satoh",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Shinichi Satoh",
       },
       {
         name: "Jingkuan Song",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Jingkuan Song",
       },
     ],
   },
@@ -236,12 +236,12 @@ export const committee = [
       {
         name: "Yong Man Ro",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Yong Man Ro",
       },
       {
         name: "Gan Chuang",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Chuang Gan",
       },
     ],
   },
@@ -251,17 +251,17 @@ export const committee = [
       {
         name: "Jia Jia",
         institution: "",
-        imageUrl: "",
+        imageUrl: "jiajia2",
       },
       {
         name: "Marie Boden",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Marie Boden",
       },
       {
         name: "Si Liu",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Si Liu",
       },
     ],
   },
@@ -271,7 +271,7 @@ export const committee = [
       {
         name: "Mahsa Baktashmotlagh",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Mahsa",
       },
       {
         name: "Zheng Zhang",
@@ -281,7 +281,7 @@ export const committee = [
       {
         name: "Tianran Hu",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Tianran Hu",
       },
     ],
   },
@@ -291,12 +291,12 @@ export const committee = [
       {
         name: "Gunhee Kim",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Gunhee Kim",
       },
       {
         name: "Xinshun Xu",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Xinshun Xu",
       },
     ],
   },
@@ -316,12 +316,12 @@ export const committee = [
       {
         name: "Xiaofang Zhou",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Xiaofang Zhou",
       },
       {
         name: "Bing-Kun Bao",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Bing-kun Bao",
       },
     ],
   },
@@ -331,12 +331,12 @@ export const committee = [
       {
         name: "Yadan Luo",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Yadan Luo",
       },
       {
         name: "Ziwei Wang",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Ziwei Wang",
       },
     ],
   },
@@ -346,12 +346,12 @@ export const committee = [
       {
         name: "Jingjing Li",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Jingjing Li",
       },
       {
         name: "Xinchen Liu",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Xinchen Liu",
       },
     ],
   },
@@ -366,7 +366,7 @@ export const committee = [
       {
         name: "Yi Yang",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Yi Yang",
       },
     ],
   },
