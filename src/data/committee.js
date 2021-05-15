@@ -1,5 +1,5 @@
-
-const committee = [
+export const lastUpdated = "May 14, 2021";
+export const committee = [
   {
     role: "Honorary Chairs",
     list: [
@@ -371,5 +371,3 @@ const committee = [
     ],
   },
 ];
-
-export default committee;

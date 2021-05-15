@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import committee from "../data/committee"
+import { committee, lastUpdated } from "../data/committee"
 
 const Organisation = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Organisation`
@@ -50,6 +50,9 @@ const Organisation = ({ data, location }) => {
           )
         })
         }
+        <footer className="pb-0">
+          <p className="text-xs mt-8">Last Updated on {lastUpdated}</p>
+        </footer>
       </div>
     </Layout>
   )

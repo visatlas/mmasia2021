@@ -49,7 +49,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </ul>
         </nav> */}
 
-        <footer>
+        <footer className="pb-0">
           <p className="text-xs mt-8">Last Updated on {post.frontmatter.date}</p>
         </footer>
       </div>
