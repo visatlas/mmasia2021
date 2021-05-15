@@ -37,7 +37,7 @@ const Organisation = ({ data, location }) => {
                   return (
                     <div className="mr-6 mb-10 flex flex-col items-center" key={index} style={{ width: "180px" }}>
                       <div style={{ width: "150px", height: "150px" }}>
-                        <GatsbyImage image={image} alt={person["name"]} />
+                        <GatsbyImage className="rounded-lg" image={image} alt={person["name"]} />
                       </div>
 
                       <p className="text-xl font-extrabold mt-6 mb-1 text-center">{person["name"]}</p>
