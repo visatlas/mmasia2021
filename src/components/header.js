@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React, { useState } from 'react';
-import { StaticImage } from "gatsby-plugin-image";
+import Logo from "../images/Logo.png";
 
 const NavLink = ({ to, children, title = "Link", selected = false, disabled = false }) => {
   if (disabled) {
@@ -58,7 +58,7 @@ export default function Header({ activePage }) {
 
               <Link to="/">
                 <div className="flex-shrink-0 items-center lg:ml-8 flex md:hidden bp3:flex">
-                  <StaticImage className="h-14" src="../images/Logo.png" alt="ACMMA Asia 2021 Logo" height={56} placeholder="blurred" />
+                <img className="h-14" src={Logo} alt="ACMMA Asia 2021 Logo" height={56} />
                 </div>
               </Link>
 

@@ -38,7 +38,7 @@ export default function Title() {
       mounted = false;
       clearInterval(x);
     };
-  });
+  }, []);
 
   return (
     <div>
