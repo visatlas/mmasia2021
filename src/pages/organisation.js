@@ -19,13 +19,13 @@ const Organisation = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="Organisation" />
-      <div className="global-wrapper">
+      <div className="flex sm:block sm:mx-auto sm:my-0 sm:max-w-4xl sm:px-10 sm:py-5 flex-col items-center">
         <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide">Key Organisors</h1>
         {committee.map((roles, index) => {
           return (
-            <div key={index}>
+            <div className="flex sm:block flex-col items-center" key={index}>
               <h2 className="text-2xl font-bold mt-6 mb-8 text-mainPurple">{roles["role"]}</h2>
-              <div className="flex flex-row flex-wrap">
+              <div className="flex flex-row justify-center sm:justify-start flex-wrap">
                 {roles["list"].map((person, index) => {
 
                   // resolve committee image path
@@ -35,7 +35,7 @@ const Organisation = ({ data, location }) => {
                   }
                   const image = getImage(imageName)
                   return (
-                    <div className="mr-6 mb-10 flex flex-col items-center" key={index} style={{ width: "180px" }}>
+                    <div className="mr-0 sm:mr-6 mb-10 flex flex-col items-center" key={index} style={{ width: "180px" }}>
                       <div style={{ width: "150px", height: "150px" }}>
                         <GatsbyImage className="rounded-lg" image={image} alt={person["name"]} />
                       </div>
