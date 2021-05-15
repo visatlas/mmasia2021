@@ -19,12 +19,12 @@ const Organisation = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="Organisation" />
-      <div className="flex sm:block sm:mx-auto sm:my-0 sm:max-w-4xl sm:px-10 sm:py-5 flex-col items-center">
+      <div className="flex sm:block sm:mx-auto sm:my-0 sm:max-w-4xl py-10 sm:px-5 flex-col items-center">
         <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide">Key Organisors</h1>
         {committee.map((roles, index) => {
           return (
             <div className="flex sm:block flex-col items-center" key={index}>
-              <h2 className="text-2xl font-bold mt-6 mb-8 text-mainPurple">{roles["role"]}</h2>
+              <h2 className="text-2xl font-bold mt-2 sm:mt-6 mb-8 text-mainPurple">{roles["role"]}</h2>
               <div className="flex flex-row justify-center sm:justify-start flex-wrap">
                 {roles["list"].map((person, index) => {
 
@@ -51,7 +51,7 @@ const Organisation = ({ data, location }) => {
         })
         }
         <footer className="pb-0">
-          <p className="text-xs mt-8">Last Updated on {lastUpdated}</p>
+          <p className="text-xs mt-0 sm:mt-8">Last Updated on {lastUpdated}</p>
         </footer>
       </div>
     </Layout>
