@@ -56,7 +56,7 @@ export default function Title() {
             <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
           <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
           <p className="mb-1 font-bold text-mainPurple text-titleMedium">1 - 3 December, 2021</p>
-          <p className="mb-8 font-semibold text-titleSmall">{count}</p>
+          <p className="w-full mb-8 font-semibold text-titleSmall">{count}</p>
           <AnchorLink className="font-semibold text-titleSmall hover:underline" to="/#welcome" title="Learn More.." />
         </div>
       </div>
@@ -64,12 +64,12 @@ export default function Title() {
       {/* Mobile view */}
       <div className="md:hidden">
         <div className="global-wrapper bg-purple-50">
-          <div className="flex flex-col justify-content-center items-center">
+          <div className="flex flex-col items-center">
             <h1 className="mb-2 font-extrabold tracking-wide text-titleBig leading-titleBig text-center">
               <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
             <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
             <p className="mb-1 font-bold text-mainPurple text-titleMedium">1 - 3 December, 2021</p>
-            <p className="font-semibold text-titleSmall">{count}</p>
+            <p className="w-full font-semibold text-titleSmall text-center">{count}</p>
           </div>
         </div>
         <StaticImage className="h-50 m-0 w-full top-0 left-0" placeholder="blurred" src="../images/GC.png" alt="Gold Coast" />

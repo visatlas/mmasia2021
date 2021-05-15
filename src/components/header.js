@@ -89,6 +89,7 @@ export default function Header({ activePage }) {
         {/* <!-- Mobile menu, show/hide based on menu state. --> */}
         <div className={showMobileMenu ? "md:hidden" : "hidden"} id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
+            <MobileNavLink to="/" title="Home" selected={activePage === "/"}>Home</MobileNavLink>
             <MobileNavLink to="/dates" title="Key Dates" selected={activePage === "/dates"}>Key Dates</MobileNavLink>
             <MobileNavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</MobileNavLink>
             <MobileNavLink to="/" title="Attend" selected={activePage === "/attend"} disabled>Attend</MobileNavLink>
