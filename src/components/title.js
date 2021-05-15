@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
-// import sample from '../images/GC_low.mp4';
-import { StaticImage } from "gatsby-plugin-image"
+import React, { useEffect, useState } from 'react';
+// import sample from '../images/GC_lowres.mp4';
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Title() {
   const [count, setCount] = useState("\u00A0");
@@ -50,7 +50,7 @@ export default function Title() {
           style={{ position: "absolute", maxWidth: "1920px", maxHeight: "1080px", zIndex: "-9999" }}
           src="../images/GC.png" alt="Gold Coast" />
 
-        <div className="px-12 py-8" style={{ position: "absolute", top: "0%", right: "20%", backgroundColor: "rgba(255, 255, 255, 0.9)" }}> {/* transform: "translate(-50%, -50%)" */}
+        <div className="px-12 py-8" style={{ position: "absolute", top: "0%", right: "20%", backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
           <h1 className="mb-2 font-extrabold tracking-wide text-titleBig leading-titleBig">
             <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
           <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
@@ -62,7 +62,7 @@ export default function Title() {
 
       {/* Mobile view */}
       <div className="md:hidden global-wrapper bg-purple-50">
-        <div className="flex flex-col justify-content-center items-center"> {/* transform: "translate(-50%, -50%)" */}
+        <div className="flex flex-col justify-content-center items-center">
           <h1 className="mb-2 font-extrabold tracking-wide text-titleBig leading-titleBig text-center">
             <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
           <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
@@ -71,5 +71,5 @@ export default function Title() {
         </div>
       </div>
     </div>
-  )
+  );
 }

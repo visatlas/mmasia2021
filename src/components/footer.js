@@ -1,5 +1,5 @@
-import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
+import React from 'react';
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Footer() {
   return (
@@ -14,5 +14,5 @@ export default function Footer() {
         <small>© 1993-{new Date().getFullYear()} ACM Multimedia. All Rights Reserved.</small>
       </div>
     </footer>
-  )
+  );
 }

@@ -112,8 +112,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `ACMMM Asia 2021`,
+        short_name: `MMAsia 2021`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

@@ -1,17 +1,16 @@
-import * as React from "react"
-// import { Link } from "gatsby"
+import * as React from "react";
 
-import Header from "./header"
-import Footer from "./footer"
+import Header from "./header";
+import Footer from "./footer";
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
+  const rootPath = `${__PATH_PREFIX__}/`;
+  const isRootPath = location.pathname === rootPath;
   let header = (
     <>
       <Header activePage={location.pathname} />
     </>
-  )
+  );
 
   // if (isRootPath) {
   //   header = (
@@ -36,7 +35,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

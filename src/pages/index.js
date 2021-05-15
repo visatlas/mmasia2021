@@ -14,7 +14,6 @@ const Index = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="Home" />
-      {/* <Bio /> */}
       <Title />
       <div className="global-wrapper">
         <h2 className="mb-6 text-3xl text-mainPurple font-extrabold">Welcome to ACMMM Asia 2021!</h2>
@@ -60,7 +59,7 @@ const Index = ({ data, location }) => {
   )
 }
 
-export default Index
+export default Index;
 
 export const pageQuery = graphql`
   query {
