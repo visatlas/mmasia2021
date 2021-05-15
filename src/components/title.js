@@ -5,6 +5,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 export default function Title() {
   const [count, setCount] = useState("\u00A0");
+  const [allowVideo, setAllowVideo] = useState(false);
 
   // calculate countdown time
   useEffect(() => {
@@ -31,6 +32,8 @@ export default function Title() {
       return tick;
     }(), 1000);
 
+    setAllowVideo(true);
+
     return () => {
       mounted = false;
       clearInterval(x);
@@ -39,13 +42,15 @@ export default function Title() {
 
   return (
     <div>
-      <div className="relative hidden md:block" style={{ height: "calc(100vw * 9 / 16)"}}>
-        {/* title video */}
-        <video className='w-full top-0 left-0 videoTag m-0' autoPlay muted loop playsInline>
-          <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type='video/mp4' crossOrigin="anonymous" />
-          <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type="video/ogg" crossOrigin="anonymous" />
-        </video>
-
+      <div className="relative hidden md:block" style={{ height: "calc(100vw * 9 / 16)" }}>
+        { /* title video */
+          allowVideo && (
+            <video className='w-full top-0 left-0 videoTag m-0' autoPlay muted loop playsInline>
+              <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type='video/mp4' crossOrigin="anonymous" />
+              <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type="video/ogg" crossOrigin="anonymous" />
+            </video>
+          )
+        }
         {/* fallback image */}
         <StaticImage className="m-0 w-full top-0" placeholder="blurred"
           style={{ position: "absolute", zIndex: "-9999", left: "50%", transform: "translate(-50%, 0)" }}
