@@ -125,6 +125,12 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-no-sourcemaps`,
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-anchor-links`,
+      options: {
+        offset: -80,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // {
