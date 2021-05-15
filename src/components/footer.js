@@ -11,7 +11,7 @@ export default function Footer() {
           <StaticImage className="mb-4 md:mb-0" src="../images/footer/UQ Logo.png" alt="UQ Logo" height={50} placeholder="blurred" />
           <StaticImage className="mb-4 md:mb-0" src="../images/footer/Griffith Logo.png" alt="Griffith Logo" height={50} placeholder="blurred" />
         </div>
-        <small>© 1993-{new Date().getFullYear()} ACM Multimedia. All Rights Reserved.</small>
+        <small>© 2021 ACM Multimedia Asia Conference. All Rights Reserved.</small>
       </div>
     </footer>
   );

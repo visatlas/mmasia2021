@@ -58,16 +58,16 @@ export default function Header({ activePage }) {
 
               <Link to="/">
                 <div className="flex-shrink-0 items-center lg:ml-8 flex md:hidden bp3:flex">
-                <img className="h-14" src={Logo} alt="ACMMA Asia 2021 Logo" height={56} />
+                <img className="h-14" src={Logo} alt="ACMMA Asia 2021 Logo" height={56} width={153.42}/>
                 </div>
               </Link>
 
               <div className="hidden md:flex sm:ml-8 items-center">
                 <div className="flex space-x-4">
                   <NavLink to="/dates" title="Key Dates" selected={activePage === "/dates"}>Key Dates</NavLink>
+                  <NavLink to="/calls" title="Calls" selected={activePage === "/calls"}>Calls</NavLink>
                   <NavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</NavLink>
                   <NavLink to="/" title="Attend" selected={activePage === "/attend"} disabled>Attend</NavLink>
-                  <NavLink to="/calls" title="Calls" selected={activePage === "/calls"}>Calls</NavLink>
                   <NavLink to="/organisation" title="Organisation" selected={activePage === "/organisation"}>Organisation</NavLink>
                   <NavLink to="/" title="Sponsors" selected={activePage === "/sponsors"} disabled>Sponsors</NavLink>
                 </div>
@@ -89,9 +89,9 @@ export default function Header({ activePage }) {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <MobileNavLink to="/" title="Home" selected={activePage === "/"}>Home</MobileNavLink>
             <MobileNavLink to="/dates" title="Key Dates" selected={activePage === "/dates"}>Key Dates</MobileNavLink>
+            <MobileNavLink to="/calls" title="Calls" selected={activePage === "/calls"}>Calls</MobileNavLink>
             <MobileNavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</MobileNavLink>
             <MobileNavLink to="/" title="Attend" selected={activePage === "/attend"} disabled>Attend</MobileNavLink>
-            <MobileNavLink to="/calls" title="Calls" selected={activePage === "/calls"}>Calls</MobileNavLink>
             <MobileNavLink to="/organisation" title="Organisation" selected={activePage === "/organisation"}>Organisation</MobileNavLink>
             <MobileNavLink to="/" title="Sponsors" selected={activePage === "/sponsors"} disabled>Sponsors</MobileNavLink>
           </div>
