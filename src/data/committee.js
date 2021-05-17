@@ -321,7 +321,7 @@ export const committee = [
       {
         name: "Bing-Kun Bao",
         institution: "",
-        imageUrl: "Bing-kun Bao",
+        imageUrl: "Bing-Kun Bao",
       },
     ],
   },
