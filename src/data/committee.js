@@ -136,7 +136,7 @@ export const committee = [
       {
         name: "Chua Tat Seng",
         institution: "National University of Singapore, Singapore",
-        imageUrl: "Tat-Seng Chua",
+        imageUrl: "Chua Tat Seng",
       },
       {
         name: "Susanne Boll",
