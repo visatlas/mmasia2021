@@ -1,11 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "acm-multimedia-asia-2021",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "ACM Multimedia Asia 2021",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/fzmi/acmmm/issues"
   },
   "dependencies": {
     "gatsby": "^3.4.1",
@@ -41,15 +40,15 @@
     "prettier": "2.2.1",
     "tailwindcss": "^2.1.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/fzmi/acmmm#readme",
   "keywords": [
-    "gatsby"
+    "acmmm"
   ],
   "license": "0BSD",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/fzmi/acmmm.git"
   },
   "scripts": {
     "build": "gatsby build",

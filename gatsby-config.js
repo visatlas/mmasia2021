@@ -7,9 +7,6 @@ module.exports = {
     },
     description: `ACM Multimedia Asia 2021, Gold Coast, Australia`,
     siteUrl: `https://mmasia2021.uqcloud.net/`,
-    // social: {
-    //   twitter: `kylemathews`,
-    // },
   },
   plugins: [
     `gatsby-plugin-image`,
