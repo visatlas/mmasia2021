@@ -81,7 +81,7 @@ export const committee = [
       {
         name: "Lorna Macdonald",
         institution: "The University of Queensland, Australia",
-        imageUrl: "",
+        imageUrl: "Lorna Macdonald",
       },
       {
         name: "Zixin Wang",
@@ -136,7 +136,7 @@ export const committee = [
       {
         name: "Chua Tat Seng",
         institution: "National University of Singapore, Singapore",
-        imageUrl: "Tat-Seng Chua",
+        imageUrl: "Chua Tat Seng",
       },
       {
         name: "Susanne Boll",
@@ -161,7 +161,7 @@ export const committee = [
       {
         name: "Min Xu",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Min Xu",
       },
     ],
   },
@@ -276,7 +276,7 @@ export const committee = [
       {
         name: "Zheng Zhang",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Zheng Zhang",
       },
       {
         name: "Tianran Hu",
@@ -306,7 +306,7 @@ export const committee = [
       {
         name: "Kathleen Williamson",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Kathleen Williamson",
       },
     ],
   },
@@ -321,7 +321,7 @@ export const committee = [
       {
         name: "Bing-Kun Bao",
         institution: "",
-        imageUrl: "Bing-kun Bao",
+        imageUrl: "Bing-Kun Bao",
       },
     ],
   },
@@ -361,7 +361,7 @@ export const committee = [
       {
         name: "Jiaying Liu",
         institution: "",
-        imageUrl: "",
+        imageUrl: "Jiaying Liu",
       },
       {
         name: "Yi Yang",
