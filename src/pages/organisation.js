@@ -47,7 +47,7 @@ const Organisation = ({ data, location }) => {
                 })}
               </div>
             </div>
-          )
+          );
         })
         }
         <footer className="pb-0">
@@ -56,7 +56,7 @@ const Organisation = ({ data, location }) => {
       </div>
     </Layout>
   );
-}
+};
 
 export default Organisation;
 
@@ -80,4 +80,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -16,7 +16,7 @@ const NotFoundPage = ({ data, location }) => {
       </div>
     </Layout>
   );
-}
+};
 
 export default NotFoundPage;
 
@@ -28,4 +28,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

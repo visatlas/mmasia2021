@@ -8,13 +8,13 @@ const NavLink = ({ to, children, title = "Link", selected = false, disabled = fa
   }
   const textColor = selected ? "text-black" : "text-white";
   const bgColor = selected ? "bg-gray-100" : "";
-  const style = `${textColor} ${bgColor} text-base hover:bg-purple-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium font-headingStyle`
+  const style = `${textColor} ${bgColor} text-base hover:bg-purple-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium font-headingStyle`;
   return (
     <Link className="flex item-center" to={to} title={title}>
       <span className={style} >{children}</span>
     </Link>
   );
-}
+};
 
 const MobileNavLink = ({ to, children, title = "Link", selected = false, disabled = false }) => {
   if (disabled) {
@@ -28,7 +28,7 @@ const MobileNavLink = ({ to, children, title = "Link", selected = false, disable
       <span className={style}>{children}</span>
     </Link>
   );
-}
+};
 
 export default function Header({ activePage }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -58,7 +58,7 @@ export default function Header({ activePage }) {
 
               <Link to="/">
                 <div className="flex-shrink-0 items-center lg:ml-8 flex md:hidden bp3:flex">
-                <img className="h-14" src={Logo} alt="ACMMA Asia 2021 Logo" height={56} width={153.42}/>
+                  <img className="h-14" src={Logo} alt="ACMMA Asia 2021 Logo" height={56} width={153.42} />
                 </div>
               </Link>
 

@@ -1,15 +1,15 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from "react";
+import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
-import Title from "../components/title"
-import highlights from "../data/highlights"
+import Title from "../components/title";
+import highlights from "../data/highlights";
 
 const Index = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const posts = data.allMarkdownRemark.nodes;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -26,7 +26,7 @@ const Index = ({ data, location }) => {
         <h2 className="mt-10 text-3xl text-mainPurple font-extrabold">Latest News</h2>
         <ol className="list-none">
           {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
+            const title = post.frontmatter.title || post.fields.slug;
 
             return (
               <li key={post.fields.slug}>
@@ -51,13 +51,13 @@ const Index = ({ data, location }) => {
                   </section>
                 </article>
               </li>
-            )
+            );
           })}
         </ol>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export default Index;
 
@@ -82,4 +82,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

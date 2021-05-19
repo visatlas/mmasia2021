@@ -55,7 +55,7 @@ const BlogPostTemplate = ({ data, location }) => {
       </div>
     </Layout>
   );
-}
+};
 
 export default BlogPostTemplate;
 
@@ -97,4 +97,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
