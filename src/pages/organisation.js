@@ -35,13 +35,13 @@ const Organisation = ({ data, location }) => {
                   }
                   const image = getImage(imageName);
                   return (
-                    <div className="mr-0 sm:mr-6 mb-10 flex flex-col items-center" key={index} style={{ width: "180px" }}>
+                    <div className="mr-0 sm:mr-6 mb-9 flex flex-col items-center" key={index} style={{ width: "180px" }}>
                       <div style={{ width: "150px", height: "150px" }}>
                         <GatsbyImage className="rounded-lg" image={image} alt={person["name"]} />
                       </div>
 
-                      <p className="text-xl font-extrabold mt-6 mb-1 text-center">{person["name"]}</p>
-                      <p className="text-base leading-6 text-center">{person["institution"]}</p>
+                      <p className="text-xl font-bold mt-6 mb-1 text-center">{person["name"]}</p>
+                      <p className="text-orgSmall text-gray-700 leading-5 text-center">{person["institution"]}</p>
                     </div>
                   );
                 })}

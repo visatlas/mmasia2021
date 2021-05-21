@@ -17,6 +17,7 @@ module.exports = {
         headingStyle: ["'Roboto'", "'Helvetica Neue'", 'Helvetica', 'Arial', 'sans-serif'],
       },
       fontSize: {
+        orgSmall: '0.9rem',
         titleSmall: '1.1rem',
         titleMedium: '1.5rem',
         titleBig: '2.4rem',

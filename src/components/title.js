@@ -57,7 +57,7 @@ export default function Title() {
           style={{ position: "absolute", zIndex: "-9999", left: "50%", transform: "translate(-50%, 0)" }}
           src="../images/GC.png" alt="Gold Coast" />
 
-        <div className="px-12 py-8" style={{ position: "absolute", top: "0%", right: "20%", backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
+        <div className="px-12 py-8" style={{ position: "absolute", top: "0%", right: "20%", backgroundColor: "rgba(236, 231, 241, 0.85)" }}>
           <h1 className="mb-2 font-extrabold tracking-wide text-titleBig leading-titleBig">
             <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
           <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
