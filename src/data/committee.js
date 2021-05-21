@@ -10,7 +10,7 @@ export const committee = [
       },
       {
         name: "Heng Tao Shen",
-        institution: "University of Electronic Science and Technology of China, China",
+        institution: "University of Electronic Science and Technology of China",
         imageUrl: "hengtao",
       },
     ],
@@ -100,7 +100,7 @@ export const committee = [
     list: [
       {
         name: "Yang Yang",
-        institution: "University of Electronic Science and Technology of China, China",
+        institution: "University of Electronic Science and Technology of China",
         imageUrl: "Yang Yang_cropped",
       },
       {
@@ -120,12 +120,12 @@ export const committee = [
     list: [
       {
         name: "Jiebo Luo",
-        institution: "University of Rochester",
+        institution: "University of Rochester, USA",
         imageUrl: "Jiebo Luo",
       },
       {
         name: "Liqiang Nie",
-        institution: "Shandong University",
+        institution: "Shandong University, China",
         imageUrl: "Liqiang Nie",
       },
     ],
@@ -135,7 +135,7 @@ export const committee = [
     list: [
       {
         name: "Chua Tat Seng",
-        institution: "National University of Singapore, Singapore",
+        institution: "National University of Singapore",
         imageUrl: "Chua Tat Seng",
       },
       {
@@ -155,12 +155,12 @@ export const committee = [
       },
       {
         name: "Zhineng Chen",
-        institution: "Fudan University",
+        institution: "Fudan University, China",
         imageUrl: "Zhineng Chen",
       },
       {
         name: "Min Xu",
-        institution: "University of Technology Sydney",
+        institution: "University of Technology Sydney, Australia",
         imageUrl: "Min Xu",
       },
     ],
@@ -185,12 +185,12 @@ export const committee = [
     list: [
       {
         name: "Liang Zheng",
-        institution: "Australian National University",
+        institution: "Australian National University, Australia",
         imageUrl: "Liang Zheng",
       },
       {
         name: "Xin Yu",
-        institution: "University of Technology Sydney",
+        institution: "University of Technology Sydney, Australia",
         imageUrl: "Xin Yu_cropped",
       },
     ],
@@ -200,12 +200,12 @@ export const committee = [
     list: [
       {
         name: "Chee Seng Chan",
-        institution: "University of Malaya",
+        institution: "University of Malaya, Malaysia",
         imageUrl: "Chee Seng Chan",
       },
       {
         name: "Ichiro Ide",
-        institution: "Nagoya University",
+        institution: "Nagoya University, Japan",
         imageUrl: "Ichiro_Ide2",
       },
       {
@@ -235,7 +235,7 @@ export const committee = [
     list: [
       {
         name: "Yong Man Ro",
-        institution: "Korea Advanced Institute of Science and Technology",
+        institution: "Korea Advanced Institute of Science and Technology, South Korea",
         imageUrl: "Yong Man Ro",
       },
       {
@@ -275,7 +275,7 @@ export const committee = [
       },
       {
         name: "Zheng Zhang",
-        institution: "College of William and Mary",
+        institution: "College of William and Mary, USA",
         imageUrl: "Zheng Zhang",
       },
       {
@@ -290,12 +290,12 @@ export const committee = [
     list: [
       {
         name: "Gunhee Kim",
-        institution: "Seoul National University",
+        institution: "Seoul National University, South Korea",
         imageUrl: "Gunhee Kim",
       },
       {
         name: "Xinshun Xu",
-        institution: "Shandong University",
+        institution: "Shandong University, China",
         imageUrl: "Xinshun Xu",
       },
     ],
@@ -315,12 +315,12 @@ export const committee = [
     list: [
       {
         name: "Xiaofang Zhou",
-        institution: "Hong Kong University of Science and Technology",
+        institution: "Hong Kong University of Science and Technology, China",
         imageUrl: "Xiaofang Zhou",
       },
       {
         name: "Bing-Kun Bao",
-        institution: "Nanjing University of Posts and Telecommunications",
+        institution: "Nanjing University of Posts and Telecommunications, China",
         imageUrl: "Bing-Kun Bao",
       },
     ],
@@ -360,12 +360,12 @@ export const committee = [
     list: [
       {
         name: "Jiaying Liu",
-        institution: "Peking University",
+        institution: "Peking University, China",
         imageUrl: "Jiaying Liu",
       },
       {
         name: "Yi Yang",
-        institution: "University of Technology Sydney",
+        institution: "University of Technology Sydney, Australia",
         imageUrl: "Yi Yang",
       },
     ],

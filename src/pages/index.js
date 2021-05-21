@@ -26,6 +26,7 @@ const Index = ({ data, location }) => {
         <div className="my-4" style={{ position: "relative", padding: "30% 45%" }}>
           <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://www.youtube.com/embed/dOebaAv8e_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        
         <div className="my-4" style={{ position: "relative", padding: "30% 45%" }}>
           <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" frameborder="no" scrolling="no"></iframe>
         </div>
