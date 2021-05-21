@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import sample from '../images/GC_lowres.mp4';
 import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
@@ -47,8 +46,8 @@ export default function Title() {
         {allowVideo && (
           /* title video */
           <video className='w-full top-0 left-0 videoTag m-0' autoPlay muted loop playsInline id="video">
-            <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type='video/mp4' crossOrigin="anonymous" />
-            <source src="https://mmasia2021.uqcloud.net/wp-content/uploads/GC.mp4" type="video/ogg" crossOrigin="anonymous" />
+            <source src="https://mmasia2021.uqcloud.net/uploads/GC.mp4" type='video/mp4' crossOrigin="anonymous" />
+            <source src="https://mmasia2021.uqcloud.net/uploads/GC.mp4" type="video/ogg" crossOrigin="anonymous" />
           </video>
         )}
 

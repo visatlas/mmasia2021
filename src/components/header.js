@@ -11,7 +11,7 @@ const NavLink = ({ to, children, title = "Link", selected = false, disabled = fa
   const style = `${textColor} ${bgColor} text-base hover:bg-purple-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium font-headingStyle`;
   return (
     <Link className="flex item-center" to={to} title={title}>
-      <span className={style} >{children}</span>
+      <span className={style}>{children}</span>
     </Link>
   );
 };
