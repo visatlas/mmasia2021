@@ -1,6 +1,6 @@
 # project build
 static/uploads/
-static/robots.txt
+robots.txt
 
 # Logs
 logs
