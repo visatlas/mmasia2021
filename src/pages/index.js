@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
@@ -8,6 +8,12 @@ import Title from "../components/title";
 import highlights from "../data/highlights";
 
 const Index = ({ data, location }) => {
+  const [allowVideo, setAllowVideo] = useState(false);
+
+  useEffect(() => {
+    setAllowVideo(true);
+  }, []);
+
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
 
@@ -23,15 +29,21 @@ const Index = ({ data, location }) => {
           );
         })
         }
-        <div className="my-4" style={{ position: "relative", padding: "30% 45%" }}>
-          <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://www.youtube.com/embed/dOebaAv8e_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        
-        <div className="my-4" style={{ position: "relative", padding: "30% 45%" }}>
-          <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" frameborder="no" scrolling="no"></iframe>
-        </div>
 
-        <h2 className="mt-10 text-3xl text-mainPurple font-extrabold">Latest News</h2>
+        {allowVideo && (
+          <div>
+            <h2 className="mt-12 mb-6 text-3xl text-mainPurple font-extrabold">Promotional Video</h2>
+            <div className="my-4" style={{ position: "relative", padding: "30% 45%" }}>
+              <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://www.youtube.com/embed/dOebaAv8e_4" title="ACM Multimedia Asia 2021 Video on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div className="my-4" style={{ position: "relative", padding: "30% 45%" }}>
+              <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" title="ACM Multimedia Asia 2021 Video on Bilibili" frameborder="no" scrolling="no"></iframe>
+            </div>
+          </div>
+        )}
+
+        <h2 className="mt-12 text-3xl text-mainPurple font-extrabold">Latest News</h2>
         <ol className="list-none">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug;

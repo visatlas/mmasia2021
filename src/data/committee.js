@@ -41,7 +41,7 @@ export const committee = [
       {
         name: "Tatsuya Harada",
         institution: "The University of Tokyo, Japan",
-        imageUrl: "tatsuya_cropped",
+        imageUrl: "tatsuya-harada",
       },
       {
         name: "Jianfei Cai",
@@ -221,7 +221,7 @@ export const committee = [
       {
         name: "Shin'ichi Satoh",
         institution: "National Institute of Informatics, Japan",
-        imageUrl: "Shinichi Satoh",
+        imageUrl: "Shinichi Sato",
       },
       {
         name: "Jingkuan Song",
