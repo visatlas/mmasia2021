@@ -64,8 +64,8 @@ export default function Header({ activePage }) {
 
               <div className="hidden md:flex sm:ml-8 items-center">
                 <div className="flex space-x-4">
-                  <NavLink to="/dates" title="Key Dates" selected={activePage === "/dates"}>Key Dates</NavLink>
-                  <NavLink to="/calls" title="Calls" selected={activePage === "/calls"}>Calls</NavLink>
+                  <NavLink to="/" title="Home" selected={false}>Home</NavLink>
+                  <NavLink to="/calls" title="Calls &amp; Dates" selected={activePage === "/calls"}>Calls &amp; Dates</NavLink>
                   <NavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</NavLink>
                   <NavLink to="/" title="Attend" selected={activePage === "/attend"} disabled>Attend</NavLink>
                   <NavLink to="/organisation" title="Organisation" selected={activePage === "/organisation"}>Organisation</NavLink>
@@ -88,8 +88,7 @@ export default function Header({ activePage }) {
         <div className={showMobileMenu ? "md:hidden" : "hidden"} id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <MobileNavLink to="/" title="Home" selected={activePage === "/"}>Home</MobileNavLink>
-            <MobileNavLink to="/dates" title="Key Dates" selected={activePage === "/dates"}>Key Dates</MobileNavLink>
-            <MobileNavLink to="/calls" title="Calls" selected={activePage === "/calls"}>Calls</MobileNavLink>
+            <MobileNavLink to="/calls" title="Calls &amp; Dates" selected={activePage === "/calls"}>Calls &amp; Dates</MobileNavLink>
             <MobileNavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</MobileNavLink>
             <MobileNavLink to="/" title="Attend" selected={activePage === "/attend"} disabled>Attend</MobileNavLink>
             <MobileNavLink to="/organisation" title="Organisation" selected={activePage === "/organisation"}>Organisation</MobileNavLink>

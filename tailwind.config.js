@@ -29,7 +29,7 @@ module.exports = {
         semiWide: '0.01em',
       },
       screens: {
-        bp3: "864px",
+        bp3: "868px",
       },
     },
   }
