@@ -33,7 +33,7 @@ module.exports = {
       },
       screens: {
         player: "660px",
-        bp3: "868px",
+        bp3: "882px",
       },
     },
   }
