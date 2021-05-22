@@ -34,10 +34,3 @@ description: View submission deadlines and other key dates.
         <div><strong>27 Sep 2021</strong></div>
     </div>
 </div>
-<style>
-    .wrapper {
-        display: grid;
-        grid-template-columns: 70% 5% 25%;
-        margin-bottom: 1em;
-    }
-</style>

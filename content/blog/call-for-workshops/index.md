@@ -12,25 +12,32 @@ We are soliciting proposals for workshops to be held in conjunction with the ACM
 
 Each workshop proposal (maximum 4 pages, in PDF format) must include:
 
-1. Title of the workshop.
-
-2. Workshop organizers (name, contact and short biography).
-
-3. Scope and topics of the workshop.
-
-4. Rationale:
-   - Why the workshop is related to ACM Multimedia Asia 2021.
-   - Why the topic is important.
-   - Why the workshop may attract a reasonable number of attendees.
-   - A brief biography for each organizer and panelist.
-
-5. Workshop details:
-   - A draft call for papers (including organizers, program committee, and steering committee if any). Organizers are expected to be fully committed and physically present at the workshop.
-   - Workshop tentative schedule (number of expected papers, duration full-half day, format talks/posters, etc.). We encourage both full-day and half-day events that demonstrate the interest of the community in the proposed topic and guarantee the commitment of the organizers. 
-   - Names of potential participants and invited speakers (if any).
-
-6. Workshop history:
-   - If there are past workshops, the history of the workshop.
+<!-- need to use html syntax for lists with sublists -->
+<ol class="list-bold">
+   <li><strong>Title of the workshop.</strong></li>
+   <li><strong>Workshop organisers (name, contact and short biography).</strong></li>
+   <li><strong>Scope and topics of the workshop.</strong></li>
+   <li><strong>Rationale:</strong>
+      <ul>
+         <li>Why the workshop is related to ACM Multimedia Asia 2021.</li>
+         <li>Why the topic is important.</li>
+         <li>Why the workshop may attract a reasonable number of attendees.</li>
+         <li>A brief biography for each organiser and panelist.</li>
+      </ul>
+   </li>
+   <li><strong>Workshop details:</strong>
+      <ul>
+         <li>A draft call for papers (including organisers, program committee, and steering committee if any). Organisers are expected to be fully committed and physically present at the workshop.</li>
+         <li>Workshop tentative schedule (number of expected papers, duration full-half day, format talks/posters, etc.). We encourage both full-day and half-day events that demonstrate the interest of the community in the proposed topic and guarantee the commitment of the organisers.</li>
+         <li>Names of potential participants and invited speakers (if any).</li>
+      </ul>
+   </li>
+   <li><strong>Workshop history:</strong>
+      <ul>
+         <li>If there are past workshops, the history of the workshop.</li>
+      </ul>
+   </li>
+</ol>
 
 ## Important Dates
 

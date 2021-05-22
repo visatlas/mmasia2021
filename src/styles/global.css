@@ -9,13 +9,13 @@
 
 /* Article style for blog-post.js */
 .blog-post h1 {
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 800;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 0.01em;
-  margin-top: 3rem;
 }
 
 .blog-post header h1 {
@@ -39,8 +39,8 @@
 
 .blog-post ul {
   list-style-type: disc;
-  list-style-position: inside;
-  margin: 0;
+  list-style-position: outside;
+  margin-left: 1em;
 }
 
 .blog-post ul>li {
@@ -54,17 +54,26 @@
   margin-bottom: 0.7em;
 }
 
-.blog-post ol li>p {
-  margin-bottom: 0.3em;
-  margin-top: -25px;
-  margin-left: 19px;
+.blog-post ol.list-bold>li::marker {
+  font-weight: bold;
 }
 
 .blog-post ol ul>li {
-  margin-left: 19px;
+  margin-left: 1.2em;
   margin-bottom: 0.3em;
+}
+
+.blog-post ol ul>li:first-child {
+  margin-top: 0.3em;
 }
 
 .blog-post a {
   color: #2563EB;
+  text-decoration: underline;
+}
+
+.blog-post div.wrapper {
+  display: grid;
+  grid-template-columns: 70% 5% 25%;
+  margin-bottom: 1em;
 }
