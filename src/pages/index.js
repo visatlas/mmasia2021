@@ -20,6 +20,7 @@ const Index = ({ data, location }) => {
       .then(response => {
         if (response.country_code !== "CN") {
           setUseYouTube(true);
+          console.log("hi");
         }
       })
       .catch(_ => {
@@ -48,7 +49,7 @@ const Index = ({ data, location }) => {
             <h2 className="mt-12 mb-6 text-3xl text-mainPurple font-extrabold">Promotional Video</h2>
             <div className="flex flex-row justify-between">
               <button onClick={() => { setUseYouTube(true); }} type="button"
-                className="py-2 flex-1 space-x-2 mr-1 inline-flex items-center justify-center rounded-md text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
+                className="py-2 px-5 flex-1 space-x-2 mr-1 flex justify-center items-center rounded-md text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
                 <svg width="24px" height="24px" viewBox="0 0 310 310" role="img" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                   <path d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938
                   C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527
@@ -60,7 +61,7 @@ const Index = ({ data, location }) => {
                 <span className="font-medium">Watch on YouTube</span>
               </button>
               <button onClick={() => { setUseYouTube(false); }} type="button"
-                className="py-2 flex-1 space-x-2 ml-1 inline-flex items-center justify-center rounded-md text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
+                className="py-2 px-5 flex-1 space-x-2 ml-1 flex justify-center items-center rounded-md text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
                 <svg width="22px" height="22px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                   <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 
                   3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 
@@ -77,18 +78,23 @@ const Index = ({ data, location }) => {
               </button>
             </div>
             {useYouTube ? (
-              <div className="mt-2 mb-4 bg-black" style={{ position: "relative", padding: "30% 45%" }}>
-                <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://www.youtube.com/embed/dOebaAv8e_4" title="ACM Multimedia Asia 2021 Video on YouTube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <div className="pb-6 mt-2">
+                <div className="bg-black" style={{ position: "relative", padding: "28.1% 45%" }}>
+                  <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://www.youtube-nocookie.com/embed/dOebaAv8e_4" title="ACM Multimedia Asia 2021 Video on YouTube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
               </div>
             ) : (
-              <div className="mt-2 mb-4 bg-black" style={{ position: "relative", padding: "30% 45%" }}>
-                <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" title="ACM Multimedia Asia 2021 Video on Bilibili" frameBorder="no" scrolling="no" allowFullScreen></iframe>
+              <div className="pb-6 player:pb-0 mt-2">
+                <div className="bg-black" style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
+                  <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" title="ACM Multimedia Asia 2021 Video on Bilibili" frameBorder="no" scrolling="no" allowFullScreen></iframe>
+                  <div className="hidden player:block bg-white" style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} />
+                </div>
               </div>
             )}
           </div>
         )}
 
-        <h2 className="mt-12 text-3xl text-mainPurple font-extrabold">Latest News</h2>
+        <h2 className="mt-6 text-3xl text-mainPurple font-extrabold">Latest News</h2>
         <ol className="list-none">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug;
