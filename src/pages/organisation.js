@@ -24,10 +24,9 @@ const Organisation = ({ data, location }) => {
         {committee.map((roles, index) => {
           return (
             <div className="flex sm:block flex-col items-center" key={index}>
-              <h2 className="text-2xl font-bold mt-2 sm:mt-6 mb-8 text-mainPurple">{roles["role"]}</h2>
+              <h2 className="text-2xl font-bold mt-2 sm:mt-6 pb-2 mb-6 text-mainPurple border-b-2 border-gray-200 tracking-semiWide">{roles["role"]}</h2>
               <div className="flex flex-row justify-center sm:justify-start flex-wrap">
                 {roles["list"].map((person, index) => {
-
                   // resolve committee image path
                   let imageName = images[person["imageUrl"]];
                   if (!imageName) {
@@ -35,12 +34,13 @@ const Organisation = ({ data, location }) => {
                   }
                   const image = getImage(imageName);
                   return (
-                    <div className="mr-0 sm:mr-6 mb-9 flex flex-col items-center" key={index} style={{ width: "180px" }}>
+                    <div className="mr-0 sm:mr-6 mb-9 flex flex-col items-center sm:bg-orgBackground sm:p-3 sm:pb-6 sm:rounded-lg"
+                      key={index} style={{ width: "180px" }}>
                       <div style={{ width: "150px", height: "150px" }}>
-                        <GatsbyImage className="rounded-lg" image={image} alt={person["name"]} />
+                        <GatsbyImage className="rounded-lg" image={image} alt={person["name"]} imgStyle={{ borderRadius: "0.5rem" }} />
                       </div>
 
-                      <p className="text-xl font-bold mt-6 mb-1 text-center">{person["name"]}</p>
+                      <p className="text-xl font-bold mt-6 mb-2 text-center leading-6">{person["name"]}</p>
                       <p className="text-orgSmall text-gray-700 leading-5 text-center">{person["institution"]}</p>
                     </div>
                   );

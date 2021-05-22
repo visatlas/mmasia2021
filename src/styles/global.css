@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar menu drop-down */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 /* Article style for blog-post.js */
 .blog-post h1 {
   margin-bottom: 1.5rem;
@@ -17,6 +22,17 @@
   margin-top: 0;
 }
 
+.blog-post h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01em;
+  margin-top: 2.5rem;
+  color: #51247a;
+}
+
 .blog-post p {
   margin-bottom: 1.5rem;
 }
@@ -27,6 +43,28 @@
   margin: 0;
 }
 
-.blog-post li {
+.blog-post ul>li {
+  margin-bottom: 0.7em;
+}
+
+.blog-post ol>li {
+  list-style-type: decimal;
+  list-style-position: inside;
   margin: 0;
+  margin-bottom: 0.7em;
+}
+
+.blog-post ol li>p {
+  margin-bottom: 0.3em;
+  margin-top: -25px;
+  margin-left: 19px;
+}
+
+.blog-post ol ul>li {
+  margin-left: 19px;
+  margin-bottom: 0.3em;
+}
+
+.blog-post a {
+  color: #2563EB;
 }

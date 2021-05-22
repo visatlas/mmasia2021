@@ -168,7 +168,7 @@ p {
   padding: var(--spacing-0);
 }
 
-ul,
+/* ul,
 ol {
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
@@ -195,7 +195,7 @@ li *:last-child {
 li > ul {
   margin-left: var(--spacing-8);
   margin-top: calc(var(--spacing-8) / 2);
-}
+} */
 
 blockquote {
   color: var(--color-text-light);

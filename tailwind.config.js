@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       colors: {
         mainPurple: '#51247a',
+        menuHover: '#72439f',
+        menuSelected: "#efe1fc",
+        orgBackground: '#f6f7f8',
       },
       backgroundImage: _ => ({
         uqStyle: "linear-gradient(90deg, #51247a 0%, #56247a 60%, #61257d 80%, #962a8b 100%)",
