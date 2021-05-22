@@ -4,7 +4,7 @@ date: "2021-05-21T10:00:00.000Z"
 description: View submission deadlines and other key dates.
 ---
 
-*All deadlines are at 11:59pm in all timezones.*
+*All deadlines are at 11:59 p.m. in all timezones.*
 
 <!-- you can also write HTML codes in markdowns! -->
 <div style="max-width: 500px;">

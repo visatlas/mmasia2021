@@ -31,11 +31,11 @@ const Layout = ({ location, title, children }) => {
     <div className="min-h-screen flex flex-col" data-is-root-path={isRootPath}>
       {/* <header className="global-header">{header}</header> */}
       <header>{header}</header>
-      <div className="bg-mainPurple w-screen h-20" />
+      <div className="w-screen h-20" />
       <main>{children}</main>
       <Footer />
     </div>
   );
-}
+};
 
 export default Layout;

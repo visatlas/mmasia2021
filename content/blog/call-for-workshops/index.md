@@ -43,8 +43,8 @@ Each workshop proposal (maximum 4 pages, in PDF format) must include:
 
 **Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
-- Workshop proposal submission: **June 28, 2021**.
-- Decision notification: **July 18, 2021**.
+- Workshop proposal submission: **28 June, 2021**.
+- Decision notification: **18 July, 2021**.
 
 ## Contacts
 
