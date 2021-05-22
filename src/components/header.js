@@ -4,7 +4,7 @@ import Logo from "../images/Logo.png";
 
 const NavLink = ({ to, children, title = "Link", selected = false, disabled = false }) => {
   if (disabled) {
-    return (<span className="text-white hover:bg-gray-600 text-base px-3 py-2 rounded-md text-sm font-medium font-headingStyle cursor-default">{children}</span>);
+    return (<span className="text-white hover:bg-menuDisabled text-base px-3 py-2 rounded-md text-sm font-medium font-headingStyle cursor-default">{children}</span>);
   }
   const textColor = selected ? "text-black" : "text-white";
   const bgColor = selected ? "bg-menuSelected" : "";

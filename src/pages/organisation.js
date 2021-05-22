@@ -24,7 +24,7 @@ const Organisation = ({ data, location }) => {
         {committee.map((roles, index) => {
           return (
             <div className="flex sm:block flex-col items-center" key={index}>
-              <h2 className="text-2xl font-bold mt-2 sm:mt-6 pb-2 mb-6 text-mainPurple border-b-2 border-gray-200 tracking-semiWide">{roles["role"]}</h2>
+              <h2 className="text-2xl font-bold mt-2 sm:mt-6 text-center sm:text-left pb-2 mb-6 text-mainPurple border-b border-gray-200 font-headingStyle tracking-semiWide">{roles["role"]}</h2>
               <div className="flex flex-row justify-center sm:justify-start flex-wrap">
                 {roles["list"].map((person, index) => {
                   // resolve committee image path

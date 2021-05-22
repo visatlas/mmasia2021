@@ -20,7 +20,6 @@ const Index = ({ data, location }) => {
       .then(response => {
         if (response.country_code !== "CN") {
           setUseYouTube(true);
-          console.log("hi");
         }
       })
       .catch(_ => {
