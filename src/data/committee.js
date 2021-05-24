@@ -101,17 +101,17 @@ export const committee = [
       {
         name: "Yang Yang",
         institution: "University of Electronic Science and Technology of China",
-        imageUrl: "Yang Yang_cropped",
+        imageUrl: "yang-yang",
       },
       {
         name: "Hanwang Zhang",
         institution: "Nanyang Technological University, Singapore",
-        imageUrl: "Hanwang Zhang_cropped",
+        imageUrl: "hanwang-zhang",
       },
       {
         name: "Wen-Huang Cheng",
         institution: "National Chiao Tung University",
-        imageUrl: "Wen-Huang Cheng",
+        imageUrl: "wenhuang-cheng",
       },
     ],
   },
@@ -221,7 +221,7 @@ export const committee = [
       {
         name: "Shin'ichi Satoh",
         institution: "National Institute of Informatics, Japan",
-        imageUrl: "Shinichi Sato",
+        imageUrl: "shinichi-satoh",
       },
       {
         name: "Jingkuan Song",
@@ -236,7 +236,7 @@ export const committee = [
       {
         name: "Yong Man Ro",
         institution: "Korea Advanced Institute of Science and Technology, South Korea",
-        imageUrl: "Yong Man Ro",
+        imageUrl: "yongman-ro",
       },
       {
         name: "Chuang Gan",
@@ -271,7 +271,7 @@ export const committee = [
       {
         name: "Mahsa Baktashmotlagh",
         institution: "The University of Queensland, Australia",
-        imageUrl: "Mahsa",
+        imageUrl: "mahsa-baktashmotlagh",
       },
       {
         name: "Zheng Zhang",
