@@ -6,7 +6,7 @@ export const committee = [
       {
         name: "Joao Magalhaes",
         institution: "Univeristy of Nova de Lisboa, Portugal",
-        imageUrl: "joan",
+        imageUrl: "joao-megalhaes2",
       },
       {
         name: "Heng Tao Shen",
@@ -21,7 +21,7 @@ export const committee = [
       {
         name: "Chang-wen Chen",
         institution: "State University of New York at Buffalo, USA",
-        imageUrl: "chang wen_cropped",
+        imageUrl: "changwen-chen",
       },
       {
         name: "Helen Huang",
@@ -31,7 +31,7 @@ export const committee = [
       {
         name: "Jun Zhou",
         institution: "Griffith University, Australia",
-        imageUrl: "jun",
+        imageUrl: "jun-zhou",
       },
     ],
   },
@@ -46,17 +46,17 @@ export const committee = [
       {
         name: "Jianfei Cai",
         institution: "Monash University, Australia",
-        imageUrl: "jianfei_cropped",
+        imageUrl: "jianfei-cai",
       },
       {
         name: "Wu Liu",
         institution: "JD AI Research",
-        imageUrl: "Wu Liu",
+        imageUrl: "wu-liu",
       },
       {
         name: "Dong Xu",
         institution: "The University of Sydney, Australia",
-        imageUrl: "Dong Xu",
+        imageUrl: "dong-xu",
       },
     ],
   },
@@ -71,7 +71,7 @@ export const committee = [
       {
         name: "Tony Chen",
         institution: "The University of Queensland, Australia",
-        imageUrl: "Tony Chen",
+        imageUrl: "tony-chen",
       },
     ],
   },
@@ -81,7 +81,7 @@ export const committee = [
       {
         name: "Lorna Macdonald",
         institution: "The University of Queensland, Australia",
-        imageUrl: "Lorna Macdonald",
+        imageUrl: "lorna-macdonald",
       },
       {
         name: "Zixin Wang",
