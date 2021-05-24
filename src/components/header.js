@@ -59,7 +59,7 @@ export default function Header({ activePage }) {
     <header>
       <nav className="bg-mainPurple fixed top-0 z-50 w-full lg:px-10 md:bg-uqStyle">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-          <div className="relative flex items-center justify-between h-20">
+          <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
               {/* <!-- Mobile menu button--> */}
               <button type="button" className="py-2 pl-3 pr-3 ml-4 inline-flex items-center justify-center rounded-md text-gray-50 hover:text-black hover:bg-purple-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false"
@@ -81,7 +81,12 @@ export default function Header({ activePage }) {
 
               <Link to="/">
                 <div className="flex-shrink-0 items-center lg:ml-8 flex md:hidden bp3:flex">
-                  <img className="h-14" src={Logo} alt="ACMMA Asia 2021 Logo" height={56} width={153.42} />
+                  {/* <img className="h-14" src={Logo} alt="ACMMA Asia 2021 Logo" height={56} width={153.42} /> */}
+                  <img className="h-12" src={Logo} alt="ACMMA Asia 2021 Logo" height={48} width={131.5}/>
+                  {/* <div className="flex flex-col ml-2 justify-center items-center">
+                    <h1 className="text-white font-bold leading-tight text-xl"><span className="text-yellow-400" style={{}}>ACM</span>multimedia</h1>
+                    <p className="text-white leading-none" style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.6)" }}>Asia 2021, Gold Coast</p>
+                  </div> */}
                 </div>
               </Link>
 

@@ -50,7 +50,7 @@ export const committee = [
       },
       {
         name: "Wu Liu",
-        institution: "JD.com",
+        institution: "JD AI Research",
         imageUrl: "Wu Liu",
       },
       {
