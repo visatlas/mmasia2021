@@ -117,7 +117,7 @@ module.exports = {
         short_name: `MMAsia 2021`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#51247a`,
         display: `minimal-ui`,
         icon: `src/images/mmasia-icon.jpg`, // This path is relative to the root of the site.
       },
@@ -132,8 +132,7 @@ module.exports = {
         offset: -64,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+    // Progressive Web App + Offline functionality
     {
       resolve: `gatsby-plugin-offline`,
       options: {

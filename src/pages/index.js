@@ -12,17 +12,27 @@ const Index = ({ data, location }) => {
   const [useYouTube, setUseYouTube] = useState(false);
 
   useEffect(() => {
-    setAllowVideo(true);
+    // set timeout when determine country
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => {
+      controller.abort();
+      setAllowVideo(true);
+      setUseYouTube(false);
+    }, 4000);
 
-    // switch to bilibili source
-    fetch('https://ipapi.co/json/')
+    // switch to youtube/bilibili source based on country
+    fetch('https://ipapi.co/json/', { signal: controller.signal })
       .then(res => res.json())
       .then(response => {
+        clearTimeout(timeoutId);
+        setAllowVideo(true);
         if (response.country_code !== "CN") {
           setUseYouTube(true);
         }
       })
       .catch(_ => {
+        clearTimeout(timeoutId);
+        setAllowVideo(true);
         setUseYouTube(false);
       });
   }, []);
@@ -86,7 +96,7 @@ const Index = ({ data, location }) => {
               <div className="pb-6 player:pb-0 mt-2">
                 <div className="bg-black" style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
                   <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" title="ACM Multimedia Asia 2021 Video on Bilibili" frameBorder="no" scrolling="no" allowFullScreen></iframe>
-                  <div className="hidden player:block bg-white" style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} />
+                  <div className="hidden player:block bg-white w-full" style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} />
                 </div>
               </div>
             )}
