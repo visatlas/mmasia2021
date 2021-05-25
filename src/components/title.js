@@ -44,7 +44,7 @@ export default function Title() {
     <div>
       <div className="hidden md:block"
         style={{ position: "relative", minHeight: "min(calc(100vw * 9 / 16), 100vh)", maxHeight: "100vh", overflow: "hidden" }}>
-        {/* {allowVideo && (
+        {allowVideo && (
           // title video
           <video style={{
             position: "absolute", zIndex: "-1", top: "50%", left: "50%", transform: "translate(-50%, -50%)",
@@ -53,7 +53,7 @@ export default function Title() {
             <source src="https://mmasia2021.uqcloud.net/uploads/GC.mp4" type='video/mp4' crossOrigin="anonymous" />
             <source src="https://mmasia2021.uqcloud.net/uploads/GC.mp4" type="video/ogg" crossOrigin="anonymous" />
           </video>
-        )} */}
+        )}
 
         {/* fallback image */}
         <StaticImage style={{
