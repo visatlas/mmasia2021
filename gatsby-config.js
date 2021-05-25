@@ -113,13 +113,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ACMMM Asia 2021`,
-        short_name: `MMAsia 2021`,
+        name: `ACM MMAsia 2021`,
+        short_name: `MMAsia '21`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#51247a`,
         display: `minimal-ui`,
-        icon: `src/images/mmasia-icon.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/mmasia-icon.jpg`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     `gatsby-plugin-react-helmet`,
