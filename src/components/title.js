@@ -50,8 +50,8 @@ export default function Title() {
             position: "absolute", zIndex: "-1", top: "50%", left: "50%", transform: "translate(-50%, -50%)",
             minWidth: "100%", minHeight: "100%", width: "auto", height: "auto"
           }} autoPlay muted loop playsInline id="video">
-            <source src="https://mmasia2021.uqcloud.net/uploads/GC.mp4" type='video/mp4' crossOrigin="anonymous" />
-            <source src="https://mmasia2021.uqcloud.net/uploads/GC.mp4" type="video/ogg" crossOrigin="anonymous" />
+            <source src="https://mmasia2021.uqcloud.net/uploads/gold-coast.mp4" type="video/mp4" crossOrigin="anonymous" />
+            <source src="https://mmasia2021.uqcloud.net/uploads/gold-coast.webm" type='video/webm' crossOrigin="anonymous" />
           </video>
         )}
 
