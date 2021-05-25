@@ -50,7 +50,7 @@ const BlogPostTemplate = ({ data, location }) => {
         </nav> */}
 
         <footer className="pb-0">
-          <p className="text-xs mt-8">Last Updated on {post.frontmatter.date}</p>
+          <p className="text-xs mt-8">Last updated on {post.frontmatter.date}.</p>
         </footer>
       </div>
     </Layout>

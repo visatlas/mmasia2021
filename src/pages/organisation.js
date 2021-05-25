@@ -24,7 +24,8 @@ const Organisation = ({ data, location }) => {
         {committee.map((roles, index) => {
           return (
             <div className="flex sm:block flex-col items-center" key={index}>
-              <h2 className="text-2xl font-bold mt-2 sm:mt-6 text-center sm:text-left pb-2 mb-6 text-mainPurple border-b border-gray-200 font-headingStyle tracking-semiWide">{roles["role"]}</h2>
+              <h2 className="text-2xl font-bold mt-2 sm:mt-6 text-center sm:text-left pb-2 mb-6 text-mainPurple 
+              border-b border-gray-200 font-headingStyle tracking-semiWide">{roles["role"]}</h2>
               <div className="flex flex-row justify-center sm:justify-start flex-wrap">
                 {roles["list"].map((person, index) => {
                   // resolve committee image path
@@ -34,10 +35,11 @@ const Organisation = ({ data, location }) => {
                   }
                   const image = getImage(imageName);
                   return (
-                    <div className="mr-0 sm:mr-6 mb-9 flex flex-col items-center sm:bg-orgBackground sm:p-3 sm:pb-6 sm:rounded-lg"
-                      key={index} style={{ width: "180px" }}>
+                    <div className="mr-0 sm:mr-6 mb-9 flex flex-col items-center sm:bg-orgBackground 
+                    sm:p-3 sm:pb-6 sm:rounded-lg" key={index} style={{ width: "180px" }}>
                       <div style={{ width: "150px", height: "150px" }}>
-                        <GatsbyImage className="rounded-lg" image={image} alt={person["name"]} imgStyle={{ borderRadius: "0.5rem" }} />
+                        <GatsbyImage className="rounded-lg" image={image} alt={person["name"]}
+                          imgStyle={{ borderRadius: "0.5rem" }} />
                       </div>
 
                       <p className="text-xl font-bold mt-6 mb-2 text-center leading-6">{person["name"]}</p>
@@ -51,7 +53,7 @@ const Organisation = ({ data, location }) => {
         })
         }
         <footer className="pb-0">
-          <p className="text-xs mt-0 sm:mt-8">Last Updated on {lastUpdated}</p>
+          <p className="text-xs mt-0 sm:mt-8 text-center sm:text-left">Last updated on {lastUpdated}.</p>
         </footer>
       </div>
     </Layout>

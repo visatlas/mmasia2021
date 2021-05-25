@@ -42,21 +42,29 @@ export default function Title() {
 
   return (
     <div>
-      <div className="relative hidden md:block" style={{ height: "calc(100vw * 9 / 16)" }}>
-        {allowVideo && (
-          /* title video */
-          <video className='w-full top-0 left-0 videoTag m-0' autoPlay muted loop playsInline id="video">
+      <div className="hidden md:block"
+        style={{ position: "relative", minHeight: "min(calc(100vw * 9 / 16), 100vh)", maxHeight: "100vh", overflow: "hidden" }}>
+        {/* {allowVideo && (
+          // title video
+          <video style={{
+            position: "absolute", zIndex: "-1", top: "50%", left: "50%", transform: "translate(-50%, -50%)",
+            minWidth: "100%", minHeight: "100%", width: "auto", height: "auto"
+          }} autoPlay muted loop playsInline id="video">
             <source src="https://mmasia2021.uqcloud.net/uploads/GC.mp4" type='video/mp4' crossOrigin="anonymous" />
             <source src="https://mmasia2021.uqcloud.net/uploads/GC.mp4" type="video/ogg" crossOrigin="anonymous" />
           </video>
-        )}
+        )} */}
 
         {/* fallback image */}
-        <StaticImage className="m-0 w-full top-0" placeholder="blurred"
-          style={{ position: "absolute", zIndex: "-9999", left: "50%", transform: "translate(-50%, 0)" }}
-          src="../images/GC.png" alt="Gold Coast" />
+        <StaticImage style={{
+          position: "absolute", zIndex: "-2", top: "50%", left: "50%", transform: "translate(-50%, -50%)",
+          minWidth: "100%", minHeight: "100%", width: "auto", height: "auto"
+        }} placeholder="blurred" src="../images/GC.png" alt="Gold Coast" loading="eager" layout="fullWidth" />
 
-        <div className="px-12 py-8" style={{ position: "absolute", top: "0%", right: "20%", backgroundColor: "rgba(236, 231, 241, 0.85)" }}>
+        <div className="px-12 py-8" style={{
+          position: "absolute", top: "0%", right: "20%",
+          backgroundColor: "rgba(236, 231, 241, 0.85)"
+        }}>
           <h1 className="mb-2 font-extrabold tracking-wide text-titleBig leading-titleBig">
             <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
           <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
@@ -84,7 +92,8 @@ export default function Title() {
               viewBox="0 0 460.114 460.114">
               <path d="M393.538,203.629L102.557,5.543c-9.793-6.666-22.468-7.372-32.94-1.832c-10.472,5.538-17.022,
                 16.413-17.022,28.26v396.173c0,11.846,6.55,22.721,17.022,28.26c10.471,5.539,23.147,4.834,32.94-1.832
-                l290.981-198.087c8.746-5.954,13.98-15.848,13.98-26.428C407.519,219.477,402.285,209.582,393.538,203.629z"/></svg>
+                l290.981-198.087c8.746-5.954,13.98-15.848,13.98-26.428
+                C407.519,219.477,402.285,209.582,393.538,203.629z"/></svg>
           )}</p>
         </button>
         )}
@@ -101,7 +110,8 @@ export default function Title() {
             <p className="w-full font-semibold text-titleSmall text-center">{count}</p>
           </div>
         </div>
-        <StaticImage className="h-50 m-0 w-full top-0 left-0" placeholder="blurred" src="../images/GC.png" alt="Gold Coast" />
+        <StaticImage className="h-50 m-0 w-full top-0 left-0" placeholder="blurred"
+          src="../images/GC.png" alt="Gold Coast" loading="eager" />
       </div>
     </div>
   );

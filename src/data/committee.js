@@ -1,4 +1,4 @@
-export const lastUpdated = "May 21, 2021";
+export const lastUpdated = "25 May, 2021";
 export const committee = [
   {
     role: "Honorary Chairs",
