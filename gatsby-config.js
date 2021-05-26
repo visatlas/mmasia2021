@@ -5,7 +5,7 @@ module.exports = {
       name: `ACM Multimedia Asia Conference`,
       summary: `ACM Multimedia Asia Conference.`,
     },
-    description: `ACM Multimedia Asia Conference (MM Asia) 2021 will be held from 1 to 3 December, 2021 in Gold Coast, Australia. 
+    description: `ACM Multimedia Asia Conference (ACM MM Asia) 2021 will be held from 1 to 3 December, 2021 in Gold Coast, Australia. 
     It will be held in a hybrid mode by offering both online and offline events. A live in-person conference with 
     virtual online component will be enabled.`,
     siteUrl: `https://mmasia2021.uqcloud.net/`,
