@@ -15,8 +15,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
         name: `blog`,
+        path: `${__dirname}/content/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
       },
     },
     {
@@ -48,6 +55,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -135,8 +143,8 @@ module.exports = {
         offset: -64,
       },
     },
-    // Progressive Web App + Offline functionality
     {
+      // Progressive Web App + Offline functionality
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [`/uploads/*`],

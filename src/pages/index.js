@@ -5,11 +5,13 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 import Title from "../components/title";
-import highlights from "../data/highlights";
 
 const Index = ({ data, location }) => {
   const [allowVideo, setAllowVideo] = useState(false);
   const [useYouTube, setUseYouTube] = useState(false);
+
+  // get introduction paragraph
+  const highlights = data.paragraphsJson.data;
 
   useEffect(() => {
     // set timeout when determine country
@@ -147,6 +149,9 @@ export const pageQuery = graphql`
       siteMetadata {
         title
       }
+    }
+    paragraphsJson(id: {eq: "highlights"}) {
+      data
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {

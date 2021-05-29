@@ -5,12 +5,14 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-import { committee, lastUpdated } from "../data/committee";
-
 const Organisation = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Organisation`;
 
-  // get all committee images
+  // get committee roles & names
+  const committee = data.committeeJson.data;
+  const lastUpdated = data.committeeJson.lastUpdated;
+
+  // get committee images
   let images = {};
   data.allFile.edges.forEach(content => {
     images[content.node.name] = content.node;
@@ -68,7 +70,18 @@ export const pageQuery = graphql`
       siteMetadata {
         title
       }
-    },
+    }
+    committeeJson(id: {eq: "committee"}) {
+      data {
+        list {
+          imageUrl
+          institution
+          name
+        }
+        role
+      }
+      lastUpdated
+    }
     allFile(
       filter: {sourceInstanceName: {eq: "images"}, relativeDirectory: {eq: "committee"}}
     ) {
