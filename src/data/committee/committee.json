@@ -1,6 +1,6 @@
 {
   "id": "committee",
-  "lastUpdated": "25 May, 2021",
+  "lastUpdated": "30 May, 2021",
   "data": [
     {
       "role": "Honorary Chairs",
@@ -123,12 +123,12 @@
         {
           "name": "Jiebo Luo",
           "institution": "University of Rochester, USA",
-          "imageUrl": "Jiebo Luo"
+          "imageUrl": "jiebo-luo"
         },
         {
           "name": "Liqiang Nie",
           "institution": "Shandong University, China",
-          "imageUrl": "Liqiang Nie"
+          "imageUrl": "liqiang-nie"
         }
       ]
     },
@@ -138,12 +138,12 @@
         {
           "name": "Chua Tat Seng",
           "institution": "National University of Singapore",
-          "imageUrl": "Chua Tat Seng"
+          "imageUrl": "chua-tat-seng"
         },
         {
           "name": "Susanne Boll",
           "institution": "University of Oldenburg, Germany",
-          "imageUrl": "Susanne Boll"
+          "imageUrl": "susanne-boll"
         }
       ]
     },
@@ -277,12 +277,12 @@
         },
         {
           "name": "Zheng Zhang",
-          "institution": "College of William and Mary, USA",
+          "institution": "College of William & Mary, USA",
           "imageUrl": "Zheng Zhang"
         },
         {
           "name": "Tianran Hu",
-          "institution": "",
+          "institution": "College of William & Mary, USA",
           "imageUrl": "Tianran Hu"
         }
       ]
@@ -347,8 +347,8 @@
       "list": [
         {
           "name": "Jingjing Li",
-          "institution": "",
-          "imageUrl": "Jingjing Li"
+          "institution": "University of Electronic Science and Technology of China",
+          "imageUrl": "jingjing-li"
         },
         {
           "name": "Xinchen Liu",
