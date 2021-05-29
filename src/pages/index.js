@@ -111,33 +111,27 @@ const Index = ({ data, location }) => {
             const title = post.frontmatter.title || post.fields.slug;
 
             return (
-              <li key={post.fields.slug}>
-                <article
-                  className="post-list-item"
-                  itemScope
-                  itemType="http://schema.org/Article"
-                >
-                  <header className="flex flex-col">
-                    <Link className="w-90 text-xl font-bold font-headingStyle tracking-semiWide hover:text-blue-600" to={post.fields.slug.slice(0, -1)} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                    <small>{post.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
+              <li className="group" key={post.fields.slug}>
+                <Link to={post.fields.slug.slice(0, -1)} itemProp="url" title={title}>
+                  <article className="post-list-item" itemScope itemType="http://schema.org/Article">
+                    <header className="flex flex-col">
+                      <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide group-hover:text-blue-600" itemProp="headline">{title}</span>
+                      <small>{post.frontmatter.date}</small>
+                    </header>
+                    <section>
+                      <p itemProp="description" dangerouslySetInnerHTML={{
                         __html: post.frontmatter.description || post.excerpt,
                       }}
-                      itemProp="description"
-                    />
-                  </section>
-                </article>
+                      />
+                    </section>
+                  </article>
+                </Link>
               </li>
             );
           })}
         </ol>
       </div>
-    </Layout>
+    </Layout >
   );
 };
 

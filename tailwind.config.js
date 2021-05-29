@@ -9,9 +9,9 @@ module.exports = {
     extend: {
       colors: {
         mainPurple: '#51247a',
-        menuHover: "rgba(114, 67, 159, 0.8)",
-        menuSelected: "#efe1fc",
-        menuDisabled: "rgba(0, 0, 0, 0.3)",
+        menuHover: "rgba(239, 225, 252, 0.9)",
+        menuSelected: "rgba(114, 67, 159, 0.9)",
+        textDisabled: "rgba(255, 255, 255, 0.4)",
         orgBackground: '#f6f7f8',
       },
       backgroundImage: _ => ({

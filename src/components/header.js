@@ -3,12 +3,11 @@ import React, { useState } from 'react';
 
 const NavLink = ({ to, children, title = "Link", selected = false, disabled = false }) => {
   if (disabled) {
-    return (<span className="text-white hover:bg-menuDisabled text-base px-3 py-2 rounded-md text-sm font-medium 
+    return (<span className="text-textDisabled text-base px-3 py-2 rounded-md text-sm font-medium 
     font-headingStyle cursor-default">{children}</span>);
   }
-  const textColor = selected ? "text-black" : "text-white";
   const bgColor = selected ? "bg-menuSelected" : "";
-  const style = `${textColor} ${bgColor} text-base hover:bg-menuHover hover:text-white px-3 py-2 rounded-md text-sm 
+  const style = `${bgColor} text-white text-base hover:bg-purple-300 hover:text-black px-3 py-2 rounded-md text-sm 
   font-medium font-headingStyle`;
   return (
     <Link className="flex item-center" to={to} title={title}>
@@ -19,12 +18,11 @@ const NavLink = ({ to, children, title = "Link", selected = false, disabled = fa
 
 const MobileNavLink = ({ to, children, title = "Link", selected = false, disabled = false }) => {
   if (disabled) {
-    return (<span className="pl-8 pr-4 py-2 flex item-center w-full text-gray-600 block rounded-md text-base 
+    return (<span className="pl-8 pr-4 py-2 flex item-center w-full text-textDisabled block rounded-md text-base 
     font-semibold font-headingStyle cursor-default">{children}</span>);
   }
-  const textColor = selected ? "text-black" : "text-white";
   const bgColor = selected ? "bg-menuSelected" : "";
-  const style = `pl-8 pr-4 py-2 w-full ${textColor} ${bgColor} hover:bg-menuHover hover:text-white block rounded-md 
+  const style = `pl-8 pr-4 py-2 w-full text-white ${bgColor} hover:bg-purple-300 hover:text-black block rounded-md 
   text-base font-semibold font-headingStyle`;
   return (
     <Link className="flex item-center w-full" to={to} title={title}>
@@ -34,9 +32,8 @@ const MobileNavLink = ({ to, children, title = "Link", selected = false, disable
 };
 
 const Calls = ({ selected }) => {
-  const textColor = selected ? "text-black" : "text-white";
   const bgColor = selected ? "bg-menuSelected" : "";
-  const style = `${textColor} ${bgColor} text-base group-hover:bg-menuHover group-hover:text-white pl-3 pr-2 py-2 
+  const style = `${bgColor} text-white text-base group-hover:bg-purple-300 group-hover:text-black pl-3 pr-2 py-2 
   rounded-md text-sm font-medium font-headingStyle inline-flex items-center`;
 
   return (
