@@ -7,7 +7,7 @@ const NavLink = ({ to, children, title = "Link", selected = false, disabled = fa
     font-headingStyle cursor-default">{children}</span>);
   }
   const bgColor = selected ? "bg-menuSelected" : "";
-  const style = `${bgColor} text-white text-base hover:bg-purple-300 hover:text-black px-3 py-2 rounded-md text-sm 
+  const style = `${bgColor} text-white text-base hover:bg-menuHover px-3 py-2 rounded-md text-sm 
   font-medium font-headingStyle`;
   return (
     <Link className="flex item-center" to={to} title={title}>
@@ -22,7 +22,7 @@ const MobileNavLink = ({ to, children, title = "Link", selected = false, disable
     font-semibold font-headingStyle cursor-default">{children}</span>);
   }
   const bgColor = selected ? "bg-menuSelected" : "";
-  const style = `pl-8 pr-4 py-2 w-full text-white ${bgColor} hover:bg-purple-300 hover:text-black block rounded-md 
+  const style = `pl-8 pr-4 py-2 w-full text-white ${bgColor} hover:bg-menuHover block rounded-md 
   text-base font-semibold font-headingStyle`;
   return (
     <Link className="flex item-center w-full" to={to} title={title}>
@@ -33,7 +33,7 @@ const MobileNavLink = ({ to, children, title = "Link", selected = false, disable
 
 const Calls = ({ selected }) => {
   const bgColor = selected ? "bg-menuSelected" : "";
-  const style = `${bgColor} text-white text-base group-hover:bg-purple-300 group-hover:text-black pl-3 pr-2 py-2 
+  const style = `${bgColor} text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 
   rounded-md text-sm font-medium font-headingStyle inline-flex items-center`;
 
   return (
@@ -68,7 +68,7 @@ export default function Header({ activePage }) {
             <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
               {/* <!-- Mobile menu button--> */}
               <button type="button" className="py-2 pl-3 pr-3 ml-4 inline-flex items-center justify-center rounded-md 
-              text-gray-50 hover:text-black hover:bg-purple-300 focus:outline-none focus:ring-2 focus:ring-inset 
+              text-gray-50 hover:text-black hover:bg-purple-300 focus:outline-none focus:ring-1 focus:ring-inset 
               focus:ring-white" aria-controls="mobile-menu" aria-expanded="false"
                 onClick={() => {
                   showMobileMenu ? setShowMobileMenu(false) : setShowMobileMenu(true);
