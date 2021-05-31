@@ -13,8 +13,7 @@ ACM Multimedia Asia 2021 will provide demonstration sessions. Demos are intended
 
 ## Expected Contents
 
-Submissions are encouraged in all areas related to multimedia, as described in ACM MMAsia 2021 general call for papers: 
-(https://mmasia2021.uqcloud.net/?page_id=84)
+Submissions are encouraged in all areas related to multimedia, as described in ACM MMAsia 2021 general [*call for papers*](https://mmasia2021.uqcloud.net/?page_id=84)
 
 ## Facilities
 
@@ -26,10 +25,9 @@ Submissions are encouraged in all areas related to multimedia, as described in A
 </ul>
 
 ## Submission Guidelines
-The demo papers should be submitted through the conference submission system: 
-(https://cmt3.research.microsoft.com/MMASIA2021/)
+The demo papers should be submitted through the [*conference submission system*](https://cmt3.research.microsoft.com/MMASIA2021/).
 
-All submissions will be peer-reviewed, and the demos will be selected through a jury process. Please submit a two page demo proposals (excluding references) using the ACM Article Template. Please remember to add Concepts and Keywords (https://www.acm.org/publications/proceedings-template)
+All submissions will be peer-reviewed, and the demos will be selected through a jury process. Please submit a two page demo proposals (excluding references) using the ACM Article Template. Please remember to add [*Concepts and Keywords*](https://www.acm.org/publications/proceedings-template).
 
 Please note that the submission is NOT blind, there is no need to anonymize presenters . Each demo submission must contain a supplementary file, either in PowerPoint format (no more than 10 slides) or in video (no longer than 3 minutes) explaining to the jury:
 <ul>
