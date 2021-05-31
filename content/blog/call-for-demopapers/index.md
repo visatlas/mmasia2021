@@ -13,7 +13,7 @@ ACM Multimedia Asia 2021 will provide demonstration sessions. Demos are intended
 
 ## Expected Contents
 
-Submissions are encouraged in all areas related to multimedia, as described in ACM MMAsia 2021 general [*call for papers*](https://mmasia2021.uqcloud.net/?page_id=84)
+Submissions are encouraged in all areas related to multimedia, as described in ACM MMAsia 2021 general [*call for papers*](https://mmasia2021.uqcloud.net/?page_id=84).
 
 ## Facilities
 
