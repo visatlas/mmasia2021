@@ -22,7 +22,7 @@ const Organisation = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Organisation" />
       <div className="flex sm:block sm:mx-auto sm:my-0 sm:max-w-4xl py-10 sm:px-5 flex-col items-center">
-        <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide">Key Organisors</h1>
+        <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Key Organisors</h1>
         {committee.map((roles, index) => {
           return (
             <div className="flex sm:block flex-col items-center" key={index}>
