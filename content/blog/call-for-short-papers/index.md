@@ -10,7 +10,6 @@ Multimedia research focuses on technologies that enable the use and exchange of 
 
 Short papers provide an opportunity to describe significant novel work in progress or multimedia research. Compared to full papers, their contribution may be narrower in scope, be applied to a narrower set of application domains, or have weaker empirical support than that expected for a full paper. Submissions that are likely to generate discussions in new and emerging areas of multimedia are especially encouraged.
 
-
 ## Expected Contents
 
 Submissions are encouraged in all areas related to multimedia, as described in ACM MMAsia 2021 general [*call for papers*](https://mmasia2021.uqcloud.net/call-for-papers)

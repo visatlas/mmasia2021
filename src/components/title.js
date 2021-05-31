@@ -10,7 +10,8 @@ export default function Title() {
   // calculate countdown time
   useEffect(() => {
     let mounted = true;
-    let countDownDate = new Date("Dec 1, 2021 00:00:00").getTime();
+    let countDownDate = new Date("Dec 1, 2021 10:00:00").getTime();
+    // let countDownDate = new Date("Jun 1, 2021 00:55:00").getTime();
 
     let x = setInterval(function tick() {
       let now = new Date().getTime();
@@ -21,12 +22,11 @@ export default function Title() {
       let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       if (mounted) {
-        setCount(days + "D " + hours + "h "
-          + minutes + "m " + seconds + "s");
+        setCount(`${days ? days + "D " : ""}${hours ? hours + "h " : ""}${minutes}m ${seconds}s`);
 
         if (distance < 0) {
           clearInterval(x);
-          setCount("Event Closed");
+          setCount("Event Started");
         }
       }
       return tick;

@@ -7,6 +7,18 @@
   display: block;
 }
 
+/* Post style for index.js */
+
+.post-list li:first-child {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.post-list li:last-child {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
 /* Article style for blog-post.js */
 .blog-post h1 {
   margin-top: 3rem;
@@ -35,7 +47,7 @@
 }
 
 .blog-post p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
 }
 
 .blog-post ul {
@@ -66,6 +78,10 @@
 
 .blog-post ol ul>li:first-child {
   margin-top: 0.3em;
+}
+
+.blog-post ul>li:last-child {
+  margin-bottom: 1.3em;
 }
 
 .blog-post a {

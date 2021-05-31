@@ -105,20 +105,22 @@ const Index = ({ data, location }) => {
           </div>
         )}
 
-        <h2 className="mt-6 text-3xl text-mainPurple font-extrabold">Latest News</h2>
-        <ol className="list-none">
+        <h2 className="mt-6 pb-4 text-3xl text-mainPurple font-extrabold">Latest News</h2>
+        <ol className="post-list list-none divide-y divide-gray-200">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug;
+            const diffDays = Math.ceil(Math.abs(new Date() - new Date(post.frontmatter.date)) / (1000 * 60 * 60 * 24));
+            const dateClass = diffDays <= 7 ? "text-pink-800 font-semibold" : "text-gray-500 font-medium";
 
             return (
-              <li className="group" key={post.fields.slug}>
+              <li className="bg-gray-50 px-6 md:px-8 hover:bg-gray-200 duration-300" key={post.fields.slug}>
                 <Link to={post.fields.slug.slice(0, -1)} itemProp="url" title={title}>
                   <article className="post-list-item" itemScope itemType="http://schema.org/Article">
                     <header className="flex flex-col">
-                      <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide group-hover:text-blue-600" itemProp="headline">{title}</span>
-                      <small>{post.frontmatter.date}</small>
+                      <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide" itemProp="headline">{title}</span>
+                      <small className={dateClass}>{post.frontmatter.date}</small>
                     </header>
-                    <section>
+                    <section className="">
                       <p itemProp="description" dangerouslySetInnerHTML={{
                         __html: post.frontmatter.description || post.excerpt,
                       }}
@@ -131,7 +133,7 @@ const Index = ({ data, location }) => {
           })}
         </ol>
       </div>
-    </Layout >
+    </Layout>
   );
 };
 

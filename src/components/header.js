@@ -12,8 +12,9 @@ export default function Header({ activePage }) {
       <nav className="bg-mainPurple fixed top-0 z-50 w-full lg:px-10 md:bg-uqStyle">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
+
+            {/* <!-- Mobile menu button--> */}
             <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
-              {/* <!-- Mobile menu button--> */}
               <button type="button" className="py-2 pl-3 pr-3 ml-4 inline-flex items-center justify-center rounded-md 
               text-gray-50 hover:text-black hover:bg-purple-300 focus:outline-none focus:ring-1 focus:ring-inset 
               focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onClick={() => { showMobileMenu ? setShowMobileMenu(false) : setShowMobileMenu(true); }}>
@@ -26,9 +27,10 @@ export default function Header({ activePage }) {
                 </svg>
               </button>
             </div>
+
             <div className="flex-1 flex items-center justify-center md:items-stretch md:justify-between">
 
-              {/* MMAsia 2021 Logo */}
+              {/* MMAsia 2021 logo */}
               <Link to="/" title="ACM Multimedia Asia 2021 - Gold Coast, Australia">
                 <div className="flex-shrink-0 items-center lg:ml-8 flex md:hidden bp3:flex">
                   <svg className="h-12" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2"
@@ -94,6 +96,7 @@ export default function Header({ activePage }) {
               <MobileNavLink to="/call-for-workshops" title="Calls for Workshops" selected={activePage === "/call-for-workshops"} nested>Call for Workshops</MobileNavLink>
               <MobileNavLink to="/call-for-demo-papers" title="Calls for Demo Papers" selected={activePage === "/call-for-demo-papers"} nested>Call for Demo Papers</MobileNavLink>
               <MobileNavLink to="/call-for-short-papers" title="Calls for Short Papers" selected={activePage === "/call-for-short-papers"} nested>Call for Short Papers</MobileNavLink>
+              <span className="pl-16 pr-4 py-2 w-full text-textDisabled cursor-default block rounded-md font-medium text-sm font-headingStyle">More to be announced..</span>
             </div>)}
             <MobileNavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</MobileNavLink>
             <MobileNavLink to="/" title="Attend" selected={activePage === "/attend"} disabled>Attend</MobileNavLink>
