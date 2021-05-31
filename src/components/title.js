@@ -21,7 +21,7 @@ export default function Title() {
       let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       if (mounted) {
-        setCount(days + "d " + hours + "h "
+        setCount(days + "D " + hours + "h "
           + minutes + "m " + seconds + "s");
 
         if (distance < 0) {
