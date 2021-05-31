@@ -11,26 +11,26 @@ The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere 
     <div class="wrapper">
         <!-- extra divs at the end are for the second css grid column -->
         <div><strong>Workshop Proposals Submission:</strong></div><div></div> 
-        <div><strong>28 Jun 2021</strong></div>
+        <div><strong>28 Jun, 2021</strong></div>
     </div>
     <div class="wrapper">
         <div><strong>Grand Challenge Proposal Submission:</strong></div><div></div>
-        <div><strong>28 Jun 2021</strong></div>
+        <div><strong>28 Jun, 2021</strong></div>
     </div>
     <div class="wrapper">
         <div><strong>Regular Paper Submission:</strong></div><div></div>
-        <div><strong>19 July 2021</strong></div>
+        <div><strong>19 July, 2021</strong></div>
     </div>
     <div class="wrapper">
         <div><strong>Workshop Paper Submission:</strong></div><div></div>
-        <div><strong>30 Aug 2021</strong></div>
+        <div><strong>30 Aug, 2021</strong></div>
     </div>
     <div class="wrapper">
         <div><strong>Tutorial Proposals Submission:</strong></div><div></div>
-        <div><strong>30 Aug 2021</strong></div>
+        <div><strong>30 Aug, 2021</strong></div>
     </div>
     <div class="wrapper">
         <div><strong>Regular Paper Notification:</strong></div><div></div>
-        <div><strong>27 Sep 2021</strong></div>
+        <div><strong>27 Sep, 2021</strong></div>
     </div>
 </div>
