@@ -52,6 +52,10 @@ const Calls = ({ selected }) => {
           whitespace-no-wrap text-orgSmall" title="Call for Papers">Call for Papers</Link>
           <Link to="/call-for-workshops" className="font-headingStyle bg-white hover:bg-gray-100 py-2 px-4 block 
           whitespace-no-wrap text-orgSmall" title="Call for Workshops">Call for Workshops</Link>
+          <Link to="/call-for-demopapers" className="font-headingStyle bg-white hover:bg-gray-100 py-2 px-4 block 
+          whitespace-no-wrap text-orgSmall" title="Call for Demo Papers">Call for Demo Papers</Link>
+          <Link to="/call-for-shortpapers" className="font-headingStyle bg-white hover:bg-gray-100 py-2 px-4 block 
+          whitespace-no-wrap text-orgSmall" title="Call for Short Papers">Call for Short Papers</Link>
         </div>
       </div>
     </div>
