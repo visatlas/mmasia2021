@@ -1,5 +1,5 @@
 ---
-title: Call for Workshops
+title: Call for Demo Papers
 date: "2021-05-31"
 description: ACM Multimedia Asia is a major annual international conference 
 ---
