@@ -50,5 +50,5 @@ Each workshop proposal (maximum 4 pages, in PDF format) must include:
 
 For questions regarding the submission, you can email the workshop chairs:
 
-- **Yanli Ji** (yanliji@uestc.edu.cn), University of Electronic Science and Technology of China
-- **Zheng Wang** (wangz@nii.ac.jp), The University of Tokyo, Japan
+- **Yanli Ji** ([yanliji@uestc.edu.cn](mailto:yanliji@uestc.edu.cn)), University of Electronic Science and Technology of China
+- **Zheng Wang** ([wangz@nii.ac.jp](mailto:wangz@nii.ac.jp)), The University of Tokyo, Japan

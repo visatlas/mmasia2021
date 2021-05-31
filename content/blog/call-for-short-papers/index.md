@@ -13,7 +13,7 @@ Short papers provide an opportunity to describe significant novel work in progre
 
 ## Expected Contents
 
-Submissions are encouraged in all areas related to multimedia, as described in ACM MMAsia 2021 general [*call for papers*](https://mmasia2021.uqcloud.net/?page_id=84)
+Submissions are encouraged in all areas related to multimedia, as described in ACM MMAsia 2021 general [*call for papers*](https://mmasia2021.uqcloud.net/call-for-papers)
 
 ## Submission Guidelines
 The short papers should be submitted through the [*conference submission system*](https://cmt3.research.microsoft.com/MMASIA2021/).
@@ -33,7 +33,6 @@ Paper submissions must conform with the "double-blind" review policy. Please pre
 
 For any questions regarding submissions, please email the Short Paper Chairs: 
 
-- **Lei Zhu** (leizhu0608@gmail.com), Shandong Normal University, China
-- **Zhineng Chen** (zhinchen@fudan.edu.cn), Fudan University, China
-- **Min Xu** (Min.Xu@uts.edu.au), University of Technology Sydney, Australia
-
+- **Lei Zhu** ([leizhu0608@gmail.com](mailto:leizhu0608@gmail.com)), Shandong Normal University, China
+- **Zhineng Chen** ([zhinchen@fudan.edu.cn](mailto:zhinchen@fudan.edu.cn)), Fudan University, China
+- **Min Xu** ([Min.Xu@uts.edu.au](mailto:Min.Xu@uts.edu.au)), University of Technology Sydney, Australia

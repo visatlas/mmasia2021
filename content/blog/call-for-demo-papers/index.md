@@ -13,7 +13,7 @@ ACM Multimedia Asia 2021 will provide demonstration sessions. Demos are intended
 
 ## Expected Contents
 
-Submissions are encouraged in all areas related to multimedia, as described in ACM MMAsia 2021 general [*call for papers*](https://mmasia2021.uqcloud.net/?page_id=84).
+Submissions are encouraged in all areas related to multimedia, as described in ACM MMAsia 2021 general [*call for papers*](https://mmasia2021.uqcloud.net/call-for-papers).
 
 ## Facilities
 
@@ -49,6 +49,6 @@ In addition, a PDF document containing one page description about your demo boot
 
 For any questions regarding submissions, please email the Demo Chairs: 
 
-- **Lei Zhu** (leizhu0608@gmail.com), Shandong Normal University, China
-- **Zhineng Chen** (zhinchen@fudan.edu.cn), Fudan University, China
-- **Min Xu** (Min.Xu@uts.edu.au), University of Technology Sydney, Australia
+- **Lei Zhu** ([leizhu0608@gmail.com](mailto:leizhu0608@gmail.com)), Shandong Normal University, China
+- **Zhineng Chen** ([zhinchen@fudan.edu.cn](mailto:zhinchen@fudan.edu.cn)), Fudan University, China
+- **Min Xu** ([Min.Xu@uts.edu.au](mailto:Min.Xu@uts.edu.au)), University of Technology Sydney, Australia

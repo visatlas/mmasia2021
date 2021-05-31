@@ -29,4 +29,3 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 
 - Submission deadline: **19 July, 2021**.
 - Decision notification: **27 September, 2021**.
-
