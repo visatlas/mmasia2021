@@ -22,3 +22,11 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 - Multimedia Virtual/Augmented Reality
 - Multimedia for Social Goods
 - Multimedia for HealthCare
+
+## Important Dates
+
+**Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
+
+- Submission deadline: **19 July, 2021**.
+- Decision notification: **27 September, 2021**.
+
