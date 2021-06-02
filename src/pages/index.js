@@ -52,8 +52,10 @@ const Index = ({ data, location }) => {
           return (
             <p className="mb-4" key={index}>{content}</p>
           );
-        })
-        }
+        })}
+        <p className="mb-4 blog-post">You can view the PDF version of the ACM MM Asia 2021 flyer <a href="https://mmasia2021.uqcloud.net/uploads/flyer.pdf"
+          target="_blank" rel="noreferrer">here</a>.
+        </p>
 
         {allowVideo && (
           <div>
