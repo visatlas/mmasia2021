@@ -43,3 +43,6 @@ The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere 
         <div><strong>12 Oct, 2021</strong></div>
     </div>
 </div>
+
+
+For more details, please refer to the [*official poster*](https://mmasia2021.uqcloud.net/).
