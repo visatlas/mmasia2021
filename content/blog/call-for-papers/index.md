@@ -19,6 +19,7 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 - Music and Audio Processing in Multimedia
 - Mobile Multimedia
 - Multimedia Systems
+- Multimedia Database
 - Multimedia Transport and Delivery
 - Multimedia for Collaboration in Education
 - Multimedia Virtual/Augmented Reality
