@@ -7,7 +7,7 @@ description: View submission deadlines and other key dates.
 The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
 <!-- you can also write HTML codes in markdowns! -->
-<div style="max-width: 500px;">
+<div style="max-width: 700px;">
     <div class="wrapper">
         <!-- extra divs at the end are for the second css grid column -->
         <div><strong>Workshop/Grand Challenge Proposals Submission:</strong></div><div></div> 
