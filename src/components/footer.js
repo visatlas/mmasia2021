@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 mt-auto bottom-0">
+    <footer className="bg-gray-100 mt-auto bottom-0 border-t shadow-inner">
       <div className="global-wrapper py-0 flex sm:block flex-col items-center md:items-start">
         <div className="mb-4 flex flex-wrap justify-around lg:justify-between lg:space-x-10">
           <a style={{ width: "160px" }} className="mb-4 md:mb-0" href="https://www.acm.org/" target="_blank" rel="noreferrer">
@@ -45,7 +45,7 @@ export default function Footer() {
             </svg>
           </a>
           <a style={{ width: "160px" }} className="mb-4 md:mb-0 flex justify-center items-center" href="http://www.sigmm.org/" target="_blank" rel="noreferrer">
-            <StaticImage src="../images/footer/SIGMM Logo.png" alt="SIGMM Logo" width={140} placeholder="tracedSVG" />
+            <StaticImage src="../images/footer/sigmm-logo.png" alt="SIGMM Logo" width={130} placeholder="tracedSVG" />
           </a>
           <a style={{ width: "160px" }} className="mb-4 md:mb-0 flex justify-center items-center" href="https://www.uq.edu.au/" target="_blank" rel="noreferrer">
             <StaticImage src="../images/footer/UQ Logo.png" alt="UQ Logo" height={50} placeholder="tracedSVG" />
