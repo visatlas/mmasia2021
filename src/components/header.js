@@ -56,7 +56,7 @@ export default function Header({ activePage }) {
               <div className="hidden md:flex sm:ml-8 items-center">
                 <div className="flex space-x-4">
                   <NavLink selected={false} to="/" title="Home">Home</NavLink>
-                  <Calls selected={["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/important-dates"].includes(activePage)} />
+                  <Calls selected={["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/Call-for-PhD-School-Participants", "/important-dates"].includes(activePage)} />
                   <NavLink selected={activePage === "/program"} to="/" title="Program" disabled>Program</NavLink>
                   <NavLink selected={activePage === "/attend"} to="/" title="Attend" disabled>Attend</NavLink>
                   <NavLink selected={activePage === "/organisation"} to="/organisation" title="Organisation">Organisation</NavLink>
@@ -96,6 +96,8 @@ export default function Header({ activePage }) {
               <MobileNavLink to="/call-for-workshops" title="Calls for Workshops" selected={activePage === "/call-for-workshops"} nested>Call for Workshops</MobileNavLink>
               <MobileNavLink to="/call-for-demo-papers" title="Calls for Demo Papers" selected={activePage === "/call-for-demo-papers"} nested>Call for Demo Papers</MobileNavLink>
               <MobileNavLink to="/call-for-short-papers" title="Calls for Short Papers" selected={activePage === "/call-for-short-papers"} nested>Call for Short Papers</MobileNavLink>
+              <MobileNavLink to="/Call-for-PhD-School-Participants" title="/Calls for PhD School Participants" selected={activePage === "/Call-for-PhD-School-Participants"} nested>/Call for PhD School Participants</MobileNavLink>
+              
               <span className="pl-16 pr-4 py-2 w-full text-textDisabled cursor-default block rounded-md font-medium text-sm font-headingStyle">More to be announced..</span>
             </div>)}
             <MobileNavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</MobileNavLink>
@@ -162,6 +164,7 @@ const Calls = ({ selected }) => {
           <Link to="/call-for-workshops" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops">Call for <span className="font-medium">Workshops</span></Link>
           <Link to="/call-for-demo-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Demo Papers">Call for <span className="font-medium">Demo Papers</span></Link>
           <Link to="/call-for-short-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Short Papers">Call for <span className="font-medium">Short Papers</span></Link>
+          <Link to="/Call-for-PhD-School-Participants" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for-PhD School Participants">Call for <span className="font-medium">PhD School Participants</span></Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
           <span className="font-headingStyle cursor-default text-gray-400 py-2 px-4 block whitespace-no-wrap text-sm">More to be announced..</span>
         </div>
