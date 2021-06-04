@@ -7,6 +7,7 @@ import Seo from "../components/seo";
 import Title from "../components/title";
 
 const Index = ({ data, location }) => {
+  const [allowTitleVideo, setAllowTitleVideo] = useState(false);
   const [allowVideo, setAllowVideo] = useState(false);
   const [useYouTube, setUseYouTube] = useState(false);
 
@@ -37,6 +38,8 @@ const Index = ({ data, location }) => {
         setAllowVideo(true);
         setUseYouTube(false);
       });
+
+    setAllowTitleVideo(true);
   }, []);
 
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -45,7 +48,7 @@ const Index = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="Home" />
-      <Title allowVideo={allowVideo} />
+      <Title allowVideo={allowTitleVideo} />
       <div className="global-wrapper" id="welcome">
         <h2 className="mb-6 text-3xl text-mainPurple font-extrabold">Welcome to ACMMM Asia 2021!</h2>
         {highlights.map((content, index) => {
@@ -53,8 +56,8 @@ const Index = ({ data, location }) => {
             <p className="mb-4" key={index}>{content}</p>
           );
         })}
-        <p className="mb-4 font-bold blog-post">You can view the PDF version of the ACM MM Asia 2021 flyer <a href="https://mmasia2021.uqcloud.net/uploads/flyer.pdf"
-          target="_blank" rel="noreferrer">here</a>.
+        <p className="mb-4 font-bold">You can view the PDF version of the <a className="text-mainPurple underline hover:underline" href="https://mmasia2021.uqcloud.net/uploads/flyer.pdf"
+          target="_blank" rel="noreferrer">ACM MM Asia 2021 flyer here</a>.
         </p>
 
         {allowVideo && (
