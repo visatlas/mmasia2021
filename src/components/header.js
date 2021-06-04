@@ -164,7 +164,7 @@ const Calls = ({ selected }) => {
           <Link to="/call-for-workshops" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops">Call for <span className="font-medium">Workshops</span></Link>
           <Link to="/call-for-demo-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Demo Papers">Call for <span className="font-medium">Demo Papers</span></Link>
           <Link to="/call-for-short-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Short Papers">Call for <span className="font-medium">Short Papers</span></Link>
-          <Link to="/Call-for-PhD-School-Participants" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for-PhD School Participants">Call for <span className="font-medium">PhD School Participants</span></Link>
+          <Link to="/Call-for-PhD-School-Participants" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for PhD School Participants">Call for <span className="font-medium">PhD School Participants</span></Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
           <span className="font-headingStyle cursor-default text-gray-400 py-2 px-4 block whitespace-no-wrap text-sm">More to be announced..</span>
         </div>
