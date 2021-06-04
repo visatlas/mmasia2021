@@ -96,7 +96,7 @@ export default function Header({ activePage }) {
               <MobileNavLink to="/call-for-workshops" title="Calls for Workshops" selected={activePage === "/call-for-workshops"} nested>Call for Workshops</MobileNavLink>
               <MobileNavLink to="/call-for-demo-papers" title="Calls for Demo Papers" selected={activePage === "/call-for-demo-papers"} nested>Call for Demo Papers</MobileNavLink>
               <MobileNavLink to="/call-for-short-papers" title="Calls for Short Papers" selected={activePage === "/call-for-short-papers"} nested>Call for Short Papers</MobileNavLink>
-              <MobileNavLink to="/Call-for-PhD-School-Participants" title="/Calls for PhD School Participants" selected={activePage === "/Call-for-PhD-School-Participants"} nested>/Call for PhD School Participants</MobileNavLink>
+              <MobileNavLink to="/Call-for-PhD-School-Participants" title="Calls for PhD School Participants" selected={activePage === "/Call-for-PhD-School-Participants"} nested>Call for PhD School Participants</MobileNavLink>
               
               <span className="pl-16 pr-4 py-2 w-full text-textDisabled cursor-default block rounded-md font-medium text-sm font-headingStyle">More to be announced..</span>
             </div>)}
