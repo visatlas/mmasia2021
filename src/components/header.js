@@ -75,7 +75,7 @@ export default function Header({ activePage }) {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
             </button>
             {showMobileAttend && (<div>
-              <MobileNavLink to="/attend-1" title="Attend 1" selected={activePage === "/attend-2"} nested>Attend 1</MobileNavLink>
+              <MobileNavLink to="/attend-1" title="Attend 1" selected={activePage === "/attend-1"} nested>Attend 1</MobileNavLink>
               <MobileNavLink to="/attend-2" title="Attend 2" selected={activePage === "/attend-2"} nested>Attend 2</MobileNavLink>
             </div>)}
             <MobileNavLink to="/organisation" title="Organisation" selected={activePage === "/organisation"}>Organisation</MobileNavLink>
