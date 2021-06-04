@@ -8,8 +8,8 @@ export default function Header({ activePage }) {
   const mobileCallsStyle = `font-semibold text-left pl-8 pr-4 py-2 w-full text-white ${mobileCallsBackground} hover:bg-menuHover block rounded-md text-base font-headingStyle inline-flex items-center`;
 
   return (
-    <header className="overflow-scroll" style={{ maxHeight: "100vh" }}>
-      <nav className="bg-mainPurple fixed top-0 z-50 w-full lg:px-10 md:bg-uqStyle">
+    <header>
+      <nav className="overflow-y-auto md:overflow-visible bg-mainPurple fixed top-0 z-50 w-full lg:px-10 md:bg-uqStyle" style={{ maxHeight: "100vh" }}>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
 
