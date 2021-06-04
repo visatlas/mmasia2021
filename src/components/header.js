@@ -128,8 +128,8 @@ const Attend = ({ selected }) => {
       </button>
       <div className="dropdown-menu absolute hidden text-gray-800 pt-1 w-60">
         <div className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
-          <Link to="/student-travel-grants" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Student Travel Grants">Student Travel Grants</Link>
-          <Link to="/carer-award" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Carer Awards">Carer Awards</Link>
+          <Link to="/student-travel-grants" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-medium" title="Student Travel Grants">Student Travel Grants</Link>
+          <Link to="/carer-award" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-medium" title="Carer Awards">Carer Awards</Link>
         </div>
       </div>
     </div>
