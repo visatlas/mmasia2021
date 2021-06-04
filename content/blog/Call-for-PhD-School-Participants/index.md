@@ -8,16 +8,16 @@ description: Twin-City PhD School (a special session of the main conference) wil
 
 ACM Multimedia Asia 2021 will provide Twin-City PhD School (a special session of the main conference).
 
-- **Who:**
-	- PhD students and ECRs
+**Who:**
+- PhD students and ECRs
 
-- **Where:**
-	- Australia: Gold Coast – Griffith University
-	- China: Shenzhen – Peng Cheng Laboratory
+**Where:**
+- Australia: Gold Coast – Griffith University
+- China: Shenzhen – Peng Cheng Laboratory
 
-- **Why:**
-	- Sharing research experiences and skills for research capability enhancement and career development;
-    - A platform for our next generation researchers to establish their social networks.
+**Why:**
+- Sharing research experiences and skills for research capability enhancement and career development;
+- A platform for our next generation researchers to establish their social networks.
 
 ## Important Dates
 
