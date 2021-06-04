@@ -151,7 +151,7 @@ export const pageQuery = graphql`
     paragraphsJson(id: {eq: "highlights"}) {
       data
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 5) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 15) {
       nodes {
         excerpt
         fields {
