@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 export default function Header({ activePage }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [showMobileCalls, setShowMobileCalls] = useState(["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers"].includes(activePage));
+  const [showMobileCalls, setShowMobileCalls] = useState(["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/Call-for-PhD-School-Participants"].includes(activePage));
   const mobileCallsBackground = showMobileCalls ? "bg-menuHover" : "";
   const mobileCallsStyle = `font-semibold text-left pl-8 pr-4 py-2 w-full text-white ${mobileCallsBackground} hover:bg-menuHover block rounded-md text-base font-headingStyle inline-flex items-center`;
 
