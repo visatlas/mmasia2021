@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-export default function Title() {
+export default function Title({ allowVideo }) {
   const [count, setCount] = useState("\u00A0");
-  const [allowVideo, setAllowVideo] = useState(false);
   const [playVideo, setPlayVideo] = useState(true);
 
   // calculate countdown time
@@ -31,8 +30,6 @@ export default function Title() {
       }
       return tick;
     }(), 1000);
-
-    setAllowVideo(true);
 
     return () => {
       mounted = false;

@@ -45,7 +45,7 @@ const Index = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="Home" />
-      <Title />
+      <Title allowVideo={allowVideo} />
       <div className="global-wrapper" id="welcome">
         <h2 className="mb-6 text-3xl text-mainPurple font-extrabold">Welcome to ACMMM Asia 2021!</h2>
         {highlights.map((content, index) => {
