@@ -24,7 +24,7 @@ TBA
 
 
 ## Contacts
-For any questions regarding the carer award, please email the Student Travel Grant Chairs: 
+For any questions regarding carer awards, please email the Student Travel Grant Chairs: 
 
 - **Gunhee Kim** ([gunhee@snu.ac.kr](mailto:gunhee@snu.ac.kr)), Seoul National University, South Korea 
 - **Xinshun Xu** ([xuxinshun@sdu.edu.cn](mailto:xuxinshun@sdu.edu.cn)), Shandong University, China
