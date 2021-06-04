@@ -6,7 +6,7 @@ import { NavLink, MobileNavLink } from "./header-links";
 export default function Header({ activePage }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showMobileCalls, setShowMobileCalls] = useState(["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants"].includes(activePage));
-  const [showMobileAttend, setShowMobileAttend] = useState(["/attend-1", "/attend-2"].includes(activePage));
+  const [showMobileAttend, setShowMobileAttend] = useState(["/student-travel-grants", "/carer-award"].includes(activePage));
   const mobileCallsBackground = showMobileCalls ? "bg-menuHover" : "";
   const mobileCallsStyle = `font-semibold text-left pl-8 pr-4 py-2 w-full text-white ${mobileCallsBackground} hover:bg-menuHover block rounded-md text-base font-headingStyle inline-flex items-center`;
   const mobileAttendBackground = showMobileAttend ? "bg-menuHover" : "";
@@ -41,7 +41,7 @@ export default function Header({ activePage }) {
                   <NavLink selected={false} to="/" title="Home">Home</NavLink>
                   <Calls selected={["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "/important-dates"].includes(activePage)} />
                   <NavLink selected={activePage === "/program"} to="/" title="Program" disabled>Program</NavLink>
-                  <Attend selected={["/attend-1", "/attend-2"].includes(activePage)} />
+                  <Attend selected={["/student-travel-grants", "/carer-award"].includes(activePage)} />
                   <NavLink selected={activePage === "/organisation"} to="/organisation" title="Organisation">Organisation</NavLink>
                   <NavLink to="/" title="Sponsors" selected={activePage === "/sponsors"} disabled>Sponsors</NavLink>
                 </div>
@@ -75,8 +75,8 @@ export default function Header({ activePage }) {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
             </button>
             {showMobileAttend && (<div>
-              <MobileNavLink to="/attend-1" title="Attend 1" selected={activePage === "/attend-1"} nested>Attend 1</MobileNavLink>
-              <MobileNavLink to="/attend-2" title="Attend 2" selected={activePage === "/attend-2"} nested>Attend 2</MobileNavLink>
+              <MobileNavLink to="/student-travel-grants" title="Student Travel Grants" selected={activePage === "/student-travel-grants"} nested>Student Travel Grants</MobileNavLink>
+              <MobileNavLink to="/carer-award" title="Carer Awards" selected={activePage === "/carer-award"} nested>Carer Awards</MobileNavLink>
             </div>)}
             <MobileNavLink to="/organisation" title="Organisation" selected={activePage === "/organisation"}>Organisation</MobileNavLink>
             <MobileNavLink to="/" title="Sponsors" selected={activePage === "/sponsors"} disabled>Sponsors</MobileNavLink>
@@ -128,8 +128,8 @@ const Attend = ({ selected }) => {
       </button>
       <div className="dropdown-menu absolute hidden text-gray-800 pt-1 w-60">
         <div className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
-          <Link to="/attend-1" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Attend 1">Attend 1</Link>
-          <Link to="/attend-2" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Attend 2">Attend 2</Link>
+          <Link to="/student-travel-grants" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Student Travel Grants">Student Travel Grants</Link>
+          <Link to="/carer-award" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Carer Awards">Carer Awards</Link>
         </div>
       </div>
     </div>
