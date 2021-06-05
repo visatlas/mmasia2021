@@ -1,6 +1,8 @@
 # ACMMM Asia 2021
 This project is for the ACMMM Asia 2021 main website.
 
+![Test](https://github.com/fzmi/acmmm/actions/workflows/main.yml/badge.svg)
+
 ## Installation
 
 First, make sure your computer has [npm](https://www.npmjs.com/get-npm) and [git](https://www.atlassian.com/git/tutorials/install-git) installed.
