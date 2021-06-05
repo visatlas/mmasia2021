@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mobile Nav Link renders correctly 1`] = `
+<a
+  className="flex item-center w-full"
+  href="/"
+  title="Link"
+>
+  <span
+    className="pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+  text-base font-semibold font-headingStyle"
+  />
+</a>
+`;
+
+exports[`Mobile Nav Link renders correctly 2`] = `
+<a
+  className="flex item-center w-full"
+  href="/"
+  title="Link"
+>
+  <span
+    className="pl-8 pr-4 py-2 w-full text-white bg-menuSelected hover:bg-menuHover block rounded-md 
+  text-base font-semibold font-headingStyle"
+  />
+</a>
+`;
+
+exports[`Mobile Nav Link renders correctly 3`] = `
+<span
+  className="pl-8 pr-4 py-2 flex item-center w-full text-textDisabled block rounded-md text-base  font-semibold font-headingStyle cursor-default"
+/>
+`;
+
+exports[`Mobile Nav Link renders correctly 4`] = `
+<a
+  className="flex item-center w-full"
+  href="/"
+  title="Link"
+>
+  <span
+    className="pl-16 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+  text-base font-medium font-headingStyle"
+  />
+</a>
+`;
+
+exports[`Nav Link renders correctly 1`] = `
+<a
+  className="flex item-center"
+  href="/"
+  title="Link"
+>
+  <span
+    className=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md text-sm 
+  font-medium font-headingStyle"
+  />
+</a>
+`;
+
+exports[`Nav Link renders correctly 2`] = `
+<a
+  className="flex item-center"
+  href="/"
+  title="Link"
+>
+  <span
+    className="bg-menuSelected text-white text-base hover:bg-menuHover px-3 py-2 rounded-md text-sm 
+  font-medium font-headingStyle"
+  />
+</a>
+`;
+
+exports[`Nav Link renders correctly 3`] = `
+<span
+  className="text-textDisabled text-base px-3 py-2 rounded-md text-sm font-medium  font-headingStyle cursor-default"
+/>
+`;

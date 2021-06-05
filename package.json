@@ -32,7 +32,6 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13",
     "typeface-roboto": "^1.1.13"
   },
@@ -44,13 +43,13 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.4",
     "postcss": "^8.2.15",
-    "prettier": "2.3.0",
     "react-test-renderer": "^17.0.2",
     "tailwindcss": "^2.1.4"
   },
   "homepage": "https://github.com/fzmi/acmmm#readme",
   "keywords": [
-    "acmmm"
+    "acmmm",
+    "mmasia"
   ],
   "license": "0BSD",
   "main": "n/a",
@@ -61,10 +60,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest"
+    "test": "jest",
+    "test-update": "jest --updateSnapshot"
   }
 }
