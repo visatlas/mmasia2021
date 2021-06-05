@@ -303,14 +303,14 @@ exports[`Header renders correctly 1`] = `
                     className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
                   >
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-medium"
                       href="/student-travel-grants"
                       title="Student Travel Grants"
                     >
                       Student Travel Grants
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-medium"
                       href="/carer-award"
                       title="Carer Awards"
                     >
