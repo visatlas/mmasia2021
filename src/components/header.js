@@ -61,7 +61,7 @@ export default function Header({ activePage }) {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
             </button>
             {showMobileCalls && (<div>
-              <MobileNavLink to="/call-for-papers" title="Call for Papers" selected={activePage === "/call-for-papers"} nested>Call for Papers</MobileNavLink>
+              <MobileNavLink to="/call-for-papers" title="Call for Regular Papers" selected={activePage === "/call-for-papers"} nested>Call for Regular Papers</MobileNavLink>
               <MobileNavLink to="/call-for-workshops" title="Call for Workshops" selected={activePage === "/call-for-workshops"} nested>Call for Workshops</MobileNavLink>
               <MobileNavLink to="/call-for-demo-papers" title="Call for Demo Papers" selected={activePage === "/call-for-demo-papers"} nested>Call for Demo Papers</MobileNavLink>
               <MobileNavLink to="/call-for-short-papers" title="Call for Short Papers" selected={activePage === "/call-for-short-papers"} nested>Call for Short Papers</MobileNavLink>
@@ -102,7 +102,7 @@ const Calls = ({ selected }) => {
         <div className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
           <Link to="/important-dates" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Important Dates">Important Dates</Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
-          <Link to="/call-for-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Papers">Call for <span className="font-medium">Papers</span></Link>
+          <Link to="/call-for-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Regular Papers">Call for <span className="font-medium">Regular Papers</span></Link>
           <Link to="/call-for-workshops" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops">Call for <span className="font-medium">Workshops</span></Link>
           <Link to="/call-for-demo-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Demo Papers">Call for <span className="font-medium">Demo Papers</span></Link>
           <Link to="/call-for-short-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Short Papers">Call for <span className="font-medium">Short Papers</span></Link>
