@@ -192,13 +192,13 @@ exports[`Header renders correctly 1`] = `
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-papers"
-                      title="Call for Papers"
+                      title="Call for Regular Papers"
                     >
                       Call for 
                       <span
                         className="font-medium"
                       >
-                        Papers
+                        Regular Papers
                       </span>
                     </a>
                     <a
