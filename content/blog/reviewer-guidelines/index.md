@@ -1,7 +1,7 @@
 ---
 title: Reviewer Guidelines
 date: "2021-06-11"
-description: The reviewer guidelines has been proposed.
+description: Click here to view the reviewer guidelines.
 ---
 
 ## Overview
@@ -24,7 +24,7 @@ The reviews are anonymous, but please make sure that you deliver your best work,
 
 ### Check the paper topic:
 
-- Confirm that the paper that you are reviewing falls into the topical scope of ACM Multimedia Asia, as defined by the Call for Papers. Re-read the Call for Papers to make sure that you have this year’s themes in the forefront of your mind while you are reviewing.
+- Confirm that the paper that you are reviewing falls into the topical scope of ACM Multimedia Asia, as defined by the Call for Regular Papers. Re-read the Call for Regular Papers to make sure that you have this year’s themes in the forefront of your mind while you are reviewing.
 - Remember that the problem addressed by an ACM Multimedia Asia paper is expected to involve more than a single modality, or is expected to be related to the challenge of how people interpret and use multimedia. Papers that address a single modality only and also fail to contribute new knowledge on human use of multimedia must be rejected as out of scope for the conference.
 - Although many submissions to ACM Multimedia Asia make a technical contribution in the form of a new algorithm, not all do, nor is it a requirement of ACM Multimedia Asia. Do not give less value to papers that carry out studies of new multimedia problems because they do not make a novel algorithmic contribution. Instead, judge these papers by the novelty of their insights and the value these insights could have for the community.
 
@@ -74,4 +74,5 @@ We consider a “publication” to be a manuscript that has undergone peer revie
 - An Area Chair summarizes the strengths and weaknesses of each paper, makes a recommendation, and presents the recommendation at the TPC meeting.
 - An Area Chair adheres to the schedule for the review and selection process.
 
-If you have any questions about the guidelines, please contact the Technical Program Chairs.
+If you have any questions about the guidelines, please contact the Program Chairs.
+
