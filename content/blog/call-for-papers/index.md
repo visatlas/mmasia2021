@@ -27,6 +27,9 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 - Multimedia for HealthCare
 
 ## Submission Guidelines
+
+**Submission Site:** TBA
+
 **Paper format:** Submitted papers (.pdf format) must use the [*ACM Article Template*](https://www.acm.org/publications/proceedings-template). Please remember to add Concepts and Keywords.
 
 **Length:** Papers must be no longer than 6 pages, including all text and figures. There is no limit to the pages of references. 
@@ -53,10 +56,6 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 We define a publication as a written piece documenting scientific work that was submitted for review by peers for either acceptance or rejection, and, after review, has been accepted. Documentation of scientific work that is published in a not-for-profit archive without any form of peer-review (departmental Technical Report, arXiv.org, etc.) is not considered a publication. However, this definition of publication does include peer-reviewed workshop papers, even if they do not appear in formal proceedings. Any submission to ACM Multimedia must not have substantial overlap with prior publications or other work currently undergoing peer review anywhere.
 
 Note that documents published on website archives are subject to change. Citing such documents is discouraged. Furthermore, ACM Multimedia will review the documents formally submitted and any additional information in a web archive version will not affect the review.
-
-
-**Submission Site:** TBA
-
 
 
 ## Important Dates
