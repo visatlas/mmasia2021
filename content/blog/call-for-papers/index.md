@@ -27,12 +27,11 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 - Multimedia for HealthCare
 
 ## Submission Guidelines
-- **Paper format:** Submitted papers (.pdf format) must use the [*ACM Article Template*](https://www.acm.org/publications/proceedings-template). Please remember to add Concepts and Keywords.
+**Paper format:** Submitted papers (.pdf format) must use the [*ACM Article Template*](https://www.acm.org/publications/proceedings-template). Please remember to add Concepts and Keywords.
 
-- **Length:** Papers must be no longer than 6 pages, including all text and figures. There is no limit to the pages of references. 
+**Length:** Papers must be no longer than 6 pages, including all text and figures. There is no limit to the pages of references. 
 
-- **Blinding:**
-Paper submissions must conform with the “double-blind” review policy. This means that the authors should not know the names of the reviewers of their papers, and reviewers should not know the names of the authors. Please prepare your paper in a way that preserves anonymity of the authors.
+**Blinding:** Paper submissions must conform with the “double-blind” review policy. This means that the authors should not know the names of the reviewers of their papers, and reviewers should not know the names of the authors. Please prepare your paper in a way that preserves anonymity of the authors.
 
 <ul>
 	<li>Do not put the authors’ names under the title.</li>
@@ -43,19 +42,20 @@ Paper submissions must conform with the “double-blind” review policy. This m
 	<li>Papers without appropriate blinding will be desk rejected without review.</li>
 </ul>
 
-- **Originality:** Papers submitted to ACM Multimedia Asia 2021 must be the original work of the authors. The may not be simultaneously under review elsewhere. Publications that have been peer-reviewed and have appeared at other conferences or workshops may not be submitted to ACM Multimedia Asia 2021(see also the arXiv/Archive policy below). Authors should be aware that ACM has a strict policy with regard to [*plagiarism and self-plagiarism*](https://www.acm.org/publications/policies/plagiarism). The authors’ prior work must be cited appropriately.
+**Originality:** Papers submitted to ACM Multimedia Asia 2021 must be the original work of the authors. The may not be simultaneously under review elsewhere. Publications that have been peer-reviewed and have appeared at other conferences or workshops may not be submitted to ACM Multimedia Asia 2021(see also the arXiv/Archive policy below). Authors should be aware that ACM has a strict policy with regard to [*plagiarism and self-plagiarism*](https://www.acm.org/publications/policies/plagiarism). The authors’ prior work must be cited appropriately.
 
-- **Author list:** Please ensure that you submit your papers with the full and final list of authors in the correct order. The author list registered for each submission is not allowed to change in any way after the paper submission deadline. (Note that this rule regards the identity of authors, e.g., typos are correctable.)
+**Author list:** Please ensure that you submit your papers with the full and final list of authors in the correct order. The author list registered for each submission is not allowed to change in any way after the paper submission deadline. (Note that this rule regards the identity of authors, e.g., typos are correctable.)
 
-- **Proofreading:** Please proofread your submission carefully. It is essential that the language used in the paper is clear and correct so that it is easily understandable. (Either US English or UK English spelling conventions are acceptable.)
+**Proofreading:** Please proofread your submission carefully. It is essential that the language used in the paper is clear and correct so that it is easily understandable. (Either US English or UK English spelling conventions are acceptable.)
 
-- **ArXiv/archive policy:** In accordance with ACM guidelines, all SIGMM-sponsored conferences adhere to the following policy regarding arXiv papers:
+**ArXiv/archive policy:** In accordance with ACM guidelines, all SIGMM-sponsored conferences adhere to the following policy regarding arXiv papers:
 
 We define a publication as a written piece documenting scientific work that was submitted for review by peers for either acceptance or rejection, and, after review, has been accepted. Documentation of scientific work that is published in a not-for-profit archive without any form of peer-review (departmental Technical Report, arXiv.org, etc.) is not considered a publication. However, this definition of publication does include peer-reviewed workshop papers, even if they do not appear in formal proceedings. Any submission to ACM Multimedia must not have substantial overlap with prior publications or other work currently undergoing peer review anywhere.
 
 Note that documents published on website archives are subject to change. Citing such documents is discouraged. Furthermore, ACM Multimedia will review the documents formally submitted and any additional information in a web archive version will not affect the review.
 
-- **Submission Site:** (https://cmt3.research.microsoft.com/MMASIA2021/Submission/)
+
+**Submission Site:** TBA
 
 
 
