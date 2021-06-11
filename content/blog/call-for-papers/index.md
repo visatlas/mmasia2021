@@ -1,7 +1,7 @@
 ---
 title: Call for Regular Papers
 date: "2021-06-11"
-description: The submission details for regular paper has been updated.
+description: The submission details of regular paper has been updated.
 ---
 
 ## Overview
