@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function Footer() {
   return (
     <footer className="bg-gray-100 mt-auto bottom-0 border-t shadow-inner">
-      <div className="global-wrapper py-0 flex sm:block flex-col items-center md:items-start">
+      <div className="global-wrapper flex sm:block flex-col items-center md:items-start">
         <div className="mb-4 flex flex-wrap justify-around lg:justify-between lg:space-x-10">
           <a style={{ width: "160px" }} className="mb-4 md:mb-0" href="https://www.acm.org/" target="_blank" rel="noreferrer">
             {/* ACM Logo */}

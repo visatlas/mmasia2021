@@ -11,23 +11,13 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      <div className="global-wrapper">
-        <article
-          className="blog-post"
-          itemScope
-          itemType="http://schema.org/Article"
-        >
+      <Seo title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+      <div className="global-wrapper pt-10">
+        <article className="blog-post" itemScope itemType="http://schema.org/Article">
           <header>
             <h1 className="" itemProp="headline">{post.frontmatter.title}</h1>
           </header>
-          <section
-            dangerouslySetInnerHTML={{ __html: post.html }}
-            itemProp="articleBody"
-          />
+          <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
         </article>
 
         {/* <nav className="blog-post-nav">

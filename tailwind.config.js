@@ -19,6 +19,9 @@ module.exports = {
         uqStyle: "linear-gradient(90deg, #51247a 0%, #56247a 60%, #61257d 80%, #962a8b 100%)",
       }),
       fontFamily: {
+        titleFont: ["Montserrat", "system-ui", "-apple-system", "BlinkMacSystemFont",
+          "'Segoe UI'", "Roboto", "'Helvetica Neue'", "Arial", "'Noto Sans'", "sans-serif",
+          "'Apple Color Emoji'", "'Segoe UI Emoji'", "'Segoe UI Symbol'", "'Noto Color Emoji'"],
         headingStyle: ["'Roboto'", "'Helvetica Neue'", 'Helvetica', 'Arial', 'sans-serif'],
       },
       fontSize: {

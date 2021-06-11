@@ -36,14 +36,12 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 
 **Blinding:** Paper submissions must conform with the “double-blind” review policy. This means that the authors should not know the names of the reviewers of their papers, and reviewers should not know the names of the authors. Please prepare your paper in a way that preserves anonymity of the authors.
 
-<ul>
-	<li>Do not put the authors’ names under the title.</li>
-	<li>Avoid using phrases such as “our previous work” when referring to earlier publications by the authors.</li>
-	<li>Remove information that may identify the authors in the acknowledgments (e.g., co-workers and grant IDs).</li>
-	<li>Check supplemental material (e.g., titles in the video clips, or supplementary documents) for information that may identify the authors’ identities.</li>
-	<li>Avoid providing links to websites that identify the authors.</li>
-	<li>Papers without appropriate blinding will be desk rejected without review.</li>
-</ul>
+- Do not put the authors’ names under the title.
+- Avoid using phrases such as “our previous work” when referring to earlier publications by the authors.
+- Remove information that may identify the authors in the acknowledgments (e.g., co-workers and grant IDs).
+- Check supplemental material (e.g., titles in the video clips, or supplementary documents) for information that may identify the authors’ identities.
+- Avoid providing links to websites that identify the authors.
+- Papers without appropriate blinding will be desk rejected without review.
 
 **Originality:** Papers submitted to ACM Multimedia Asia 2021 must be the original work of the authors. The may not be simultaneously under review elsewhere. Publications that have been peer-reviewed and have appeared at other conferences or workshops may not be submitted to ACM Multimedia Asia 2021(see also the arXiv/Archive policy below). Authors should be aware that ACM has a strict policy with regard to [*plagiarism and self-plagiarism*](https://www.acm.org/publications/policies/plagiarism). The authors’ prior work must be cited appropriately.
 

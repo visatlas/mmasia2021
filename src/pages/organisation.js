@@ -37,15 +37,15 @@ const Organisation = ({ data, location }) => {
                   }
                   const image = getImage(imageName);
                   return (
-                    <div className="mr-0 sm:mr-6 mb-9 flex flex-col items-center sm:bg-orgBackground 
-                    sm:p-3 sm:pb-6 sm:rounded-lg" key={index} style={{ width: "180px" }}>
+                    <div className="mr-0 sm:mr-6 mb-9 sm:mb-9 px-0 sm:px-3 pt-3 flex flex-col items-center sm:bg-orgBackground 
+                    sm:rounded-lg" key={index} style={{ width: "180px" }}>
                       <div style={{ width: "150px", height: "150px" }}>
                         <GatsbyImage className="rounded-lg" image={image} alt={person["name"]}
                           imgStyle={{ borderRadius: "0.5rem" }} />
                       </div>
 
                       <p className="text-xl font-bold mt-6 mb-2 text-center leading-6">{person["name"]}</p>
-                      <p className="text-orgSmall text-gray-700 leading-5 text-center">{person["institution"]}</p>
+                      <p className="mb-6 text-orgSmall text-gray-700 leading-5 text-center">{person["institution"]}</p>
                     </div>
                   );
                 })}
@@ -55,7 +55,7 @@ const Organisation = ({ data, location }) => {
         })
         }
         <footer className="pb-0">
-          <p className="text-xs mt-0 sm:mt-8 text-center sm:text-left">Last updated on {lastUpdated}.</p>
+          <p className="text-xs mt-0 sm:mt-8 mb-0 text-center sm:text-left">Last updated on {lastUpdated}.</p>
         </footer>
       </div>
     </Layout>
