@@ -26,7 +26,7 @@ const Organisation = ({ data, location }) => {
         {committee.map((roles, index) => {
           return (
             <div className="flex sm:block flex-col items-center" key={index}>
-              <h2 className="text-2xl font-bold mt-2 sm:mt-6 text-center sm:text-left pb-2 mb-6 text-mainPurple 
+              <h2 className="text-2xl font-bold mt-4 sm:mt-6 text-center sm:text-left pb-2 mb-6 text-mainPurple 
               border-b border-gray-200 font-headingStyle tracking-semiWide">{roles["role"]}</h2>
               <div className="flex flex-row justify-center sm:justify-start flex-wrap">
                 {roles["list"].map((person, index) => {
@@ -37,7 +37,7 @@ const Organisation = ({ data, location }) => {
                   }
                   const image = getImage(imageName);
                   return (
-                    <div className="mr-0 sm:mr-6 mb-9 sm:mb-9 px-0 sm:px-3 pt-3 flex flex-col items-center sm:bg-orgBackground 
+                    <div className="mr-0 sm:mr-6 mb-3 md:mb-9 px-0 sm:px-3 pt-3 flex flex-col items-center sm:bg-orgBackground 
                     sm:rounded-lg" key={index} style={{ width: "180px" }}>
                       <div style={{ width: "150px", height: "150px" }}>
                         <GatsbyImage className="rounded-lg" image={image} alt={person["name"]}
