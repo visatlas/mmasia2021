@@ -68,7 +68,7 @@ Note that documents published on website archives are subject to change. Citing 
 
 ## Review and Rebuttal Process
 
-Each submission will be reviewed by at least three reviewers, adhering to the [*reviewing guidelines*](https://acmmm.dev.nifu.me/reviewer-guidelines).
+Each submission will be reviewed by at least three reviewers, adhering to the [*reviewer guidelines*](https://acmmm.dev.nifu.me/reviewer-guidelines).
 
 After receiving the reviews, authors may optionally submit a rebuttal to address the reviewers’ comments as plain text in the cmt3 interface. There is a 500 word limit for this.
 
