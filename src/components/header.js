@@ -55,6 +55,7 @@ export default function Header({ activePage }) {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <MobileNavLink to="/" title="Home" selected={activePage === "/"}>Home</MobileNavLink>
             <MobileNavLink to="/important-dates" title="Important Dates" selected={activePage === "/important-dates"}>Important Dates</MobileNavLink>
+             <MobileNavLink to="/reviewer-guidelines" title="Reviewer Guidelines" selected={activePage === "/reviewer-guidelines"}>Reviewer Guidelines</MobileNavLink>
             <button className={mobileCallsStyle} onClick={() => { setShowMobileCalls(!showMobileCalls); }}>
               <span className="mr-1">Calls</span>
               <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -101,6 +102,7 @@ const Calls = ({ selected }) => {
       <div className="dropdown-menu absolute hidden text-gray-800 pt-1 w-60"> {/* hidden */}
         <div className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
           <Link to="/important-dates" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Important Dates">Important Dates</Link>
+          <Link to="/reviewer-guidelines" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Reviewer Guidelines">Reviewer Guidelines</Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
           <Link to="/call-for-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Regular Papers">Call for <span className="font-medium">Regular Papers</span></Link>
           <Link to="/call-for-workshops" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops">Call for <span className="font-medium">Workshops</span></Link>
