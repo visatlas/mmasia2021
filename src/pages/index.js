@@ -50,7 +50,7 @@ const Index = ({ data, location }) => {
       <Seo title="Home" />
       <Title allowVideo={allowTitleVideo} />
       <div className="global-wrapper pb-12" id="welcome">
-        <h2 className="pt-9 mb-6 text-3xl text-mainPurple font-extrabold">Welcome to ACMMM Asia 2021!</h2>
+        <h2 className="pt-9 mb-6 font-titleFont text-3xl text-mainPurple font-extrabold">Welcome to ACM MMAsia 2021!</h2>
         {highlights.map((content, index) => {
           return (
             <p className="mb-4" key={index}>{content}</p>
@@ -62,7 +62,7 @@ const Index = ({ data, location }) => {
 
         {allowVideo && (
           <div>
-            <h2 className="mt-12 mb-6 text-3xl text-mainPurple font-extrabold">Promotional Video</h2>
+            <h2 className="mt-12 mb-6 font-titleFont text-3xl text-mainPurple font-extrabold">Promotional Video</h2>
             <div className="flex flex-row justify-between">
               <button onClick={() => { setUseYouTube(true); }} type="button"
                 className="py-2 px-5 flex-1 space-x-2 mr-1 flex justify-center items-center rounded-md text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
@@ -110,7 +110,7 @@ const Index = ({ data, location }) => {
           </div>
         )}
 
-        <h2 className="mt-6 pb-4 text-3xl text-mainPurple font-extrabold">Latest News</h2>
+        <h2 className="mt-6 pb-4 font-titleFont text-3xl text-mainPurple font-extrabold">Latest News</h2>
         <ol className="post-list list-none divide-y divide-gray-200">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug;
