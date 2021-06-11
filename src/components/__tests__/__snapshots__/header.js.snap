@@ -177,6 +177,13 @@ exports[`Header renders correctly 1`] = `
                     >
                       Important Dates
                     </a>
+                    <a
+                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide"
+                      href="/reviewer-guidelines"
+                      title="Reviewer Guidelines"
+                    >
+                      Reviewer Guidelines
+                    </a>
                     <div
                       className="w-full py-1"
                     >
@@ -370,6 +377,18 @@ exports[`Header renders correctly 1`] = `
   text-base font-semibold font-headingStyle"
           >
             Important Dates
+          </span>
+        </a>
+        <a
+          className="flex item-center w-full"
+          href="/reviewer-guidelines"
+          title="Reviewer Guidelines"
+        >
+          <span
+            className="pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+  text-base font-semibold font-headingStyle"
+          >
+            Reviewer Guidelines
           </span>
         </a>
         <button
