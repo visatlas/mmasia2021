@@ -133,7 +133,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#51247a`,
-        display: `minimal-ui`,
+        display: `fullscreen`,
         icon: `src/images/mmasia-icon.jpg`,
         icon_options: {
           purpose: `any maskable`,
