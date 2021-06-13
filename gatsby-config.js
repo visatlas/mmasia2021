@@ -154,7 +154,7 @@ module.exports = {
       // Progressive Web App + Offline functionality
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/uploads/*`],
+        precachePages: [`/`, `/index.html`, `/call-for-papers`, `/uploads/*`],
       },
     },
   ],
