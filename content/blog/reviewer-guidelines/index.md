@@ -1,6 +1,6 @@
 ---
 title: Reviewer Guidelines
-date: "2021-06-11"
+date: "2021-06-13"
 description: Click here to view the reviewer guidelines.
 ---
 
