@@ -151,10 +151,23 @@ module.exports = {
       },
     },
     {
-      // Progressive Web App + Offline functionality
+      // PWA Offline functionality
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, `/index.html`, `/call-for-papers`, `/uploads/*`],
+        precachePages: [
+          `/`,
+          `/important-dates`,
+          `/reviewer-guidelines`,
+          `/call-for-papers`,
+          `/call-for-workshops`,
+          `/call-for-demo-papers`,
+          `/call-for-short-papers`,
+          `/call-for-phd-school-participants`,
+          `/student-travel-grants`,
+          `/carer-award`,
+          `/organisation`,
+          `/uploads/*`,
+        ],
       },
     },
   ],
