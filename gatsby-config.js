@@ -155,7 +155,7 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [
-          `/`,
+          `/index.html`,
           `/important-dates`,
           `/reviewer-guidelines`,
           `/call-for-papers`,
