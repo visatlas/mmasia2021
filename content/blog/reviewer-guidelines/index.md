@@ -12,7 +12,7 @@ Thank you for your work reviewing for ACM Multimedia Asia 2021. We appreciate yo
 
 As a Technical Program Committee (TPC) member, we expect that you are already experienced with writing excellent reviews. However, in practice we find that guidelines can help streamline the process. ACM Multimedia Asia will be announcing awards for the best reviewers of the conference. The guidelines also serves as a basis for the best reviewer decisions.
 
-As an Area Chair (AC), we expect that you have experience summarizing the strengths and weaknesses of papers pointed out by reviewers, and making recommendations. You will want to be thoroughly familiar with the review guidelines. For completeness, at the bottom of the guidelines the responsibilities of an AC are summarized.
+As an Area Chair (AC), we expect that you have experience summarizing the strengths and weaknesses of papers pointed out by reviewers, and making recommendations. You will want to be thoroughly familiar with the review guidelines. For completeness, at the bottom of the guidelines the responsibilities of an AC are summarised.
 
 The Golden Rule of reviewing: Write a review that you would like to receive yourself.
 
@@ -71,7 +71,7 @@ We consider a “publication” to be a manuscript that has undergone peer revie
 - An Area Chair solicits reviews for up to 10 papers.
 - An Area Chair reads the ten papers and the reviews.
 - An Area Chair ensures that the reviews have followed the reviewer guidelines.
-- An Area Chair summarizes the strengths and weaknesses of each paper, makes a recommendation, and presents the recommendation at the TPC meeting.
+- An Area Chair summarises the strengths and weaknesses of each paper, makes a recommendation, and presents the recommendation at the TPC meeting.
 - An Area Chair adheres to the schedule for the review and selection process.
 
 If you have any questions about the guidelines, please contact the Program Chairs.

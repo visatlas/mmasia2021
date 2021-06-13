@@ -1,7 +1,7 @@
 ---
 title: Call for Demo Papers
 date: "2021-05-31"
-description: ACM Multimedia Asia 2021 will provide demonstration sessions that allows conference attendants to view and interact first hand with live evidence of innovative solutions and ideas in the field of multimedia and to experience leading edge research at work. 
+description: ACM Multimedia Asia 2021 will provide demonstration sessions that allows conference attendants to view and interact first hand with live evidence of innovative solutions and ideas in the field of multimedia and to experience leading edge research at work.
 ---
 
 ## Overview
@@ -25,7 +25,7 @@ The demo papers should be submitted through the [*conference submission system*]
 
 All submissions will be peer-reviewed, and the demos will be selected through a jury process. Please submit a two page demo proposals (excluding references) using the ACM Article Template. Please remember to add [*Concepts and Keywords*](https://www.acm.org/publications/proceedings-template).
 
-Please note that the submission is NOT blind, there is no need to anonymize presenters . Each demo submission must contain a supplementary file, either in PowerPoint format (no more than 10 slides) or in video (no longer than 3 minutes) explaining to the jury:
+Please note that the submission is NOT blind, there is no need to anonymise presenters . Each demo submission must contain a supplementary file, either in PowerPoint format (no more than 10 slides) or in video (no longer than 3 minutes) explaining to the jury:
 
 - What is the scientific or engineering concept behind the work?
 - What is the novelty of the work and how is the work different from existing systems or techniques?

@@ -17,7 +17,7 @@ Oh, and here's a great quote from this Wikipedia on
 > charcoal paste. The eggs may also be sold with the salted paste removed,
 > wrapped in plastic, and vacuum packed. From the salt curing process, the
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+> firm-textured, round yolk that is bright orange-red in colour.
 
 ![Chinese Salty Egg](./example.jpg)
 
