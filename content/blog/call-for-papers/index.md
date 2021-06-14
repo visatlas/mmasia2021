@@ -1,7 +1,7 @@
 ---
 title: Call for Regular Papers
-date: "2021-06-13"
-description: The submission details of regular paper has been updated.
+date: "2021-06-14"
+description: The submission details and links of regular paper have been updated.
 ---
 
 ## Overview
@@ -28,7 +28,7 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 
 ## Submission Guidelines
 
-**Submission Site:** Please [*click here*](https://cmt3.research.microsoft.com/MMASIA2021/Submission/Index) to submit your paper.
+**Submission Site:** Please [*click here to submit your paper*](https://cmt3.research.microsoft.com/MMASIA2021/Submission/Index).
 
 **Paper format:** Submitted papers (.pdf format) must use the [*ACM Article Template*](https://www.acm.org/publications/proceedings-template). Please remember to add Concepts and Keywords.
 
