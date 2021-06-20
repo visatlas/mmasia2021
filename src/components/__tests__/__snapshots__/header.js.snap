@@ -3,7 +3,7 @@
 exports[`Header renders correctly 1`] = `
 <header>
   <nav
-    className="overflow-y-auto md:overflow-visible bg-mainPurple fixed top-0 z-50 w-full lg:px-10 md:bg-uqStyle"
+    className="overflow-y-auto md:overflow-visible bg-mainPurple fixed top-0 z-50 w-full md:bg-uqStyle"
     style={
       Object {
         "maxHeight": "100vh",
@@ -11,7 +11,7 @@ exports[`Header renders correctly 1`] = `
     }
   >
     <div
-      className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8"
+      className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-16"
     >
       <div
         className="relative flex items-center justify-between h-16"
