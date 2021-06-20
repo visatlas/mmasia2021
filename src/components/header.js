@@ -14,10 +14,14 @@ export default function Header({ activePage }) {
 
   return (
     <header>
-      <nav className="overflow-y-auto md:overflow-visible bg-mainPurple fixed top-0 z-50 w-full lg:px-10 md:bg-uqStyle" style={{ maxHeight: "100vh" }}>
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <nav className="overflow-y-auto md:overflow-visible bg-mainPurple fixed top-0 z-50 w-full md:bg-uqStyle" style={{ maxHeight: "100vh" }}>
+        {process.env.GATSBY_PREVIEW_MODE === "true" && (
+          <div className="bg-blue-300 flex justify-center items-center h-6">
+            <small className="font-medium text-center">You are currently in preview mode. <a className="underline" href="https://mmasia2021.uqcloud.net" target="_blank" rel="noreferrer">Visit the main page.</a></small>
+          </div>
+        )}
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-16">
           <div className="relative flex items-center justify-between h-16">
-
             {/* <!-- Mobile menu button--> */}
             <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
               <button type="button" className="py-2 pl-3 pr-3 ml-4 inline-flex items-center justify-center rounded-md 
@@ -55,7 +59,7 @@ export default function Header({ activePage }) {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <MobileNavLink to="/" title="Home" selected={activePage === "/"}>Home</MobileNavLink>
             <MobileNavLink to="/important-dates" title="Important Dates" selected={activePage === "/important-dates"}>Important Dates</MobileNavLink>
-             <MobileNavLink to="/reviewer-guidelines" title="Reviewer Guidelines" selected={activePage === "/reviewer-guidelines"}>Reviewer Guidelines</MobileNavLink>
+            <MobileNavLink to="/reviewer-guidelines" title="Reviewer Guidelines" selected={activePage === "/reviewer-guidelines"}>Reviewer Guidelines</MobileNavLink>
             <button className={mobileCallsStyle} onClick={() => { setShowMobileCalls(!showMobileCalls); }}>
               <span className="mr-1">Calls</span>
               <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
