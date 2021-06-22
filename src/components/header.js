@@ -42,12 +42,12 @@ export default function Header({ activePage }) {
               {/* Desktop menu */}
               <div className="hidden md:flex sm:ml-8 items-center">
                 <div className="flex space-x-4">
-                  <NavLink selected={false} to="/" title="Home">Home</NavLink>
+                  <NavLink to="/" selected={false} title="Home">Home</NavLink>
                   <Calls selected={["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "/important-dates"].includes(activePage)} />
-                  <NavLink selected={activePage === "/program"} to="/" title="Program" disabled>Program</NavLink>
+                  <NavLink to="/" selected={activePage === "/program"} title="Program" disabled>Program</NavLink>
                   <Attend selected={["/student-travel-grants", "/carer-award"].includes(activePage)} />
-                  <NavLink selected={activePage === "/organisation"} to="/organisation" title="Organisation">Organisation</NavLink>
-                  <NavLink to="/" title="Sponsors" selected={activePage === "/sponsors"} disabled>Sponsors</NavLink>
+                  <NavLink to="/organisation" selected={activePage === "/organisation"} title="Organisation">Organisation</NavLink>
+                  <NavLink to="/sponsors" selected={activePage === "/sponsors"} title="Sponsors">Sponsors</NavLink>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function Header({ activePage }) {
               <MobileNavLink to="/carer-award" title="Carer Awards" selected={activePage === "/carer-award"} nested>Carer Awards</MobileNavLink>
             </div>)}
             <MobileNavLink to="/organisation" title="Organisation" selected={activePage === "/organisation"}>Organisation</MobileNavLink>
-            <MobileNavLink to="/" title="Sponsors" selected={activePage === "/sponsors"} disabled>Sponsors</MobileNavLink>
+            <MobileNavLink to="/sponsors" title="Sponsors" selected={activePage === "/sponsors"}>Sponsors</MobileNavLink>
           </div>
         </div>
       </nav>

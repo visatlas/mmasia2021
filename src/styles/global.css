@@ -12,8 +12,10 @@
   --maxWidth-2xl: 42rem;
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
+  --maxWidth-7xl: 80rem;
   --maxWidth-full: "100%";
   --maxWidth-wrapper: var(--maxWidth-4xl);
+  --maxWidth-wrapper-wide: var(--maxWidth-7xl);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -131,10 +133,16 @@ table thead tr th {
 }
 
 /* Custom classes */
-
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
+  padding-left: var(--spacing-5);
+  padding-right: var(--spacing-5);
+}
+
+.global-wrapper-wide {
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper-wide);
   padding-left: var(--spacing-5);
   padding-right: var(--spacing-5);
 }

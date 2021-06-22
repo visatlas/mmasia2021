@@ -13,7 +13,7 @@ const Layout = ({ location, children }) => {
       {process.env.GATSBY_PREVIEW_MODE === "true" && (<div className="w-screen h-6" />)}
       <div className="w-screen h-16" />
       <main>{children}</main>
-      <Footer />
+      <Footer activePage={location.pathname} />
     </div>
   );
 };
