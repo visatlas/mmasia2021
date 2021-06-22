@@ -1,3 +1,5 @@
+/* I am too lazy to remove duplicate codes */
+
 import React from 'react';
 import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
@@ -22,7 +24,7 @@ const Sponsors = ({ data, location }) => {
 
         <div className="flex flex-col lg:flex-row flex-wrap w-full global-wrapper-wide overflow-hidden">
           <section className="w-full lg:w-2/3 py-4 pl-4 pr-4 lg:pl-8 lg:pr-12">
-            <article className="text-justify flex flex-col items-center">
+            <article className="text-justify flex flex-col">
               <p>The Organising Committee for the 2021 ACM Multimedia Asia warmly invites you to become a sponsor of the conference to be held at Gold Coast, Australia on December 1st to 3rd 2021. This is a unique opportunity to promote your institute or company, gain exposure and advertise your product or research to a variety of influencers and leaders on the vibrant multimedia community.</p>
               <h2 className="w-full text-center mb-6 text-lg text-gray-600 font-semibold">Levels of Sponsorship</h2>
               <div className="w-full overflow-scroll">
@@ -57,6 +59,13 @@ const Sponsors = ({ data, location }) => {
                   </tbody>
                 </table>
               </div>
+
+              <p className="mt-4 mb-6">ACM Multimedia Asia 2021 Sponsorships Chairs:</p>
+              <ul className="list-disc list-inside">
+                <li className="mb-2"><strong>Xiaofang Zhou</strong>, Hong Kong University of Science and Technology, China</li>
+                <li className="mb-6"><strong>Bing-Kun Bao</strong>, Nanjing University of Posts and Telecommunications, China</li>
+              </ul>
+
             </article>
           </section>
 
