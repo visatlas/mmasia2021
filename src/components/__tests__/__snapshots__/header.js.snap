@@ -338,11 +338,18 @@ exports[`Header renders correctly 1`] = `
                   Organisation
                 </span>
               </a>
-              <span
-                className="text-textDisabled text-base px-3 py-2 rounded-md text-sm font-medium  font-headingStyle cursor-default"
+              <a
+                className="flex item-center"
+                href="/sponsors"
+                title="Sponsors"
               >
-                Sponsors
-              </span>
+                <span
+                  className=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md text-sm 
+  font-medium font-headingStyle"
+                >
+                  Sponsors
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -446,11 +453,18 @@ exports[`Header renders correctly 1`] = `
             Organisation
           </span>
         </a>
-        <span
-          className="pl-8 pr-4 py-2 flex item-center w-full text-textDisabled block rounded-md text-base  font-semibold font-headingStyle cursor-default"
+        <a
+          className="flex item-center w-full"
+          href="/sponsors"
+          title="Sponsors"
         >
-          Sponsors
-        </span>
+          <span
+            className="pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+  text-base font-semibold font-headingStyle"
+          >
+            Sponsors
+          </span>
+        </a>
       </div>
     </div>
   </nav>
