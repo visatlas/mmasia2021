@@ -96,6 +96,9 @@ const Sponsors = ({ data, location }) => {
               <a className="flex flex-col justify-center items-center" href="https://www.acm.org/" target="_blank" rel="noreferrer">
                 <img style={{ height: "55px" }} src={ACMLogo} alt="ACM Logo" />
               </a>
+              <a className="flex flex-col justify-center items-center" href="https://www.griffith.edu.au/" target="_blank" rel="noreferrer">
+                <img style={{ height: "55px" }} src={GriffithLogo} alt="Griffith Logo" />
+              </a>
             </div>
           </aside>
         </div>
