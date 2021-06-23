@@ -75,7 +75,7 @@ const Sponsors = ({ data, location }) => {
             <h2 className="w-full py-1 border-b text-gray-500 text-center text-xl mb-8 font-semibold font-headingStyle tracking-wide">Silver Sponsors</h2>
             <div>
               <a className="flex flex-col justify-center items-center" href="https://www.uq.edu.au/" target="_blank" rel="noreferrer">
-                <img style={{ height: "38px" }} src={UQLogo} alt="UQ Logo" />
+                <img style={{ height: "40px" }} src={UQLogo} alt="UQ Logo" />
                 <small className="font-light text-center mt-4"><span className="font-medium">The University of Queensland</span><br />School of Information Technology &amp; Electrical Engineering</small>
               </a>
             </div>
@@ -97,7 +97,7 @@ const Sponsors = ({ data, location }) => {
                 <img style={{ height: "55px" }} src={ACMLogo} alt="ACM Logo" />
               </a>
               <a className="flex flex-col justify-center items-center" href="https://www.griffith.edu.au/" target="_blank" rel="noreferrer">
-                <img style={{ height: "55px" }} src={GriffithLogo} alt="Griffith Logo" />
+                <img style={{ height: "48px" }} src={GriffithLogo} alt="Griffith Logo" />
               </a>
             </div>
           </aside>
