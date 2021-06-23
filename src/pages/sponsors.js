@@ -19,7 +19,7 @@ const Sponsors = ({ data, location }) => {
       <Seo title="Sponsors" />
       <div className="flex flex-col items-center sm:mx-auto sm:my-0 pb-10">
         <div className="w-full pt-8 md:pt-4 pb-6 mb-0 md:mb-6 bg-white md:bg-uqStyle flex justify-center items-center">
-          <h1 className="text-3xl text-gray-800 md:text-gray-100 font-semibold font-headingStyle tracking-wide">Sponsors</h1>
+          <h1 className="text-3xl text-gray-800 md:text-gray-100 font-semibold font-headingStyle tracking-wide">Sponsorship</h1>
         </div>
 
         <div className="flex flex-col lg:flex-row flex-wrap w-full global-wrapper-wide overflow-hidden">
