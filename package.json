@@ -4,7 +4,7 @@
   "description": "ACM Multimedia Asia 2021 - Gold Coast, Australia",
   "version": "0.1.0",
   "bugs": {
-    "url": "https://github.com/fzmi/acmmm/issues"
+    "url": "https://github.com/fzmi/mmasia2021/issues"
   },
   "dependencies": {
     "gatsby": "^3.6.2",
@@ -46,7 +46,7 @@
     "react-test-renderer": "^17.0.2",
     "tailwindcss": "^2.1.4"
   },
-  "homepage": "https://github.com/fzmi/acmmm#readme",
+  "homepage": "https://github.com/fzmi/mmasia2021#readme",
   "keywords": [
     "acmmm",
     "mmasia"
@@ -55,7 +55,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fzmi/acmmm.git"
+    "url": "git+https://github.com/fzmi/mmasia2021.git"
   },
   "scripts": {
     "build": "gatsby build",

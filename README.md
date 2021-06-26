@@ -1,7 +1,7 @@
-# ACMMM Asia 2021
-This project is for the ACMMM Asia 2021 main website.
+# ACM MMAsia 2021
+This project is for the ACM MMAsia 2021 main website.
 
-![Test](https://github.com/fzmi/acmmm/actions/workflows/main.yml/badge.svg)
+![Test](https://github.com/fzmi/mmasia2021/actions/workflows/main.yml/badge.svg)
 
 ## Installation
 
@@ -10,8 +10,8 @@ First, make sure your computer has [npm](https://www.npmjs.com/get-npm) and [git
 Then, clone the repository by running the following command:
 
 ```
-git clone https://github.com/fzmi/acmmm.git
-cd acmmm
+git clone https://github.com/fzmi/mmasia2021.git
+cd mmasia2021
 ```
 
 Next, install the Gatsby CLI and project dependencies:

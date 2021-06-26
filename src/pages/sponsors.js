@@ -14,6 +14,8 @@ import MonashLogo from "../images/footer/monash-logo.svg";
 const Sponsors = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Sponsors`;
 
+  const lastUpdated = "23 June, 2021"
+
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="Sponsors" />
@@ -66,6 +68,9 @@ const Sponsors = ({ data, location }) => {
                 <li className="mb-6"><strong>Bing-Kun Bao</strong>, Nanjing University of Posts and Telecommunications, China</li>
               </ul>
 
+              <footer className="pb-0">
+                <p className="text-xs mt-0 sm:mt-8 mb-0 text-center sm:text-left">Last updated on {lastUpdated}.</p>
+              </footer>
             </article>
           </section>
 

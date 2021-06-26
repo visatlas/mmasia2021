@@ -166,6 +166,7 @@ module.exports = {
           `/student-travel-grants`,
           `/carer-award`,
           `/organisation`,
+          `/sponsors`,
           `/uploads/*`,
         ],
       },
