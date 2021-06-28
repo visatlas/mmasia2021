@@ -40,6 +40,9 @@ module.exports = {
         player: "660px",
         bp3: "882px",
       },
+      spacing: {
+        '68': '17rem',
+      },
     },
   }
 };
