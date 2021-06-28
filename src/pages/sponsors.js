@@ -64,8 +64,8 @@ const Sponsors = ({ data, location }) => {
 
               <p className="mt-4 mb-6">ACM Multimedia Asia 2021 Sponsorships Chairs:</p>
               <ul className="list-disc list-inside">
-                <li className="mb-2"><strong>Xiaofang Zhou</strong> (<address><a href="zxf@itee.uq.edu.au" color: blue>email</a></address>), Hong Kong University of Science and Technology, China</li>
-                <li className="mb-6"><strong>Bing-Kun Bao</strong> (<address><a href="bingkunbao@njupt.edu.cn" color: blue>email</a></address>), Nanjing University of Posts and Telecommunications, China</li>
+                <li className="mb-2"><strong>Xiaofang Zhou</strong> (<address><a href="zxf@itee.uq.edu.au">email</a></address>), Hong Kong University of Science and Technology, China</li>
+                <li className="mb-6"><strong>Bing-Kun Bao</strong> (<address><a href="bingkunbao@njupt.edu.cn">email</a></address>), Nanjing University of Posts and Telecommunications, China</li>
               </ul>
 
               <footer className="pb-0">
