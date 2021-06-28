@@ -1,7 +1,7 @@
 ---
 title: Call for Grand Challenge Proposals
 date: "2021-06-28"
-description: Twin-City PhD School (a special session of the main conference) will be held.
+description: ACM Multimedia Asia is calling for proposals for Grand Challenges in 2021.
 ---
 
 ## Overview
@@ -10,7 +10,7 @@ ACM Multimedia Asia is calling for proposals for Grand Challenges in 2021. Propo
 
 The purpose of the Multimedia Grand Challenge is to engage the multimedia research community by establishing well-defined and objectively judged challenge problems intended to exercise the state-of-the-art methods and inspire future research directions. The key criteria for Grand Challenges are that they should be useful, interesting, and their solution should involve a series of research tasks over a long period of time, with pointers towards longer-term research.
 
-- A Multimedia Grand Challenge proposal should include:
+**A Multimedia Grand Challenge proposal should include:**
 
 - A brief description to explain why the challenge problem is important and relevant to the multimedia research community, industry, and society over the next 3-5 years or a longer horizon.
 
@@ -43,8 +43,8 @@ Please [*click here to submit*](https://cmt3.research.microsoft.com/MMASIA2021/)
 
 ## Contacts
 
-For any questions regarding this session, please email the Grand Challenge Chairs: 
+For any questions regarding the submission, please email the Grand Challenge Chairs: 
 
-- **Shin'ichi Satoh** ([tba](tba)), National Institute of Informatics, Japan
-- **Jingkuan Song** ([tba](tba)), University of Electronic Science and Technology of China, China
+- **Shin'ichi Satoh** ([satoh@nii.ac.jp](satoh@nii.ac.jp)), National Institute of Informatics, Japan
+- **Jingkuan Song** ([jingkuan.song@gmail.com](jingkuan.song@gmail.com)), University of Electronic Science and Technology of China, China
 
