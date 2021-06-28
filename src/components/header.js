@@ -5,7 +5,7 @@ import { NavLink, MobileNavLink } from "./header-links";
 
 export default function Header({ activePage }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [showMobileCalls, setShowMobileCalls] = useState(["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants"].includes(activePage));
+  const [showMobileCalls, setShowMobileCalls] = useState(["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "call-for-grand-challenge-proposals"].includes(activePage));
   const [showMobileAttend, setShowMobileAttend] = useState(["/student-travel-grants", "/carer-award"].includes(activePage));
   const mobileCallsBackground = showMobileCalls ? "bg-menuHover" : "";
   const mobileCallsStyle = `font-semibold text-left pl-8 pr-4 py-2 w-full text-white ${mobileCallsBackground} hover:bg-menuHover block rounded-md text-base font-headingStyle inline-flex items-center`;
@@ -43,7 +43,7 @@ export default function Header({ activePage }) {
               <div className="hidden md:flex sm:ml-8 items-center">
                 <div className="flex space-x-4">
                   <NavLink to="/" selected={false} title="Home">Home</NavLink>
-                  <Calls selected={["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "/important-dates"].includes(activePage)} />
+                  <Calls selected={["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "call-for-grand-challenge-proposals", "/important-dates"].includes(activePage)} />
                   <NavLink to="/" selected={activePage === "/program"} title="Program" disabled>Program</NavLink>
                   <Attend selected={["/student-travel-grants", "/carer-award"].includes(activePage)} />
                   <NavLink to="/organisation" selected={activePage === "/organisation"} title="Organisation">Organisation</NavLink>
@@ -71,6 +71,7 @@ export default function Header({ activePage }) {
               <MobileNavLink to="/call-for-demo-papers" title="Call for Demo Papers" selected={activePage === "/call-for-demo-papers"} nested>Call for Demo Papers</MobileNavLink>
               <MobileNavLink to="/call-for-short-papers" title="Call for Short Papers" selected={activePage === "/call-for-short-papers"} nested>Call for Short Papers</MobileNavLink>
               <MobileNavLink to="/call-for-phd-school-participants" title="Call for PhD School Participants" selected={activePage === "/call-for-phd-school-participants"} nested>Call for PhD School Participants</MobileNavLink>
+              <MobileNavLink to="/call-for-grand-challenge-proposals" title="Call for Grand Challenge Proposals" selected={activePage === "/call-for-grand-challenge-proposals"} nested>Call for Grand Challenge Proposals</MobileNavLink>
               <span className="pl-16 pr-4 py-2 w-full text-textDisabled cursor-default block rounded-md font-medium text-sm font-headingStyle">More to be announced..</span>
             </div>)}
             <MobileNavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</MobileNavLink>
@@ -113,6 +114,7 @@ const Calls = ({ selected }) => {
           <Link to="/call-for-demo-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Demo Papers">Call for <span className="font-medium">Demo Papers</span></Link>
           <Link to="/call-for-short-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Short Papers">Call for <span className="font-medium">Short Papers</span></Link>
           <Link to="/call-for-phd-school-participants" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for PhD School Participants">Call for <span className="font-medium">PhD School Participants</span></Link>
+          <Link to="/call-for-grand-challenge-proposals" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Grand Challenge Proposals">Call for <span className="font-medium">Grand Challenge Proposals</span></Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
           <span className="font-headingStyle cursor-default text-gray-400 py-2 px-4 block whitespace-no-wrap text-sm">More to be announced..</span>
         </div>
