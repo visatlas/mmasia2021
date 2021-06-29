@@ -31,7 +31,7 @@ The purpose of the Multimedia Grand Challenge is to engage the multimedia resear
 **Note** that although we ask organizers to express a multi-year commitment to their Grand Challenge, the Challenge will still undergo a new review each year. Priority will be given to Grand Challenges which have been successful in the past and are clearly contributing to continuity.
 
 ## Submission Website
-Please [*click here to submit*](https://cmt3.research.microsoft.com/MMASIA2021/).
+Please follow the link: [*https://cmt3.research.microsoft.com/MMASIA2021/*](https://cmt3.research.microsoft.com/MMASIA2021/).
 
 ## Important Dates
 
