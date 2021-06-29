@@ -1,7 +1,7 @@
 ---
 title: Important Dates
-date: "2021-05-21T10:00:00.000Z"
-description: View submission deadlines and other key dates.
+date: "2021-06-29"
+description: The deadline for Regular Paper, Workshops and Short/Demo Paper has been postponed.
 ---
 
 The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
