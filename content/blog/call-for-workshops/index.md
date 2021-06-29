@@ -1,7 +1,7 @@
 ---
 title: Call for Workshops
-date: "2021-06-29"
-description: The submission deadline for workshops has been postponed to 5, July.
+date: "2021-05-22"
+description: We are soliciting proposals for workshops to be held in conjunction with the ACM Multimedia Asia 2021.
 ---
 
 ## Call for Workshop Proposals
