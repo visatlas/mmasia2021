@@ -164,9 +164,8 @@ exports[`Header renders correctly 1`] = `
                   </svg>
                 </button>
                 <div
-                  className="dropdown-menu absolute hidden text-gray-800 pt-1 w-60"
+                  className="dropdown-menu absolute hidden text-gray-800 pt-1 w-68"
                 >
-                   
                   <div
                     className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
                   >
@@ -254,6 +253,18 @@ exports[`Header renders correctly 1`] = `
                         className="font-medium"
                       >
                         PhD School Participants
+                      </span>
+                    </a>
+                    <a
+                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      href="/call-for-grand-challenge-proposals"
+                      title="Call for Grand Challenge Proposals"
+                    >
+                      Call for 
+                      <span
+                        className="font-medium"
+                      >
+                        Grand Challenge Proposals
                       </span>
                     </a>
                     <div
