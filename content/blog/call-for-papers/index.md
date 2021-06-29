@@ -28,7 +28,7 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 
 ## Submission Guidelines
 
-**Submission Site:** Please [*click here to submit your paper*](https://cmt3.research.microsoft.com/MMASIA2021/Submission/Index).
+**Submission Site:** Please [*https://cmt3.research.microsoft.com/MMASIA2021/Submission/Index*](https://cmt3.research.microsoft.com/MMASIA2021/Submission/Index).
 
 **Paper format:** Submitted papers (.pdf format) must use the [*ACM Article Template*](https://www.acm.org/publications/proceedings-template). Please remember to add Concepts and Keywords.
 
@@ -60,7 +60,7 @@ Note that documents published on website archives are subject to change. Citing 
 
 **Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
-- Submission deadline: **19 July, 2021**.
+- Submission deadline: **29 July, 2021**.
 - Decision notification: **27 September, 2021**.
 
 
