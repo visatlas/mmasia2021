@@ -21,7 +21,7 @@ Submissions are encouraged in all areas related to multimedia, as described in A
 - **Important note for the authors:** The official publication date is the date the proceedings are made available in the ACM Digital Library. This date may be up to two weeks prior to the first day of the conference. The official publication date may affect the deadline for any patent filings related to published work.
 
 ## Submission Guidelines
-The demo papers should be submitted through the [*conference submission system*](https://cmt3.research.microsoft.com/MMASIA2021/).
+The demo papers should be submitted through [*https://cmt3.research.microsoft.com/MMASIA2021/*](https://cmt3.research.microsoft.com/MMASIA2021/).
 
 All submissions will be peer-reviewed, and the demos will be selected through a jury process. Please submit a two page demo proposals (excluding references) using the ACM Article Template. Please remember to add [*Concepts and Keywords*](https://www.acm.org/publications/proceedings-template).
 
@@ -37,7 +37,7 @@ In addition, a PDF document containing one page description about your demo boot
 
 **Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
-- Submission deadline: **2 August, 2021**.
+- Submission deadline: **12 August, 2021**.
 - Decision notification: **12 October, 2021**.
 
 ## Contacts
