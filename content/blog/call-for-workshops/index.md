@@ -1,7 +1,7 @@
 ---
 title: Call for Workshops
-date: "2021-05-22T10:00:00.000Z"
-description: We are soliciting proposals for workshops to be held in conjunction with the ACM Multimedia Asia 2021.
+date: "2021-06-29"
+description: The submission deadline for workshops has been postponed to 5, July.
 ---
 
 ## Call for Workshop Proposals
@@ -43,7 +43,7 @@ Each workshop proposal (maximum 4 pages, in PDF format) must include:
 
 **Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
-- Workshop proposal submission: **28 June, 2021**.
+- Workshop proposal submission: **5 July, 2021**.
 - Decision notification: **18 July, 2021**.
 
 ## Contacts
