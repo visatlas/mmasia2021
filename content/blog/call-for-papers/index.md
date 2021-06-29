@@ -28,7 +28,7 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 
 ## Submission Guidelines
 
-**Submission Site:** Please [*https://cmt3.research.microsoft.com/MMASIA2021/Submission/Index*](https://cmt3.research.microsoft.com/MMASIA2021/Submission/Index).
+**Submission Site:** [*https://cmt3.research.microsoft.com/MMASIA2021/Submission/Index*](https://cmt3.research.microsoft.com/MMASIA2021/Submission/Index).
 
 **Paper format:** Submitted papers (.pdf format) must use the [*ACM Article Template*](https://www.acm.org/publications/proceedings-template). Please remember to add Concepts and Keywords.
 
