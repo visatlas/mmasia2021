@@ -15,7 +15,7 @@ Short papers provide an opportunity to describe significant novel work in progre
 Submissions are encouraged in all areas related to multimedia, as described in ACM MMAsia 2021 general [*call for papers*](https://mmasia2021.uqcloud.net/call-for-papers)
 
 ## Submission Guidelines
-The short papers should be submitted through the [*conference submission system*](https://cmt3.research.microsoft.com/MMASIA2021/).
+The short papers should be submitted through [*https://cmt3.research.microsoft.com/MMASIA2021/*](https://cmt3.research.microsoft.com/MMASIA2021/).
 
 Submissions will be peer-reviewed, and accepted short papers will be published in the conference proceeding. Submissions of short research papers (pdf format) must use the ACM Article Template, **and be at most 4 pages (including figures, appendices, etc.) in length + unrestricted space for references**. Please remember to add [*Concepts and Keywords*](https://www.acm.org/publications/proceedings-template)
 
