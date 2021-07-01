@@ -157,8 +157,8 @@ table thead tr th {
 }
 
 .post-list-item {
-  padding-bottom: var(--spacing-4);
-  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-5);
+  padding-top: var(--spacing-5);
 }
 
 .post-list-item p {

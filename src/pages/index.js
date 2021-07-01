@@ -95,14 +95,14 @@ const Index = ({ data, location }) => {
             </div>
             {useYouTube ? (
               <div className="pb-4 mt-2 rounded-lg">
-                <div className="bg-white rounded-lg" style={{ position: "relative", padding: "28.1% 45%" }}>
-                  <iframe style={{ borderRadius: "0.5em", backgroundColor: "white", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://www.youtube-nocookie.com/embed/dOebaAv8e_4" title="ACM Multimedia Asia 2021 Video on YouTube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <div className="bg-black rounded-lg" style={{ position: "relative", padding: "28.1% 45%" }}>
+                  <iframe style={{ borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://www.youtube-nocookie.com/embed/dOebaAv8e_4" title="ACM Multimedia Asia 2021 Video on YouTube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
               </div>
             ) : (
               <div className="pb-4 player:pb-0 mt-2 rounded-lg">
-                <div className="bg-white rounded-lg" style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
-                  <iframe style={{ borderRadius: "0.5em", backgroundColor: "white", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" title="ACM Multimedia Asia 2021 Video on Bilibili" frameBorder="no" scrolling="no" allowFullScreen></iframe>
+                <div className="bg-black rounded-lg" style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
+                  <iframe style={{ borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" title="ACM Multimedia Asia 2021 Video on Bilibili" frameBorder="no" scrolling="no" allowFullScreen></iframe>
                   <div className="hidden player:block bg-white w-full" style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} />
                 </div>
               </div>
@@ -118,7 +118,7 @@ const Index = ({ data, location }) => {
             const dateClass = diffDays <= 7 ? "text-pink-800 font-semibold" : "text-gray-500 font-medium";
 
             return (
-              <li className="px-6 md:px-7 hover:bg-gray-200 duration-300" key={post.fields.slug}>
+              <li className="bg-gray-50 px-6 md:px-7 hover:bg-gray-200 duration-300" key={post.fields.slug}>
                 <Link to={post.fields.slug.slice(0, -1)} itemProp="url" title={title}>
                   <article className="post-list-item" itemScope itemType="http://schema.org/Article">
                     <header className="flex flex-col">
