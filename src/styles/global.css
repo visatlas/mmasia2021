@@ -157,8 +157,8 @@ table thead tr th {
 }
 
 .post-list-item {
-  padding-bottom: var(--spacing-6);
-  padding-top: var(--spacing-6);
+  padding-bottom: var(--spacing-4);
+  padding-top: var(--spacing-4);
 }
 
 .post-list-item p {
@@ -194,15 +194,9 @@ table thead tr th {
 }
 
 /* Post style for index.js */
-
-.post-list li:first-child {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
 .post-list li:last-child {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 
 /* Article style for blog-post.js */

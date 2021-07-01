@@ -49,19 +49,19 @@ const Index = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Home" />
       <Title allowVideo={allowTitleVideo} />
-      <div className="global-wrapper pb-12" id="welcome">
-        <h2 className="pt-9 mb-6 font-titleFont text-3xl text-mainPurple font-extrabold">Welcome to ACM MMAsia 2021!</h2>
-        {highlights.map((content, index) => {
-          return (
-            <p className="mb-4" key={index}>{content}</p>
-          );
-        })}
-        <p className="mb-4 font-bold">You can view the PDF version of the <a className="text-mainPurple underline hover:underline" href="https://mmasia2021.uqcloud.net/uploads/flyer.pdf"
-          target="_blank" rel="noreferrer">ACM MM Asia 2021 flyer here</a>.
-        </p>
+      <div className="global-wrapper pb-12" style={{ maxWidth: "59rem" }} id="welcome">
+        <header className="px-0 sm:px-7">
+          <h2 className="pt-9 mb-6 font-titleFont text-3xl text-mainPurple font-extrabold">Welcome to ACM MMAsia 2021!</h2>
+          {highlights.map((content, index) => {
+            return (<p className="mb-4" key={index}>{content}</p>);
+          })}
+          <p className="mb-4 font-bold">You can view the PDF version of the <a className="text-mainPurple underline hover:underline" href="https://mmasia2021.uqcloud.net/uploads/flyer.pdf"
+            target="_blank" rel="noreferrer">ACM Multimedia Asia 2021 flyer here</a>.
+          </p>
+        </header>
 
         {allowVideo && (
-          <div>
+          <div className="px-0 sm:px-7">
             <h2 className="mt-12 mb-6 font-titleFont text-3xl text-mainPurple font-extrabold">Promotional Video</h2>
             <div className="flex flex-row justify-between">
               <button onClick={() => { setUseYouTube(true); }} type="button"
@@ -94,15 +94,15 @@ const Index = ({ data, location }) => {
               </button>
             </div>
             {useYouTube ? (
-              <div className="pb-6 mt-2">
-                <div className="bg-black" style={{ position: "relative", padding: "28.1% 45%" }}>
-                  <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://www.youtube-nocookie.com/embed/dOebaAv8e_4" title="ACM Multimedia Asia 2021 Video on YouTube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <div className="pb-4 mt-2 rounded-lg">
+                <div className="bg-white rounded-lg" style={{ position: "relative", padding: "28.1% 45%" }}>
+                  <iframe style={{ borderRadius: "0.5em", backgroundColor: "white", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://www.youtube-nocookie.com/embed/dOebaAv8e_4" title="ACM Multimedia Asia 2021 Video on YouTube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
               </div>
             ) : (
-              <div className="pb-6 player:pb-0 mt-2">
-                <div className="bg-black" style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
-                  <iframe style={{ position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" title="ACM Multimedia Asia 2021 Video on Bilibili" frameBorder="no" scrolling="no" allowFullScreen></iframe>
+              <div className="pb-4 player:pb-0 mt-2 rounded-lg">
+                <div className="bg-white rounded-lg" style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
+                  <iframe style={{ borderRadius: "0.5em", backgroundColor: "white", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" title="ACM Multimedia Asia 2021 Video on Bilibili" frameBorder="no" scrolling="no" allowFullScreen></iframe>
                   <div className="hidden player:block bg-white w-full" style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} />
                 </div>
               </div>
@@ -110,23 +110,23 @@ const Index = ({ data, location }) => {
           </div>
         )}
 
-        <h2 className="mt-6 pb-4 font-titleFont text-3xl text-mainPurple font-extrabold">Latest News</h2>
-        <ol className="post-list list-none divide-y divide-gray-200">
+        <h2 className="mt-12 pb-4 px-6 sm:px-7 font-titleFont text-3xl text-mainPurple font-extrabold">Latest News</h2>
+        <ol className="post-list list-none divide-y divide-gray-200 border-t">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug;
             const diffDays = Math.ceil(Math.abs(new Date() - new Date(post.frontmatter.date)) / (1000 * 60 * 60 * 24));
             const dateClass = diffDays <= 7 ? "text-pink-800 font-semibold" : "text-gray-500 font-medium";
 
             return (
-              <li className="bg-gray-50 px-6 md:px-8 hover:bg-gray-200 duration-300" key={post.fields.slug}>
+              <li className="px-6 md:px-7 hover:bg-gray-200 duration-300" key={post.fields.slug}>
                 <Link to={post.fields.slug.slice(0, -1)} itemProp="url" title={title}>
                   <article className="post-list-item" itemScope itemType="http://schema.org/Article">
                     <header className="flex flex-col">
                       <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide" itemProp="headline">{title}</span>
                       <small className={dateClass}>{post.frontmatter.date}</small>
                     </header>
-                    <section className="">
-                      <p itemProp="description" dangerouslySetInnerHTML={{
+                    <section className="text-gray-700">
+                      <p className="leading-6" itemProp="description" dangerouslySetInnerHTML={{
                         __html: post.frontmatter.description || post.excerpt,
                       }}
                       />
@@ -161,7 +161,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "DD MMMM, YYYY")
+          date(formatString: "D MMMM, YYYY")
           title
           description
         }
