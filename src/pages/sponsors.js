@@ -29,8 +29,8 @@ const Sponsors = ({ data, location }) => {
             <article className="text-justify flex flex-col">
               <p>The Organising Committee for the 2021 ACM Multimedia Asia warmly invites you to become a sponsor of the conference to be held at Gold Coast, Australia on December 1st to 3rd 2021. This is a unique opportunity to promote your institute or company, gain exposure and advertise your product or research to a variety of influencers and leaders on the vibrant multimedia community.</p>
               <h2 className="w-full text-center mb-6 text-lg text-gray-600 font-semibold">Levels of Sponsorship</h2>
-              <div className="w-full overflow-scroll">
-                <table className="text-center table-auto overflow-scroll">
+              <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden">
+                <table className="mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
                   <thead>
                     <tr class="border-t bg-gray-50 text-gray-600 text-sm leading-normal">
                       <th className="py-3 px-6 font-semibold">Levels</th>

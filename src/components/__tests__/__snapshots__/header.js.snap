@@ -221,6 +221,18 @@ exports[`Header renders correctly 1`] = `
                     </a>
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      href="/call-for-tutorials"
+                      title="Call for Tutorials"
+                    >
+                      Call for 
+                      <span
+                        className="font-medium"
+                      >
+                        Tutorials
+                      </span>
+                    </a>
+                    <a
+                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-demo-papers"
                       title="Call for Demo Papers"
                     >

@@ -8,11 +8,11 @@ const Layout = ({ location, children }) => {
   const isRootPath = location.pathname === rootPath;
 
   return (
-    <div className="min-h-screen flex flex-col" data-is-root-path={isRootPath}>
+    <div className="w-full min-h-screen flex flex-col" data-is-root-path={isRootPath}>
       <Header activePage={location.pathname} />
-      {process.env.GATSBY_PREVIEW_MODE === "true" && (<div className="w-screen h-6" />)}
-      <div className="w-screen h-16" />
-      <main>{children}</main>
+      {process.env.GATSBY_PREVIEW_MODE === "true" && (<div className="w-full h-6" />)}
+      <div className="w-full h-16" />
+      <main className="w-full">{children}</main>
       <Footer activePage={location.pathname} />
     </div>
   );
