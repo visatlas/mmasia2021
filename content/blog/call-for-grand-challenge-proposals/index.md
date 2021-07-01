@@ -6,7 +6,7 @@ description: ACM Multimedia Asia is calling for proposals for Grand Challenges i
 
 ## Overview
 
-ACM Multimedia Asia is calling for proposals for Grand Challenges in 2021. Proposers with an innovative idea of a Multimedia Grand Challenge, should gather an organizational team with the capacity to carry out the organization of a challenge, and submit a proposal according to the instructions below.
+ACM Multimedia Asia is calling for proposals for Grand Challenges in 2021. Proposers with an innovative idea of a Multimedia Grand Challenge, should gather an organisational team with the capacity to carry out the organisation of a challenge, and submit a proposal according to the instructions below.
 
 The purpose of the Multimedia Grand Challenge is to engage the multimedia research community by establishing well-defined and objectively judged challenge problems intended to exercise the state-of-the-art methods and inspire future research directions. The key criteria for Grand Challenges are that they should be useful, interesting, and their solution should involve a series of research tasks over a long period of time, with pointers towards longer-term research.
 
@@ -24,11 +24,11 @@ The purpose of the Multimedia Grand Challenge is to engage the multimedia resear
 
 - A commitment to publish and maintain a website related to their specific Grand Challenge containing the information, datasets, tasks for the Grand Challenge at least the next 3 years.
 
-- Work with ACM Multimedia Asia Conference organizers to publicize the Grand Challenge tasks to researchers for participation.
+- Work with ACM Multimedia Asia Conference organisers to publicise the Grand Challenge tasks to researchers for participation.
 
-- Contact information of at least two organizers who will be responsible for organizing, publicizing, reviewing and judging the Grand Challenge submissions as described in the proposal.
+- Contact information of at least two organisers who will be responsible for organizing, publicizing, reviewing and judging the Grand Challenge submissions as described in the proposal.
 
-**Note** that although we ask organizers to express a multi-year commitment to their Grand Challenge, the Challenge will still undergo a new review each year. Priority will be given to Grand Challenges which have been successful in the past and are clearly contributing to continuity.
+**Note** that although we ask organisers to express a multi-year commitment to their Grand Challenge, the Challenge will still undergo a new review each year. Priority will be given to Grand Challenges which have been successful in the past and are clearly contributing to continuity.
 
 ## Submission Website
 The grand challenge proposals should be submitted through: [*https://cmt3.research.microsoft.com/MMASIA2021/*](https://cmt3.research.microsoft.com/MMASIA2021/).

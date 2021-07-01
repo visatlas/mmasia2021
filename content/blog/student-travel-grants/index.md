@@ -1,12 +1,12 @@
 ---
 title: Student Travel Grants
 date: "2021-06-04"
-description: ACM SIGMM and ACM MM Asia 2021 organization committee will offer student travel grants for students. 
+description: ACM SIGMM and ACM MM Asia 2021 organisation committee will offer student travel grants for students. 
 ---
 
 ## Overview
 
-To promote the participation of students in the [*PhD School*](https://mmasia2021.uqcloud.net/call-for-phd-school-participants), ACM SIGMM and ACM MM Asia 2021 organization committee will offer student travel grants for students.
+To promote the participation of students in the [*PhD School*](https://mmasia2021.uqcloud.net/call-for-phd-school-participants), ACM SIGMM and ACM MM Asia 2021 organisation committee will offer student travel grants for students.
 
 The **Student Travel Grants** is meant to support the personal attendance of one student at the PhD School (to Shen Zhen or Gold Coast). **The applicant must be a SIGMM student member ([*create an account*](https://services.acm.org/public/qj/login_gensigqj.cfm?rdr=&promo=QJSIG&offering=044&form_type=SIG)) at the time of application.**
 

@@ -1,12 +1,12 @@
 ---
 title: Carer Awards
 date: "2021-06-04"
-description: ACM SIGMM and ACM MM Asia 2021 organization committee will offer carer awards for students to attend online events. 
+description: ACM SIGMM and ACM MM Asia 2021 organisation committee will offer carer awards for students to attend online events. 
 ---
 
 ## Overview
 
-To promote the participation of students in the online conference events and special student-oriented activities, ACM SIGMM and ACM MM Asia 2021 organization committee will offer carer awards.
+To promote the participation of students in the online conference events and special student-oriented activities, ACM SIGMM and ACM MM Asia 2021 organisation committee will offer carer awards.
 
 The **Carer Awards** is meant to support the personal attendance of one student who participates in online events of ACM MM Asia 2021. **The applicant must be a SIGMM student member ([*create an account*](https://services.acm.org/public/qj/login_gensigqj.cfm?rdr=&promo=QJSIG&offering=044&form_type=SIG)) at the time of application.**
 
