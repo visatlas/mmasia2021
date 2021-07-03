@@ -118,9 +118,9 @@ const Index = ({ data, location }) => {
             const dateClass = diffDays <= 7 ? "text-pink-800 font-semibold" : "text-gray-500 font-medium";
 
             return (
-              <li className="bg-gray-50 px-6 md:px-7 hover:bg-gray-200 duration-300" key={post.fields.slug}>
+              <li className="bg-gray-50 hover:bg-gray-200 duration-300" key={post.fields.slug}>
                 <Link to={post.fields.slug.slice(0, -1)} itemProp="url" title={title}>
-                  <article className="post-list-item" itemScope itemType="http://schema.org/Article">
+                  <article className="post-list-item px-6 md:px-7" itemScope itemType="http://schema.org/Article">
                     <header className="flex flex-col">
                       <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide" itemProp="headline">{title}</span>
                       <small className={dateClass}>{post.frontmatter.date}</small>
