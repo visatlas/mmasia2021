@@ -7,7 +7,7 @@ exports[`Mobile Nav Link renders correctly 1`] = `
   title="Link"
 >
   <span
-    className="pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+    className="pl-8 pr-4 py-2 w-full text-white  block rounded-md 
   text-base font-semibold font-headingStyle"
   />
 </a>
@@ -20,7 +20,7 @@ exports[`Mobile Nav Link renders correctly 2`] = `
   title="Link"
 >
   <span
-    className="pl-8 pr-4 py-2 w-full text-white bg-menuSelected hover:bg-menuHover block rounded-md 
+    className="pl-8 pr-4 py-2 w-full text-white bg-menuSelected block rounded-md 
   text-base font-semibold font-headingStyle"
   />
 </a>
@@ -39,7 +39,7 @@ exports[`Mobile Nav Link renders correctly 4`] = `
   title="Link"
 >
   <span
-    className="pl-16 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+    className="pl-16 pr-4 py-2 w-full text-white  block rounded-md 
   text-base font-medium font-headingStyle"
   />
 </a>

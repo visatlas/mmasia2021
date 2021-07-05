@@ -22,7 +22,7 @@ exports[`Header renders correctly 1`] = `
           <button
             aria-controls="mobile-menu"
             aria-expanded="false"
-            className="py-2 pl-3 pr-3 ml-4 inline-flex items-center justify-center rounded-md  text-gray-50 hover:text-black hover:bg-purple-300 focus:outline-none focus:ring-1 focus:ring-inset  focus:ring-white"
+            className="py-2 pl-3 pr-3 ml-4 inline-flex items-center justify-center rounded-md  text-gray-50 focus:outline-none focus:ring-1 focus:ring-inset  focus:ring-white"
             onClick={[Function]}
             type="button"
           >
@@ -146,7 +146,7 @@ exports[`Header renders correctly 1`] = `
               >
                 <button
                   className=" text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 
-  rounded-md text-sm font-medium font-headingStyle inline-flex items-center"
+  rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default"
                 >
                   <span
                     className="mr-1"
@@ -170,14 +170,14 @@ exports[`Header renders correctly 1`] = `
                     className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
                   >
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide"
                       href="/important-dates"
                       title="Important Dates"
                     >
                       Important Dates
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide"
                       href="/reviewer-guidelines"
                       title="Reviewer Guidelines"
                     >
@@ -196,7 +196,7 @@ exports[`Header renders correctly 1`] = `
                       />
                     </div>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-papers"
                       title="Call for Regular Papers"
                     >
@@ -208,7 +208,7 @@ exports[`Header renders correctly 1`] = `
                       </span>
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-workshops"
                       title="Call for Workshops"
                     >
@@ -220,7 +220,7 @@ exports[`Header renders correctly 1`] = `
                       </span>
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-tutorials"
                       title="Call for Tutorials"
                     >
@@ -232,7 +232,7 @@ exports[`Header renders correctly 1`] = `
                       </span>
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-demo-papers"
                       title="Call for Demo Papers"
                     >
@@ -244,7 +244,7 @@ exports[`Header renders correctly 1`] = `
                       </span>
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-short-papers"
                       title="Call for Short Papers"
                     >
@@ -256,7 +256,7 @@ exports[`Header renders correctly 1`] = `
                       </span>
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-phd-school-participants"
                       title="Call for PhD School Participants"
                     >
@@ -268,7 +268,7 @@ exports[`Header renders correctly 1`] = `
                       </span>
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-grand-challenge-proposals"
                       title="Call for Grand Challenge Proposals"
                     >
@@ -292,7 +292,7 @@ exports[`Header renders correctly 1`] = `
                       />
                     </div>
                     <span
-                      className="font-headingStyle cursor-default text-gray-400 py-2 px-4 block whitespace-no-wrap text-sm"
+                      className="font-headingStyle cursor-default text-gray-400 py-1.5 px-4 block whitespace-no-wrap text-sm"
                     >
                       More to be announced..
                     </span>
@@ -309,7 +309,7 @@ exports[`Header renders correctly 1`] = `
               >
                 <button
                   className=" text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 
-  rounded-md text-sm font-medium font-headingStyle inline-flex items-center"
+  rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default"
                 >
                   <span
                     className="mr-1"
@@ -333,14 +333,14 @@ exports[`Header renders correctly 1`] = `
                     className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
                   >
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
                       href="/student-travel-grants"
                       title="Student Travel Grants"
                     >
                       Student Travel Grants
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
                       href="/carer-award"
                       title="Carer Awards"
                     >
@@ -391,7 +391,7 @@ exports[`Header renders correctly 1`] = `
           title="Home"
         >
           <span
-            className="pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+            className="pl-8 pr-4 py-2 w-full text-white  block rounded-md 
   text-base font-semibold font-headingStyle"
           >
             Home
@@ -403,7 +403,7 @@ exports[`Header renders correctly 1`] = `
           title="Important Dates"
         >
           <span
-            className="pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+            className="pl-8 pr-4 py-2 w-full text-white  block rounded-md 
   text-base font-semibold font-headingStyle"
           >
             Important Dates
@@ -415,14 +415,14 @@ exports[`Header renders correctly 1`] = `
           title="Reviewer Guidelines"
         >
           <span
-            className="pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+            className="pl-8 pr-4 py-2 w-full text-white  block rounded-md 
   text-base font-semibold font-headingStyle"
           >
             Reviewer Guidelines
           </span>
         </a>
         <button
-          className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md text-base font-headingStyle inline-flex items-center"
+          className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-headingStyle inline-flex items-center"
           onClick={[Function]}
         >
           <span
@@ -446,7 +446,7 @@ exports[`Header renders correctly 1`] = `
           Program
         </span>
         <button
-          className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md text-base font-headingStyle inline-flex items-center"
+          className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-headingStyle inline-flex items-center"
           onClick={[Function]}
         >
           <span
@@ -470,7 +470,7 @@ exports[`Header renders correctly 1`] = `
           title="Organisation"
         >
           <span
-            className="pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+            className="pl-8 pr-4 py-2 w-full text-white  block rounded-md 
   text-base font-semibold font-headingStyle"
           >
             Organisation
@@ -482,7 +482,7 @@ exports[`Header renders correctly 1`] = `
           title="Sponsors"
         >
           <span
-            className="pl-8 pr-4 py-2 w-full text-white  hover:bg-menuHover block rounded-md 
+            className="pl-8 pr-4 py-2 w-full text-white  block rounded-md 
   text-base font-semibold font-headingStyle"
           >
             Sponsors
