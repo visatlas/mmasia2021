@@ -187,16 +187,20 @@ table thead tr th {
   margin: var(--spacing-0);
 }
 
-
 /* Navbar menu drop-down */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Post style for index.js */
+.post-list li:first-child {
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
 .post-list li:last-child {
-  border-bottom-left-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
 }
 
 /* Article style for blog-post.js */

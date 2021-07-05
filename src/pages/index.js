@@ -111,7 +111,7 @@ const Index = ({ data, location }) => {
         )}
 
         <h2 className="mt-12 pb-4 px-6 sm:px-7 font-titleFont text-3xl text-mainPurple font-extrabold">Latest News</h2>
-        <ol className="post-list list-none divide-y divide-gray-200 border-t">
+        <ol className="post-list list-none divide-y divide-gray-200">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug;
             const diffDays = Math.ceil(Math.abs(new Date() - new Date(post.frontmatter.date)) / (1000 * 60 * 60 * 24));

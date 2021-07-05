@@ -8,9 +8,9 @@ export default function Header({ activePage }) {
   const [showMobileCalls, setShowMobileCalls] = useState(["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "/call-for-grand-challenge-proposals", "/call-for-tutorials"].includes(activePage));
   const [showMobileAttend, setShowMobileAttend] = useState(["/student-travel-grants", "/carer-award"].includes(activePage));
   const mobileCallsBackground = showMobileCalls ? "bg-menuHover" : "";
-  const mobileCallsStyle = `font-semibold text-left pl-8 pr-4 py-2 w-full text-white ${mobileCallsBackground} hover:bg-menuHover block rounded-md text-base font-headingStyle inline-flex items-center`;
+  const mobileCallsStyle = `font-semibold text-left pl-8 pr-4 py-2 w-full text-white ${mobileCallsBackground} block rounded-md text-base font-headingStyle inline-flex items-center`;
   const mobileAttendBackground = showMobileAttend ? "bg-menuHover" : "";
-  const mobileAttendStyle = `font-semibold text-left pl-8 pr-4 py-2 w-full text-white ${mobileAttendBackground} hover:bg-menuHover block rounded-md text-base font-headingStyle inline-flex items-center`;
+  const mobileAttendStyle = `font-semibold text-left pl-8 pr-4 py-2 w-full text-white ${mobileAttendBackground} block rounded-md text-base font-headingStyle inline-flex items-center`;
 
   return (
     <header>
@@ -25,7 +25,7 @@ export default function Header({ activePage }) {
             {/* <!-- Mobile menu button--> */}
             <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
               <button type="button" className="py-2 pl-3 pr-3 ml-4 inline-flex items-center justify-center rounded-md 
-              text-gray-50 hover:text-black hover:bg-purple-300 focus:outline-none focus:ring-1 focus:ring-inset 
+              text-gray-50 focus:outline-none focus:ring-1 focus:ring-inset 
               focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onClick={() => { showMobileMenu ? setShowMobileMenu(false) : setShowMobileMenu(true); }}>
                 <span className="sr-only">Open main menu</span>
                 <svg className={`${showMobileMenu ? "hidden" : "block"} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -97,7 +97,7 @@ export default function Header({ activePage }) {
 const Calls = ({ selected }) => {
   const bgColor = selected ? "bg-menuSelected" : "";
   const style = `${bgColor} text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 
-  rounded-md text-sm font-medium font-headingStyle inline-flex items-center`;
+  rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default`;
 
   return (
     <div className="group dropdown inline-block relative">
@@ -107,18 +107,18 @@ const Calls = ({ selected }) => {
       </button>
       <div className="dropdown-menu absolute hidden text-gray-800 pt-1 w-68">
         <div className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
-          <Link to="/important-dates" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Important Dates">Important Dates</Link>
-          <Link to="/reviewer-guidelines" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Reviewer Guidelines">Reviewer Guidelines</Link>
+          <Link to="/important-dates" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Important Dates">Important Dates</Link>
+          <Link to="/reviewer-guidelines" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Reviewer Guidelines">Reviewer Guidelines</Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
-          <Link to="/call-for-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Regular Papers">Call for <span className="font-medium">Regular Papers</span></Link>
-          <Link to="/call-for-workshops" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops">Call for <span className="font-medium">Workshops</span></Link>
-          <Link to="/call-for-tutorials" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Tutorials">Call for <span className="font-medium">Tutorials</span></Link>
-          <Link to="/call-for-demo-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Demo Papers">Call for <span className="font-medium">Demo Papers</span></Link>
-          <Link to="/call-for-short-papers" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Short Papers">Call for <span className="font-medium">Short Papers</span></Link>
-          <Link to="/call-for-phd-school-participants" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for PhD School Participants">Call for <span className="font-medium">PhD School Participants</span></Link>
-          <Link to="/call-for-grand-challenge-proposals" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Grand Challenge Proposals">Call for <span className="font-medium">Grand Challenge Proposals</span></Link>
+          <Link to="/call-for-papers" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Regular Papers">Call for <span className="font-medium">Regular Papers</span></Link>
+          <Link to="/call-for-workshops" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops">Call for <span className="font-medium">Workshops</span></Link>
+          <Link to="/call-for-tutorials" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Tutorials">Call for <span className="font-medium">Tutorials</span></Link>
+          <Link to="/call-for-demo-papers" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Demo Papers">Call for <span className="font-medium">Demo Papers</span></Link>
+          <Link to="/call-for-short-papers" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Short Papers">Call for <span className="font-medium">Short Papers</span></Link>
+          <Link to="/call-for-phd-school-participants" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for PhD School Participants">Call for <span className="font-medium">PhD School Participants</span></Link>
+          <Link to="/call-for-grand-challenge-proposals" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Grand Challenge Proposals">Call for <span className="font-medium">Grand Challenge Proposals</span></Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
-          <span className="font-headingStyle cursor-default text-gray-400 py-2 px-4 block whitespace-no-wrap text-sm">More to be announced..</span>
+          <span className="font-headingStyle cursor-default text-gray-400 py-1.5 px-4 block whitespace-no-wrap text-sm">More to be announced..</span>
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@ const Calls = ({ selected }) => {
 const Attend = ({ selected }) => {
   const bgColor = selected ? "bg-menuSelected" : "";
   const style = `${bgColor} text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 
-  rounded-md text-sm font-medium font-headingStyle inline-flex items-center`;
+  rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default`;
 
   return (
     <div className="group dropdown inline-block relative">
@@ -138,8 +138,8 @@ const Attend = ({ selected }) => {
       </button>
       <div className="dropdown-menu absolute hidden text-gray-800 pt-1 w-60">
         <div className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
-          <Link to="/student-travel-grants" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-medium" title="Student Travel Grants">Student Travel Grants</Link>
-          <Link to="/carer-award" className="font-headingStyle hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap text-orgSmall font-medium" title="Carer Awards">Carer Awards</Link>
+          <Link to="/student-travel-grants" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium" title="Student Travel Grants">Student Travel Grants</Link>
+          <Link to="/carer-award" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium" title="Carer Awards">Carer Awards</Link>
         </div>
       </div>
     </div>

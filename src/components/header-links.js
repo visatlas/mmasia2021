@@ -25,7 +25,7 @@ export const MobileNavLink = ({ to, children, title = "Link", selected = false, 
   const fontWeight = nested ? "font-medium" : "font-semibold";
   const paddingLeft = nested ? "pl-16" : "pl-8";
 
-  const style = `${paddingLeft} pr-4 py-2 w-full text-white ${bgColor} hover:bg-menuHover block rounded-md 
+  const style = `${paddingLeft} pr-4 py-2 w-full text-white ${bgColor} block rounded-md 
   text-base ${fontWeight} font-headingStyle`;
   return (
     <Link className="flex item-center w-full" to={to} title={title}>
