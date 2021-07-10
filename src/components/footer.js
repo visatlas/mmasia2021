@@ -1,6 +1,6 @@
 import React from 'react';
-import { StaticImage } from "gatsby-plugin-image";
 import ACMLogo from "../images/footer/acm-logo.svg";
+import SIGMMLogo from "../images/footer/sigmm-logo.svg";
 import UQLogo from "../images/footer/uq-logo.svg";
 import GriffithLogo from "../images/footer/griffith-logo.svg";
 import MonashLogo from "../images/footer/monash-logo.svg";
@@ -16,7 +16,7 @@ export default function Footer({ activePage }) {
                 <img style={{ height: "55px" }} src={ACMLogo} alt="ACM Logo" />
               </a>
               <a style={{ width: "150px" }} className="mb-5 lg:mb-0 flex justify-center items-center" href="http://www.sigmm.org/" target="_blank" rel="noreferrer">
-                <StaticImage src="../images/footer/sigmm-logo.png" alt="SIGMM Logo" height={38} placeholder="tracedSVG" />
+                <img style={{ height: "30px" }} src={SIGMMLogo} alt="SIGMM Logo" />
               </a>
               <a style={{ width: "150px" }} className="mb-5 lg:mb-0 flex justify-center items-center" href="https://www.uq.edu.au/" target="_blank" rel="noreferrer">
                 <img style={{ height: "38px" }} src={UQLogo} alt="UQ Logo" />

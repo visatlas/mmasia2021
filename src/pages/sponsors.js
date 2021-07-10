@@ -1,12 +1,10 @@
-/* I am too lazy to remove duplicate codes */
-
 import React from 'react';
 import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 import ACMLogo from "../images/footer/acm-logo.svg";
+import SIGMMLogo from "../images/footer/sigmm-logo.svg";
 import UQLogo from "../images/footer/uq-logo.svg";
 import GriffithLogo from "../images/footer/griffith-logo.svg";
 import MonashLogo from "../images/footer/monash-logo.svg";
@@ -96,7 +94,7 @@ const Sponsors = ({ data, location }) => {
             <h2 className="w-full py-1 border-b text-mainPurple text-center text-xl mt-10 mb-8 font-semibold font-headingStyle tracking-wide">Supporters</h2>
             <div className="flex flex-col space-y-6">
               <a className="flex flex-col justify-center items-center" href="http://www.sigmm.org/" target="_blank" rel="noreferrer">
-                <StaticImage src="../images/footer/sigmm-logo.png" alt="SIGMM Logo" height={38} placeholder="tracedSVG" />
+                <img style={{ height: "30px" }} src={SIGMMLogo} alt="SIGMM Logo" />
               </a>
               <a className="flex flex-col justify-center items-center" href="https://www.acm.org/" target="_blank" rel="noreferrer">
                 <img style={{ height: "55px" }} src={ACMLogo} alt="ACM Logo" />
