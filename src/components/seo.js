@@ -21,6 +21,8 @@ const Seo = ({ description, lang, meta, title }) => {
             social {
               twitter
             }
+            siteUrl
+            thumbnail
           }
         }
       }
@@ -57,6 +59,14 @@ const Seo = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: site.siteMetadata?.thumbnail,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata?.siteUrl,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -75,7 +85,7 @@ const Seo = ({ description, lang, meta, title }) => {
       ].concat(meta)}
     />
   );
-}
+};
 
 Seo.defaultProps = {
   lang: `en`,

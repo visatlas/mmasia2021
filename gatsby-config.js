@@ -9,6 +9,7 @@ module.exports = {
     It will be held in a hybrid mode by offering both online and offline events. A live in-person conference with 
     virtual online component will be enabled.`,
     siteUrl: `https://mmasia2021.uqcloud.net/`,
+    thumbnail: `%PUBLIC_URL%/thumbnail.png`,
   },
   plugins: [
     `gatsby-plugin-image`,
