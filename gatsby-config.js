@@ -166,6 +166,7 @@ module.exports = {
           `/call-for-short-papers`,
           `/call-for-phd-school-participants`,
           `/call-for-grand-challenge-proposals`,
+          `/call-for-grand-challenge-submissions`,
           `/student-travel-grants`,
           `/carer-award`,
           `/organisation`,

@@ -5,7 +5,7 @@ import { NavLink, MobileNavLink } from "./header-links";
 
 export default function Header({ activePage }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [showMobileCalls, setShowMobileCalls] = useState(["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "/call-for-grand-challenge-proposals", "/call-for-tutorials", "/call-for-grand-challenge-submission"].includes(activePage));
+  const [showMobileCalls, setShowMobileCalls] = useState(["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "/call-for-grand-challenge-proposals", "/call-for-tutorials", "/call-for-grand-challenge-submissions"].includes(activePage));
   const [showMobileAttend, setShowMobileAttend] = useState(["/student-travel-grants", "/carer-award"].includes(activePage));
   const mobileCallsBackground = showMobileCalls ? "bg-menuHover" : "";
   const mobileCallsStyle = `font-semibold text-left pl-8 pr-4 py-2 w-full text-white ${mobileCallsBackground} block rounded-md text-base font-headingStyle inline-flex items-center`;
@@ -43,7 +43,7 @@ export default function Header({ activePage }) {
               <div className="hidden md:flex sm:ml-8 items-center">
                 <div className="flex space-x-4">
                   <NavLink to="/" selected={false} title="Home">Home</NavLink>
-                  <Calls selected={["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "/call-for-grand-challenge-proposals", "/call-for-tutorials", "/important-dates", "/call-for-grand-challenge-submission"].includes(activePage)} />
+                  <Calls selected={["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "/call-for-grand-challenge-proposals", "/call-for-tutorials", "/important-dates", "/call-for-grand-challenge-submissions"].includes(activePage)} />
                   <NavLink to="/" selected={activePage === "/program"} title="Program" disabled>Program</NavLink>
                   <Attend selected={["/student-travel-grants", "/carer-award"].includes(activePage)} />
                   <NavLink to="/organisation" selected={activePage === "/organisation"} title="Organisation">Organisation</NavLink>
@@ -69,12 +69,11 @@ export default function Header({ activePage }) {
               <MobileNavLink to="/call-for-papers" title="Call for Regular Papers" selected={activePage === "/call-for-papers"} nested>Call for Regular Papers</MobileNavLink>
               <MobileNavLink to="/call-for-demo-papers" title="Call for Demo Papers" selected={activePage === "/call-for-demo-papers"} nested>Call for Demo Papers</MobileNavLink>
               <MobileNavLink to="/call-for-short-papers" title="Call for Short Papers" selected={activePage === "/call-for-short-papers"} nested>Call for Short Papers</MobileNavLink>
-              <MobileNavLink to="/call-for-grand-challenge-submission" title="Call for Grand Challenge Submission" selected={activePage === "/call-for-grand-challenge-submission"} nested>Call for Grand Challenge Submission</MobileNavLink>
-              <MobileNavLink to="/call-for-workshops" title="Call for Workshops (closed)" selected={activePage === "/call-for-workshops"} nested>Call for Workshops (closed)</MobileNavLink>
+              <MobileNavLink to="/call-for-grand-challenge-submissions" title="Call for Grand Challenge Submissions" selected={activePage === "/call-for-grand-challenge-submissions"} nested>Call for Grand Challenge Submissions</MobileNavLink>
               <MobileNavLink to="/call-for-tutorials" title="Call for Tutorials" selected={activePage === "/call-for-tutorials"} nested>Call for Tutorials</MobileNavLink>
               <MobileNavLink to="/call-for-phd-school-participants" title="Call for PhD School Participants" selected={activePage === "/call-for-phd-school-participants"} nested>Call for PhD School Participants</MobileNavLink>
-              <MobileNavLink to="/call-for-grand-challenge-proposals" title="Grand Challenge Proposals (closed)" selected={activePage === "/call-for-grand-challenge-proposals"} nested>Grand Challenge Proposals (closed)</MobileNavLink>
-              
+              <MobileNavLink to="/call-for-workshops" title="Call for Workshops (closed)" selected={activePage === "/call-for-workshops"} nested>Call for Workshops (closed)</MobileNavLink>
+              <MobileNavLink to="/call-for-grand-challenge-proposals" title="Grand Challenge Proposals (closed)" selected={activePage === "/call-for-grand-challenge-proposals"} nested>Call for Grand Challenge Proposals (closed)</MobileNavLink>
               <span className="pl-16 pr-4 py-2 w-full text-textDisabled cursor-default block rounded-md font-medium text-sm font-headingStyle">More to be announced..</span>
             </div>)}
             <MobileNavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</MobileNavLink>
@@ -107,7 +106,7 @@ const Calls = ({ selected }) => {
         <span className="mr-1">Calls &amp; Dates</span>
         <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
       </button>
-      <div className="dropdown-menu absolute hidden text-gray-800 pt-1 w-68">
+      <div className="dropdown-menu absolute hidden text-gray-800 pt-1 w-80">
         <div className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
           <Link to="/important-dates" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Important Dates">Important Dates</Link>
           <Link to="/reviewer-guidelines" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Reviewer Guidelines">Reviewer Guidelines</Link>
@@ -115,14 +114,12 @@ const Calls = ({ selected }) => {
           <Link to="/call-for-papers" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Regular Papers">Call for <span className="font-medium">Regular Papers</span></Link>
           <Link to="/call-for-demo-papers" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Demo Papers">Call for <span className="font-medium">Demo Papers</span></Link>
           <Link to="/call-for-short-papers" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Short Papers">Call for <span className="font-medium">Short Papers</span></Link>
-          <Link to="/call-for-grand-challenge-submission" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Grand Challenge Submission">Call for <span className="font-medium">Grand Challenge Submission</span></Link>
+          <Link to="/call-for-grand-challenge-submissions" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Grand Challenge Submissions">Call for <span className="font-medium">Grand Challenge Submissions</span></Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
-          <Link to="/call-for-workshops" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops (closed)">Call for <span className="font-medium">Workshops (closed)</span></Link>
           <Link to="/call-for-tutorials" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Tutorials">Call for <span className="font-medium">Tutorials</span></Link>
           <Link to="/call-for-phd-school-participants" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for PhD School Participants">Call for <span className="font-medium">PhD School Participants</span></Link>
-          <Link to="/call-for-grand-challenge-proposals" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Grand Challenge Proposals (closed)"><span className="font-medium">Grand Challenge Proposals (closed)</span></Link>
-          
-
+          <Link to="/call-for-workshops" className="text-gray-400 font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops (closed)">Call for <span className="font-medium">Workshops</span> (closed)</Link>
+          <Link to="/call-for-grand-challenge-proposals" className="text-gray-400 font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Grand Challenge Proposals (closed)">Call for <span className="font-medium">Grand Challenge Proposals</span> (closed)</Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
           <span className="font-headingStyle cursor-default text-gray-400 py-1.5 px-4 block whitespace-no-wrap text-sm">More to be announced..</span>
         </div>
