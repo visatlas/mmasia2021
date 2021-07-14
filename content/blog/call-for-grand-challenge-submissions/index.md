@@ -14,13 +14,16 @@ Deep video understanding is a difficult task which requires systems to develop a
 
 Interested participants are invited to apply their approaches and methods on an extended novel Deep Video Understanding (DVU) dataset being made available by the challenge organizers. This includes total of 14 movies with a Creative Commons license. The dataset are annotated by human assessors and final ground truth, both at the overall movie level (Ontology of relations, entities, actions & events, Knowledge Graph, and names and images of all main characters), and the individual scene level (Ontology of relationships, interactions, locations, scene sentiments, character emotional states, and scene textual summaries) will be provided for 70% of the dataset to participating researchers for training and development of their systems. The organizers will support evaluation and scoring for a hybrid of main query types, at the overall movie level and at the individual scene level distributed with the dataset (please refer to the [*dataset webpage*]((https://sites.google.com/view/dvu-asia-challenge-2021/home/supported-datasets)) for more details): 
 
+\
+**Example Question types at Overall Movie Level:**
 
-Example Question types at Overall Movie Level:
 - Multiple choice question answering on part of Knowledge Graph for selected movies.
 - Possible path analysis between persons / entities of interest in a Knowledge Graph extracted from selected movies.
 - Fill in the Graph Space - Given a partial graph, systems will be asked to fill in the graph space.
 
-Example Question types at Individual Scene Level:
+\
+**Example Question types at Individual Scene Level:**
+
 - Find next or previous interaction, given two people, a specific scene, and the interaction between them.
 - Find a unique scene given a set of interactions and a scene list.
 - Fill in the Graph Space - Given a partial graph for a scene, systems will be asked to fill in the graph space.
