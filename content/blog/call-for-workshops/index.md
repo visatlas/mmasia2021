@@ -1,7 +1,7 @@
 ---
-title: Call for Workshops
+title: Call for Workshops (closed)
 date: "2021-05-22"
-description: We are soliciting proposals for workshops to be held in conjunction with the ACM Multimedia Asia 2021.
+description: This channel has been closed on 05 July, 2021.
 ---
 
 ## Call for Workshop Proposals
