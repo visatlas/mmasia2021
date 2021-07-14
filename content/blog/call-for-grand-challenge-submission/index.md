@@ -1,7 +1,7 @@
 ---
 title: Multimedia Grand Challenges
 date: "2021-07-15"
-description: ACM Multimedia Asia 2021 is calling for grand challenge submission.
+description: ACM Multimedia Asia 2021 is calling for Grand Challenge Submission.
 ---
 
 ## Deep Video Understanding
