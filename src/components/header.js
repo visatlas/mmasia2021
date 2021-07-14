@@ -67,13 +67,14 @@ export default function Header({ activePage }) {
             </button>
             {showMobileCalls && (<div>
               <MobileNavLink to="/call-for-papers" title="Call for Regular Papers" selected={activePage === "/call-for-papers"} nested>Call for Regular Papers</MobileNavLink>
-              <MobileNavLink to="/call-for-workshops" title="Call for Workshops" selected={activePage === "/call-for-workshops"} nested>Call for Workshops</MobileNavLink>
-              <MobileNavLink to="/call-for-tutorials" title="Call for Tutorials" selected={activePage === "/call-for-tutorials"} nested>Call for Tutorials</MobileNavLink>
               <MobileNavLink to="/call-for-demo-papers" title="Call for Demo Papers" selected={activePage === "/call-for-demo-papers"} nested>Call for Demo Papers</MobileNavLink>
               <MobileNavLink to="/call-for-short-papers" title="Call for Short Papers" selected={activePage === "/call-for-short-papers"} nested>Call for Short Papers</MobileNavLink>
+              <MobileNavLink to="/call-for-grand-challenge-submission" title="Call for Grand Challenge Submission" selected={activePage === "/call-for-grand-challenge-submission"} nested>Call for Grand Challenge Submission</MobileNavLink>
+              <MobileNavLink to="/call-for-workshops" title="Call for Workshops (closed)" selected={activePage === "/call-for-workshops"} nested>Call for Workshops (closed)</MobileNavLink>
+              <MobileNavLink to="/call-for-tutorials" title="Call for Tutorials" selected={activePage === "/call-for-tutorials"} nested>Call for Tutorials</MobileNavLink>
               <MobileNavLink to="/call-for-phd-school-participants" title="Call for PhD School Participants" selected={activePage === "/call-for-phd-school-participants"} nested>Call for PhD School Participants</MobileNavLink>
               <MobileNavLink to="/call-for-grand-challenge-proposals" title="Grand Challenge Proposals (closed)" selected={activePage === "/call-for-grand-challenge-proposals"} nested>Grand Challenge Proposals (closed)</MobileNavLink>
-              <MobileNavLink to="/call-for-grand-challenge-submission" title="Call for Grand Challenge Submission" selected={activePage === "/call-for-grand-challenge-submission"} nested>Call for Grand Challenge Submission</MobileNavLink>
+              
               <span className="pl-16 pr-4 py-2 w-full text-textDisabled cursor-default block rounded-md font-medium text-sm font-headingStyle">More to be announced..</span>
             </div>)}
             <MobileNavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</MobileNavLink>
@@ -116,7 +117,7 @@ const Calls = ({ selected }) => {
           <Link to="/call-for-short-papers" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Short Papers">Call for <span className="font-medium">Short Papers</span></Link>
           <Link to="/call-for-grand-challenge-submission" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Grand Challenge Submission">Call for <span className="font-medium">Grand Challenge Submission</span></Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
-          <Link to="/call-for-workshops" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops">Call for <span className="font-medium">Workshops</span></Link>
+          <Link to="/call-for-workshops" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops (closed)">Call for <span className="font-medium">Workshops (closed)</span></Link>
           <Link to="/call-for-tutorials" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Tutorials">Call for <span className="font-medium">Tutorials</span></Link>
           <Link to="/call-for-phd-school-participants" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for PhD School Participants">Call for <span className="font-medium">PhD School Participants</span></Link>
           <Link to="/call-for-grand-challenge-proposals" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Grand Challenge Proposals (closed)"><span className="font-medium">Grand Challenge Proposals (closed)</span></Link>
