@@ -1,7 +1,7 @@
 ---
 title: Call for Grand Challenge Proposals (closed)
 date: "2021-06-29"
-description: This channel has been closed. For more information, please refer to Call for Grand Challenge Submission.
+description: Call for Grand Challenge Proposals has been closed. For more information, please refer to Call for Grand Challenge Submission.
 ---
 
 ## Overview
@@ -40,11 +40,9 @@ The grand challenge proposals should be submitted through: [*https://cmt3.resear
 - Submission deadline: **5 July, 2021**.
 - Notification of acceptance: **18 July, 2021**.
 
-
 ## Contacts
 
 For any questions regarding the submission, please email the Grand Challenge Chairs: 
 
 - **Shin'ichi Satoh** ([satoh@nii.ac.jp](satoh@nii.ac.jp)), National Institute of Informatics, Japan
 - **Jingkuan Song** ([jingkuan.song@gmail.com](jingkuan.song@gmail.com)), University of Electronic Science and Technology of China, China
-
