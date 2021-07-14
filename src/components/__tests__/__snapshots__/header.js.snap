@@ -164,7 +164,7 @@ exports[`Header renders correctly 1`] = `
                   </svg>
                 </button>
                 <div
-                  className="dropdown-menu absolute hidden text-gray-800 pt-1 w-68"
+                  className="dropdown-menu absolute hidden text-gray-800 pt-1 w-80"
                 >
                   <div
                     className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
@@ -209,30 +209,6 @@ exports[`Header renders correctly 1`] = `
                     </a>
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-workshops"
-                      title="Call for Workshops"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
-                      >
-                        Workshops
-                      </span>
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-tutorials"
-                      title="Call for Tutorials"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
-                      >
-                        Tutorials
-                      </span>
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-demo-papers"
                       title="Call for Demo Papers"
                     >
@@ -257,6 +233,42 @@ exports[`Header renders correctly 1`] = `
                     </a>
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                      href="/call-for-grand-challenge-submissions"
+                      title="Call for Grand Challenge Submissions"
+                    >
+                      Call for 
+                      <span
+                        className="font-medium"
+                      >
+                        Grand Challenge Submissions
+                      </span>
+                    </a>
+                    <div
+                      className="w-full py-1"
+                    >
+                      <div
+                        className="w-full bg-gray-200"
+                        style={
+                          Object {
+                            "height": "1px",
+                          }
+                        }
+                      />
+                    </div>
+                    <a
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                      href="/call-for-tutorials"
+                      title="Call for Tutorials"
+                    >
+                      Call for 
+                      <span
+                        className="font-medium"
+                      >
+                        Tutorials
+                      </span>
+                    </a>
+                    <a
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-phd-school-participants"
                       title="Call for PhD School Participants"
                     >
@@ -268,9 +280,22 @@ exports[`Header renders correctly 1`] = `
                       </span>
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="text-gray-400 font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                      href="/call-for-workshops"
+                      title="Call for Workshops (closed)"
+                    >
+                      Call for 
+                      <span
+                        className="font-medium"
+                      >
+                        Workshops
+                      </span>
+                       (closed)
+                    </a>
+                    <a
+                      className="text-gray-400 font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-grand-challenge-proposals"
-                      title="Call for Grand Challenge Proposals"
+                      title="Grand Challenge Proposals (closed)"
                     >
                       Call for 
                       <span
@@ -278,6 +303,7 @@ exports[`Header renders correctly 1`] = `
                       >
                         Grand Challenge Proposals
                       </span>
+                       (closed)
                     </a>
                     <div
                       className="w-full py-1"

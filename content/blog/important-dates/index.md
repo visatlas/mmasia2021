@@ -6,13 +6,10 @@ description: The submission deadline for Regular Paper, Workshops and Short/Demo
 
 The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
+## Upcoming
+
 <!-- you can also write HTML codes in markdowns! -->
-<div style="max-width: 700px;">
-    <div class="wrapper">
-        <!-- extra divs at the end are for the second css grid column -->
-        <div><strong>Workshop/Grand Challenge Proposals Submission:</strong></div><div></div> 
-        <div><strong> 5 July, 2021</strong></div>
-    </div>
+<div class="pt-3" style="max-width: 700px;">
     <div class="wrapper">
         <!-- extra divs at the end are for the second css grid column -->
         <div><strong>Workshop/Grand Challenge Proposals Notification:</strong></div><div></div> 
@@ -44,3 +41,11 @@ The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere 
     </div>
 </div>
 
+## Past Dates
+<div class="pt-3 text-gray-600" style="max-width: 700px;">
+    <div class="wrapper">
+        <!-- extra divs at the end are for the second css grid column -->
+        <div>Workshop/Grand Challenge Proposals Submission:</div><div></div> 
+        <div>5 July, 2021</strong></div>
+    </div>
+</div>
