@@ -1,5 +1,5 @@
 ---
-title: Call for Grand Challenge Proposals
+title: Call for Grand Challenge Proposals (closed)
 date: "2021-06-29"
 description: ACM Multimedia Asia is calling for proposals for Grand Challenges in 2021.
 ---
