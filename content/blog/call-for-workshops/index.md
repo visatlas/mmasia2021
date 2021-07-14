@@ -4,7 +4,7 @@ date: "2021-05-22"
 description: This channel has been closed on 05 July, 2021.
 ---
 
-## Call for Workshop Proposals (closed)
+## Call for Workshop Proposals
 
 We are soliciting proposals for workshops to be held in conjunction with the ACM Multimedia Asia 2021. The purpose of the workshop is to provide a comprehensive forum on current and emerging topics that could not be fully explored during the main conference and to encourage in-depth discussion of technical and application issues.
 
