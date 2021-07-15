@@ -170,14 +170,14 @@ exports[`Header renders correctly 1`] = `
                     className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
                   >
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium tracking-semiWide"
                       href="/important-dates"
                       title="Important Dates"
                     >
                       Important Dates
                     </a>
                     <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium tracking-semiWide"
                       href="/reviewer-guidelines"
                       title="Reviewer Guidelines"
                     >
@@ -280,7 +280,7 @@ exports[`Header renders correctly 1`] = `
                       </span>
                     </a>
                     <a
-                      className="text-gray-400 font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-workshops"
                       title="Call for Workshops (closed)"
                     >
@@ -293,7 +293,7 @@ exports[`Header renders correctly 1`] = `
                        (closed)
                     </a>
                     <a
-                      className="text-gray-400 font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-grand-challenge-proposals"
                       title="Grand Challenge Proposals (closed)"
                     >
