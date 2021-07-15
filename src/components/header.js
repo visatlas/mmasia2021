@@ -108,8 +108,8 @@ const Calls = ({ selected }) => {
       </button>
       <div className="dropdown-menu absolute hidden text-gray-800 pt-1 w-80">
         <div className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
-          <Link to="/important-dates" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Important Dates">Important Dates</Link>
-          <Link to="/reviewer-guidelines" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-semibold tracking-semiWide" title="Reviewer Guidelines">Reviewer Guidelines</Link>
+          <Link to="/important-dates" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium tracking-semiWide" title="Important Dates">Important Dates</Link>
+          <Link to="/reviewer-guidelines" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium tracking-semiWide" title="Reviewer Guidelines">Reviewer Guidelines</Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
           <Link to="/call-for-papers" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Regular Papers">Call for <span className="font-medium">Regular Papers</span></Link>
           <Link to="/call-for-demo-papers" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Demo Papers">Call for <span className="font-medium">Demo Papers</span></Link>
@@ -118,8 +118,8 @@ const Calls = ({ selected }) => {
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
           <Link to="/call-for-tutorials" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Tutorials">Call for <span className="font-medium">Tutorials</span></Link>
           <Link to="/call-for-phd-school-participants" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for PhD School Participants">Call for <span className="font-medium">PhD School Participants</span></Link>
-          <Link to="/call-for-workshops" className="text-gray-400 font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops (closed)">Call for <span className="font-medium">Workshops</span> (closed)</Link>
-          <Link to="/call-for-grand-challenge-proposals" className="text-gray-400 font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Grand Challenge Proposals (closed)">Call for <span className="font-medium">Grand Challenge Proposals</span> (closed)</Link>
+          <Link to="/call-for-workshops" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Workshops (closed)">Call for <span className="font-medium">Workshops</span> (closed)</Link>
+          <Link to="/call-for-grand-challenge-proposals" className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Grand Challenge Proposals (closed)">Call for <span className="font-medium">Grand Challenge Proposals</span> (closed)</Link>
           <div className="w-full py-1"><div className="w-full bg-gray-200" style={{ height: "1px" }} /></div>
           <span className="font-headingStyle cursor-default text-gray-400 py-1.5 px-4 block whitespace-no-wrap text-sm">More to be announced..</span>
         </div>

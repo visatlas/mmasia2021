@@ -234,15 +234,23 @@ table thead tr th {
 
 .blog-post h3 {
   margin-top: 1.8rem;
-  margin-bottom: 0.7rem;
-  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
   line-height: 1.7rem;
   font-weight: 700;
   color: #333333;
 }
 
-.blog-post h2+h3 {
+.blog-post h2+h4 {
   margin-top: 1.2rem;
+}
+
+.blog-post h4 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+  color: #333333;
 }
 
 .blog-post p {

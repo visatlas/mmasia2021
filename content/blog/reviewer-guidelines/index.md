@@ -22,42 +22,42 @@ The reviews are anonymous, but please make sure that you deliver your best work,
 
 ## Best practices for reviewing
 
-### Check the paper topic:
+#### Check the paper topic:
 
 - Confirm that the paper that you are reviewing falls into the topical scope of ACM Multimedia Asia, as defined by the Call for Regular Papers. Re-read the Call for Regular Papers to make sure that you have this year’s themes in the forefront of your mind while you are reviewing.
 - Remember that the problem addressed by an ACM Multimedia Asia paper is expected to involve more than a single modality, or is expected to be related to the challenge of how people interpret and use multimedia. Papers that address a single modality only and also fail to contribute new knowledge on human use of multimedia must be rejected as out of scope for the conference.
 - Although many submissions to ACM Multimedia Asia make a technical contribution in the form of a new algorithm, not all do, nor is it a requirement of ACM Multimedia Asia. Do not give less value to papers that carry out studies of new multimedia problems because they do not make a novel algorithmic contribution. Instead, judge these papers by the novelty of their insights and the value these insights could have for the community.
 
-### Support your statements:
+#### Support your statements:
 
 - Reviews should not just state, “It is well known that…”, but rather, they should include citations.
 - Reviews should not just state, “Important references are missing…”, but rather, they should include examples; Reviewers should list their own references only in very rare cases that these are indeed the most relevant references for the authors to refer to.
 - Reviews should not just state, “Authors should compare to the state of the art…”, but rather, they should cite specific work (i.e., peer-reviewed references) that they feel the authors should have considered and why.
 - Authors appreciate if reviewers are generous with their feedback.
 
-### Respect the authors:
+#### Respect the authors:
 
 - Reviews should critique “the paper”, and not the authors.
 - Reviews should try not address the authors directly, esp. not as “you”. (A direct address can be interpreted as an affront by the reader).
 - During the review process, no attempt should be made to guess the identity of the authors. (If you discover it by accident, please complete your review, but notify your AC.)
 
-### Please include in your review:
+#### Please include in your review:
 
 - Statement of novelty: What does the paper contribute? Is that contribution valuable for the multimedia research community? Does the paper cover all the relevant related work, and explain how its contribution builds on the related work?
 - Statement of scientific rigor: Are the experiments well designed? Are the experiments sufficient to support the claims made by the paper? Are they reproducible? Have the authors released a resource, such as a data set or code?
 - Fixes that the authors should make for the camera ready. We can trust the authors to correct minor errors. Authors generally also will state their commitment to correcting minor errors found during the review process during the rebuttal. However, major flaws must lead to rejection, since it is not possible to confirm that the authors have actually corrected major flaws successfully (i.e., the paper does not go back to the reviewers for checking).
 
-### Ensuring review quality:
+#### Ensuring review quality:
 
 - When you finish a review, and before you submit it, please check it over to make sure that it follows these guidelines. Checking your review is good practice and will also save the ACs the effort of chasing you.
 - Note that high-quality, accurate reviews will also ensure that the authors do not request your review to be referred to the Authors’ Advocate.
 
-### Rebuttal:
+#### Rebuttal:
 
 - When the authors return their rebuttals, please read them carefully. The authors devoted a great deal of effort to writing rebuttals.
 - Take the rebuttal into consideration by updating your review or otherwise responding to requests of the AC.
 
-### Policy on arXiv papers:
+#### Policy on arXiv papers:
 
 We consider a “publication” to be a manuscript that has undergone peer review and has been accepted for publication. This means that the following points apply to arXiv papers (and any other papers available online that have not been peer reviewed):
 
