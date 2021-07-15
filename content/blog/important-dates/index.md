@@ -36,7 +36,7 @@ The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere 
         <div><strong>27 Sep, 2021</strong></div>
     </div>
     <div class="wrapper">
-        <div><strong>Grand Challenge Submission:</strong></div><div></div>
+        <div><strong>Grand Challenge Paper Submission:</strong></div><div></div>
         <div><strong>1 Oct, 2021</strong></div>
     </div>
     <div class="wrapper">
@@ -44,7 +44,7 @@ The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere 
         <div><strong>12 Oct, 2021</strong></div>
     </div>
     <div class="wrapper">
-        <div><strong>Grand Challenge Notification:</strong></div><div></div>
+        <div><strong>Grand Challenge Notification to Authors:</strong></div><div></div>
         <div><strong>15 Oct, 2021</strong></div>
     </div>
 </div>
