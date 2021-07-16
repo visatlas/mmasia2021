@@ -30,9 +30,9 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 
 ***The related special issues:**
 
-- ACM TOMM Special Issue on Extended Best Paper Candidates of ACM MM Asia 2021
-- IEEE T-CSVT Special Issue on Visual Analysis and Understanding under Adverse Environments
-- ACM TOMM Special Issue on Trustworthy Multimedia Computing and Applications in Urban Sense
+- **ACM TOMM Special Issue on Extended Best Paper Candidates of ACM MM Asia 2021**
+- **IEEE T-CSVT Special Issue on Visual Analysis and Understanding under Adverse Environments**
+- **ACM TOMM Special Issue on Trustworthy Multimedia Computing and Applications in Urban Sense**
 
 ## Submission Guidelines
 
