@@ -8,7 +8,7 @@ module.exports = {
     description: `ACM Multimedia Asia Conference (ACM MM Asia) 2021 will be held from 1 to 3 December, 2021 in Gold Coast, Australia. 
     It will be held in a hybrid mode by offering both online and offline events. A live in-person conference with 
     virtual online component will be enabled.`,
-    siteUrl: `https://mmasia2021.uqcloud.net/`,
+    siteUrl: process.env.URL || `https://mmasia2021.uqcloud.net`,
     thumbnail: `/thumbnail.png`,
   },
   plugins: [
@@ -57,7 +57,6 @@ module.exports = {
               rel: "noreferrer",
             }
           },
-          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -142,9 +141,9 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-no-sourcemaps`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-anchor-links`,
       options: {
@@ -174,6 +173,20 @@ module.exports = {
           `/uploads/*`,
         ],
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        resolveEnv: () => process.env.GATSBY_PREVIEW_MODE || "false",
+        env: {
+          true: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          false: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
     },
   ],
 };
