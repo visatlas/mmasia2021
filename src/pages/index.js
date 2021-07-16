@@ -52,6 +52,11 @@ const Index = ({ data, location }) => {
       <div className="global-wrapper pb-12" style={{ maxWidth: "59rem" }} id="welcome">
         <header className="px-0 sm:px-7">
           <h2 className="pt-9 mb-6 font-titleFont text-3xl text-mainPurple font-extrabold">Welcome to ACM MMAsia 2021!</h2>
+          <p className="mb-4"><span className="font-bold">The <a className="text-mainPurple underline hover:underline" href="https://www.acmmmasia.org/" target="_blank" rel="noreferrer">ACM Multimedia Asia</a>,&nbsp;</span>
+            puts together the long-lasting experience of former PCM and ICIMCS, which both have good history as well as attending experiences.
+            It is a newly established international conference to showcase the scientific achievements and industrial innovations in the multimedia field.
+            Its mission is to illuminate the state of the art in multimedia computing by bringing together researchers and practitioners in this field.
+          </p>
           {highlights.map((content, index) => {
             return (<p className="mb-4" key={index}>{content}</p>);
           })}
