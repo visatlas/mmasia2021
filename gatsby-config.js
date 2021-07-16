@@ -8,7 +8,7 @@ module.exports = {
     description: `ACM Multimedia Asia Conference (ACM MM Asia) 2021 will be held from 1 to 3 December, 2021 in Gold Coast, Australia. 
     It will be held in a hybrid mode by offering both online and offline events. A live in-person conference with 
     virtual online component will be enabled.`,
-    siteUrl: process.env.URL || `https://mmasia2021.uqcloud.net`,
+    siteUrl: process.env.GATSBY_SITE_URL || `https://mmasia2021.uqcloud.net`,
     thumbnail: `/thumbnail.png`,
   },
   plugins: [
