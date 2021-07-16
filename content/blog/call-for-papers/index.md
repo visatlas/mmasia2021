@@ -82,9 +82,7 @@ Note that the author rebuttal is optional, it is meant to provide you with an op
 
 Authors may optionally contact the Author’s Advocate, whose role is to listen to the authors, and to help them if reviews are clearly below average quality. The Author’s Advocate operates independently from the Technical Program Committee.
 
-
 ## Publication
 The conference proceedings will be published in the ACM Digital Library. The official publication date is the date the proceedings are made available in the ACM Digital Library. This date may be up to two weeks prior to the first day of the conference. The official publication date affects the deadline for any patent filings related to the published work.
-
 
 Please download the PDF version of the ACM MM Asia 2021 flyer [*here*](https://mmasia2021.uqcloud.net/uploads/flyer.pdf).
