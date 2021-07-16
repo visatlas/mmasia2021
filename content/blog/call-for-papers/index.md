@@ -26,7 +26,7 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 - Multimedia for Social Goods
 - Multimedia for HealthCare
 
-** * All the best paper candidates of ACM Multimedia Asia 2021 will be recommended to the ACM TOMM Special Issue on Extended Best Paper Candidates of ACM MM Asia 2021. Moreover, the selected high-quality papers will also be recommended to the related special issues on IEEE TCSVT and ACM TOMM.**
+***All the best paper candidates of ACM Multimedia Asia 2021 will be recommended to the ACM TOMM Special Issue on Extended Best Paper Candidates of ACM MM Asia 2021. Moreover, the selected high-quality papers will also be recommended to the related special issues on IEEE TCSVT and ACM TOMM.**
 
 ## Submission Guidelines
 
