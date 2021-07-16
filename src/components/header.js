@@ -43,7 +43,7 @@ export default function Header({ activePage }) {
               <div className="hidden md:flex sm:ml-8 items-center">
                 <div className="flex space-x-4">
                   <NavLink to="/" selected={false} title="Home">Home</NavLink>
-                  <Calls selected={["/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "/call-for-grand-challenge-proposals", "/call-for-tutorials", "/important-dates", "/call-for-grand-challenge-submissions"].includes(activePage)} />
+                  <Calls selected={["/important-dates", "/reviewer-guidelines", "/call-for-papers", "/call-for-workshops", "/call-for-demo-papers", "/call-for-short-papers", "/call-for-phd-school-participants", "/call-for-grand-challenge-proposals", "/call-for-tutorials", "/call-for-grand-challenge-submissions"].includes(activePage)} />
                   <NavLink to="/" selected={activePage === "/program"} title="Program" disabled>Program</NavLink>
                   <Attend selected={["/student-travel-grants", "/carer-award"].includes(activePage)} />
                   <NavLink to="/organisation" selected={activePage === "/organisation"} title="Organisation">Organisation</NavLink>
