@@ -11,6 +11,7 @@ const Seo = ({ lang, pageMeta }) => {
           buildTime(formatString: "YYYY-MM-DD")
           siteMetadata {
             title
+            longTitle
             description
             author {
               name
@@ -24,13 +25,21 @@ const Seo = ({ lang, pageMeta }) => {
   );
 
   const pageSEO = {
-    title: pageMeta.title !== "Home" ? pageMeta.title : site.siteMetadata.title,
-    fullTitle: pageMeta.title !== "Home" ? `${pageMeta.title} | ${site.siteMetadata.title}` : site.siteMetadata.title,
+    title: pageMeta.title !== "Home" ? pageMeta.title : site.siteMetadata.longTitle,
+    fullTitle: pageMeta.title !== "Home" ? `${pageMeta.title} | ${site.siteMetadata.title}` : site.siteMetadata.longTitle,
     description: pageMeta.description || site.siteMetadata.description,
     datePublished: pageMeta.datePublished || site.buildTime,
     dateModified: pageMeta.dateModified || site.buildTime,
-    pageUrl: `${site.siteMetadata.siteUrl}${pageMeta.pathname || ""}`
+    pageUrl: `${site.siteMetadata.siteUrl}${pageMeta.pathname || ""}`,
   };
+
+  // initial breadcrumb list
+  const itemListElement = [{
+    '@type': 'ListItem',
+    position: 1,
+    name: 'Home',
+    item: site.siteMetadata.siteUrl,
+  }];
 
   // schema.org in JSONLD format
   let schemaPage = null;
@@ -68,12 +77,18 @@ const Seo = ({ lang, pageMeta }) => {
         url: `${site.siteMetadata.siteUrl}${site.siteMetadata.thumbnail}`,
       },
     };
+    itemListElement.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: pageSEO.title,
+      item: pageSEO.pageUrl,
+    });
   } else {
     // main page
     schemaPage = {
       '@context': 'http://schema.org',
       '@type': 'WebPage',
-      name: site.siteMetadata.title,
+      name: site.siteMetadata.longTitle,
       description: site.siteMetadata.description,
       url: site.siteMetadata.siteUrl,
       mainEntityOfPage: site.siteMetadata.siteUrl,
@@ -110,37 +125,50 @@ const Seo = ({ lang, pageMeta }) => {
     '@type': 'BreadcrumbList',
     description: 'Breadcrumbs list',
     name: 'Breadcrumbs',
-    itemListElement: [{
-      '@type': 'ListItem',
-      position: 1,
-      name: 'Important Dates',
-      item: `${site.siteMetadata.siteUrl}/important-dates`,
+    itemListElement,
+  };
+
+  // Event Information
+  const schemaEvent = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "ACM Multimedia Asia Conference",
+    startDate: "2021-12-01",
+    endDate: "2021-12-03",
+    eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+    eventStatus: "https://schema.org/EventScheduled",
+    location: [{
+      "@type": "VirtualLocation",
+      url: "https://mmasia2021.uqcloud.net",
     }, {
-      '@type': 'ListItem',
-      position: 2,
-      name: 'Organisation',
-      item: `${site.siteMetadata.siteUrl}/organisation`,
-    }, {
-      '@type': 'ListItem',
-      position: 3,
-      name: 'Call for Regular Papers',
-      item: `${site.siteMetadata.siteUrl}/call-for-papers`,
-    }, {
-      '@type': 'ListItem',
-      position: 4,
-      name: 'Call for Demo Papers',
-      item: `${site.siteMetadata.siteUrl}/call-for-demo-papers`,
-    }, {
-      '@type': 'ListItem',
-      position: 5,
-      name: 'Call for Short Papers',
-      item: `${site.siteMetadata.siteUrl}/call-for-short-papers`,
-    }, {
-      '@type': 'ListItem',
-      position: 6,
-      name: 'Call for Tutorials',
-      item: `${site.siteMetadata.siteUrl}/call-for-tutorials`,
+      "@type": "Place",
+      name: "Griffith University, Gold Coast Campus",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "1 Parklands Dr",
+        addressLocality: "Southport",
+        postalCode: "4215",
+        addressRegion: "QLD",
+        addressCountry: "AU",
+      }
     }],
+    image: [
+      "https://mmasia2021.uqcloud.net/uploads/mmasia-logo.png",
+    ],
+    description: "ACM Multimedia Asia 2021 Conference will be held in a hybrid mode by offering both online and offline events. A live in-person conference with virtual online component will be enabled.",
+    // "offers": {
+    //   "@type": "Offer",
+    //   "url": "https://www.example.com/event_offer/12345_201803180430",
+    //   "price": "30",
+    //   "priceCurrency": "USD",
+    //   "availability": "https://schema.org/InStock",
+    //   "validFrom": "2024-05-21T12:00"
+    // },
+    organizer: {
+      "@type": "Organization",
+      name: "ACM Multimedia Asia Conference (MM Asia)",
+      url: "https://www.acmmmasia.org/",
+    },
   };
 
   return (
@@ -180,8 +208,9 @@ const Seo = ({ lang, pageMeta }) => {
       }]}
     >
       <script type="application/ld+json">{JSON.stringify(schemaPage)}</script>
+      <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       {pageMeta.title === "Home" && (
-        <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
+        <script type="application/ld+json">{JSON.stringify(schemaEvent)}</script>
       )}
     </Helmet>
   );
@@ -190,13 +219,13 @@ const Seo = ({ lang, pageMeta }) => {
 Seo.defaultProps = {
   lang: `en`,
   pageMeta: {
-    title: "Home"
-  }
+    title: "Home",
+  },
 };
 
 Seo.propTypes = {
   lang: PropTypes.string,
-  pageMeta: PropTypes.object.isRequired
+  pageMeta: PropTypes.object.isRequired,
 };
 
 export default Seo;

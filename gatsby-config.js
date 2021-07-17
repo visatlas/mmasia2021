@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `ACM Multimedia Asia 2021 - Gold Coast, Australia`,
+    title: `ACM Multimedia Asia 2021`,
+    longTitle: `ACM Multimedia Asia 2021 - Gold Coast, Australia`,
     author: {
       name: `ACM Multimedia Asia Conference`,
     },
