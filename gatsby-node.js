@@ -7,12 +7,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`);
 
-  // Get all markdown blog posts sorted by date
+  // Get all markdown blog posts sorted by date modified
   const result = await graphql(
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
+          sort: { fields: [frontmatter___dateModified], order: ASC }
           limit: 1000
         ) {
           nodes {
@@ -85,16 +85,10 @@ exports.createSchemaCustomization = ({ actions }) => {
     type SiteSiteMetadata {
       author: Author
       siteUrl: String
-      social: Social
     }
 
     type Author {
       name: String
-      summary: String
-    }
-
-    type Social {
-      twitter: String
     }
 
     type MarkdownRemark implements Node {
@@ -105,7 +99,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Frontmatter {
       title: String
       description: String
-      date: Date @dateformat
+      datePublished: Date @dateformat
+      dateModified: Date @dateformat
     }
 
     type Fields {

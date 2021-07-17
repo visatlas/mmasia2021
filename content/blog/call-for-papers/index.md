@@ -1,6 +1,7 @@
 ---
 title: Call for Regular Papers
-date: "2021-07-16"
+datePublished: "2021-07-16"
+dateModified: "2021-07-16"
 description: All the best paper candidates of ACM Multimedia Asia 2021 will be recommended to the ACM TOMM Special Issue on Extended Best Paper Candidates of ACM MM Asia 2021. Moreover, the selected high-quality papers will also be recommended to the related special issues on IEEE TCSVT and ACM TOMM.
 ---
 

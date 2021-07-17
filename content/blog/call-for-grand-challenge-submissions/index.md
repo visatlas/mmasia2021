@@ -1,6 +1,7 @@
 ---
 title: Multimedia Grand Challenges
-date: "2021-07-15"
+datePublished: "2021-07-15"
+dateModified: "2021-07-15"
 description: ACM Multimedia Asia 2021 is calling for Grand Challenge Submissions.
 ---
 

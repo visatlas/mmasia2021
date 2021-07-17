@@ -1,6 +1,7 @@
 ---
 title: Call for PhD School Participants
-date: "2021-06-04"
+datePublished: "2021-06-04"
+dateModified: "2021-06-04"
 description: Twin-City PhD School (a special session of the main conference) will be held.
 ---
 

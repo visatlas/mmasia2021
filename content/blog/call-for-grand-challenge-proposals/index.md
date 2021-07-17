@@ -1,6 +1,7 @@
 ---
 title: Call for Grand Challenge Proposals (closed)
-date: "2021-06-29"
+datePublished: "2021-06-29"
+dateModified: "2021-06-29"
 description: Call for Grand Challenge Proposals has been closed. For more information, please refer to Call for Grand Challenge Submissions.
 ---
 

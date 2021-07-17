@@ -3,11 +3,8 @@ module.exports = {
     title: `ACM Multimedia Asia 2021 - Gold Coast, Australia`,
     author: {
       name: `ACM Multimedia Asia Conference`,
-      summary: `ACM Multimedia Asia Conference.`,
     },
-    description: `ACM Multimedia Asia Conference (ACM MM Asia) 2021 will be held from 1 to 3 December, 2021 in Gold Coast, Australia. 
-    It will be held in a hybrid mode by offering both online and offline events. A live in-person conference with 
-    virtual online component will be enabled.`,
+    description: `ACM Multimedia Asia Conference (ACM MM Asia) 2021 will be held from 1 to 3 December, 2021 in Gold Coast, Australia. It will be held in a hybrid mode by offering both online and offline events. A live in-person conference with virtual online component will be enabled.`,
     siteUrl: process.env.GATSBY_SITE_URL || `https://mmasia2021.uqcloud.net`,
     thumbnail: `/thumbnail.png`,
   },
@@ -94,7 +91,7 @@ module.exports = {
               return allMarkdownRemark.nodes.map(node => {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
-                  date: node.frontmatter.date,
+                  date: node.frontmatter.dateModified,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
@@ -104,7 +101,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { order: DESC, fields: [frontmatter___dateModified] },
                 ) {
                   nodes {
                     excerpt
@@ -114,7 +111,7 @@ module.exports = {
                     }
                     frontmatter {
                       title
-                      date
+                      dateModified
                     }
                   }
                 }

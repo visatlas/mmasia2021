@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
@@ -9,14 +8,21 @@ import UQLogo from "../images/footer/uq-logo.svg";
 import GriffithLogo from "../images/footer/griffith-logo.svg";
 import MonashLogo from "../images/footer/monash-logo.svg";
 
-const Sponsors = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Sponsors`;
-
-  const lastUpdated = "23 June, 2021"
+const Sponsors = ({ location }) => {
+  const datePublished = "2021-06-23";
+  const dateModified = "2021-06-23";
+  const dateModifiedFormatted = "23 June, 2021";
+  const pageMeta = {
+    title: "Sponsors",
+    description: "The Organising Committee for the 2021 ACM Multimedia Asia warmly invites you to become a sponsor of the conference to be held at Gold Coast, Australia on December 1st to 3rd 2021.",
+    datePublished,
+    dateModified,
+    pathname: location.pathname
+  };
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="Sponsors" />
+    <Layout location={location}>
+      <Seo pageMeta={pageMeta} />
       <div className="flex flex-col items-center sm:mx-auto sm:my-0 pb-10">
         <div className="w-full pt-8 md:pt-4 pb-6 mb-0 md:mb-6 bg-white md:bg-uqStyle flex justify-center items-center">
           <h1 className="text-3xl text-gray-800 md:text-gray-100 font-semibold font-headingStyle tracking-semiWide">Sponsorship</h1>
@@ -30,7 +36,7 @@ const Sponsors = ({ data, location }) => {
               <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden">
                 <table className="mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
                   <thead>
-                    <tr class="border-t bg-gray-50 text-gray-600 text-sm leading-normal">
+                    <tr className="border-t bg-gray-50 text-gray-600 text-sm leading-normal">
                       <th className="py-3 px-6 font-semibold">Levels</th>
                       <th className="py-3 px-6 font-semibold">Full<br />Registrations</th>
                       <th className="py-3 px-6 font-semibold">Student<br />Registrations</th>
@@ -67,7 +73,7 @@ const Sponsors = ({ data, location }) => {
               </ul>
 
               <footer className="pb-0">
-                <p className="text-xs mt-0 sm:mt-8 mb-0 text-center sm:text-left">Last updated on {lastUpdated}.</p>
+                <p className="text-xs mt-0 sm:mt-8 mb-0 text-center sm:text-left">Last updated on {dateModifiedFormatted}.</p>
               </footer>
             </article>
           </section>
@@ -111,13 +117,3 @@ const Sponsors = ({ data, location }) => {
 };
 
 export default Sponsors;
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;

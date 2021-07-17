@@ -7,12 +7,17 @@ import Seo from "../components/seo";
 import Title from "../components/title";
 
 const Index = ({ data, location }) => {
+  const pageMeta = {
+    title: "Home"
+  };
+
   const [allowTitleVideo, setAllowTitleVideo] = useState(false);
   const [allowVideo, setAllowVideo] = useState(false);
   const [useYouTube, setUseYouTube] = useState(false);
 
   // get introduction paragraph
   const highlights = data.paragraphsJson.data;
+  const posts = data.allMarkdownRemark.nodes;
 
   useEffect(() => {
     // set timeout when determine country
@@ -42,12 +47,9 @@ const Index = ({ data, location }) => {
     setAllowTitleVideo(true);
   }, []);
 
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
-  const posts = data.allMarkdownRemark.nodes;
-
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="Home" />
+    <Layout location={location}>
+      <Seo pageMeta={pageMeta} />
       <Title allowVideo={allowTitleVideo} />
       <div className="global-wrapper pb-12" style={{ maxWidth: "59rem" }} id="welcome">
         <header className="px-0 sm:px-7">
@@ -119,7 +121,7 @@ const Index = ({ data, location }) => {
         <ol className="post-list list-none divide-y divide-gray-200">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug;
-            const diffDays = Math.ceil(Math.abs(new Date() - new Date(post.frontmatter.date)) / (1000 * 60 * 60 * 24));
+            const diffDays = Math.ceil(Math.abs(new Date() - new Date(post.frontmatter.dateModified)) / (1000 * 60 * 60 * 24));
             const dateClass = diffDays <= 7 ? "text-pink-800 font-semibold" : "text-gray-500 font-medium";
 
             return (
@@ -128,7 +130,7 @@ const Index = ({ data, location }) => {
                   <article className="post-list-item px-6 md:px-7" itemScope itemType="http://schema.org/Article">
                     <header className="flex flex-col">
                       <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide" itemProp="headline">{title}</span>
-                      <small className={dateClass}>{post.frontmatter.date}</small>
+                      <small className={dateClass}>{post.frontmatter.dateModified}</small>
                     </header>
                     <section className="text-gray-700">
                       <p className="leading-6" itemProp="description" dangerouslySetInnerHTML={{
@@ -159,14 +161,14 @@ export const pageQuery = graphql`
     paragraphsJson(id: {eq: "highlights"}) {
       data
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 15) {
+    allMarkdownRemark(sort: { fields: [frontmatter___dateModified], order: DESC }, limit: 15) {
       nodes {
         excerpt
         fields {
           slug
         }
         frontmatter {
-          date(formatString: "D MMMM, YYYY")
+          dateModified(formatString: "D MMMM, YYYY")
           title
           description
         }

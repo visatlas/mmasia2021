@@ -5,11 +5,16 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 const Organisation = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Organisation`;
+  const pageMeta = {
+    title: "Organisation",
+    description: "Key organisors of ACM MMAsia 2021 Conference.",
+    datePublished: data.committeeJson.datePublished,
+    dateModified: data.committeeJson.dateModified,
+    pathname: location.pathname
+  };
 
   // get committee roles & names
   const committee = data.committeeJson.data;
-  const lastUpdated = data.committeeJson.lastUpdated;
 
   // get committee images
   let images = {};
@@ -18,8 +23,8 @@ const Organisation = ({ data, location }) => {
   });
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="Organisation" />
+    <Layout location={location}>
+      <Seo pageMeta={pageMeta} />
       <div className="flex sm:block sm:mx-auto sm:my-0 sm:max-w-4xl py-10 sm:px-5 flex-col items-center">
         <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Key Organisors</h1>
         {committee.map((roles, index) => {
@@ -54,7 +59,7 @@ const Organisation = ({ data, location }) => {
         })
         }
         <footer className="pb-0">
-          <p className="text-xs mt-0 sm:mt-8 mb-0 text-center sm:text-left">Last updated on {lastUpdated}.</p>
+          <p className="text-xs mt-0 sm:mt-8 mb-0 text-center sm:text-left">Last updated on {data.committeeJson.dateModifiedFormatted}.</p>
         </footer>
       </div>
     </Layout>
@@ -65,11 +70,6 @@ export default Organisation;
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     committeeJson(id: {eq: "committee"}) {
       data {
         list {
@@ -79,7 +79,9 @@ export const pageQuery = graphql`
         }
         role
       }
-      lastUpdated
+      datePublished
+      dateModified
+      dateModifiedFormatted: dateModified(formatString: "D MMMM, YYYY")
     }
     allFile(
       filter: {sourceInstanceName: {eq: "images"}, relativeDirectory: {eq: "committee"}}

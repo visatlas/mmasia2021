@@ -6,16 +6,23 @@ import Seo from "../components/seo";
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
   // const { previous, next } = data;
 
+  const pageMeta = {
+    title: post.frontmatter.title,
+    description: post.frontmatter.description || post.excerpt,
+    datePublished: post.frontmatter.datePublished,
+    dateModified: post.frontmatter.dateModified,
+    pathname: location.pathname
+  };
+
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+    <Layout location={location}>
+      <Seo pageMeta={pageMeta} />
       <div className="global-wrapper pt-10">
         <article className="blog-post" itemScope itemType="http://schema.org/Article">
           <header>
-            <h1 className="" itemProp="headline">{post.frontmatter.title}</h1>
+            <h1 itemProp="headline">{post.frontmatter.title}</h1>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
         </article>
@@ -40,7 +47,7 @@ const BlogPostTemplate = ({ data, location }) => {
         </nav> */}
 
         <footer className="pb-0">
-          <p className="text-xs mt-8">Last updated on {post.frontmatter.date}.</p>
+          <p className="text-xs mt-8">Last updated on {post.frontmatter.dateModifiedFormatted}.</p>
         </footer>
       </div>
     </Layout>
@@ -66,7 +73,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "D MMMM, YYYY")
+        datePublished
+        dateModified
+        dateModifiedFormatted: dateModified(formatString: "D MMMM, YYYY")
         description
       }
     }

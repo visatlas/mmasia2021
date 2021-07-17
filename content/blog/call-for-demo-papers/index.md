@@ -1,6 +1,7 @@
 ---
 title: Call for Demo Papers
-date: "2021-05-31"
+datePublished: "2021-05-31"
+dateModified: "2021-05-31"
 description: ACM Multimedia Asia 2021 will provide demonstration sessions that allows conference attendants to view and interact first hand with live evidence of innovative solutions and ideas in the field of multimedia and to experience leading edge research at work.
 ---
 

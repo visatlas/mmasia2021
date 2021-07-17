@@ -1,6 +1,7 @@
 ---
 title: Call for Short Papers
-date: "2021-05-31"
+datePublished: "2021-05-31"
+dateModified: "2021-05-31"
 description: Short papers provide an opportunity to describe significant novel work in progress or multimedia research. Compared to full papers, their contribution may be narrower in scope, be applied to a narrower set of application domains, or have weaker empirical support than that expected for a full paper. 
 ---
 

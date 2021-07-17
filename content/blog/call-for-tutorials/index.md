@@ -1,6 +1,7 @@
 ---
 title: Call for Tutorials
-date: "2021-07-01"
+datePublished: "2021-07-01"
+dateModified: "2021-07-01"
 description: We are soliciting proposals for tutorials to be held in conjunction with the ACM Multimedia Asia 2021.
 ---
 
