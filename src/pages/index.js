@@ -53,7 +53,7 @@ const Index = ({ data, location }) => {
       <Title allowVideo={allowTitleVideo} />
       <div className="global-wrapper pb-12" style={{ maxWidth: "59rem" }} id="welcome">
         <header className="px-0 sm:px-7">
-          <h2 className="pt-9 mb-6 font-titleFont text-3xl text-mainPurple font-extrabold">Welcome to ACM MMAsia 2021!</h2>
+          <h2 className="pt-9 mb-5 font-titleFont text-3xl text-mainPurple font-extrabold">Welcome to ACM MMAsia 2021!</h2>
           <p className="mb-4"><span className="font-bold">The <a className="text-mainPurple underline hover:underline" href="https://www.acmmmasia.org/" target="_blank" rel="noreferrer">ACM Multimedia Asia</a>,&nbsp;</span>
             puts together the long-lasting experience of former PCM and ICIMCS, which both have good history as well as attending experiences.
             It is a newly established international conference to showcase the scientific achievements and industrial innovations in the multimedia field.
@@ -69,7 +69,7 @@ const Index = ({ data, location }) => {
 
         {allowVideo && (
           <div className="px-0 sm:px-7">
-            <h2 className="mt-12 mb-6 font-titleFont text-3xl text-mainPurple font-extrabold">Promotional Video</h2>
+            <h2 className="mt-12 mb-5 font-titleFont text-3xl text-mainPurple font-extrabold">Promotional Video</h2>
             <div className="flex flex-row justify-between">
               <button onClick={() => { setUseYouTube(true); }} type="button"
                 className="py-2 px-5 flex-1 space-x-2 mr-1 flex justify-center items-center rounded-md text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
@@ -117,7 +117,7 @@ const Index = ({ data, location }) => {
           </div>
         )}
 
-        <h2 className="mt-12 pb-4 px-6 sm:px-7 font-titleFont text-3xl text-mainPurple font-extrabold">Latest News</h2>
+        <h2 className="mt-12 pb-3 px-6 sm:px-7 font-titleFont text-3xl text-mainPurple font-extrabold">Latest News</h2>
         <ol className="post-list list-none divide-y divide-gray-200">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug;
