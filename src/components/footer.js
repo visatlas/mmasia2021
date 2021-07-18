@@ -13,19 +13,19 @@ export default function Footer({ activePage }) {
           <div className="mb-4 lg:mb-8 flex flex-col space-y-5 ">
             <div className="flex flex-wrap justify-around lg:justify-between items-center justify-items-center">
               <a style={{ width: "150px" }} className="mb-5 lg:mb-0 flex justify-center items-center" href="https://www.acm.org/" target="_blank" rel="noreferrer">
-                <img style={{ height: "55px" }} src={ACMLogo} alt="ACM Logo" />
+                <img style={{ height: "55px", width: "150px" }} src={ACMLogo} alt="ACM Logo" />
               </a>
               <a style={{ width: "150px" }} className="mb-5 lg:mb-0 flex justify-center items-center" href="http://www.sigmm.org/" target="_blank" rel="noreferrer">
-                <img style={{ height: "30px" }} src={SIGMMLogo} alt="SIGMM Logo" />
+                <img style={{ height: "30px", width: "116.36px" }} src={SIGMMLogo} alt="SIGMM Logo" />
               </a>
               <a style={{ width: "150px" }} className="mb-5 lg:mb-0 flex justify-center items-center" href="https://www.uq.edu.au/" target="_blank" rel="noreferrer">
-                <img style={{ height: "38px" }} src={UQLogo} alt="UQ Logo" />
+                <img style={{ height: "38px", width: "137.52px" }} src={UQLogo} alt="UQ Logo" />
               </a>
               <a style={{ width: "130px" }} className="mb-5 lg:mb-0 flex justify-center justify-center items-center" href="https://www.griffith.edu.au/" target="_blank" rel="noreferrer">
-                <img style={{ height: "42px" }} src={GriffithLogo} alt="Griffith Logo" />
+                <img style={{ height: "42px", width: "109.81px" }} src={GriffithLogo} alt="Griffith Logo" />
               </a>
               <a style={{ width: "170px" }} className="mb-5 lg:mb-0 flex justify-center items-center" href="https://www.monash.edu/" target="_blank" rel="noreferrer">
-                <img style={{ height: "40px" }} src={MonashLogo} alt="Monash Logo" />
+                <img style={{ height: "40px", width: "170px" }} src={MonashLogo} alt="Monash Logo" />
               </a>
             </div>
           </div>
