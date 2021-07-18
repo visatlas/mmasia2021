@@ -3,13 +3,13 @@ import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 export default function Title({ allowVideo }) {
-  const [count, setCount] = useState("\u00A0");
   const [playVideo, setPlayVideo] = useState(true);
+  const [time, setTime] = useState(null);
 
   // calculate countdown time
   useEffect(() => {
     let mounted = true;
-    let countDownDate = new Date("Dec 1, 2021 10:00:00").getTime();
+    let countDownDate = new Date("2021-12-01T10:00:00+10:00").getTime();
     // let countDownDate = new Date("Jun 1, 2021 00:55:00").getTime();
 
     let x = setInterval(function tick() {
@@ -21,11 +21,11 @@ export default function Title({ allowVideo }) {
       let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       if (mounted) {
-        setCount(`${days ? days + "D " : ""}${hours ? hours + "h " : ""}${minutes}m ${seconds}s`);
+        setTime({ days, hours, mins: minutes, secs: seconds });
 
         if (distance < 0) {
           clearInterval(x);
-          setCount("Event Started");
+          setTime(null);
         }
       }
       return tick;
@@ -47,8 +47,8 @@ export default function Title({ allowVideo }) {
             position: "absolute", zIndex: "-1", top: "50%", left: "50%", transform: "translate(-50%, -50%)",
             minWidth: "100%", minHeight: "100%", width: "auto", height: "auto"
           }} autoPlay muted loop playsInline id="video">
-            <source src="https://mmasia2021.uqcloud.net/uploads/gold-coast.mp4" type="video/mp4" crossOrigin="anonymous" />
-            <source src="https://mmasia2021.uqcloud.net/uploads/gold-coast.webm" type='video/webm' crossOrigin="anonymous" />
+            <source src="https://mmasia2021.uqcloud.net/uploads/gold-coast-drone.mp4" type="video/mp4" crossOrigin="anonymous" />
+            {/* <source src="https://mmasia2021.uqcloud.net/uploads/gold-coast-drone.webm" type='video/webm' crossOrigin="anonymous" /> */}
           </video>
         )}
 
@@ -56,18 +56,25 @@ export default function Title({ allowVideo }) {
         <StaticImage style={{
           position: "absolute", zIndex: "-2", top: "50%", left: "50%", transform: "translate(-50%, -50%)",
           minWidth: "100%", minHeight: "100%", width: "auto", height: "auto"
-        }} placeholder="blurred" src="../images/GC.png" alt="Gold Coast" loading="eager" layout="fullWidth" />
+        }} placeholder="blurred" src="../images/gold-coast.jpg" alt="Gold Coast" loading="eager" layout="fullWidth" />
 
-        <div className="px-12 py-8" style={{
+        <div className="pl-11 pr-4 py-8 rounded-b-xl shadow-lg w-87" style={{
           position: "absolute", top: "0%", right: "20%",
           backgroundColor: "rgba(236, 231, 241, 0.85)"
         }}>
           <h1 className="mb-2 font-titleFont text-black font-extrabold tracking-wide text-titleBig leading-titleBig">
             <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
-          <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
-          <p className="mb-1 font-bold text-mainPurple text-titleMedium">1 - 3 December, 2021</p>
-          <p className="w-full mb-8 font-semibold text-titleSmall">{count}</p>
-          <AnchorLink className="font-semibold text-titleSmall hover:underline" to="/#welcome" title="Learn More.." />
+          <p className="mb-4 font-semibold text-titleSmall">Gold Coast, Australia</p>
+          <p className="mb-1 font-bold text-mainPurple text-titleMedium tracking-semiWide">1 - 3 December, 2021</p>
+          <div className="flex space-x-2 w-full mb-7 h-7">
+            {time && ["days", "hours", "mins", "secs"].map((item, key) => (
+              <div className="flex items-baseline space-x-1" key={key}>
+                <span className="font-semibold text-lg font-titleFont">{time[item]}</span>
+                <span className="font-semibold text-xs">{time[item] !== 1 ? item : item.slice(0, -1)}</span>
+              </div>
+            ))}
+          </div>
+          <AnchorLink className="font-semibold text-titleSmall hover:underline text-mainPurple" to="/#welcome" title="Learn More &#8594;" />
         </div>
 
         {/* play/pause button */}
@@ -104,11 +111,10 @@ export default function Title({ allowVideo }) {
               <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
             <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
             <p className="mb-1 font-bold text-mainPurple text-titleMedium">1 - 3 December, 2021</p>
-            <p className="w-full font-semibold text-titleSmall text-center">{count}</p>
           </div>
         </div>
         <StaticImage className="h-50 m-0 w-full top-0 left-0" placeholder="blurred"
-          src="../images/GC.png" alt="Gold Coast" loading="eager" />
+          src="../images/gold-coast.jpg" alt="Gold Coast" loading="eager" />
       </div>
     </div>
   );
