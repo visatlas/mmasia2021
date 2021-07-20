@@ -6,35 +6,22 @@ export default function Title({ allowVideo }) {
   const [playVideo, setPlayVideo] = useState(true);
   const [time, setTime] = useState(null);
 
-  // calculate countdown time
   useEffect(() => {
-    let mounted = true;
-    let countDownDate = new Date("2021-12-01T10:00:00+10:00").getTime();
-    // let countDownDate = new Date("Jun 1, 2021 00:55:00").getTime();
+    const timer = setInterval(function tick() {
+      // calculate countdown time
+      const distance = new Date("2021-12-01T10:00:00+10:00").getTime() - new Date().getTime();
+      let days = Math.floor(distance / 86400000);  // 1000 * 60 * 60 * 24
+      let hours = Math.floor((distance % 86400000) / 3600000);  // 1000 * 60 * 60
+      let minutes = Math.floor((distance % 3600000) / 60000);  // 1000 * 60
+      let seconds = Math.floor((distance % 60000) / 1000);
 
-    let x = setInterval(function tick() {
-      let now = new Date().getTime();
-      let distance = countDownDate - now;
-      let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      if (distance < 0) return () => clearInterval(timer);
+      setTime({ days, hours, mins: minutes, secs: seconds });
 
-      if (mounted) {
-        setTime({ days, hours, mins: minutes, secs: seconds });
-
-        if (distance < 0) {
-          clearInterval(x);
-          setTime(null);
-        }
-      }
       return tick;
     }(), 1000);
 
-    return () => {
-      mounted = false;
-      clearInterval(x);
-    };
+    return () => clearInterval(timer);
   }, []);
 
   return (

@@ -45,6 +45,8 @@ const Index = ({ data, location }) => {
       });
 
     setAllowTitleVideo(true);
+
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
