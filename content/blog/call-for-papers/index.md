@@ -29,11 +29,11 @@ ACM Multimedia Asia 2021 invites submission of research papers presenting novel 
 
 **All the best paper candidates of ACM Multimedia Asia 2021 will be recommended to the ACM TOMM Special Issue on Extended Best Paper Candidates of ACM MM Asia 2021. Moreover, the selected high-quality papers will also be recommended to the related special issues on IEEE TCSVT and ACM TOMM.**  
 
-**The related special issues:**
+<!-- **The related special issues:**
 
 - **ACM TOMM Special Issue on Extended Best Paper Candidates of ACM MM Asia 2021**
 - **IEEE T-CSVT Special Issue on Visual Analysis and Understanding under Adverse Environments**
-- **ACM TOMM Special Issue on Trustworthy Multimedia Computing and Applications in Urban Sense**
+- **ACM TOMM Special Issue on Trustworthy Multimedia Computing and Applications in Urban Sense** -->
 
 ## Submission Guidelines
 
@@ -69,7 +69,7 @@ Note that documents published on website archives are subject to change. Citing 
 
 **Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
-- Submission deadline: **29 July, 2021**.
+- Submission deadline: **12 August, 2021**.
 - Decision notification: **27 September, 2021**.
 
 
