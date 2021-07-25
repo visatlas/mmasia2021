@@ -26,7 +26,7 @@ Paper submissions must conform with the "double-blind" review policy. Please pre
 
 **Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
-- Submission deadline: **12 August, 2021**.
+- Submission deadline: **26 August, 2021**.
 - Decision notification: **12 October, 2021**.
 
 ## Contacts
