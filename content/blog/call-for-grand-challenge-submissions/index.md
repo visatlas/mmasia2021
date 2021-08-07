@@ -6,7 +6,7 @@ description: A new challenge "Multi-modal Video Understanding in a Noisy Environ
 ---
 
 
-## Multi-modal Video Understanding in a Noisy Environment
+## Challenge 1: Multi-modal Video Understanding in a Noisy Environment
 
 [*https://midas-research.github.io/noisy-mmvu/*](https://midas-research.github.io/noisy-mmvu/)
 
@@ -40,8 +40,12 @@ We are releasing two splits: 100k and 25k, along with its meta data.
 - Files are compressed using bzip2.
 
 
+***
 
-## Deep Video Understanding
+
+
+
+## Challenge 2: Deep Video Understanding
 
 [*https://sites.google.com/view/dvu-asia-challenge-2021*](https://sites.google.com/view/dvu-asia-challenge-2021)
 
