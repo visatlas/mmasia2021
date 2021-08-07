@@ -7,7 +7,7 @@ import Seo from "../components/seo";
 const Organisation = ({ data, location }) => {
   const pageMeta = {
     title: "Organisation",
-    description: "Key organisors of ACM MMAsia 2021 Conference.",
+    description: "Key organisers of ACM MMAsia 2021 Conference.",
     datePublished: data.committeeJson.datePublished,
     dateModified: data.committeeJson.dateModified,
     pathname: location.pathname
@@ -26,7 +26,7 @@ const Organisation = ({ data, location }) => {
     <Layout location={location}>
       <Seo pageMeta={pageMeta} />
       <div className="flex sm:block sm:mx-auto sm:my-0 sm:max-w-4xl py-10 sm:px-5 flex-col items-center">
-        <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Key Organisors</h1>
+        <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Key Organisers</h1>
         {committee.map((roles, index) => {
           return (
             <div className="flex sm:block flex-col items-center" key={index}>

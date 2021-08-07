@@ -5,11 +5,9 @@ dateModified: "2021-08-07"
 description: A new challenge "Multi-modal Video Understanding in a Noisy Environment" has been released.
 ---
 
-
 ## Challenge 1: Multi-modal Video Understanding in a Noisy Environment
 
 [*https://midas-research.github.io/noisy-mmvu/*](https://midas-research.github.io/noisy-mmvu/)
-
 
 ### Challenge Overview
 
@@ -20,11 +18,8 @@ In this challenge, we present a novel but challenging task of video understandin
 In this grand challenge we propose three different tasks.
 
 - **Task 1: Multi-modal Noisy Learning for Action Recognition**
-
 - **Task 2: Multi-modal Noisy Learning for Video Retrieval**
-
 - **Task 3: Multi-modal Noisy Video Understanding**
-
 
 ### About The Dataset
 
@@ -34,26 +29,25 @@ We are releasing two splits: 100k and 25k, along with its meta data.
 - 100k Split: [*Videos*](https://drive.google.com/file/d/19_ddJZkgTVDNC2Hwp4ZWKhV4hfF2N6zv/view) (Compressed Size:1.3TB , Uncompressed Size: 1.4TB), [*Metadata*](https://drive.google.com/file/d/1f81Q-N7DY21wFenS1ThbgO7kWpWGJseb/view), [*Tags*](https://drive.google.com/file/d/11uSVC3dw9Om7bT25hC_pqh7WPNRBQMXW/view), [*Features*](https://drive.google.com/file/d/19qIUb4iOprVm-M3cI7d_5fJzTnzArepO/view)
 - 25k Split: [*Videos*](https://drive.google.com/file/d/1frvv3JXRoiTn7hubMTl5BQDdVIcY9XO9/view) (Compressed Size: 420GB, Uncompressed Size: 425GB), [*Metadata*](https://drive.google.com/file/d/1y_QP0Vm4KKCaTSTiY3MrX347Fs14kZ1o/view), [*Tags*](https://drive.google.com/file/d/1grVNqoR1MobJe0vWYe77zSdbdyYVvHMP/view), [*Features*](https://drive.google.com/file/d/1gpwLppZ_noSHxFTXvXDH1zWK27q-7e2z/view)
 
-**Please note:** 
+#### Please note:
 - For the full split of 2.4M, participants will have to download the videos themselves from Flickr.
 - Tags json file contains tags associated with each video, as the main metadata file only contains tag IDs.
 - Files are compressed using bzip2.
 
+<br/>
+<br/>
 
 ***
-
-
-
 
 ## Challenge 2: Deep Video Understanding
 
 [*https://sites.google.com/view/dvu-asia-challenge-2021*](https://sites.google.com/view/dvu-asia-challenge-2021)
 
-Deep video understanding is a difficult task which requires systems to develop a deep analysis and understanding of the relationships between different entities in video, to use known information to reason about other, more hidden information, and to populate a knowledge graph (KG) with all acquired information. To work on this task, a system should take into consideration all available modalities (speech, image/video, and in some cases text). The aim of this new challenge is to push the limits of multimodal extraction, fusion, and analysis techniques to address the problem of analyzing long duration videos holistically and extracting useful knowledge to utilize it in solving different types of queries. The target knowledge includes both visual and non-visual elements. As videos and multimedia data are getting more and more popular and usable by users in different domains, the research, approaches and techniques we aim to be applied in this Grand Challenge will be very relevant in the coming years and near future.
+Deep video understanding is a difficult task which requires systems to develop a deep analysis and understanding of the relationships between different entities in video, to use known information to reason about other, more hidden information, and to populate a knowledge graph (KG) with all acquired information. To work on this task, a system should take into consideration all available modalities (speech, image/video, and in some cases text). The aim of this new challenge is to push the limits of multimodal extraction, fusion, and analysis techniques to address the problem of analyzing long duration videos holistically and extracting useful knowledge to utilise it in solving different types of queries. The target knowledge includes both visual and non-visual elements. As videos and multimedia data are getting more and more popular and usable by users in different domains, the research, approaches and techniques we aim to be applied in this Grand Challenge will be very relevant in the coming years and near future.
 
 ### Challenge Overview
 
-Interested participants are invited to apply their approaches and methods on an extended novel Deep Video Understanding (DVU) dataset being made available by the challenge organizers. This includes total of 14 movies with a Creative Commons license. The dataset are annotated by human assessors and final ground truth, both at the overall movie level (Ontology of relations, entities, actions & events, Knowledge Graph, and names and images of all main characters), and the individual scene level (Ontology of relationships, interactions, locations, scene sentiments, character emotional states, and scene textual summaries) will be provided for 70% of the dataset to participating researchers for training and development of their systems. The organizers will support evaluation and scoring for a hybrid of main query types, at the overall movie level and at the individual scene level distributed with the dataset (please refer to the [*dataset webpage*]((https://sites.google.com/view/dvu-asia-challenge-2021/home/supported-datasets)) for more details): 
+Interested participants are invited to apply their approaches and methods on an extended novel Deep Video Understanding (DVU) dataset being made available by the challenge organisers. This includes total of 14 movies with a Creative Commons license. The dataset are annotated by human assessors and final ground truth, both at the overall movie level (Ontology of relations, entities, actions & events, Knowledge Graph, and names and images of all main characters), and the individual scene level (Ontology of relationships, interactions, locations, scene sentiments, character emotional states, and scene textual summaries) will be provided for 70% of the dataset to participating researchers for training and development of their systems. The organisers will support evaluation and scoring for a hybrid of main query types, at the overall movie level and at the individual scene level distributed with the dataset (please refer to the [*dataset webpage*]((https://sites.google.com/view/dvu-asia-challenge-2021/home/supported-datasets)) for more details): 
 
 #### Example Question types at Overall Movie Level:
 - Multiple choice question answering on part of Knowledge Graph for selected movies.
