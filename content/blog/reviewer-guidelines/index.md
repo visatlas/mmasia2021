@@ -1,7 +1,7 @@
 ---
 title: Reviewer Guidelines
-datePublished: "2021-06-13"
-dateModified: "2021-06-13"
+datePublished: "2021-06-11"
+dateModified: "2021-07-15"
 description: Click here to view the reviewer guidelines.
 ---
 

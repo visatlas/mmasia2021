@@ -1,7 +1,7 @@
 ---
 title: Call for Workshops (closed)
 datePublished: "2021-05-22"
-dateModified: "2021-05-22"
+dateModified: "2021-07-15"
 description: Call for Workshops has been closed on 5 July, 2021.
 ---
 

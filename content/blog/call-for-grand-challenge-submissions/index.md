@@ -1,6 +1,6 @@
 ---
 title: Multimedia Grand Challenges
-datePublished: "2021-08-07"
+datePublished: "2021-07-15"
 dateModified: "2021-08-07"
 description: A new challenge "Multi-modal Video Understanding in a Noisy Environment" has been released.
 ---

@@ -1,7 +1,7 @@
 ---
 title: Student Travel Grants
 datePublished: "2021-06-04"
-dateModified: "2021-06-04"
+dateModified: "2021-07-01"
 description: ACM SIGMM and ACM MM Asia 2021 organisation committee will offer student travel grants for students. 
 ---
 
