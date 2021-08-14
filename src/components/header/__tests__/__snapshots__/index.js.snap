@@ -198,7 +198,7 @@ exports[`Header renders correctly 1`] = `
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-papers"
-                      title="Call for Regular Papers"
+                      title="Call for Regular Papersfalse"
                     >
                       Call for 
                       <span
@@ -210,7 +210,7 @@ exports[`Header renders correctly 1`] = `
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-demo-papers"
-                      title="Call for Demo Papers"
+                      title="Call for Demo Papersfalse"
                     >
                       Call for 
                       <span
@@ -222,7 +222,7 @@ exports[`Header renders correctly 1`] = `
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-short-papers"
-                      title="Call for Short Papers"
+                      title="Call for Short Papersfalse"
                     >
                       Call for 
                       <span
@@ -233,8 +233,20 @@ exports[`Header renders correctly 1`] = `
                     </a>
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                      href="/call-for-brave-new-ideas"
+                      title="Call for Brave New Ideasfalse"
+                    >
+                      Call for 
+                      <span
+                        className="font-medium"
+                      >
+                        Brave New Ideas
+                      </span>
+                    </a>
+                    <a
+                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-grand-challenge-submissions"
-                      title="Call for Grand Challenge Submissions"
+                      title="Call for Grand Challenge Submissionsfalse"
                     >
                       Call for 
                       <span
@@ -258,7 +270,7 @@ exports[`Header renders correctly 1`] = `
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-tutorials"
-                      title="Call for Tutorials"
+                      title="Call for Tutorialsfalse"
                     >
                       Call for 
                       <span
@@ -270,7 +282,7 @@ exports[`Header renders correctly 1`] = `
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-phd-school-participants"
-                      title="Call for PhD School Participants"
+                      title="Call for PhD School Participantsfalse"
                     >
                       Call for 
                       <span
@@ -295,7 +307,7 @@ exports[`Header renders correctly 1`] = `
                     <a
                       className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                       href="/call-for-grand-challenge-proposals"
-                      title="Grand Challenge Proposals (closed)"
+                      title="Call for Grand Challenge Proposals (closed)"
                     >
                       Call for 
                       <span
@@ -448,7 +460,7 @@ exports[`Header renders correctly 1`] = `
           </span>
         </a>
         <button
-          className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-headingStyle inline-flex items-center"
+          className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-headingStyle inline-flex items-center "
           onClick={[Function]}
         >
           <span
@@ -472,7 +484,7 @@ exports[`Header renders correctly 1`] = `
           Program
         </span>
         <button
-          className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-headingStyle inline-flex items-center"
+          className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-headingStyle inline-flex items-center "
           onClick={[Function]}
         >
           <span

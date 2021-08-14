@@ -1,11 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Logo from "../header-logo";
+import Header from "..";
 
-describe("Logo", () => {
+describe("Header", () => {
   it("renders correctly", () => {
     const tree = renderer
-      .create(<Logo />)
+      .create(<Header siteTitle="Default Starter" />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
