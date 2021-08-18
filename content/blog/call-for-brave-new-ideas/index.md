@@ -1,7 +1,7 @@
 ---
 title: Call for Brave New Ideas
 datePublished: "2021-08-14"
-dateModified: "2021-08-19"
+dateModified: "2021-08-18"
 description: The Brave New Ideas (BNI) Track of ACM Multimedia Asia 2021 is calling for innovative papers leading to new prospects with the potential of long-lasting impact on multimedia research and practices.
 ---
 
