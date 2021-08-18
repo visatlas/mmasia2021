@@ -14,7 +14,7 @@ export default function Header({ activePage }) {
     { name: "Regular Papers", link: "/call-for-papers", closed: false },
     { name: "Demo Papers", link: "/call-for-demo-papers", closed: false },
     { name: "Short Papers", link: "/call-for-short-papers", closed: false },
-    { name: "Workshop Papers", link: "/call-for-workshop-papers", closed: false},
+    { name: "Workshop Papers", link: "/call-for-workshop-papers", closed: false },
     { name: "Brave New Ideas", link: "/call-for-brave-new-ideas", closed: false },
     { name: "Grand Challenge Submissions", link: "/call-for-grand-challenge-submissions", closed: false },
   ], [
@@ -59,7 +59,7 @@ export default function Header({ activePage }) {
                       return (<Fragment key={index}>
                         <Divider />
                         {group.map((call, indexCall) => {
-                          const title = `Call for ${call.name}${call.closed && " (closed)"}`;
+                          const title = `Call for ${call.name}${call.closed ? " (closed)" : ""}`;
                           return (<Fragment key={indexCall}>
                             <Link key={indexCall} to={call.link} className={linkStyle} title={title}>
                               Call for <span className="font-medium">{call.name}</span>
@@ -97,7 +97,7 @@ export default function Header({ activePage }) {
             </button>
             {showMobileCalls && (<div>
               {mergedCalls.map((call, indexCall) => {
-                const title = `Call for ${call.name}${call.closed && " (closed)"}`;
+                const title = `Call for ${call.name}${call.closed ? " (closed)" : ""}`;
                 return (<Fragment key={indexCall}>
                   <MobileNavLink to={call.link} title={title}
                     selected={activePage === call.link} nested>

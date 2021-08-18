@@ -5,14 +5,13 @@ dateModified: "2021-08-19"
 description: Three workshop proposals were accepted for the ACM Multimedia Asia 2021 edition.
 ---
 
-
 ## Workshop 1: Visual Tasks and Challenges under Low-quality Multimedia Data
 
 **[*https://workshopcv.github.io/*](https://workshopcv.github.io/)**
 
 ### Overview
 
-The field of computer vision has been a research hotspot, and early research focused on high-quality image or daytime scenes with better illumination. Existing vision techniques have achieved better results with an approximately accuracy rate of 96% with these conditions. In practice, nearly 90% of criminal activities occur in the night scenes with low quality, especially in major cases. The video data collected by the surveillance system in these scene has low contrast and poor quality. According to the Ministry of Public Security Evidence Identification Center (China), the proportion of poor quality video images at night is as high as 95%, and the performance of current methods on low- quality visible images is low, which is difficult to cope with the actual security needs. There is an urgent need to optimize this problem. 
+The field of computer vision has been a research hotspot, and early research focused on high-quality image or daytime scenes with better illumination. Existing vision techniques have achieved better results with an approximately accuracy rate of 96% with these conditions. In practice, nearly 90% of criminal activities occur in the night scenes with low quality, especially in major cases. The video data collected by the surveillance system in these scene has low contrast and poor quality. According to the Ministry of Public Security Evidence Identification Center (China), the proportion of poor quality video images at night is as high as 95%, and the performance of current methods on low- quality visible images is low, which is difficult to cope with the actual security needs. There is an urgent need to optimise this problem. 
 
 ### Challenge
 
@@ -24,7 +23,6 @@ The goal of this challenges to:
 - Showcase innovative methodologies and ideas;
 - Introduce interesting real-world intelligent object detection under low illumination;
 - Propose new real-world datasets and discuss future directions. We believe the workshop will offer a timely collection of research updates to benefit the researchers and practitioners working in the broad computer vision, multimedia, and pattern recognition communities.
-
 
 ### Call for Papers
 
@@ -51,7 +49,6 @@ Except for the challenge, we solicit original research and survey papers in (but
 - **Liang Liao**, ([liang@nii.ac.jp](mailto:liang@nii.ac.jp)), National Institute of Informaties, Japan 
 - **Shin'ichi Satoh**, ([satoh@nii.ac.jp](mailto:satoh@nii.ac.jp)), National Institute of Informaties, Japan 
 - **Chia-wen Lin**, ([cwlin@ee.nthu.edu.tw](mailto:cwlin@ee.nthu.edu.tw)), National Tsing Hua University, Taiwan 
-
 
 &nbsp;
 ***
@@ -102,39 +99,28 @@ Coming soon……
 **[*https://mcmbd.github.io/MCMBD.html*](https://mcmbd.github.io/MCMBD.html)**
 
 ### Overview
-Different from the traditional multimedia technology which mainly focuses on human life, it is a novel and challenging problem to study multimedia data analysis methods for marine big data. Compared with traditional multimedia data, marine big data has big differences in feature distribution, content understanding, applications, etc. This makes existing multimedia analysis method in target detection and recognition, tracking and depth estimation and other tasks cannot be simply applied to ocean data analysis. The study of multimedia data analysis technology with the marine big data can help humans understand the marine, realize the detection and protection of ocean resources intelligently, and provide important technical support for the protection of various rare ocean resources. 
+Different from the traditional multimedia technology which mainly focuses on human life, it is a novel and challenging problem to study multimedia data analysis methods for marine big data. Compared with traditional multimedia data, marine big data has big differences in feature distribution, content understanding, applications, etc. This makes existing multimedia analysis method in target detection and recognition, tracking and depth estimation and other tasks cannot be simply applied to ocean data analysis. The study of multimedia data analysis technology with the marine big data can help humans understand the marine, realise the detection and protection of ocean resources intelligently, and provide important technical support for the protection of various rare ocean resources. 
 
 ### Call for Papers
 Marine multimedia data analysis and retrieval techniques are essential for marine resource exploration and marine environment prediction and forecasting. The main analytical tasks based on the marine domain include detection, identification, retrieval, tracking, and prediction forecasting of marine environmental data such as weather, temperature, humidity, and rainfall. Detection and protection of marine resources can be intelligent through detection, identification and tracking technologies, which provides important technical support for the protection of various types of rare marine resources. Today, in order to better understand the ocean, humans are rapidly collecting a wide variety of marine multimedia big data. Therefore, in this workshop, we will present the recent advances of multimedia technology in marine big data. The main analytical tasks based on the marine domain include detection, identification, retrieval, tracking, and prediction forecasting of marine environmental data such as weather, temperature, humidity, and rainfall. Exploring multi-modal data provides important technical support for understanding the marine and protecting various rare marine resources. We believe that this workshop will facilitate a closer integration of multimedia content analysis technologies with applications in the marine field. we solicit original research and survey papers in (but not limited):
 
- -   Marine object detection
- -   Marine object re-identification
- -   Cross-modal hash retrieval in marine area
- -   Fine-grained identification of marine organisms
- -   Artificial Intelligence for coastal environment evolution prediction
- -   Artificial Intelligence for optimization of ecological dynamic model
- -   Marine big data mining methods
+-   Marine object detection
+-   Marine object re-identification
+-   Cross-modal hash retrieval in marine area
+-   Fine-grained identification of marine organisms
+-   Artificial Intelligence for coastal environment evolution prediction
+-   Artificial Intelligence for optimization of ecological dynamic model
+-   Marine big data mining methods
 
- ### Important Dates
+### Important Dates
 
- -   Submission Deadline: **15 October, 2021.**
- -   Notifications of Acceptance: **15 November, 2021.**
- -   Camera ready Submission: **20 November, 2021.**
+-   Submission Deadline: **15 October, 2021.**
+-   Notifications of Acceptance: **15 November, 2021.**
+-   Camera ready Submission: **20 November, 2021.**
 
-
- ### Organisers
- - **Jie Nie**, Ocean University of China, China
- - **Lei Huang**, Ocean University of China; Pilot National Laboratory for Marine Science and Technology (Qingdao)
- - **An-An Liu**, Tianjin University, China
- - **Junbo Guo**, State Key Laboratory of Communication Content Cognition, People's Daily Online, China
- - **Zhiqiang Wei**, Ocean University of China; Pilot National Laboratory for Marine Science and Technology (Qingdao)
-
-
-
-
-
-
-
-
-
-
+### Organisers
+- **Jie Nie**, Ocean University of China, China
+- **Lei Huang**, Ocean University of China; Pilot National Laboratory for Marine Science and Technology (Qingdao)
+- **An-An Liu**, Tianjin University, China
+- **Junbo Guo**, State Key Laboratory of Communication Content Cognition, People's Daily Online, China
+- **Zhiqiang Wei**, Ocean University of China; Pilot National Laboratory for Marine Science and Technology (Qingdao)

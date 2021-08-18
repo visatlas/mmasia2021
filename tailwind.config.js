@@ -1,6 +1,7 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  mode: 'jit',
+  darkMode: false,
   variants: {
     extend: {},
   },
@@ -35,6 +36,9 @@ module.exports = {
       },
       letterSpacing: {
         semiWide: '0.01em',
+      },
+      maxHeight: {
+        'safeHeight': '80vh',
       },
       screens: {
         player: "660px",
