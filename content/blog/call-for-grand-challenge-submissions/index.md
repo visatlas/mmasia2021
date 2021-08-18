@@ -7,7 +7,7 @@ description: A new challenge "Multi-modal Video Understanding in a Noisy Environ
 
 ## Challenge 1: Multi-modal Video Understanding in a Noisy Environment
 
-[*https://midas-research.github.io/noisy-mmvu/*](https://midas-research.github.io/noisy-mmvu/)
+**[*https://midas-research.github.io/noisy-mmvu/*](https://midas-research.github.io/noisy-mmvu/)**
 
 ### Challenge Overview
 
@@ -41,7 +41,7 @@ We are releasing two splits: 100k and 25k, along with its meta data.
 
 ## Challenge 2: Deep Video Understanding
 
-[*https://sites.google.com/view/dvu-asia-challenge-2021*](https://sites.google.com/view/dvu-asia-challenge-2021)
+**[*https://sites.google.com/view/dvu-asia-challenge-2021*](https://sites.google.com/view/dvu-asia-challenge-2021)**
 
 Deep video understanding is a difficult task which requires systems to develop a deep analysis and understanding of the relationships between different entities in video, to use known information to reason about other, more hidden information, and to populate a knowledge graph (KG) with all acquired information. To work on this task, a system should take into consideration all available modalities (speech, image/video, and in some cases text). The aim of this new challenge is to push the limits of multimodal extraction, fusion, and analysis techniques to address the problem of analyzing long duration videos holistically and extracting useful knowledge to utilise it in solving different types of queries. The target knowledge includes both visual and non-visual elements. As videos and multimedia data are getting more and more popular and usable by users in different domains, the research, approaches and techniques we aim to be applied in this Grand Challenge will be very relevant in the coming years and near future.
 

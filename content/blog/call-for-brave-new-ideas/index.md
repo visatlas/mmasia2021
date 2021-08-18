@@ -25,7 +25,7 @@ Submissions must be 6 pages in length. For more details on the format, please se
 
 Submissions will be reviewed by a set of at least three independent reviewers, and the decisions will be made on the basis of their feedback. Review criteria are: scientific impact, intellectual rigour, and a compelling case for the paper to be innovative in the sense described above.
 
-**Please submit your paper to the submission system [https://cmt3.research.microsoft.com/MMASIA2021-BNI/](https://cmt3.research.microsoft.com/MMASIA2021-BNI/)**
+**Please submit your paper to the submission system [https://cmt3.research.microsoft.com/MMASIA2021/](https://cmt3.research.microsoft.com/MMASIA2021/)**
 
 We expect BNI papers to be submitted directly to the BNI track. However, at the discretion of the Program Chairs, submissions to the regular full paper track may be recommended to the “Brave New Ideas” Program Committee for consideration.
 

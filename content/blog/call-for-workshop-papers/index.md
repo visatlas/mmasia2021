@@ -8,7 +8,7 @@ description: Three workshop proposals were accepted for the ACM Multimedia Asia 
 
 ## Workshop 1: Visual Tasks and Challenges under Low-quality Multimedia Data
 
-[*https://workshopcv.github.io/*](https://workshopcv.github.io/)
+**[*https://workshopcv.github.io/*](https://workshopcv.github.io/)**
 
 ### Overview
 
@@ -99,7 +99,7 @@ Coming soon……
 ***
 ## Workshop 3: Multi-Model Computing of Marine Big Data
 
-[*https://mcmbd.github.io/MCMBD.html*](https://mcmbd.github.io/MCMBD.html)
+**[*https://mcmbd.github.io/MCMBD.html*](https://mcmbd.github.io/MCMBD.html)**
 
 ### Overview
 Different from the traditional multimedia technology which mainly focuses on human life, it is a novel and challenging problem to study multimedia data analysis methods for marine big data. Compared with traditional multimedia data, marine big data has big differences in feature distribution, content understanding, applications, etc. This makes existing multimedia analysis method in target detection and recognition, tracking and depth estimation and other tasks cannot be simply applied to ocean data analysis. The study of multimedia data analysis technology with the marine big data can help humans understand the marine, realize the detection and protection of ocean resources intelligently, and provide important technical support for the protection of various rare ocean resources. 
