@@ -1,11 +1,10 @@
 ---
 title: Call for Workshop Papers
-datePublished: "2021-08-18"
-dateModified: "2021-08-18"
-description: ACM Multimedia Asia 2021 Calling for Workshop Papers.
+datePublished: "2021-08-19"
+dateModified: "2021-08-19"
+description: Three workshop proposals were accepted for the ACM Multimedia Asia 2021 edition.
 ---
 
-Three workshop proposals were accepted for the ACM Multimedia Asia 2021 edition.
 
 ## Workshop 1: Visual Tasks and Challenges under Low-quality Multimedia Data
 
@@ -39,12 +38,12 @@ Except for the challenge, we solicit original research and survey papers in (but
 
 ### Important Dates
 
--	Release of Training Date: Aug 10, 2021, 23:59 AoE
--	Release of Validation Date:	Sep 10, 2021, 23:59 AoE
--	Release of Test Date: Sep 24, 2021, 23:59 AoE
--	Result Submission Close: Oct 8, 2021, 23:59 AoE
--	Workshop Paper Submission: Oct 18, 2021, 23:59 AoE
--	Workshop Notification: Nov 1, 2021, 23:59 AoE
+-	Release of Training Date: **10 August, 2021.**
+-	Release of Validation Date:	**10 September, 2021.**
+-	Release of Test Date: **24 September, 2021.**
+-	Result Submission Close: **8 October, 2021.**
+-	Workshop Paper Submission: **18 October, 2021.**
+-	Workshop Notification: **1 November, 2021.**
 
 ### Organisers
 - **Jing Xiao**, ([jing@whu.edu.cn](mailto:jing@whu.edu.cn)), Wuhan University, China 
@@ -52,10 +51,6 @@ Except for the challenge, we solicit original research and survey papers in (but
 - **Liang Liao**, ([liang@nii.ac.jp](mailto:liang@nii.ac.jp)), National Institute of Informaties, Japan 
 - **Shin'ichi Satoh**, ([satoh@nii.ac.jp](mailto:satoh@nii.ac.jp)), National Institute of Informaties, Japan 
 - **Chia-wen Lin**, ([cwlin@ee.nthu.edu.tw](mailto:cwlin@ee.nthu.edu.tw)), National Tsing Hua University, Taiwan 
-
-
-
-
 
 
 &nbsp;
@@ -86,16 +81,58 @@ Multi-modal understanding are important and fundamental problems in the field of
 
 **Length:** Papers must be **no longer than 6 pages**, including all text and figures, and up to two additional pages may be added for references. The reference pages must only contain references. Over-length papers will be rejected without review.
 
+### Workshop Schedule
+Coming soon……
+
 ### Important dates
-- Paper submission deadline: Oct 13, 2021, 23:59 AoE 
-- Notifications of acceptance: Nov 3, 2021
-- Camera-ready submission: Nov 10, 2021, 23:59 AoE
+- Paper Submission Deadline: **13 October, 2021.**
+- Notifications of Acceptance: **3 November, 2021.**
+- Camera-ready Submission: **10 November, 2021.**
 
 ### Organisers
 - **Wenguan Wang**, ETH Zurich, Switzerland
 - **Xiaojun Chang**, RMIT, Australia
 - **Yanli Ji**, University of Electronic Science and Technology of China, China
 - **Yi Bin**, University of Electronic Science and Technology of China, China
+
+&nbsp;
+***
+## Workshop 3: Multi-Model Computing of Marine Big Data
+
+[*https://mcmbd.github.io/MCMBD.html*](https://mcmbd.github.io/MCMBD.html)
+
+### Overview
+Different from the traditional multimedia technology which mainly focuses on human life, it is a novel and challenging problem to study multimedia data analysis methods for marine big data. Compared with traditional multimedia data, marine big data has big differences in feature distribution, content understanding, applications, etc. This makes existing multimedia analysis method in target detection and recognition, tracking and depth estimation and other tasks cannot be simply applied to ocean data analysis. The study of multimedia data analysis technology with the marine big data can help humans understand the marine, realize the detection and protection of ocean resources intelligently, and provide important technical support for the protection of various rare ocean resources. 
+
+### Call for Papers
+Marine multimedia data analysis and retrieval techniques are essential for marine resource exploration and marine environment prediction and forecasting. The main analytical tasks based on the marine domain include detection, identification, retrieval, tracking, and prediction forecasting of marine environmental data such as weather, temperature, humidity, and rainfall. Detection and protection of marine resources can be intelligent through detection, identification and tracking technologies, which provides important technical support for the protection of various types of rare marine resources. Today, in order to better understand the ocean, humans are rapidly collecting a wide variety of marine multimedia big data. Therefore, in this workshop, we will present the recent advances of multimedia technology in marine big data. The main analytical tasks based on the marine domain include detection, identification, retrieval, tracking, and prediction forecasting of marine environmental data such as weather, temperature, humidity, and rainfall. Exploring multi-modal data provides important technical support for understanding the marine and protecting various rare marine resources. We believe that this workshop will facilitate a closer integration of multimedia content analysis technologies with applications in the marine field. we solicit original research and survey papers in (but not limited):
+
+ -   Marine object detection
+ -   Marine object re-identification
+ -   Cross-modal hash retrieval in marine area
+ -   Fine-grained identification of marine organisms
+ -   Artificial Intelligence for coastal environment evolution prediction
+ -   Artificial Intelligence for optimization of ecological dynamic model
+ -   Marine big data mining methods
+
+ ### Important Dates
+
+ -   Submission Deadline: **15 October, 2021.**
+ -   Notifications of Acceptance: **15 November, 2021.**
+ -   Camera ready Submission: **20 November, 2021.**
+
+
+ ### Organisers
+ - **Jie Nie**, Ocean University of China, China
+ - **Lei Huang**, Ocean University of China; Pilot National Laboratory for Marine Science and Technology (Qingdao)
+ - **An-An Liu**, Tianjin University, China
+ - **Junbo Guo**, State Key Laboratory of Communication Content Cognition, People's Daily Online, China
+ - **Zhiqiang Wei**, Ocean University of China; Pilot National Laboratory for Marine Science and Technology (Qingdao)
+
+
+
+
+
 
 
 
