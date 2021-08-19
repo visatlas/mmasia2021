@@ -36,14 +36,14 @@ Except for the challenge, we solicit original research and survey papers in (but
 5) Segmentation in low illumination, low resolution, rain and fog, etc.
 6) Counting in low illumination, low resolution, rain and fog, etc.
 
-### Important Dates
+<!-- ### Important Dates
 
 -	Release of Training Date: **10 August, 2021.**
 -	Release of Validation Date:	**10 September, 2021.**
 -	Release of Test Date: **24 September, 2021.**
 -	Result Submission Close: **8 October, 2021.**
 -	Workshop Paper Submission: **18 October, 2021.**
--	Workshop Notification: **1 November, 2021.**
+-	Workshop Notification: **1 November, 2021.** -->
 
 ### Organisers
 - **Jing Xiao**, ([jing@whu.edu.cn](mailto:jing@whu.edu.cn)), Wuhan University, China 
@@ -84,10 +84,10 @@ Multi-modal understanding are important and fundamental problems in the field of
 ### Workshop Schedule
 Coming soon……
 
-### Important dates
+<!-- ### Important dates
 - Paper Submission Deadline: **13 October, 2021.**
 - Notifications of Acceptance: **3 November, 2021.**
-- Camera-ready Submission: **10 November, 2021.**
+- Camera-ready Submission: **10 November, 2021.** -->
 
 ### Organisers
 - **Wenguan Wang**, ETH Zurich, Switzerland
@@ -115,11 +115,11 @@ Marine multimedia data analysis and retrieval techniques are essential for marin
  -   Artificial Intelligence for optimization of ecological dynamic model
  -   Marine big data mining methods
 
- ### Important Dates
+ <!-- ### Important Dates
 
  -   Submission Deadline: **15 October, 2021.**
  -   Notifications of Acceptance: **15 November, 2021.**
- -   Camera ready Submission: **20 November, 2021.**
+ -   Camera ready Submission: **20 November, 2021.** -->
 
 
  ### Organisers
