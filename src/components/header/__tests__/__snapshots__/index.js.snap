@@ -169,171 +169,187 @@ exports[`Header renders correctly 1`] = `
                   <div
                     className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
                   >
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium tracking-semiWide"
-                      href="/important-dates"
-                      title="Important Dates"
-                    >
-                      Important Dates
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium tracking-semiWide"
-                      href="/reviewer-guidelines"
-                      title="Reviewer Guidelines"
-                    >
-                      Reviewer Guidelines
-                    </a>
                     <div
-                      className="w-full py-1"
+                      className="max-h-safeHeight overflow-y-scroll"
                     >
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium tracking-semiWide"
+                        href="/important-dates"
+                        title="Important Dates"
+                      >
+                        Important Dates
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium tracking-semiWide"
+                        href="/reviewer-guidelines"
+                        title="Reviewer Guidelines"
+                      >
+                        Reviewer Guidelines
+                      </a>
                       <div
-                        className="w-full bg-gray-200"
-                        style={
-                          Object {
-                            "height": "1px",
+                        className="w-full py-1"
+                      >
+                        <div
+                          className="w-full bg-gray-200"
+                          style={
+                            Object {
+                              "height": "1px",
+                            }
                           }
-                        }
-                      />
-                    </div>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-papers"
-                      title="Call for Regular Papersfalse"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
+                        />
+                      </div>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-papers"
+                        title="Call for Regular Papers"
                       >
-                        Regular Papers
-                      </span>
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-demo-papers"
-                      title="Call for Demo Papersfalse"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Regular Papers
+                        </span>
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-demo-papers"
+                        title="Call for Demo Papers"
                       >
-                        Demo Papers
-                      </span>
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-short-papers"
-                      title="Call for Short Papersfalse"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Demo Papers
+                        </span>
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-short-papers"
+                        title="Call for Short Papers"
                       >
-                        Short Papers
-                      </span>
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-brave-new-ideas"
-                      title="Call for Brave New Ideasfalse"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Short Papers
+                        </span>
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-workshop-papers"
+                        title="Call for Workshop Papers"
                       >
-                        Brave New Ideas
-                      </span>
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-grand-challenge-submissions"
-                      title="Call for Grand Challenge Submissionsfalse"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Workshop Papers
+                        </span>
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-brave-new-ideas"
+                        title="Call for Brave New Ideas"
                       >
-                        Grand Challenge Submissions
-                      </span>
-                    </a>
-                    <div
-                      className="w-full py-1"
-                    >
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Brave New Ideas
+                        </span>
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-grand-challenge-submissions"
+                        title="Call for Grand Challenge Submissions"
+                      >
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Grand Challenge Submissions
+                        </span>
+                      </a>
                       <div
-                        className="w-full bg-gray-200"
-                        style={
-                          Object {
-                            "height": "1px",
+                        className="w-full py-1"
+                      >
+                        <div
+                          className="w-full bg-gray-200"
+                          style={
+                            Object {
+                              "height": "1px",
+                            }
                           }
-                        }
-                      />
-                    </div>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-tutorials"
-                      title="Call for Tutorialsfalse"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
+                        />
+                      </div>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-tutorials"
+                        title="Call for Tutorials"
                       >
-                        Tutorials
-                      </span>
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-phd-school-participants"
-                      title="Call for PhD School Participantsfalse"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Tutorials
+                        </span>
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-phd-school-participants"
+                        title="Call for PhD School Participants"
                       >
-                        PhD School Participants
-                      </span>
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-workshops"
-                      title="Call for Workshops (closed)"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          PhD School Participants
+                        </span>
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-workshops"
+                        title="Call for Workshops (closed)"
                       >
-                        Workshops
-                      </span>
-                       (closed)
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                      href="/call-for-grand-challenge-proposals"
-                      title="Call for Grand Challenge Proposals (closed)"
-                    >
-                      Call for 
-                      <span
-                        className="font-medium"
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Workshops
+                        </span>
+                         (closed)
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-grand-challenge-proposals"
+                        title="Call for Grand Challenge Proposals (closed)"
                       >
-                        Grand Challenge Proposals
-                      </span>
-                       (closed)
-                    </a>
-                    <div
-                      className="w-full py-1"
-                    >
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Grand Challenge Proposals
+                        </span>
+                         (closed)
+                      </a>
                       <div
-                        className="w-full bg-gray-200"
-                        style={
-                          Object {
-                            "height": "1px",
+                        className="w-full py-1"
+                      >
+                        <div
+                          className="w-full bg-gray-200"
+                          style={
+                            Object {
+                              "height": "1px",
+                            }
                           }
-                        }
-                      />
+                        />
+                      </div>
+                      <span
+                        className="font-headingStyle cursor-default text-gray-400 py-1.5 px-4 block whitespace-no-wrap text-sm"
+                      >
+                        More to be announced..
+                      </span>
                     </div>
-                    <span
-                      className="font-headingStyle cursor-default text-gray-400 py-1.5 px-4 block whitespace-no-wrap text-sm"
-                    >
-                      More to be announced..
-                    </span>
                   </div>
                 </div>
               </div>
@@ -370,20 +386,24 @@ exports[`Header renders correctly 1`] = `
                   <div
                     className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
                   >
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
-                      href="/student-travel-grants"
-                      title="Student Travel Grants"
+                    <div
+                      className="max-h-safeHeight overflow-y-scroll"
                     >
-                      Student Travel Grants
-                    </a>
-                    <a
-                      className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
-                      href="/carer-award"
-                      title="Carer Awards"
-                    >
-                      Carer Awards
-                    </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/student-travel-grants"
+                        title="Student Travel Grants"
+                      >
+                        Student Travel Grants
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/carer-award"
+                        title="Carer Awards"
+                      >
+                        Carer Awards
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
