@@ -27,12 +27,12 @@ The goal of this challenge is to:
 ### Call for Papers
 
 Except for the challenge, we solicit original research and survey papers in (but not limited to) the following topics:
-1) Pedestrian detection in low illumination, low resolution, rain and fog, etc.
-2) Object detection in low illumination, low resolution, rain and fog, etc.
-3) Person re-identification in low illumination, low resolution, rain and fog, etc.
-4) Object recognition in low illumination, low resolution, rain and fog, etc.
-5) Segmentation in low illumination, low resolution, rain and fog, etc.
-6) Counting in low illumination, low resolution, rain and fog, etc.
+1. Pedestrian detection in low illumination, low resolution, rain and fog, etc.
+2. Object detection in low illumination, low resolution, rain and fog, etc.
+3. Person re-identification in low illumination, low resolution, rain and fog, etc.
+4. Object recognition in low illumination, low resolution, rain and fog, etc.
+5. Segmentation in low illumination, low resolution, rain and fog, etc.
+6. Counting in low illumination, low resolution, rain and fog, etc.
 
 <!-- ### Important Dates
 
@@ -53,7 +53,9 @@ Except for the challenge, we solicit original research and survey papers in (but
 &nbsp;
 ***
 
-## Workshop 2: Multi-Modal Embedding and Understanding 
+## Workshop 2: Multi-Modal Embedding and Understanding
+
+**[*https://mmeu.github.io/*](https://mmeu.github.io/)**
 
 ### Overview
 We humans perceive the physical world via multiple ways, e.g., watching, touching, hearing, and so on, which means that we process multi-modal information for environment perception. Multi-modal understanding plays a crucial role in enabling the machine with such ability. Due to its research significance, multi-modal embedding and understanding has gained much research attention and achieved much progress in the past couple of years. The recent advances in deep learning inspire us to explore more and deeper for the multi-modal embedding and understanding, such as self-supervised learning and pre-training in it. In this workshop, we aim to bring together researchers from the field of multimedia to discuss recent research and future directions for multi-modal embedding and understanding, and their applications.
@@ -61,17 +63,17 @@ We humans perceive the physical world via multiple ways, e.g., watching, touchin
 ### Call for Papers
 
 Multi-modal understanding are important and fundamental problems in the field of multimodal analysis, which have been attracting much research attention in recent years. Previous works have explored shallow embedding and understanding in many downstream tasks, including cross-modal retrieval, visual navigation, VQA, visual captioning, etc. To encourage researchers to explore new and advanced techniques in this area, we are organizing a workshop on “multi-modal embedding and understanding” with the conjunction of ACM MM Asia 2021, and calling for contributions. The included (but not limited) topics are as follows:
-1)	 Large-scale pre-training for multi-modal embedding and understanding
-2)	 Self-supervised learning in multi-modal embedding and understanding
-3)	 Semi-supervised learning in multi-modal embedding and understanding
-4)	 Contrastive learning in multi-modal embedding and understanding
-5)	 Interpretability in multi-modal embedding and understanding
-6) 	 Interactive multi-modal understanding
-7)	 Trust AI for multi-modal understanding
-8)	 Cross-modal matching and retrieval
-9)	 Cross-modal understanding
-10)  Multi-modal deep fake generation and detection
-11)	 And other related...
+1.	 Large-scale pre-training for multi-modal embedding and understanding
+2.	 Self-supervised learning in multi-modal embedding and understanding
+3.	 Semi-supervised learning in multi-modal embedding and understanding
+4.	 Contrastive learning in multi-modal embedding and understanding
+5.	 Interpretability in multi-modal embedding and understanding
+6. 	 Interactive multi-modal understanding
+7.	 Trust AI for multi-modal understanding
+8.	 Cross-modal matching and retrieval
+9.	 Cross-modal understanding
+10.  Multi-modal deep fake generation and detection
+11.	 And other related...
 
 ### Submission Guidelines
 **Format:** Submitted papers (.pdf format) must use the ACM Article Template [*https://www.acm.org/publications/proceedings-template*](https://www.acm.org/publications/proceedings-template). Please remember to add Concepts and Keywords.
