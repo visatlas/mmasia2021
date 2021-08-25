@@ -11,13 +11,13 @@ import DropDownMenu from "./dropdown-menu";
 export default function Header({ activePage }) {
   // A separator will be inserted between each array
   const calls = [[
-    { name: "Regular Papers", link: "/call-for-papers", closed: true },
     { name: "Demo Papers", link: "/call-for-demo-papers", closed: false },
     { name: "Short Papers", link: "/call-for-short-papers", closed: false },
     { name: "Workshop Papers", link: "/call-for-workshop-papers", closed: false },
     { name: "Brave New Ideas", link: "/call-for-brave-new-ideas", closed: false },
     { name: "Applied Research Track Papers", link: "/call-for-applied-research-track-papers", closed: false},
     { name: "Grand Challenge Submissions", link: "/call-for-grand-challenge-submissions", closed: false },
+    { name: "Regular Papers", link: "/call-for-papers", closed: true },
   ], [
     { name: "Tutorials", link: "/call-for-tutorials", closed: false },
     { name: "PhD School Participants", link: "/call-for-phd-school-participants", closed: false },

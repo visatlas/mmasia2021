@@ -112,7 +112,7 @@ Marine multimedia data analysis and retrieval techniques are essential for marin
 -   Cross-modal hash retrieval in the marine area
 -   Fine-grained identification of marine organisms
 -   Artificial Intelligence for coastal environment evolution prediction
--   Artificial Intelligence for optimization of an ecological dynamic model
+-   Artificial Intelligence for optimisation of an ecological dynamic model
 -   Marine big data mining methods
 
 <!-- ### Important Dates

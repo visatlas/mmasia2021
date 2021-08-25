@@ -200,18 +200,6 @@ exports[`Header renders correctly 1`] = `
                       </div>
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
-                        href="/call-for-papers"
-                        title="Call for Regular Papers"
-                      >
-                        Call for 
-                        <span
-                          className="font-medium"
-                        >
-                          Regular Papers
-                        </span>
-                      </a>
-                      <a
-                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                         href="/call-for-demo-papers"
                         title="Call for Demo Papers"
                       >
@@ -260,6 +248,18 @@ exports[`Header renders correctly 1`] = `
                       </a>
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-applied-research-track-papers"
+                        title="Call for Applied Research Track Papers"
+                      >
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Applied Research Track Papers
+                        </span>
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                         href="/call-for-grand-challenge-submissions"
                         title="Call for Grand Challenge Submissions"
                       >
@@ -269,6 +269,19 @@ exports[`Header renders correctly 1`] = `
                         >
                           Grand Challenge Submissions
                         </span>
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                        href="/call-for-papers"
+                        title="Call for Regular Papers (closed)"
+                      >
+                        Call for 
+                        <span
+                          className="font-medium"
+                        >
+                          Regular Papers
+                        </span>
+                         (closed)
                       </a>
                       <div
                         className="w-full py-1"
