@@ -1,8 +1,8 @@
 ---
 title: Call for Short Papers
 datePublished: "2021-05-31"
-dateModified: "2021-07-25"
-description: Short papers provide an opportunity to describe significant novel work in progress or multimedia research. Compared to full papers, their contribution may be narrower in scope, be applied to a narrower set of application domains, or have weaker empirical support than that expected for a full paper. 
+dateModified: "2021-08-25"
+description: The submission deadline for Short Papers has been postponed to 7 September, 2021.
 ---
 
 ## Overview
@@ -26,7 +26,7 @@ Paper submissions must conform with the "double-blind" review policy. Please pre
 
 **Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
-- Submission deadline: **26 August, 2021**.
+- Submission deadline: **7 September, 2021**.
 - Decision notification: **12 October, 2021**.
 
 ## Contacts

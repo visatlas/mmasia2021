@@ -1,8 +1,8 @@
 ---
 title: Call for Demo Papers
 datePublished: "2021-05-31"
-dateModified: "2021-07-25"
-description: ACM Multimedia Asia 2021 will provide demonstration sessions that allows conference attendants to view and interact first hand with live evidence of innovative solutions and ideas in the field of multimedia and to experience leading edge research at work.
+dateModified: "2021-08-25"
+description: The submission deadline for Demo Papers has been postponed to 7 September, 2021.
 ---
 
 ## Overview
@@ -38,7 +38,7 @@ In addition, a PDF document containing one page description about your demo boot
 
 **Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
-- Submission deadline: **26 August, 2021**.
+- Submission deadline: **7 September, 2021**.
 - Decision notification: **12 October, 2021**.
 
 ## Contacts

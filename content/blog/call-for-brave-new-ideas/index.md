@@ -1,8 +1,8 @@
 ---
 title: Call for Brave New Ideas
 datePublished: "2021-08-14"
-dateModified: "2021-08-18"
-description: The Brave New Ideas (BNI) Track of ACM Multimedia Asia 2021 is calling for innovative papers leading to new prospects with the potential of long-lasting impact on multimedia research and practices.
+dateModified: "2021-08-25"
+description: The submission deadline for Brave New Ideas Papers has been postponed to 19 September, 2021.
 ---
 
 ## Overview
@@ -35,8 +35,9 @@ Important note for the authors: The official publication date is the date the pr
 
 **Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
-- Submission deadline: **26 August, 2021**.
-- Notification of acceptance: **12 October, 2021**.
+- Submission deadline: **19 September, 2021**.
+- Notification of acceptance: **18 October, 2021**.
+- Camera Ready Deadline: **31 October, 2021**.
 
 ## Contacts
 
