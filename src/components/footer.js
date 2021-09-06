@@ -21,7 +21,7 @@ export default function Footer({ activePage }) {
               <a style={{ width: "150px" }} className="mb-5 lg:mb-0 flex justify-center items-center" href="https://www.uq.edu.au/" target="_blank" rel="noreferrer">
                 <img style={{ height: "38px", width: "137.52px" }} src={UQLogo} alt="UQ Logo" />
               </a>
-              <a style={{ width: "130px" }} className="mb-5 lg:mb-0 flex justify-center justify-center items-center" href="https://www.griffith.edu.au/" target="_blank" rel="noreferrer">
+              <a style={{ width: "130px" }} className="mb-5 lg:mb-0 flex justify-center items-center" href="https://www.griffith.edu.au/" target="_blank" rel="noreferrer">
                 <img style={{ height: "42px", width: "109.81px" }} src={GriffithLogo} alt="Griffith Logo" />
               </a>
               <a style={{ width: "170px" }} className="mb-5 lg:mb-0 flex justify-center items-center" href="https://www.monash.edu/" target="_blank" rel="noreferrer">

@@ -129,7 +129,7 @@ const Index = ({ data, location }) => {
             return (
               <li className="bg-gray-50 hover:bg-gray-200 duration-300" key={post.fields.slug}>
                 <Link to={post.fields.slug.slice(0, -1)} itemProp="url" title={title}>
-                  <article className="post-list-item px-6 md:px-7" itemScope itemType="http://schema.org/Article">
+                  <article className="post-list-item py-5 px-6 md:px-7" itemScope itemType="http://schema.org/Article">
                     <header className="flex flex-col">
                       <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide" itemProp="headline">{title}</span>
                       <small className={dateClass}>{post.frontmatter.dateModified}</small>

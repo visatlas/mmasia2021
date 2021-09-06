@@ -156,10 +156,10 @@ table thead tr th {
   margin: 0;
 }
 
-.post-list-item {
+/* .post-list-item {
   padding-bottom: var(--spacing-5);
   padding-top: var(--spacing-5);
-}
+} */
 
 .post-list-item p {
   margin-bottom: var(--spacing-0);

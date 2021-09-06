@@ -26,11 +26,11 @@ const Organisation = ({ data, location }) => {
     <Layout location={location}>
       <Seo pageMeta={pageMeta} />
       <div className="flex sm:block sm:mx-auto sm:my-0 sm:max-w-4xl py-10 sm:px-5 flex-col items-center">
-        <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Key Organisers</h1>
+        <h1 className="text-4xl pl-0 sm:pl-4 mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Key Organisers</h1>
         {committee.map((roles, index) => {
           return (
             <div className="flex sm:block flex-col items-center" key={index}>
-              <h2 className="text-2xl font-bold mt-4 sm:mt-6 text-center sm:text-left pb-2 mb-6 text-mainPurple 
+              <h2 className="text-2xl font-bold mt-4 sm:mt-6 text-center sm:text-left pl-0 sm:pl-4 pb-2 mb-6 text-mainPurple 
               border-b border-gray-200 font-headingStyle tracking-semiWide">{roles["role"]}</h2>
               <div className="flex flex-row justify-center sm:justify-start flex-wrap">
                 {roles["list"].map((person, index) => {
