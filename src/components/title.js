@@ -95,7 +95,7 @@ export default function Title({ allowVideo }) {
         <div className="global-wrapper pt-9 bg-purple-50">
           <div className="flex flex-col items-center">
             <h1 className="mb-2 font-titleFont text-black font-extrabold tracking-wide text-titleBig leading-titleBig text-center">
-              <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021</h1>
+              <span className="text-mainPurple">ACM</span> <br />Multimedia <br />Asia 2021<sup><sup className="font-semibold text-xs"> Hybrid</sup></sup></h1>
             <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
             <p className="mb-1 font-bold text-mainPurple text-titleMedium tracking-semiWide">1 - 3 December, 2021</p>
             <div className="flex space-x-2 mb-7 h-7">
