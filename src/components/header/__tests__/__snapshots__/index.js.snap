@@ -135,7 +135,7 @@ exports[`Header renders correctly 1`] = `
                 title="Home"
               >
                 <span
-                  className=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md text-sm 
+                  className=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md
   font-medium font-headingStyle"
                 >
                   Home
@@ -367,7 +367,7 @@ exports[`Header renders correctly 1`] = `
                 </div>
               </div>
               <span
-                className="text-textDisabled text-base px-3 py-2 rounded-md text-sm font-medium  font-headingStyle cursor-default"
+                className="text-textDisabled text-base px-3 py-2 rounded-md font-medium  font-headingStyle cursor-default"
               >
                 Program
               </span>
@@ -426,7 +426,7 @@ exports[`Header renders correctly 1`] = `
                 title="Organisation"
               >
                 <span
-                  className=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md text-sm 
+                  className=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md
   font-medium font-headingStyle"
                 >
                   Organisation
@@ -438,7 +438,7 @@ exports[`Header renders correctly 1`] = `
                 title="Sponsors"
               >
                 <span
-                  className=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md text-sm 
+                  className=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md
   font-medium font-headingStyle"
                 >
                   Sponsors
@@ -512,7 +512,7 @@ exports[`Header renders correctly 1`] = `
           </svg>
         </button>
         <span
-          className="pl-8 pr-4 py-2 flex item-center w-full text-textDisabled block rounded-md text-base  font-semibold font-headingStyle cursor-default"
+          className="pl-8 pr-4 py-2 flex item-center w-full text-textDisabled rounded-md text-base  font-semibold font-headingStyle cursor-default"
         >
           Program
         </span>
