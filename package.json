@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
-    "babel-jest": "^27.0.6",
+    "babel-jest": "^27.1.0",
     "babel-preset-gatsby": "^1.6.0",
     "gatsby-plugin-postcss": "^4.10.0",
     "identity-obj-proxy": "^3.0.0",
