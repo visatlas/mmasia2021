@@ -30,7 +30,7 @@ export default function Footer({ activePage }) {
             </div>
           </div>
           <div className="flex flex-col-reverse md:flex-row justify-around md:justify-between">
-            <small className="text-center">© 2021 <a className="hover:underline" href="https://www.acmmmasia.org/" target="_blank" rel="noreferrer">ACM Multimedia Asia Conference</a>. All Rights Reserved.</small>
+            <small className="text-center">&copy; 2021 <a className="hover:underline" href="https://www.acmmmasia.org/" target="_blank" rel="noreferrer">ACM Multimedia Asia Conference</a>. All Rights Reserved.</small>
             <small className="text-center mb-3 md:mb-0"><a className="hover:underline" href="https://www.acm.org/about-acm/policy-against-harassment" target="_blank" rel="noreferrer">Code of Conduct</a></small>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Footer({ activePage }) {
       <footer className="bottom-0">
         <div className="global-wrapper-wide flex sm:block flex-col items-center md:items-start">
           <div className="px-8 flex flex-col-reverse md:flex-row justify-around md:justify-between">
-            <small className="text-center">© 2021 <a className="hover:underline" href="https://www.acmmmasia.org/" target="_blank" rel="noreferrer">ACM Multimedia Asia Conference</a>. All Rights Reserved.</small>
+            <small className="text-center">&copy; 2021 <a className="hover:underline" href="https://www.acmmmasia.org/" target="_blank" rel="noreferrer">ACM Multimedia Asia Conference</a>. All Rights Reserved.</small>
             <small className="text-center mb-3 md:mb-0"><a className="hover:underline" href="https://www.acm.org/about-acm/policy-against-harassment" target="_blank" rel="noreferrer">Code of Conduct</a></small>
           </div>
         </div>
