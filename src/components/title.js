@@ -51,9 +51,9 @@ export default function Title({ allowVideo }) {
         }}>
           <h1 className="mb-2 relative font-titleFont text-black font-extrabold tracking-wide text-titleBig leading-titleBig">
             <span className="text-mainPurple">ACM</span>&nbsp;<br />Multimedia&nbsp;<br />Asia 2021
-            <span className="absolute bottom-0 right-0 border border-mainPurple text-mainPurple font-semibold mr-6 mb-2 px-1 py-0.5 rounded-sm text-xs tracking-tight font-sans">Hybrid</span>
+            {/* <span className="absolute bottom-0 right-0 border border-mainPurple text-mainPurple font-semibold mr-6 mb-2 px-1 py-0.5 rounded-sm text-xs tracking-tight font-sans">Hybrid</span> */}
           </h1>
-          <p className="mb-4 font-semibold text-titleSmall">Gold Coast, Australia</p>
+          <p className="mb-4 font-semibold text-titleSmall">Hybrid • Gold Coast, Australia</p>
           <p className="mb-1 font-bold text-mainPurple text-titleMedium tracking-semiWide">1 - 3 December, 2021</p>
           <div className="flex space-x-2 w-full mb-7 h-7">
             {time && ["days", "hours", "mins", "secs"].map((item, key) => (
@@ -98,9 +98,9 @@ export default function Title({ allowVideo }) {
           <div className="flex flex-col items-center">
             <h1 className="mb-2 w-87 relative font-titleFont text-black font-extrabold tracking-wide text-titleBig leading-titleBig text-center">
               <span className="text-mainPurple">ACM</span>&nbsp;<br />Multimedia&nbsp;<br />Asia 2021
-              <span className="absolute bottom-0 right-0 border border-mainPurple text-mainPurple font-semibold mr-3 mb-2 px-1 py-0.5 rounded-sm text-xs tracking-tight font-sans">Hybrid</span>
+              {/* <span className="absolute bottom-0 right-0 border border-mainPurple text-mainPurple font-semibold mr-3 mb-2 px-1 py-0.5 rounded-sm text-xs tracking-tight font-sans">Hybrid</span> */}
             </h1>
-            <p className="mb-4 font-semibold text-titleSmall" >Gold Coast, Australia</p>
+            <p className="mb-4 font-semibold text-titleSmall" >Hybrid • Gold Coast, Australia</p>
             <p className="mb-1 font-bold text-mainPurple text-titleMedium tracking-semiWide">1 - 3 December, 2021</p>
             <div className="flex space-x-2 mb-7 h-7">
               {time && ["days", "hours", "mins", "secs"].map((item, key) => (
