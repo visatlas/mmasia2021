@@ -53,10 +53,6 @@ The reviews are anonymous, but please make sure that you deliver your best work,
 - When you finish a review, and before you submit it, please check it over to make sure that it follows these guidelines. Checking your review is good practice and will also save the ACs the effort of chasing you.
 - Note that high-quality, accurate reviews will also ensure that the authors do not request your review to be referred to the Authors’ Advocate.
 
-#### Rebuttal:
-
-- When the authors return their rebuttals, please read them carefully. The authors devoted a great deal of effort to writing rebuttals.
-- Take the rebuttal into consideration by updating your review or otherwise responding to requests of the AC.
 
 #### Policy on arXiv papers:
 
