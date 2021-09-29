@@ -32,10 +32,6 @@ The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere 
         <div><strong>15 Sep, 2021</strong></div>
     </div>
     <div class="wrapper">
-        <div><strong>Brave New Idea Papers Submission:</strong></div><div></div>
-        <div><strong>19 Sep, 2021</strong></div>
-    </div>
-    <div class="wrapper">
         <div style="color: #51247a"><strong>Regular Papers Notification (Full Track):</strong></div><div></div>
         <div style="color: #51247a"><strong>27 Sep, 2021</strong></div>
     </div>
@@ -46,6 +42,10 @@ The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere 
     <div class="wrapper">
         <div><strong>Grand Challenge/Applied Research Track Papers Submission:</strong></div><div></div>
         <div><strong>1 Oct, 2021</strong></div>
+    </div>
+    <div class="wrapper">
+        <div><strong>Brave New Idea Papers Submission:</strong></div><div></div>
+        <div><strong>3 Oct, 2021</strong></div>
     </div>
     <div class="wrapper">
         <div><strong>Short/Demo Papers Notification:</strong></div><div></div>
