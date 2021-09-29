@@ -35,9 +35,9 @@ Important note for the authors: The official publication date is the date the pr
 
 **Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
 
-- Submission deadline: **3 October, 2021**.
-- Notification of acceptance: **18 October, 2021**.
-- Camera Ready Deadline: **31 October, 2021**.
+- Submission deadline: **3 October, 2021**. (Extended)
+- Notification of acceptance: **25 October, 2021**. (Extended)
+
 
 ## Contacts
 
