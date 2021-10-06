@@ -63,7 +63,7 @@ export default function Title({ allowVideo }) {
               </div>
             ))}
           </div>
-          <AnchorLink className="font-semibold text-titleSmall hover:underline text-mainPurple" to="/#welcome" title="Learn More &#8594;" />
+          <AnchorLink className="font-semibold text-titleSmall hover:underline text-mainPurple" to="/#welcome" title="Learn More.." />
         </div>
 
         {/* play/pause button */}
