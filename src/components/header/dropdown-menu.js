@@ -16,7 +16,7 @@ export default function DropDownMenu({ name, selected, widthStyle, children }) {
       </button>
       <div className={dropDownStyle}>
         <div className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
-          <div className="max-h-safeHeight overflow-y-scroll">
+          <div className="max-h-safeHeight overflow-y-auto">
             {children}
           </div>
         </div>
