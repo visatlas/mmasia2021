@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="flex flex-col py-2 px-6 lg:px-0">
           <div className="flex flex-wrap items-center gap-x-12 gap-y-4 mb-4 md:mb-8">
             <div>
-              <p className="mb-5 font-semibold font-headingStyle tracking-semiWide">Sliver Sponsor</p>
+              <p className="mb-5 font-semibold font-headingStyle tracking-semiWide">Silver Sponsor</p>
               <div className="flex flex-wrap gap-x-12">
                 <a style={{ width: "150px" }} className="mb-5 lg:mb-0 flex items-center" href="https://www.uq.edu.au/" target="_blank" rel="noreferrer">
                   <img style={{ height: "38px", width: "137.52px" }} src={UQLogo} alt="UQ Logo" />
