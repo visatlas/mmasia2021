@@ -1,8 +1,8 @@
 ---
 title: Carer Awards
 datePublished: "2021-06-04"
-dateModified: "2021-07-01"
-description: ACM SIGMM and ACM MM Asia 2021 organisation committee will offer carer awards for students to attend online events. 
+dateModified: "2021-10-09"
+description: SIGMM is sponsoring Carer Awards for ACMMM Asia 2021 to allow attendees to avail financial support to engage more fully with the event online. Students from all over the world are invited to consider applying to the Carer Award. Applications are opening from Oct 4, 2021, to Nov 5, 2021. Please click here for more details.
 ---
 
 ## Overview
@@ -21,7 +21,11 @@ Students being the primary authors of an accepted paper in the main conference o
 
 
 ## Application Procedure
-TBA
+
+- Opening 4 October 2021
+- Closing 5 November 2021
+
+Submit your application form via [*https://acmsigmm.wufoo.com/forms/zs7ntks1qifyyk/*](https://acmsigmm.wufoo.com/forms/zs7ntks1qifyyk/)
 
 
 ## Contacts
