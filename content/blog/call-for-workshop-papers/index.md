@@ -1,8 +1,8 @@
 ---
 title: Call for Workshop Papers
 datePublished: "2021-08-19"
-dateModified: "2021-08-19"
-description: Three workshop proposals were accepted for the ACM Multimedia Asia 2021 edition.
+dateModified: "2021-10-12"
+description: The important dates for Workshop, Multi-Modal Embedding and Understanding, have been updated.
 ---
 
 ## Workshop 1: Visual Tasks and Challenges under Low-quality Multimedia Data
@@ -81,7 +81,11 @@ Multi-modal understanding are important and fundamental problems in the field of
 **Length:** Papers must be **no longer than 6 pages**, including all text and figures, and up to two additional pages may be added for references. The reference pages must only contain references. Over-length papers will be rejected without review.
 
 ### Workshop Schedule
-Coming soon...
+**Please note:** The submission deadline is at 11:59 p.m. of the stated deadline date [*Anywhere on Earth*](https://www.timeanddate.com/time/zones/aoe).
+
+- Paper Submission Deadline: **19 October, 2021**.
+- Notifications of Acceptance: **1 November, 2021**.
+- Camera-ready Submission: **7 November, 2021**.
 
 <!-- ### Important dates
 - Paper Submission Deadline: **13 October, 2021**.
