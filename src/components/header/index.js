@@ -73,7 +73,8 @@ export default function Header({ activePage }) {
                     <span className="font-headingStyle cursor-default text-gray-400 py-1.5 px-4 block whitespace-no-wrap text-sm">More to be announced..</span>
                   </DropDownMenu>
                   <NavLink to="/" selected={activePage === "/program"} title="Program" disabled>Program</NavLink>
-                  <DropDownMenu selected={["/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
+                  <DropDownMenu selected={["/registration", "/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
+                    <Link to="/registration" className={linkStyleMedium} title="Registration Information">Registration Information</Link>
                     <Link to="/student-travel-grants" className={linkStyleMedium} title="Student Travel Grants">Student Travel Grants</Link>
                     <Link to="/carer-award" className={linkStyleMedium} title="Carer Awards">Carer Awards</Link>
                   </DropDownMenu>
@@ -115,6 +116,7 @@ export default function Header({ activePage }) {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
             </button>
             {showMobileAttend && (<div>
+              <MobileNavLink to="/registration" title="Registration Information" selected={activePage === "/registration"} nested>Registration Information</MobileNavLink>
               <MobileNavLink to="/student-travel-grants" title="Student Travel Grants" selected={activePage === "/student-travel-grants"} nested>Student Travel Grants</MobileNavLink>
               <MobileNavLink to="/carer-award" title="Carer Awards" selected={activePage === "/carer-award"} nested>Carer Awards</MobileNavLink>
             </div>)}
