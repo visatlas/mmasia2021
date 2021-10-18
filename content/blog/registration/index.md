@@ -23,7 +23,7 @@ description: ACM MM Asia 2021 Registration Information is now available.
                 <td colspan="2" class="font-bold">Online</td>
             </tr>
             <tr>
-                <td>Author <span class="font-semibold">ACM-SIG Member</span><br/>[Either Professional or Student]</td>
+                <td>Author <span class="font-semibold">ACM/SIGMM Member</span><br/>[Either Professional or Student]</td>
                 <td colspan="2">AU$380</td>
             </tr>
             <tr>
@@ -36,7 +36,7 @@ description: ACM MM Asia 2021 Registration Information is now available.
                 <td colspan="2" class="font-bold">Online</td>
             </tr>
             <tr>
-                <td>Author <span class="font-semibold">ACM-SIG Member</span><br/>[Either Professional or Student]</td>
+                <td>Author <span class="font-semibold">ACM/SIGMM Member</span><br/>[Either Professional or Student]</td>
                 <td colspan="2">AU$530</td>
             </tr>
             <tr>
