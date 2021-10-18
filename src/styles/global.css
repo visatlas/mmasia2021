@@ -302,6 +302,19 @@ table thead tr th {
   margin-bottom: 1em;
 }
 
+.table-custom tr {
+  border-width: 1px;
+  border-color: rgba(229, 231, 235, 1);
+}
+
+.table-custom td {
+  border-width: 1px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
