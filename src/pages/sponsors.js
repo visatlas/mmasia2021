@@ -46,19 +46,19 @@ const Sponsors = ({ location }) => {
                   </thead>
                   <tbody className="text-gray-600 text-sm font-normal">
                     <tr className="border-b border-gray-200">
-                      <td className="py-3 px-6"><span className="font-semibold">Gold Level</span><br />(AUD5000)</td>
+                      <td className="py-3 px-6"><span className="font-semibold">Gold Level</span><br />(AU$5000)</td>
                       <td className="py-3 px-6">Two (2) Free</td>
                       <td className="py-3 px-6">Two (2) Free</td>
                       <td className="py-3 px-6">Showed under Gold Level</td>
                     </tr>
                     <tr className="border-b border-gray-200">
-                      <td className="py-3 px-6"><span className="font-semibold">Silver Level</span><br />(AUD3000)</td>
+                      <td className="py-3 px-6"><span className="font-semibold">Silver Level</span><br />(AU$3000)</td>
                       <td className="py-3 px-6">One (1) Free</td>
                       <td className="py-3 px-6">Two (2) Free</td>
                       <td className="py-3 px-6">Showed under Silver Level</td>
                     </tr>
                     <tr className="border-b border-gray-200">
-                      <td className="py-3 px-6"><span className="font-semibold">Bronze Level</span><br />(AUD1500)</td>
+                      <td className="py-3 px-6"><span className="font-semibold">Bronze Level</span><br />(AU$1500)</td>
                       <td className="py-3 px-6">One (1) Free</td>
                       <td className="py-3 px-6">One (1) Free</td>
                       <td className="py-3 px-6">Showed under Bronze Level</td>

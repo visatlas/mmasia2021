@@ -37,6 +37,7 @@ export default function Header({ activePage }) {
   const linkStyle = `font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall`;
   const linkStyleMedium = `${linkStyle} font-medium`;
   const linkStyleWide = `${linkStyleMedium} tracking-semiWide`;
+  const linkStylePurple = `${linkStyleMedium} text-mainPurple`;
 
   return (
     <header>
@@ -56,24 +57,26 @@ export default function Header({ activePage }) {
                     name="Calls &amp; Dates" widthStyle="w-80">
                     <Link to="/important-dates" className={linkStyleWide} title="Important Dates">Important Dates</Link>
                     <Link to="/reviewer-guidelines" className={linkStyleWide} title="Reviewer Guidelines">Reviewer Guidelines</Link>
-                    {calls.map((group, index) => {
-                      return (<Fragment key={index}>
-                        <Divider />
-                        {group.map((call, indexCall) => {
-                          const title = `Call for ${call.name}${call.closed ? " (closed)" : ""}`;
-                          return (<Fragment key={indexCall}>
-                            <Link key={indexCall} to={call.link} className={linkStyle} title={title}>
-                              Call for <span className="font-medium">{call.name}</span>
-                              {call.closed && " (closed)"}</Link>
-                          </Fragment>);
-                        })}
-                      </Fragment>);
-                    })}
-                    <Divider />
-                    <span className="font-headingStyle cursor-default text-gray-400 py-1.5 px-4 block whitespace-no-wrap text-sm">More to be announced..</span>
+                    {calls.map((group, index) => (<Fragment key={index}>
+                      <Divider />
+                      {group.map((call, indexCall) => {
+                        const title = `Call for ${call.name}${call.closed ? " (closed)" : ""}`;
+                        return (<Fragment key={indexCall}>
+                          <Link key={indexCall} to={call.link} className={linkStyle} title={title}>
+                            Call for <span className="font-medium">{call.name}</span>
+                            {call.closed && " (closed)"}</Link>
+                        </Fragment>);
+                      })}
+                    </Fragment>)
+                    )}
                   </DropDownMenu>
                   <NavLink to="/" selected={activePage === "/program"} title="Program" disabled>Program</NavLink>
-                  <DropDownMenu selected={["/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
+                  {/* <DropDownMenu selected={false} name="Program" widthStyle="w-60">
+                    <span className="font-headingStyle cursor-default text-gray-400 py-2 px-4 block whitespace-no-wrap text-sm">Coming Soon..</span>
+                  </DropDownMenu> */}
+                  <DropDownMenu selected={["/registration", "/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
+                    <Link to="/registration" className={linkStylePurple} title="Registration">Registration</Link>
+                    <Divider />
                     <Link to="/student-travel-grants" className={linkStyleMedium} title="Student Travel Grants">Student Travel Grants</Link>
                     <Link to="/carer-award" className={linkStyleMedium} title="Carer Awards">Carer Awards</Link>
                   </DropDownMenu>
@@ -106,7 +109,6 @@ export default function Header({ activePage }) {
                   </MobileNavLink>
                 </Fragment>);
               })}
-              <span className="pl-16 pr-4 py-2 w-full text-textDisabled cursor-default block rounded-md font-medium text-sm font-headingStyle">More to be announced..</span>
             </div>)}
             <MobileNavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</MobileNavLink>
             <button className={mobileAttendStyle} onClick={() => { setShowMobileAttend(!showMobileAttend); }}>
@@ -115,6 +117,7 @@ export default function Header({ activePage }) {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
             </button>
             {showMobileAttend && (<div>
+              <MobileNavLink to="/registration" title="Registration" selected={activePage === "/registration"} nested>Registration</MobileNavLink>
               <MobileNavLink to="/student-travel-grants" title="Student Travel Grants" selected={activePage === "/student-travel-grants"} nested>Student Travel Grants</MobileNavLink>
               <MobileNavLink to="/carer-award" title="Carer Awards" selected={activePage === "/carer-award"} nested>Carer Awards</MobileNavLink>
             </div>)}

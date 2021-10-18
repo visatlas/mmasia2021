@@ -42,7 +42,7 @@ module.exports = {
       },
       screens: {
         player: "660px",
-        bp3: "882px",
+        bp3: "900px",
       },
       spacing: {
         '68': '17rem',
