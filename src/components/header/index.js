@@ -71,17 +71,12 @@ export default function Header({ activePage }) {
                     )}
                   </DropDownMenu>
                   <NavLink to="/" selected={activePage === "/program"} title="Program" disabled>Program</NavLink>
-<<<<<<< HEAD
-                  <DropDownMenu selected={["/registration", "/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
-                    <Link to="/registration" className={linkStyleMedium} title="Registration Information">Registration Information</Link>
-=======
                   {/* <DropDownMenu selected={false} name="Program" widthStyle="w-60">
                     <span className="font-headingStyle cursor-default text-gray-400 py-2 px-4 block whitespace-no-wrap text-sm">Coming Soon..</span>
                   </DropDownMenu> */}
                   <DropDownMenu selected={["/registration", "/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
                     <Link to="/registration" className={linkStylePurple} title="Registration">Registration</Link>
                     <Divider />
->>>>>>> f94d74ae36130d08cbe628affeeefffc5cce3649
                     <Link to="/student-travel-grants" className={linkStyleMedium} title="Student Travel Grants">Student Travel Grants</Link>
                     <Link to="/carer-award" className={linkStyleMedium} title="Carer Awards">Carer Awards</Link>
                   </DropDownMenu>
@@ -122,11 +117,7 @@ export default function Header({ activePage }) {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
             </button>
             {showMobileAttend && (<div>
-<<<<<<< HEAD
-              <MobileNavLink to="/registration" title="Registration Information" selected={activePage === "/registration"} nested>Registration Information</MobileNavLink>
-=======
               <MobileNavLink to="/registration" title="Registration" selected={activePage === "/registration"} nested>Registration</MobileNavLink>
->>>>>>> f94d74ae36130d08cbe628affeeefffc5cce3649
               <MobileNavLink to="/student-travel-grants" title="Student Travel Grants" selected={activePage === "/student-travel-grants"} nested>Student Travel Grants</MobileNavLink>
               <MobileNavLink to="/carer-award" title="Carer Awards" selected={activePage === "/carer-award"} nested>Carer Awards</MobileNavLink>
             </div>)}

@@ -1,6 +1,5 @@
 ---
 title: Registration Information
-<<<<<<< HEAD
 datePublished: "2021-10-18"
 dateModified: "2021-10-18"
 description: ACM MM Asia 2021 Registration Information is now available.
@@ -14,24 +13,6 @@ description: ACM MM Asia 2021 Registration Information is now available.
 
 
 ## Registration Fees
-
-=======
-datePublished: "2021-10-19"
-dateModified: "2021-10-19"
-description: xxxxx
----
-
-## Registration Procedures
-
-- Register your information in the system here [Register online button/link] and make payment.
-- A confirmation email with a Payment Receipt ID will be sent to you by email after you finish a registration.
-- With the Payment Receipt ID, you can check your registration information. For modification, please send your request to mmasia21@uq.edu.au
-
-## Registration Fees
-
-All pricing is <ins>inclusive of GST</ins> and is given in **Australian dollars**.
-
->>>>>>> f94d74ae36130d08cbe628affeeefffc5cce3649
 <div class="mb-6 w-full overflow-x-scroll md:overflow-hidden">
     <table class="table-custom mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
         <tbody class="border-t text-gray-600 text-sm font-normal">
@@ -77,7 +58,6 @@ All pricing is <ins>inclusive of GST</ins> and is given in **Australian dollars*
     </table>
 </div>
 
-<<<<<<< HEAD
 *All pricing is <ins>inclusive of GST</ins> and is given in **Australian dollars**.
 
 ## Registration Policy
@@ -110,24 +90,3 @@ A professional or student membership is required for Registration at the discoun
 ## Contact Information
 
 - For any registration-related issues or queries please send an email to: **[mmasia21@uq.edu.au](mailto:mmasia21@uq.edu.au)**.
-=======
-## Registration Policy
-
-...
-
-## ACM/SIGMM Professional or Student Membership
-
-...
-
-## Registration Methods
-
-...
-
-## Registration Cancellation Policy
-
-...
-
-## Contact Information
-
-...
->>>>>>> f94d74ae36130d08cbe628affeeefffc5cce3649
