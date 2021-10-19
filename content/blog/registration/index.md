@@ -4,12 +4,12 @@ datePublished: "2021-10-18"
 dateModified: "2021-10-18"
 description: ACM MM Asia 2021 Registration Information is now available.
 ---
-<!-- Register your information in the system **[*here*]()** and make payment -->
+
 ## Registration Procedures
 
-- Register your information in the system and make payment. (Registration link will be available soon.)
+- **Register your information in the system **[*here*](https://payments.uq.edu.au/onestopweb/ECET101EAI017)** and make payment.**
 - A confirmation email with a Payment Receipt ID will be sent to you by email after you finish a registration.
-- With the Payment Receipt ID, you can check your registration information. For modification, please send your request to **[mmasia21@uq.edu.au](mailto:mmasia21@uq.edu.au)**.
+- With the Payment Receipt ID, you can check your registration information. For modification, please send your request to **[mmasia21@itee.uq.edu.au](mailto:mmasia21@itee.uq.edu.au)**.
 
 
 ## Registration Fees
@@ -44,7 +44,7 @@ description: ACM MM Asia 2021 Registration Information is now available.
                 <td colspan="2">AU$605</td>
             </tr>
             <tr class="bg-gray-100">
-                <td rowspan="2" colspan="2" class="font-bold">AUTHOR<br/>Main + Workshop + PhD School</td>
+                <td rowspan="2" colspan="2" class="font-bold">ATTENDEE<br/>Main + Workshop + PhD School</td>
                 <td class="font-bold">Category - Attendee</td>
                 <td class="font-bold">Online</td>
                 <td class="font-bold">In Person</td>
@@ -76,17 +76,18 @@ A professional or student membership is required for Registration at the discoun
 ## Registration Methods
 
 ### Online
-- ACM Multimedia Asia 2021 prefers that participants register through the online registration system, which accepts Master card, Visa card and American Express. Registration link will be available soon.
+- ACM Multimedia Asia 2021 prefers that participants register through the online registration system, which accepts Master card, Visa card and American Express. 
+- **Online registration link:** **[*https://payments.uq.edu.au/onestopweb/ECET101EAI017*](https://payments.uq.edu.au/onestopweb/ECET101EAI017)**
 
 ### Other
-- If online payment via credit card is not possible, contact **[mmasia21@uq.edu.au](mailto:mmasia21@uq.edu.au)** to make alternative arrangements.
+- If online payment via credit card is not possible, contact **[mmasia21@itee.uq.edu.au](mailto:mmasia21@itee.uq.edu.au)** to make alternative arrangements.
 
 ## Registration Cancellation Policy
 - Cancellation and refund requests received on or before 15 November 2021 will be refunded at 50% of the registration fee.
 - Cancellation and refund requests received from 16 November 2021 will not be refunded.
-- Alternatively, if you cannot attend, your registration may be transferred to a colleague. To organize a registration name transfer, email your request to **[mmasia21@uq.edu.au](mailto:mmasia21@uq.edu.au)**.
+- Alternatively, if you cannot attend, your registration may be transferred to a colleague. To organize a registration name transfer, email your request to **[mmasia21@itee.uq.edu.au](mailto:mmasia21@itee.uq.edu.au)**.
 
 
 ## Contact Information
 
-- For any registration-related issues or queries please send an email to: **[mmasia21@uq.edu.au](mailto:mmasia21@uq.edu.au)**.
+- For any registration-related issues or queries please send an email to: **[mmasia21@itee.uq.edu.au](mailto:mmasia21@itee.uq.edu.au)**.
