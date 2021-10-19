@@ -24,24 +24,24 @@ description: ACM MM Asia 2021 registration link is now available.
             </tr>
             <tr>
                 <td>Author <span class="font-semibold">ACM/SIGMM Member</span><br/>[Either Professional or Student]</td>
-                <td colspan="2">AU$380</td>
+                <td colspan="2">AU$380 <br/> (USD$250)</td>
             </tr>
             <tr>
                 <td>Author Non-Member</td>
-                <td colspan="2">AU$455</td>
+                <td colspan="2">AU$455<br/>(USD$300)</td>
             </tr>
             <tr class="bg-gray-100">
-                <td rowspan="3"><span class="font-bold">LATE</span><br/>From 16 November 2021</td>
+                <td rowspan="3"><span class="font-bold">LATE</span><br/>After 15 November 2021</td>
                 <td class="font-bold">Category – Author</td>
                 <td colspan="2" class="font-bold">Online</td>
             </tr>
             <tr>
                 <td>Author <span class="font-semibold">ACM/SIGMM Member</span><br/>[Either Professional or Student]</td>
-                <td colspan="2">AU$530</td>
+                <td colspan="2">AU$530<br/>(USD$350)</td>
             </tr>
             <tr>
                 <td>Author Non-Member</td>
-                <td colspan="2">AU$605</td>
+                <td colspan="2">AU$605<br/>(USD$400)</td>
             </tr>
             <tr class="bg-gray-100">
                 <td rowspan="2" colspan="2" class="font-bold">ATTENDEE<br/>Main + Workshop + PhD School</td>
@@ -51,8 +51,8 @@ description: ACM MM Asia 2021 registration link is now available.
             </tr>
             <tr>
                 <td>Conference Attendee</td>
-                <td>AU$75</td>
-                <td>AU$305</td>
+                <td>AU$75<br/>(USD$50)</td>
+                <td>AU$305<br/>(USD$200)</td>
             </tr>
         </tbody>
     </table>
