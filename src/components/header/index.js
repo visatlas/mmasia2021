@@ -8,7 +8,7 @@ import MobileMenuButton from "./mobile-menu-button";
 import PreviewMode from "./preview-mode";
 import DropDownMenu from "./dropdown-menu";
 
-export default function Header({ activePage }) {
+export default function Header({ activePage, themed }) {
   // A separator will be inserted between each array
   const calls = [[
     { name: "Demo Papers", link: "/call-for-demo-papers", closed: false },
@@ -38,10 +38,11 @@ export default function Header({ activePage }) {
   const linkStyleMedium = `${linkStyle} font-medium`;
   const linkStyleWide = `${linkStyleMedium} tracking-semiWide`;
   const linkStylePurple = `${linkStyleMedium} text-mainPurple`;
+  const navStyle = `overflow-y-auto md:overflow-visible bg-mainPurple fixed top-0 z-50 w-full ${themed ? "md:bg-gray-800" : "md:bg-uqStyle"}`;
 
   return (
     <header>
-      <nav className="overflow-y-auto md:overflow-visible bg-mainPurple fixed top-0 z-50 w-full md:bg-uqStyle" style={{ maxHeight: "100vh" }}>
+      <nav className={navStyle} style={{ maxHeight: "100vh" }}>
         {process.env.GATSBY_PREVIEW_MODE === "true" && (<PreviewMode />)}
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-16">
           <div className="relative flex items-center justify-between h-16">
@@ -70,7 +71,7 @@ export default function Header({ activePage }) {
                     </Fragment>)
                     )}
                   </DropDownMenu>
-                  <NavLink to="/" selected={activePage === "/program"} title="Program" disabled>Program</NavLink>
+                  <NavLink to="/app/program" selected={activePage === "/app/program"} title="Program" themed>Program</NavLink>
                   {/* <DropDownMenu selected={false} name="Program" widthStyle="w-60">
                     <span className="font-headingStyle cursor-default text-gray-400 py-2 px-4 block whitespace-no-wrap text-sm">Coming Soon..</span>
                   </DropDownMenu> */}
@@ -110,7 +111,7 @@ export default function Header({ activePage }) {
                 </Fragment>);
               })}
             </div>)}
-            <MobileNavLink to="/" title="Program" selected={activePage === "/program"} disabled>Program</MobileNavLink>
+            <MobileNavLink to="/app/program" title="Program" selected={activePage === "/app/program"}>Program</MobileNavLink>
             <button className={mobileAttendStyle} onClick={() => { setShowMobileAttend(!showMobileAttend); }}>
               <span className="mr-1">Attend</span>
               <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
