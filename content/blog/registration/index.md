@@ -1,8 +1,8 @@
 ---
 title: Registration Information
 datePublished: "2021-10-18"
-dateModified: "2021-10-18"
-description: ACM MM Asia 2021 Registration Information is now available.
+dateModified: "2021-10-19"
+description: ACM MM Asia 2021 registration link is now available.
 ---
 
 ## Registration Procedures
