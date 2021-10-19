@@ -345,32 +345,22 @@ exports[`Header renders correctly 1`] = `
                         </span>
                          (closed)
                       </a>
-                      <div
-                        className="w-full py-1"
-                      >
-                        <div
-                          className="w-full bg-gray-200"
-                          style={
-                            Object {
-                              "height": "1px",
-                            }
-                          }
-                        />
-                      </div>
-                      <span
-                        className="font-headingStyle cursor-default text-gray-400 py-1.5 px-4 block whitespace-no-wrap text-sm"
-                      >
-                        More to be announced..
-                      </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <span
-                className="text-textDisabled text-base px-3 py-2 rounded-md font-medium  font-headingStyle cursor-default"
+              <a
+                className="flex item-center"
+                href="/app/program"
+                title="Program"
               >
-                Program
-              </span>
+                <span
+                  className=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md
+  font-medium font-headingStyle"
+                >
+                  Program
+                </span>
+              </a>
               <div
                 className="group dropdown inline-block relative"
               >
@@ -402,6 +392,25 @@ exports[`Header renders correctly 1`] = `
                     <div
                       className="max-h-safeHeight overflow-y-auto"
                     >
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium text-mainPurple"
+                        href="/registration"
+                        title="Registration"
+                      >
+                        Registration
+                      </a>
+                      <div
+                        className="w-full py-1"
+                      >
+                        <div
+                          className="w-full bg-gray-200"
+                          style={
+                            Object {
+                              "height": "1px",
+                            }
+                          }
+                        />
+                      </div>
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
                         href="/student-travel-grants"
@@ -511,11 +520,18 @@ exports[`Header renders correctly 1`] = `
             />
           </svg>
         </button>
-        <span
-          className="pl-8 pr-4 py-2 flex item-center w-full text-textDisabled rounded-md text-base  font-semibold font-headingStyle cursor-default"
+        <a
+          className="flex item-center w-full"
+          href="/app/program"
+          title="Program"
         >
-          Program
-        </span>
+          <span
+            className="pl-8 pr-4 py-2 w-full text-white  block rounded-md 
+  text-base font-semibold font-headingStyle"
+          >
+            Program
+          </span>
+        </a>
         <button
           className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-headingStyle inline-flex items-center "
           onClick={[Function]}
