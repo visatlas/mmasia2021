@@ -26,7 +26,7 @@ class Login extends React.Component {
         <h1 className="text-4xl mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Sign In</h1>
         <p className="font-semibold mb-6">Please sign in to view the program details.</p>
         <p className="text-gray-800 bg-gray-200 text-xs inline-block px-3 py-1 font-semibold rounded-md">Sign in details will be available soon.</p>
-        <form class="bg-gray-50 border rounded px-8 pt-6 pb-8 mb-4 max-w-xl" method="post" onSubmit={event => {
+        <form class="bg-gray-50 border rounded px-8 pt-6 pb-8 mb-4" method="post" onSubmit={event => {
           this.handleSubmit(event);
           navigate(`/app/program`);
         }}>
