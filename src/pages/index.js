@@ -54,7 +54,7 @@ const Index = ({ data, location }) => {
   return (
     <Layout location={location}>
       <Seo pageMeta={pageMeta} />
-      {isLoggedIn() && <UserBanner />}
+      {allowTitleVideo && isLoggedIn() && <UserBanner />}
       <Title allowVideo={allowTitleVideo} />
       <div className="global-wrapper pb-12" style={{ maxWidth: "59rem" }} id="welcome">
         <header className="px-0 sm:px-7">
