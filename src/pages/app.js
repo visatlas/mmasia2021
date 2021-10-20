@@ -6,6 +6,7 @@ import PrivateRoute from "../components/auth/privateRoute";
 import Program from "../components/auth/program";
 import Login from "../components/auth/login";
 import UserBanner from "../components/auth/userBanner";
+import Schedule from '../components/schedule';
 import { isLoggedIn } from "../services/auth";
 
 const App = ({ location }) => (
@@ -14,6 +15,7 @@ const App = ({ location }) => (
     <Router>
       <PrivateRoute path="/app/program" component={Program} />
       <Login path="/app/login" />
+      <Schedule path="/app" />
     </Router>
   </Layout>
 );
