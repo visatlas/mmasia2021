@@ -149,33 +149,6 @@ module.exports = {
       },
     },
     {
-      // PWA Offline functionality
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [
-          `/important-dates`,
-          `/reviewer-guidelines`,
-          `/call-for-papers`,
-          `/call-for-demo-papers`,
-          `/call-for-short-papers`,
-          `/call-for-workshop-papers`,
-          `/call-for-brave-new-ideas`,
-          `/call-for-applied-research-track-papers`,
-          `/call-for-grand-challenge-submissions`,
-          `/call-for-tutorials`,
-          `/call-for-phd-school-participants`,
-          `/call-for-workshops`,
-          `/call-for-grand-challenge-proposals`,
-          `/registration`,
-          `/student-travel-grants`,
-          `/carer-award`,
-          `/organisation`,
-          `/sponsors`,
-          `/uploads/*`,
-        ],
-      },
-    },
-    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         resolveEnv: () => process.env.GATSBY_PREVIEW_MODE || "false",
@@ -189,5 +162,6 @@ module.exports = {
         }
       }
     },
+    `gatsby-plugin-remove-serviceworker`,
   ],
 };
