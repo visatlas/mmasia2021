@@ -3,13 +3,15 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
+const browser = typeof window !== "undefined" && window;
+
 const NotFoundPage = ({ location }) => {
   const pageMeta = {
     title: "404"
   };
 
   return (
-    <Layout location={location}>
+    browser && (<Layout location={location}>
       <Seo pageMeta={pageMeta} />
       <div className="flex-grow flex flex-col justify-center content-center items-center m-20">
         <h1 className="font-bold text-3xl mb-2 text-center">404 - Not Found</h1>
@@ -18,7 +20,7 @@ const NotFoundPage = ({ location }) => {
           <span className="text-center">Back to Homepage</span>
         </Link>
       </div>
-    </Layout>
+    </Layout>)
   );
 };
 
