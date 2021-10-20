@@ -7,13 +7,19 @@ export const getUser = () =>
 
 const setUser = user => window.localStorage.setItem("gatsbyUser", JSON.stringify(user));
 
-export const handleLogin = ({ username, password }) => {
-  if (username === `mmasia` && password === `pass`) {
-    return setUser({
-      username: `admin`,
-      name: `Admin`,
-      email: `admin@example.com`,
-    });
+export const handleLogin = async ({ username, password }) => {
+  // temporary url for testing purposes
+  const response = await fetch("https://api.nifu.me/mmasia21", {
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ username, password })
+  });
+  const { token } = await response.json();
+  if (token) {
+    setUser(token);
+    return true;
   }
   return false;
 };
