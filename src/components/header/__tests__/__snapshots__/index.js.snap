@@ -351,7 +351,7 @@ exports[`Header renders correctly 1`] = `
               </div>
               <a
                 className="flex item-center"
-                href="/app/program"
+                href="/program/home"
                 title="Program"
               >
                 <span
@@ -522,7 +522,7 @@ exports[`Header renders correctly 1`] = `
         </button>
         <a
           className="flex item-center w-full"
-          href="/app/program"
+          href="/program/home"
           title="Program"
         >
           <span

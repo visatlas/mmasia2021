@@ -19,7 +19,7 @@ const Login = () => {
     }, 5000);
     const response = await handleLogin({ username, password });
     if (response) {
-      navigate(`/app/program`);
+      navigate(`/program/home`);
     } else {
       setInvalidMessage("Incorrect username or access pin.");
       setSubmitting(false);
@@ -27,7 +27,7 @@ const Login = () => {
   };
 
   useEffect(() => {
-    if (isLoggedIn()) navigate(`/app/program`);
+    if (isLoggedIn()) navigate(`/program/home`);
     return () => {
       clearTimeout();
     };

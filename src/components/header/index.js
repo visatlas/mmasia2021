@@ -71,7 +71,7 @@ export default function Header({ activePage, themed }) {
                     </Fragment>)
                     )}
                   </DropDownMenu>
-                  <NavLink to="/app/program" selected={activePage === "/app/program"} title="Program" themed>Program</NavLink>
+                  <NavLink to="/program/home" selected={activePage === "/program/home"} title="Program" themed>Program</NavLink>
                   {/* <DropDownMenu selected={false} name="Program" widthStyle="w-60">
                     <span className="font-headingStyle cursor-default text-gray-400 py-2 px-4 block whitespace-no-wrap text-sm">Coming Soon..</span>
                   </DropDownMenu> */}
@@ -111,7 +111,7 @@ export default function Header({ activePage, themed }) {
                 </Fragment>);
               })}
             </div>)}
-            <MobileNavLink to="/app/program" title="Program" selected={activePage === "/app/program"}>Program</MobileNavLink>
+            <MobileNavLink to="/program/home" title="Program" selected={activePage === "/program/home"}>Program</MobileNavLink>
             <button className={mobileAttendStyle} onClick={() => { setShowMobileAttend(!showMobileAttend); }}>
               <span className="mr-1">Attend</span>
               <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
