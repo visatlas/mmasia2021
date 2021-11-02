@@ -156,18 +156,18 @@ const Seo = ({ lang, pageMeta }) => {
       "https://mmasia2021.uqcloud.net/uploads/mmasia-logo.png",
     ],
     description: "ACM Multimedia Asia 2021 Conference will be held in a hybrid mode by offering both online and offline events. A live in-person conference with virtual online component will be enabled.",
-    // performer: {
-    //   "@type": "Organization",
-    //   "name": "ACM Multimedia Asia Conference (MM Asia)"
-    // },
-    // offers: {
-    //   "@type": "Offer",
-    //   "url": "https://mmasia2021.uqcloud.net",
-    //   "price": "30",
-    //   "priceCurrency": "USD",
-    //   "availability": "https://schema.org/InStock",
-    //   "validFrom": "2024-05-21T12:00"
-    // },
+    performer: {
+      "@type": "Organization",
+      "name": "ACM Multimedia Asia Conference (MM Asia)"
+    },
+    offers: {
+      "@type": "Offer",
+      "url": "https://mmasia2021.uqcloud.net/registration",
+      // "price": "455",
+      // "priceCurrency": "AUD",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2021-11-01T10:00"
+    },
     organizer: {
       "@type": "Organization",
       name: "ACM Multimedia Asia Conference (MM Asia)",
