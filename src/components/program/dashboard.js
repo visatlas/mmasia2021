@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 
 // sample data for testing purposes
 const data = [
-  { id: "1", start: 9, end: 11, day: 1, name: "Session #1" },
-  { id: "2", start: 11, end: 14, day: 1, name: "Session #2" },
+  { id: "1", start: 11, end: 11.10, day: 1, name: "Welcome Session" },
+  { id: "2", start: 11.11, end: 12.15, day: 1, name: "Intro to the speaker" },
   { id: "3", start: 16, end: 17, day: 1, name: "Session #3" },
   { id: "4", start: 10, end: 12, day: 2, name: "Session #4" },
   { id: "5", start: 9, end: 10, day: 3, name: "Session #5" },
