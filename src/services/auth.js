@@ -9,17 +9,21 @@ const setUser = user => window.localStorage.setItem("gatsbyUser", JSON.stringify
 
 export const handleLogin = async ({ username, password }) => {
   // temporary url for testing purposes
-  const response = await fetch("https://api.nifu.me/mmasia21", {
-    method: "POST",
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ username, password })
-  });
-  const { token } = await response.json();
-  if (token) {
-    setUser(token);
-    return true;
+  try {
+    const response = await fetch("https://mmasia2021.uqcloud.net/api/users/login", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username, password })
+    });
+    const token = await response.json();
+    if (token) {
+      setUser(token);
+      return true;
+    }
+  } catch (error) {
+    return false;
   }
   return false;
 };
