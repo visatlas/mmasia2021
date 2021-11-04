@@ -17,6 +17,7 @@ const Login = () => {
       if (submitting) setInvalidMessage("Sign in timed out, please try again.");
       setSubmitting(false);
     }, 5000);
+
     const response = await handleLogin({ username, password });
     if (response) {
       navigate(`/program/home`);
@@ -55,7 +56,7 @@ const Login = () => {
           {invalidMessage && <p className="text-red-600 text-xs italic font-medium">{invalidMessage}</p>}
         </div>
         <div className="flex items-center justify-between">
-          <input className={inputStyle} type="submit" value="Sign In" disabled={submitting} />
+          <input className={inputStyle} type="submit" value={submitting ? "Signing In..." : "Sign In"} disabled={submitting} />
         </div>
       </form>
     </div>
