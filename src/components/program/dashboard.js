@@ -4,14 +4,11 @@ import { getUser } from "../../services/auth";
 import TimezoneSelect from './timezone';
 
 const Dashboard = () => {
-  // Get the sessions data
-  const [sessions, setSessions] = useState([]);
-  const [timezone, setTimezone] = useState(Intl.DateTimeFormat().resolvedOptions().timeZone);
+  const [sessions, setSessions] = useState([]);  // fetched sessions data from API
+  const [timezone, setTimezone] = useState({ value: Intl.DateTimeFormat().resolvedOptions().timeZone });
+  const [groupedSessions, setGroupedSessions] = useState([]);  // processed sessions data with local timezone
 
-  const convertTZ = (date, tzString) => {
-    return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", { timeZone: tzString }));
-  };
-
+  // fetch sessions data
   useEffect(() => {
     fetch(`https://mmasia2021.uqcloud.net/api/sessions`, {
       method: "GET",
@@ -22,6 +19,25 @@ const Dashboard = () => {
       })
       .catch(err => console.log(err));
   }, []);
+
+  const convertTZ = (date, tzString) => {
+    return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", { timeZone: tzString }));
+  };
+
+  // group sessions by day
+  useEffect(() => {
+    setGroupedSessions(sessions.reduce((r, a) => {
+      const startTimestamp = convertTZ(a.start, timezone.value);
+      const startDay = startTimestamp.toLocaleDateString('default', { weekday: 'long' });
+      const startDate = startTimestamp.getDate();
+      const startMonth = startTimestamp.toLocaleString('default', { month: 'long' });
+      a.startLocalTime = startTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hour12: true });
+      const endTimestamp = convertTZ(a.end, timezone.value);
+      a.endLocalTime = endTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hour12: true });
+      r[`${startDay}, ${startDate} ${startMonth}`] = [...r[`${startDay}, ${startDate} ${startMonth}`] || [], a];
+      return r;
+    }, {}));
+  }, [timezone, sessions]);
 
   // const timeOffset = 10;
   // const scale = 2;
@@ -48,23 +64,28 @@ const Dashboard = () => {
   return (
     <div className="global-wrapper py-10">
       <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Program</h1>
-      <h2 className="text-xl mb-6 font-bold font-headingStyle">Announcement</h2>
-      <h2 className="text-xl mb-6 font-bold font-headingStyle">Event Schedule</h2>
-
+      {/* <h2 className="text-2xl mb-6 font-bold font-headingStyle text-mainPurple">Announcement</h2> */}
+      <h2 className="text-2xl mb-6 font-bold font-headingStyle text-mainPurple">Event Schedule</h2>
       <div className="mb-6">
         <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone} />
       </div>
 
-      {sessions.map((session, index) => {
-        return (
-          <Fragment key={index}>
-            <Link to={`/program/session/${session.id}`}>
-              <p className="mb-0">{convertTZ(session.start, timezone.value).toLocaleString([],
-                { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }
-              )} - {session.name}</p>
-            </Link>
-          </Fragment>
-        );
+      {groupedSessions.length === 0 && (<p>Loading...</p>)}
+
+      {Object.keys(groupedSessions).map((key, index) => {
+        return (<Fragment key={index}>
+          <h3 className="text-lg mb-3 mt-6 font-bold font-headingStyle">{key}</h3>
+          {groupedSessions[key].map((session, index) => {
+            return (<Fragment key={index}>
+              <Link to={`/program/session/${session.id}`}>
+                <div className="mb-3 border px-3 py-3 rounded-md">
+                  <p className="mb-0 text-sm font-semibold text-mainPurple">{session.startLocalTime} - {session.endLocalTime}</p>
+                  <p className="mb-0">{session.name}</p>
+                </div>
+              </Link>
+            </Fragment>);
+          })}
+        </Fragment>);
       })}
 
       {/* <div className="bg-gray-100 p-4 rounded-lg">

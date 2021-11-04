@@ -16,8 +16,8 @@ const Detail = ({ id }) => {
       <Link to="/program/home" className="font-medium hover:underline py-2 pr-2">
         &lsaquo;&nbsp;Back
       </Link>
-      <h1 className="text-4xl mt-6 mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">{data[id].name}</h1>
-      <p>{data[id].description}</p>
+      <h1 className="text-4xl mt-6 mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">{data[id]?.name}</h1>
+      <p>{data[id]?.description}</p>
     </div>
   );
 };
