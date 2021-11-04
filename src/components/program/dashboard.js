@@ -1,15 +1,12 @@
 import React, { Fragment, useEffect, useState } from "react";
-// import TimezoneSelect from "react-timezone-select";
 import { Link } from "gatsby";
 import { getUser } from "../../services/auth";
+import TimezoneSelect from './timezone';
 
 const Dashboard = () => {
   // Get the sessions data
   const [sessions, setSessions] = useState([]);
-  const [timezone, setTimezone] = useState(
-    "en-AU"
-    // Intl.DateTimeFormat().resolvedOptions().timeZone
-  );
+  const [timezone, setTimezone] = useState(Intl.DateTimeFormat().resolvedOptions().timeZone);
 
   const convertTZ = (date, tzString) => {
     return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", { timeZone: tzString }));
@@ -54,9 +51,9 @@ const Dashboard = () => {
       <h2 className="text-xl mb-6 font-bold font-headingStyle">Announcement</h2>
       <h2 className="text-xl mb-6 font-bold font-headingStyle">Event Schedule</h2>
 
-      {/* <div className="mb-6">
-        <TimezoneSelect value={timezone} onChange={setTimezone} />
-      </div> */}
+      <div className="mb-6">
+        <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone} />
+      </div>
 
       {sessions.map((session, index) => {
         return (
