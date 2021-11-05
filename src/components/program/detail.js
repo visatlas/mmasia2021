@@ -24,11 +24,11 @@ const Detail = ({ id }) => {
         &lsaquo;&nbsp;Back
       </Link>
       {(sessionData && Object.keys(sessionData).length === 0 && Object.getPrototypeOf(sessionData) === Object.prototype) ? (<>
-        <h1 className="text-4xl mt-6 mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">{sessionData?.title}</h1>
-        <p>{sessionData?.start} - {sessionData?.end}</p>
-      </>) : (<>
         <h3 className="text-xl mt-6 mb-2 font-bold text-semiBlack">Session details not available.</h3>
         <p>Please try again later.</p>
+      </>) : (<>
+        <h1 className="text-4xl mt-6 mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">{sessionData?.title}</h1>
+        <p>{sessionData?.start} - {sessionData?.end}</p>
       </>)}
     </div>
   );
