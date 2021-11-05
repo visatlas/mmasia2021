@@ -4,7 +4,7 @@ import { navigate } from "gatsby";
 import { handleLogin, isLoggedIn } from "../../services/auth";
 import Seo from "../seo";
 
-const Login = () => {
+const Login = ({ setShowBanner }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [invalidMessage, setInvalidMessage] = useState("");
@@ -22,6 +22,7 @@ const Login = () => {
 
     const response = await handleLogin({ username, password });
     if (response) {
+      setShowBanner(isLoggedIn());
       navigate(`/program/home`);
     } else {
       setInvalidMessage("Incorrect username or access pin.");

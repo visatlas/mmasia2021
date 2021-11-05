@@ -21,7 +21,7 @@ const Program = ({ location }) => {
       <Router>
         <PrivateRoute path="/program/home" component={Dashboard} />
         <PrivateRoute path="/program/session/:id" component={Detail} />
-        <Login path="/program/login" />
+        <Login path="/program/login" setShowBanner={setShowBanner} />
       </Router>
     </Layout>
   );
