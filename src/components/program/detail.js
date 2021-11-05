@@ -1,23 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
-
-// sample data for testing purposes
-const data = {
-  '1': { name: "Welcome Session", description: "Description of Session 1" },
-  '2': { name: "Intro to the speakers", description: "Description of Session 2" },
-  '3': { name: "Session #3", description: "Description of Session 3" },
-  '4': { name: "Session #4", description: "Description of Session 4" },
-  '5': { name: "Session #5", description: "Description of Session 5" }
-};
+import { getUser } from "../../services/auth";
 
 const Detail = ({ id }) => {
+  const [sessionData, setSessionData] = useState({});
+
+  // fetch session details
+  useEffect(() => {
+    fetch(`https://mmasia2021.uqcloud.net/api/sessions/${id}`, {
+      method: 'GET',
+      headers: { "Authorization": `Bearer ${getUser().token}` }
+    }).then(res => res.json())
+      .then(data => {
+        console.log(data);
+        setSessionData(data);
+      })
+      .catch(err => console.log(err));
+  }, [id]);
+
   return (
     <div className="global-wrapper py-10">
       <Link to="/program/home" className="font-medium hover:underline py-2 pr-2">
         &lsaquo;&nbsp;Back
       </Link>
-      <h1 className="text-4xl mt-6 mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">{data[id]?.name}</h1>
-      <p>{data[id]?.description}</p>
+      {(sessionData && Object.keys(sessionData).length === 0 && Object.getPrototypeOf(sessionData) === Object.prototype) ? (<>
+        <h1 className="text-4xl mt-6 mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">{sessionData?.title}</h1>
+        <p>{sessionData?.start} - {sessionData?.end}</p>
+      </>) : (<>
+        <h3 className="text-xl mt-6 mb-2 font-bold text-semiBlack">Session details not available.</h3>
+        <p>Please try again later.</p>
+      </>)}
     </div>
   );
 };
