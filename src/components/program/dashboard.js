@@ -31,9 +31,9 @@ const Dashboard = () => {
       const startDay = startTimestamp.toLocaleDateString('default', { weekday: 'long' });
       const startDate = startTimestamp.getDate();
       const startMonth = startTimestamp.toLocaleString('default', { month: 'long' });
-      a.startLocalTime = startTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hour12: true });
+      a.startLocalTime = startTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hourCycle: 'h12' });
       const endTimestamp = convertTZ(a.end, timezone.value);
-      a.endLocalTime = endTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hour12: true });
+      a.endLocalTime = endTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hourCycle: 'h12' });
       r[`${startDay}, ${startDate} ${startMonth}`] = [...r[`${startDay}, ${startDate} ${startMonth}`] || [], a];
       return r;
     }, {}));
@@ -78,7 +78,7 @@ const Dashboard = () => {
           {groupedSessions[key].map((session, index) => {
             return (<Fragment key={index}>
               <Link to={`/program/session/${session.id}`}>
-                <div className="mb-3 border px-3 py-3 rounded-md">
+                <div className="mb-3 border px-3 py-3 rounded-md bg-gray-50">
                   <p className="mb-0 text-sm font-semibold text-mainPurple">{session.startLocalTime} - {session.endLocalTime}</p>
                   <p className="mb-0">{session.name}</p>
                 </div>
