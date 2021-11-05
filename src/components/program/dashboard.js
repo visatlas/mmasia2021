@@ -90,16 +90,18 @@ const Dashboard = () => {
       {Object.keys(groupedSessions).map((key, index) => {
         return (<Fragment key={index}>
           <h3 className="text-lg mb-3 mt-6 font-bold font-headingStyle">{key}</h3>
+          <div className="border-t border-l border-r rounded-md bg-gray-50">
           {groupedSessions[key].map((session, index) => {
             return (<Fragment key={index}>
               <Link className="" to={`/program/session/${session.id}`}>
-                <div className="mb-3 border px-3 py-3 rounded-md bg-gray-50 hover:bg-gray-200 duration-100">
+                <div className="border-b px-3 py-3 hover:bg-gray-200 duration-100">
                   <p className="mb-0 text-sm font-semibold text-mainPurple">{session.startLocalTime} - {session.endLocalTime}</p>
                   <p className="mb-0">{session.name}</p>
                 </div>
               </Link>
             </Fragment>);
           })}
+          </div>
         </Fragment>);
       })}
 
