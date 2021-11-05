@@ -3,12 +3,13 @@ import { Link } from "gatsby";
 import { getUser } from "../../services/auth";
 import TimezoneSelect from './timezone';
 import { getTimezonePref, setTimezonePref } from "../../services/preferences";
+import Seo from "../../components/seo";
 
 const Dashboard = () => {
   const [sessions, setSessions] = useState([]);  // Fetched sessions data from API
   const [timezone, setTimezone] = useState({ value: Intl.DateTimeFormat().resolvedOptions().timeZone });
   const [groupedSessions, setGroupedSessions] = useState([]);  // Processed sessions data with local timezone
-  
+
   useEffect(() => {
     // Fetch sessions data
     fetch(`https://mmasia2021.uqcloud.net/api/sessions`, {
@@ -30,7 +31,7 @@ const Dashboard = () => {
   const convertTZ = (date, tzString) => {
     return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", { timeZone: tzString }));
   };
-  
+
   useEffect(() => {
     // Group sessions by day
     setGroupedSessions(sessions.reduce((r, a) => {
@@ -73,7 +74,8 @@ const Dashboard = () => {
   //   );
   // };
 
-  return (
+  return (<>
+    <Seo pageMeta={{ title: "Program" }} />
     <div className="global-wrapper py-10">
       <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Program</h1>
       <h2 className="text-2xl mb-6 font-bold font-headingStyle text-mainPurple">Announcement</h2>
@@ -91,16 +93,16 @@ const Dashboard = () => {
         return (<Fragment key={index}>
           <h3 className="text-lg mb-3 mt-6 font-bold font-headingStyle">{key}</h3>
           <div className="border-t border-l border-r rounded-md bg-gray-50">
-          {groupedSessions[key].map((session, index) => {
-            return (<Fragment key={index}>
-              <Link className="" to={`/program/session/${session.id}`}>
-                <div className="border-b px-3 py-3 hover:bg-gray-200 duration-100">
-                  <p className="mb-0 text-sm font-semibold text-mainPurple">{session.startLocalTime} - {session.endLocalTime}</p>
-                  <p className="mb-0">{session.name}</p>
-                </div>
-              </Link>
-            </Fragment>);
-          })}
+            {groupedSessions[key].map((session, index) => {
+              return (<Fragment key={index}>
+                <Link className="" to={`/program/session/${session.id}`}>
+                  <div className="border-b px-3 py-3 hover:bg-gray-200 duration-100">
+                    <p className="mb-0 text-sm font-semibold text-mainPurple">{session.startLocalTime} - {session.endLocalTime}</p>
+                    <p className="mb-0">{session.name}</p>
+                  </div>
+                </Link>
+              </Fragment>);
+            })}
           </div>
         </Fragment>);
       })}
@@ -134,7 +136,7 @@ const Dashboard = () => {
         </div>
       </div> */}
     </div>
-  );
+  </>);
 };
 
 export default Dashboard;

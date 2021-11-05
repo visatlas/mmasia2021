@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { navigate } from "gatsby";
+
 import { handleLogin, isLoggedIn } from "../../services/auth";
+import Seo from "../seo";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -34,7 +36,8 @@ const Login = () => {
     };
   }, []);
 
-  return (
+  return (<>
+    <Seo pageMeta={{ title: "Sign In" }} />
     <div className="global-wrapper py-10">
       <h1 className="text-4xl mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Sign In</h1>
       <p className="font-semibold mb-6">Please sign in to view the program details.</p>
@@ -61,7 +64,7 @@ const Login = () => {
         </div>
       </form>
     </div>
-  );
+  </>);
 };
 
 export default Login;
