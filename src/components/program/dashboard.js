@@ -2,14 +2,15 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "gatsby";
 import { getUser } from "../../services/auth";
 import TimezoneSelect from './timezone';
+import { getTimezonePref, setTimezonePref } from "../../services/preferences";
 
 const Dashboard = () => {
-  const [sessions, setSessions] = useState([]);  // fetched sessions data from API
+  const [sessions, setSessions] = useState([]);  // Fetched sessions data from API
   const [timezone, setTimezone] = useState({ value: Intl.DateTimeFormat().resolvedOptions().timeZone });
-  const [groupedSessions, setGroupedSessions] = useState([]);  // processed sessions data with local timezone
-
-  // fetch sessions data
+  const [groupedSessions, setGroupedSessions] = useState([]);  // Processed sessions data with local timezone
+  
   useEffect(() => {
+    // Fetch sessions data
     fetch(`https://mmasia2021.uqcloud.net/api/sessions`, {
       method: "GET",
       headers: { "Authorization": `Bearer ${getUser().token}` }
@@ -18,14 +19,20 @@ const Dashboard = () => {
         setSessions(data);
       })
       .catch(err => console.log(err));
+
+    // Get timezone preference
+    const timezonePref = getTimezonePref();
+    if (timezonePref) {
+      setTimezone({ value: timezonePref });
+    }
   }, []);
 
   const convertTZ = (date, tzString) => {
     return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", { timeZone: tzString }));
   };
-
-  // group sessions by day
+  
   useEffect(() => {
+    // Group sessions by day
     setGroupedSessions(sessions.reduce((r, a) => {
       const startTimestamp = convertTZ(a.start, timezone.value);
       const startDay = startTimestamp.toLocaleDateString('default', { weekday: 'long' });
@@ -38,6 +45,11 @@ const Dashboard = () => {
       return r;
     }, {}));
   }, [timezone, sessions]);
+
+  useEffect(() => {
+    // Remember user choice of timezone
+    setTimezonePref(timezone.value);
+  }, [timezone]);
 
   // const timeOffset = 10;
   // const scale = 2;
@@ -64,7 +76,10 @@ const Dashboard = () => {
   return (
     <div className="global-wrapper py-10">
       <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Program</h1>
-      {/* <h2 className="text-2xl mb-6 font-bold font-headingStyle text-mainPurple">Announcement</h2> */}
+      <h2 className="text-2xl mb-6 font-bold font-headingStyle text-mainPurple">Announcement</h2>
+      <p className="mb-10">
+        The program will be updated soon.
+      </p>
       <h2 className="text-2xl mb-6 font-bold font-headingStyle text-mainPurple">Event Schedule</h2>
       <div className="mb-6">
         <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone} />

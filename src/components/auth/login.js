@@ -8,7 +8,7 @@ const Login = () => {
   const [invalidMessage, setInvalidMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
-  const inputStyle = `${submitting ? "bg-gray-200" : "bg-gray-600 hover:bg-gray-800 cursor-pointer"} text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline`;
+  const inputStyle = `${submitting ? "bg-gray-200" : "bg-gray-600 hover:bg-gray-800 cursor-pointer"} text-white font-bold py-2 px-10 rounded focus:outline-none focus:shadow-outline`;
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -55,6 +55,7 @@ const Login = () => {
             onChange={e => setPassword(e.target.value)} />
           {invalidMessage && <p className="text-red-600 text-xs italic font-medium">{invalidMessage}</p>}
         </div>
+        {/* <p className="text-sm text-gray-600 font-medium">This website uses cookies to improve user experience.</p> */}
         <div className="flex items-center justify-between">
           <input className={inputStyle} type="submit" value={submitting ? "Signing In..." : "Sign In"} disabled={submitting} />
         </div>
