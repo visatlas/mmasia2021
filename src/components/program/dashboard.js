@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "gatsby";
+import spacetime from "spacetime";
 import { getUser } from "../../services/auth";
 import TimezoneSelect from './timezone';
 import { getTimezonePref, setTimezonePref } from "../../services/preferences";
@@ -7,7 +8,10 @@ import Seo from "../../components/seo";
 
 const Dashboard = () => {
   const [sessions, setSessions] = useState([]);  // Fetched sessions data from API
-  const [timezone, setTimezone] = useState({ value: Intl.DateTimeFormat().resolvedOptions().timeZone });
+  const [timezone, setTimezone] = useState({
+    value: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    offset: spacetime.now(Intl.DateTimeFormat().resolvedOptions().timeZone).timezone().current.offset
+  });
   const [groupedSessions, setGroupedSessions] = useState([]);  // Processed sessions data with local timezone
 
   useEffect(() => {
@@ -24,24 +28,27 @@ const Dashboard = () => {
     // Get timezone preference
     const timezonePref = getTimezonePref();
     if (timezonePref) {
-      setTimezone({ value: timezonePref });
+      setTimezone({
+        value: timezonePref,
+        offset: spacetime.now(timezonePref).timezone().current.offset
+      });
     }
   }, []);
 
-  const convertTZ = (date, tzString) => {
-    return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", { timeZone: tzString }));
+  const convertTimezone = (date, offset) => {
+    return new Date((typeof date === "string" ? new Date(date) : date).getTime() + offset * 60 * 60 * 1000);
   };
 
   useEffect(() => {
     // Group sessions by day
     setGroupedSessions(sessions.reduce((r, a) => {
-      const startTimestamp = convertTZ(a.start, timezone.value);
-      const startDay = startTimestamp.toLocaleDateString('default', { weekday: 'long' });
-      const startDate = startTimestamp.getDate();
-      const startMonth = startTimestamp.toLocaleString('default', { month: 'long' });
-      a.startLocalTime = startTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hourCycle: 'h12' });
-      const endTimestamp = convertTZ(a.end, timezone.value);
-      a.endLocalTime = endTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hourCycle: 'h12' });
+      const startTimestamp = convertTimezone(a.start, timezone.offset);
+      const startDay = startTimestamp.toLocaleString('default', { weekday: 'short', timeZone: "UTC" });
+      const startDate = startTimestamp.toLocaleString('default', { day: 'numeric', timeZone: "UTC" });
+      const startMonth = startTimestamp.toLocaleString('default', { month: 'long', timeZone: "UTC" });
+      a.startLocalTime = startTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hourCycle: 'h12', timeZone: "UTC" });
+      const endTimestamp = convertTimezone(a.end, timezone.offset);
+      a.endLocalTime = endTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hourCycle: 'h12', timeZone: "UTC" });
       r[`${startDay}, ${startDate} ${startMonth}`] = [...r[`${startDay}, ${startDate} ${startMonth}`] || [], a];
       return r;
     }, {}));
@@ -76,36 +83,50 @@ const Dashboard = () => {
 
   return (<>
     <Seo pageMeta={{ title: "Program" }} />
-    <div className="global-wrapper py-10">
-      <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Program</h1>
-      <h2 className="text-2xl mb-6 font-bold font-headingStyle text-mainPurple">Announcement</h2>
-      <p className="mb-10">
+    <div className="max-w-7xl mx-auto py-10 px-5 lg:px-21">
+      <h1 className="text-4xl mb-10 px-3 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Program</h1>
+      <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Announcement</h2>
+      <p className="mb-10 px-3">
         The program will be updated soon.
       </p>
-      <h2 className="text-2xl mb-6 font-bold font-headingStyle text-mainPurple">Event Schedule</h2>
-      <div className="mb-6">
-        <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone} />
+      <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Event Schedule</h2>
+      <div className="mb-0 lg:mb-6">
+        <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone} 
+          styles={{
+            option: (provided) => ({
+              ...provided,
+              cursor: 'pointer',
+            }),
+            control: (provided) => ({
+              ...provided,
+              borderColor: '#eaeaea',
+              cursor: 'pointer',
+            })
+          }}
+        />
       </div>
 
       {groupedSessions.length === 0 && (<p>Loading...</p>)}
 
-      {Object.keys(groupedSessions).map((key, index) => {
-        return (<Fragment key={index}>
-          <h3 className="text-lg mb-3 mt-6 font-bold font-headingStyle">{key}</h3>
-          <div className="border-t border-l border-r rounded-md bg-gray-50">
-            {groupedSessions[key].map((session, index) => {
-              return (<Fragment key={index}>
-                <Link className="" to={`/program/session/${session.id}`}>
-                  <div className="border-b px-3 py-3 hover:bg-gray-200 duration-100">
-                    <p className="mb-0 text-sm font-semibold text-mainPurple">{session.startLocalTime} - {session.endLocalTime}</p>
-                    <p className="mb-0">{session.name}</p>
-                  </div>
-                </Link>
-              </Fragment>);
-            })}
-          </div>
-        </Fragment>);
-      })}
+      <div className="flex flex-col lg:flex-row gap-x-5">
+        {Object.keys(groupedSessions).map((key, index) => {
+          return (<div className="flex-1" key={index}>
+            <h3 className="pl-3 text-lg mb-3 mt-6 lg:mt-0 font-bold font-headingStyle">{key}</h3>
+            <div className="border-t border-l border-r rounded-md bg-gray-50">
+              {groupedSessions[key].map((session, index) => {
+                return (<Fragment key={index}>
+                  <Link className="" to={`/program/session/${session.id}`}>
+                    <div className="border-b px-3 py-3 hover:bg-gray-200 duration-100">
+                      <p className="mb-0 text-sm font-semibold text-mainPurple">{session.startLocalTime} - {session.endLocalTime}</p>
+                      <p className="mb-0">{session.name}</p>
+                    </div>
+                  </Link>
+                </Fragment>);
+              })}
+            </div>
+          </div>);
+        })}
+      </div>
 
       {/* <div className="bg-gray-100 p-4 rounded-lg">
         <div className="grid gap-8 grid-rows-1 mb-2 place-items-center font-semibold"

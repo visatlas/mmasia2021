@@ -45,6 +45,7 @@ module.exports = {
         bp3: "900px",
       },
       spacing: {
+        '21': '5.25rem',
         '68': '17rem',
         '87': '21rem',
       },
