@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   mode: 'jit',
@@ -15,6 +17,7 @@ module.exports = {
         textDisabled: "rgba(255, 255, 255, 0.4)",
         orgBackground: '#f6f7f8',
         semiBlack: "#222222",
+        sky: colors.sky,
       },
       backgroundImage: _ => ({
         uqStyle: "linear-gradient(90deg, #51247a 0%, #56247a 60%, #61257d 80%, #962a8b 100%)",

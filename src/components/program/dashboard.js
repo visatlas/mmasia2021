@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import spacetime from "spacetime";
 import { getUser } from "../../services/auth";
@@ -35,6 +35,7 @@ const Dashboard = () => {
     }
   }, []);
 
+  // Convert time given offset
   const convertTimezone = (date, offset) => {
     return new Date((typeof date === "string" ? new Date(date) : date).getTime() + offset * 60 * 60 * 1000);
   };
@@ -43,12 +44,22 @@ const Dashboard = () => {
     // Group sessions by day
     setGroupedSessions(sessions.reduce((r, a) => {
       const startTimestamp = convertTimezone(a.start, timezone.offset);
-      const startDay = startTimestamp.toLocaleString('default', { weekday: 'short', timeZone: "UTC" });
-      const startDate = startTimestamp.toLocaleString('default', { day: 'numeric', timeZone: "UTC" });
-      const startMonth = startTimestamp.toLocaleString('default', { month: 'long', timeZone: "UTC" });
-      a.startLocalTime = startTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hourCycle: 'h12', timeZone: "UTC" });
+      const startDay = startTimestamp.toLocaleString('default',
+        { weekday: 'short', timeZone: "UTC" }
+      );
+      const startDate = startTimestamp.toLocaleString('default',
+        { day: 'numeric', timeZone: "UTC" }
+      );
+      const startMonth = startTimestamp.toLocaleString('default',
+        { month: 'long', timeZone: "UTC" }
+      );
+      a.startLocalTime = startTimestamp.toLocaleString('default',
+        { hour: 'numeric', minute: 'numeric', hourCycle: 'h12', timeZone: "UTC" }
+      );
       const endTimestamp = convertTimezone(a.end, timezone.offset);
-      a.endLocalTime = endTimestamp.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hourCycle: 'h12', timeZone: "UTC" });
+      a.endLocalTime = endTimestamp.toLocaleString('default',
+        { hour: 'numeric', minute: 'numeric', hourCycle: 'h12', timeZone: "UTC" }
+      );
       r[`${startDay}, ${startDate} ${startMonth}`] = [...r[`${startDay}, ${startDate} ${startMonth}`] || [], a];
       return r;
     }, {}));
@@ -59,39 +70,20 @@ const Dashboard = () => {
     setTimezonePref(timezone.value);
   }, [timezone]);
 
-  // const timeOffset = 10;
-  // const scale = 2;
-
-  // const Session = ({ id, start, end, day, name }) => {
-  //   const startRow = (start - (timeOffset - 1)) * scale + 1;
-  //   const endRow = startRow + (end - start) * scale;
-
-  //   return (
-  //     <Link to={`/program/session/${id}`}
-  //       className="bg-gray-600 hover:bg-gray-500 duration-100 rounded-md font-semibold text-sm text-gray-100 p-1"
-  //       style={{
-  //         "gridRowStart": startRow,
-  //         "gridRowEnd": endRow,
-  //         "gridColumnStart": day + 1
-  //       }}>
-  //       <span className="">
-  //         {name}
-  //       </span>
-  //     </Link>
-  //   );
-  // };
-
   return (<>
     <Seo pageMeta={{ title: "Program" }} />
     <div className="max-w-7xl mx-auto py-10 px-5 lg:px-21">
-      <h1 className="text-4xl mb-10 px-3 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Program</h1>
+      <h1 className="text-4xl mb-10 px-3 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">
+        Program
+      </h1>
       <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Announcement</h2>
       <p className="mb-10 px-3">
         The program will be updated soon.
       </p>
       <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Event Schedule</h2>
       <div className="mb-0 lg:mb-6">
-        <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone} 
+        <p className="px-3 mb-2 font-bold font-headingStyle tracking-semiWide">Please make sure the timezone matches your region:</p>
+        <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone}
           styles={{
             option: (provided) => ({
               ...provided,
@@ -106,56 +98,37 @@ const Dashboard = () => {
         />
       </div>
 
-      {groupedSessions.length === 0 && (<p>Loading...</p>)}
-
+      {groupedSessions.length === 0 && (<p className="px-3 font-medium">Loading...</p>)}
       <div className="flex flex-col lg:flex-row gap-x-5">
         {Object.keys(groupedSessions).map((key, index) => {
           return (<div className="flex-1" key={index}>
             <h3 className="pl-3 text-lg mb-3 mt-6 lg:mt-0 font-bold font-headingStyle">{key}</h3>
-            <div className="border-t border-l border-r rounded-md bg-gray-50">
+            <div className="program-list border rounded-md divide-y divide-gray-200">
               {groupedSessions[key].map((session, index) => {
-                return (<Fragment key={index}>
+                let bgStyle = "";
+                switch (session.type) {
+                  case "red": bgStyle = 'bg-pink-50 hover:bg-pink-100'; break;
+                  case "blue": bgStyle = "bg-sky-50 hover:bg-sky-100"; break;
+                  case "yellow": bgStyle = "bg-yellow-50 hover:bg-yellow-100"; break;
+                  default: bgStyle = "bg-gray-50 hover:bg-gray-200";
+                }
+                const style = `${bgStyle} duration-100`;
+                return (<div className={style} key={index}>
                   <Link className="" to={`/program/session/${session.id}`}>
-                    <div className="border-b px-3 py-3 hover:bg-gray-200 duration-100">
-                      <p className="mb-0 text-sm font-semibold text-mainPurple">{session.startLocalTime} - {session.endLocalTime}</p>
-                      <p className="mb-0">{session.name}</p>
+                    <div className="px-3 py-3">
+                      <p className="mb-1 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
+                        {session.startLocalTime} - {session.endLocalTime}
+                      </p>
+                      {session.subtitle && <small className="font-bold">{session.subtitle}</small>}
+                      <p className="mb-0 leading-5">{session.name}</p>
                     </div>
                   </Link>
-                </Fragment>);
+                </div>);
               })}
             </div>
           </div>);
         })}
       </div>
-
-      {/* <div className="bg-gray-100 p-4 rounded-lg">
-        <div className="grid gap-8 grid-rows-1 mb-2 place-items-center font-semibold"
-          style={{ "gridTemplateColumns": "50px auto auto auto" }}>
-          <div className="col-start-2">Wed 1 Dec</div>
-          <div className="">Thu 2 Dec</div>
-          <div className="">Fri 3 Dec</div>
-        </div>
-
-        <div className="relative h-96 grid grid-flow-col gap-x-8 gap-y-1"
-          style={{
-            "gridTemplateColumns": "50px auto auto auto",
-            "gridTemplateRows": `repeat(${scale * 9}, minmax(0, 1fr))`
-          }}>
-          {[...Array(9).keys()].map((num, index) => (
-            <div key={index} className="row-span-2 flex justify-end font-semibold">
-              {num + timeOffset - 1}:00
-            </div>))}
-
-          {sessions.length ? sessions.map((session, index) => (
-            <Fragment key={index}>
-              <Session id={session.id} start={session.start} end={session.end} day={session.day} name={session.name} />
-            </Fragment>
-          )) : (
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-            z-50 font-semibold text-xl text-gray-400">Loading...</div>
-          )}
-        </div>
-      </div> */}
     </div>
   </>);
 };
