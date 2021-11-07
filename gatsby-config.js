@@ -99,6 +99,7 @@ module.exports = {
                 });
               });
             },
+            title: `ACM Multimedia Asia 2021`,
             query: `
               {
                 allMarkdownRemark(

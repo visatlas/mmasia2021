@@ -18,10 +18,10 @@ const Program = ({ location }) => {
   return (
     <Layout location={location} themed>
       {showBanner && <UserBanner />}
-      <Router>
-        <PrivateRoute path="/program/home" component={Dashboard} />
-        <PrivateRoute path="/program/session/:id" component={Detail} />
-        <Login path="/program/login" setShowBanner={setShowBanner} />
+      <Router basepath="/program">
+        <PrivateRoute path="/home" component={Dashboard} />
+        <PrivateRoute path="/session/:id" component={Detail} />
+        <Login path="/login" setShowBanner={setShowBanner} />
       </Router>
     </Layout>
   );
