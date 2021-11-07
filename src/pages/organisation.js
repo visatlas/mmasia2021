@@ -70,7 +70,7 @@ export default Organisation;
 
 export const pageQuery = graphql`
   query {
-    committeeJson(id: {eq: "committee"}) {
+    committeeJson(jsonId: {eq: "committee"}) {
       data {
         list {
           imageUrl

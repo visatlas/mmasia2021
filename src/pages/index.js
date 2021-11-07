@@ -163,7 +163,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    paragraphsJson(id: {eq: "highlights"}) {
+    paragraphsJson(jsonId: {eq: "highlights"}) {
       data
     }
     allMarkdownRemark(sort: { fields: [frontmatter___dateModified], order: DESC }, limit: 15) {

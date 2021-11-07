@@ -75,7 +75,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.onCreatePage = async ({ page, actions }) => {
   const { createPage } = actions;
   if (page.path.match(/^\/program/)) {
-    page.matchPath = "/program/*";  // matching pages only ont he client
+    page.matchPath = "/program/*";  // matching pages only on the client
     createPage(page);  // Update the page
   }
 };

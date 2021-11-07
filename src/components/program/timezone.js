@@ -4,14 +4,7 @@ import Select from "react-select";
 import spacetime from "spacetime";
 import soft from "timezone-soft";
 
-const TimezoneSelect = ({
-  value,
-  onBlur,
-  onChange,
-  labelStyle = "original",
-  timezones = allTimezones,
-  ...props
-}) => {
+const TimezoneSelect = ({ value, onBlur, onChange, labelStyle = "original", timezones = allTimezones, ...props }) => {
   const getOptions = React.useMemo(() => {
     return Object.entries(timezones)
       .reduce((selectOptions, zone) => {
@@ -53,7 +46,7 @@ const TimezoneSelect = ({
 
         return selectOptions;
       }, [])
-        .sort((a, b) => a.offset - b.offset);
+      .sort((a, b) => a.offset - b.offset);
   }, [labelStyle, timezones]);
 
   const handleChange = (tz) => {
@@ -219,4 +212,4 @@ const allTimezones = {
   "Pacific/Fiji": "Fiji Islands",
   "Pacific/Auckland": "Auckland, Wellington",
   "Pacific/Tongatapu": "Nuku'alofa",
-}
+};
