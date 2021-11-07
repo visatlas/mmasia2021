@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout from "../components/layout";
-import Seo from "../components/seo";
 
-import ACMLogo from "../images/footer/acm-logo.svg";
-import SIGMMLogo from "../images/footer/sigmm-logo.svg";
-import UQLogo from "../images/footer/uq-logo.svg";
-import GriffithLogo from "../images/footer/griffith-logo.svg";
-import MonashDSAI from '../images/footer/monash-dsai.svg';
-import MonashDFI from '../images/footer/monash-dfi.svg';
+import Layout from "@/components/layout";
+import Seo from "@/components/seo";
+import ACMLogo from "@/images/footer/acm-logo.svg";
+import SIGMMLogo from "@/images/footer/sigmm-logo.svg";
+import UQLogo from "@/images/footer/uq-logo.svg";
+import GriffithLogo from "@/images/footer/griffith-logo.svg";
+import MonashDSAI from '@/images/footer/monash-dsai.svg';
+import MonashDFI from '@/images/footer/monash-dfi.svg';
 
 const Sponsors = ({ location }) => {
   const datePublished = "2021-06-23";

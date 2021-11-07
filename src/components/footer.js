@@ -1,15 +1,17 @@
 import React from 'react';
-import ACMLogo from "../images/footer/acm-logo.svg";
-import SIGMMLogo from "../images/footer/sigmm-logo.svg";
-import UQLogo from "../images/footer/uq-logo.svg";
-import GriffithLogo from "../images/footer/griffith-logo.svg";
-import MonashDSAI from '../images/footer/monash-dsai.svg';
-import MonashDFI from '../images/footer/monash-dfi.svg';
+import ACMLogo from "@/images/footer/acm-logo.svg";
+import SIGMMLogo from "@/images/footer/sigmm-logo.svg";
+import UQLogo from "@/images/footer/uq-logo.svg";
+import GriffithLogo from "@/images/footer/griffith-logo.svg";
+import MonashDSAI from '@/images/footer/monash-dsai.svg';
+import MonashDFI from '@/images/footer/monash-dfi.svg';
 
-export default function Footer() {
+export default function Footer({ wide = true }) {
+  const style = `${wide ? "max-w-7xl mx-auto px-8 lg:px-24" : "global-wrapper"} flex sm:block flex-col items-center md:items-start`;
+
   return (<>
     <footer className="bg-gray-100 mt-auto bottom-0 border-t shadow-inner overflow-x-hidden">
-      <div className="global-wrapper flex sm:block flex-col items-center md:items-start">
+      <div className={style}>
         <div className="flex flex-col py-2 px-6 lg:px-0">
           <div className="flex flex-wrap items-center gap-x-12 gap-y-4 mb-4 md:mb-8">
             <div>

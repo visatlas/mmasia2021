@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { navigate } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
-import { handleLogin, isLoggedIn } from "../../services/auth";
-import Seo from "../seo";
+import { handleLogin, isLoggedIn } from "@/services/auth";
+import Seo from "@/components/seo";
 
 const Login = ({ setShowBanner }) => {
   const [username, setUsername] = useState("");
@@ -39,6 +40,8 @@ const Login = ({ setShowBanner }) => {
 
   return (<>
     <Seo pageMeta={{ title: "Sign In" }} />
+    <StaticImage src="../images/dino.png" alt="A dinosaur" />
+
     <div className="global-wrapper py-10">
       <h1 className="text-4xl mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Sign In</h1>
       <p className="font-semibold mb-6">Please sign in to view the program details.</p>

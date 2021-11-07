@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-
-import Title from "../components/title";
-import UserBanner from "../components/auth/userBanner";
-import { isLoggedIn } from "../services/auth";
+import Layout from "@/components/layout";
+import Seo from "@/components/seo";
+import Title from "@/components/title";
+import UserBanner from "@/components/auth/userBanner";
+import { isLoggedIn } from "@/services/auth";
 
 const Index = ({ data, location }) => {
   const pageMeta = {
