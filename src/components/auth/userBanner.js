@@ -1,7 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby";
-
-import { getUser, isLoggedIn, logout } from "@/services/auth";
+import { getUser, isLoggedIn, logout } from "../../services/auth";
 
 const UserBanner = () => {
   return isLoggedIn() ? (

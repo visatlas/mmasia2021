@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 
-import { getUser } from "@/services/auth";
-import Seo from "@/components/seo";
+import { getUser } from "../../services/auth";
+import Seo from "../seo";
 
 const Detail = ({ id }) => {
   const [sessionData, setSessionData] = useState({});
@@ -22,7 +22,7 @@ const Detail = ({ id }) => {
 
   return (<>
     <Seo pageMeta={{ title: sessionData.title || "Session" }} />
-    <div className="max-w-7xl px-8 lg:px-24 py-10 mx-auto">
+    <div className="global-wrapper py-10">
       <Link to="/program/home" className="font-medium hover:underline py-2 pr-2">
         &lsaquo;&nbsp;Back
       </Link>

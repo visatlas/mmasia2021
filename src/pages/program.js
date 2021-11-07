@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Router } from "@reach/router";
 
-import Layout from "@/components/layout";
-import PrivateRoute from "@/components/auth/privateRoute";
-import Dashboard from "@/components/program/dashboard";
-import Login from "@/components/auth/login";
-import UserBanner from "@/components/auth/userBanner";
-import Detail from "@/components/program/detail";
-import { isLoggedIn } from "@/services/auth";
+import Layout from "../components/layout";
+import PrivateRoute from "../components/auth/privateRoute";
+import Dashboard from "../components/program/dashboard";
+import Login from "../components/auth/login";
+import UserBanner from "../components/auth/userBanner";
+import { isLoggedIn } from "../services/auth";
+import Detail from "../components/program/detail";
 
 const Program = ({ location }) => {
   const [showBanner, setShowBanner] = useState(false);

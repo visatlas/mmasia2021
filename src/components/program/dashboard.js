@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import spacetime from "spacetime";
-
+import { getUser } from "../../services/auth";
 import TimezoneSelect from './timezone';
-import { getUser } from "@/services/auth";
-import { getTimezonePref, setTimezonePref } from "@/services/preferences";
-import Seo from "@/components/seo";
+import { getTimezonePref, setTimezonePref } from "../../services/preferences";
+import Seo from "../../components/seo";
 
 const Dashboard = () => {
   const [sessions, setSessions] = useState([]);  // Fetched sessions data from API
@@ -83,9 +82,7 @@ const Dashboard = () => {
       </p>
       <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Event Schedule</h2>
       <div className="mb-0 lg:mb-6">
-        <p className="px-3 mb-2 font-bold font-headingStyle tracking-semiWide">
-          Please make sure the timezone matches your region:
-        </p>
+        <p className="px-3 mb-2 font-bold font-headingStyle tracking-semiWide">Please make sure the timezone matches your region:</p>
         <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone}
           styles={{
             option: (provided) => ({
