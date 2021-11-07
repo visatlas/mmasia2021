@@ -16,7 +16,7 @@ const Program = ({ location }) => {
   }, []);
 
   return (
-    <Layout location={location} themed>
+    <Layout location={location} themed footerWide>
       {showBanner && <UserBanner />}
       <Router basepath="/program">
         <PrivateRoute path="/home" component={Dashboard} />

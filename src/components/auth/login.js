@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { navigate } from "gatsby";
+import { navigate, Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import { handleLogin, isLoggedIn } from "../../services/auth";
 import Seo from "../seo";
@@ -10,7 +11,8 @@ const Login = ({ setShowBanner }) => {
   const [invalidMessage, setInvalidMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
-  const inputStyle = `${submitting ? "bg-gray-200" : "bg-gray-600 hover:bg-gray-800 cursor-pointer"} text-white font-bold py-2 px-10 rounded focus:outline-none focus:shadow-outline`;
+  const inputStyle = `${submitting ? "bg-gray-200" : "bg-gray-600 hover:bg-gray-800 cursor-pointer"} text-white 
+    font-bold py-2 px-10 rounded focus:outline-none focus:shadow-outline`;
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -39,31 +41,48 @@ const Login = ({ setShowBanner }) => {
 
   return (<>
     <Seo pageMeta={{ title: "Sign In" }} />
-    <div className="global-wrapper py-10">
-      <h1 className="text-4xl mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">Sign In</h1>
-      <p className="font-semibold mb-6">Please sign in to view the program details.</p>
-      <p className="text-gray-800 bg-gray-200 text-xs inline-block px-3 py-1 font-semibold rounded-md">Sign in details will be available soon.</p>
-      <form className="bg-gray-50 border rounded px-8 pt-6 pb-8 mb-4" method="post" onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
-            Email or Username
-          </label>
-          <input className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="username" type="text" placeholder="user@example.com"
-            onChange={e => setUsername(e.target.value)} />
+    <div className="w-full h-screen">
+      <StaticImage className="h-full w-full" src="../../images/gold-coast-blur.jpg" alt="Gold Coast Background"
+        placeholder="blurred" layout="constrained" objectFit="cover" quality={100} />
+      <div className="absolute top-[64px] left-0 w-full h-full">
+        <div className="max-w-7xl mx-auto px-0 lg:px-12 h-full">
+          <div className="w-full sm:w-148 bg-gray-100 bg-opacity-90 p-8 sm:p-12 pt-16 h-full">
+            <h1 className="text-2xl mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">
+              Sign in to MMAsia'21
+            </h1>
+            <p className="font-medium mb-3">Please sign in to view the program details.</p>
+            <p className="text-red-800 text-xs inline-block font-semibold rounded-md">
+              Sign in details will be available soon for all attendees.
+            </p>
+            <form className="pt-3" method="post" onSubmit={handleSubmit}>
+              <div className="mb-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
+                  Email or Username
+                </label>
+                <input className="appearance-none rounded w-full py-2 px-3 text-gray-700 bg-gray-50 
+                  leading-tight focus:outline-none focus:shadow-outline" name="username" type="text" placeholder="user@example.com"
+                  onChange={e => setUsername(e.target.value)} />
+              </div>
+              <div className="mb-5">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="pin">
+                  Access Pin
+                </label>
+                <input className="appearance-none rounded w-full py-2 px-3 text-gray-700 bg-gray-50 mb-3 
+                  leading-tight focus:outline-none focus:shadow-outline" name="pin" type="password" placeholder="**********"
+                  onChange={e => setPassword(e.target.value)} />
+                {invalidMessage && <p className="text-red-800 text-xs italic font-medium mt-2">{invalidMessage}</p>}
+              </div>
+              <p className="text-sm text-gray-600 font-medium leading-6 mb-8">
+                This website may use cookies to improve user experience, including keeping you logged in and remembering your preferences.
+              </p>
+              <div className="flex items-center gap-2">
+                <input className={inputStyle} type="submit" value={submitting ? "Signing In..." : "Sign In"} disabled={submitting} />
+                <Link to="/registration" title="Conference Registration" className="hover:underline py-2 px-4 font-medium">Sign Up</Link>
+              </div>
+            </form>
+          </div>
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="pin">
-            Access Pin
-          </label>
-          <input className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" name="pin" type="password" placeholder="**********"
-            onChange={e => setPassword(e.target.value)} />
-          {invalidMessage && <p className="text-red-600 text-xs italic font-medium">{invalidMessage}</p>}
-        </div>
-        {/* <p className="text-sm text-gray-600 font-medium">This website uses cookies to improve user experience.</p> */}
-        <div className="flex items-center justify-between">
-          <input className={inputStyle} type="submit" value={submitting ? "Signing In..." : "Sign In"} disabled={submitting} />
-        </div>
-      </form>
+      </div>
     </div>
   </>);
 };

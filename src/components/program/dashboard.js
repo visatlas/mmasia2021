@@ -76,11 +76,11 @@ const Dashboard = () => {
       <h1 className="text-4xl mb-10 px-3 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">
         Program
       </h1>
-      <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Announcement</h2>
+      <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Announcements</h2>
       <p className="mb-10 px-3">
         The program will be updated soon.
       </p>
-      <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Event Schedule</h2>
+      <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Conference Schedule</h2>
       <div className="mb-0 lg:mb-6">
         <p className="px-3 mb-2 font-bold font-headingStyle tracking-semiWide">Please make sure the timezone matches your region:</p>
         <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone}
