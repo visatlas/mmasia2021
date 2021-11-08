@@ -349,18 +349,72 @@ exports[`Header renders correctly 1`] = `
                   </div>
                 </div>
               </div>
-              <a
-                className="flex item-center"
-                href="/program/home"
-                title="Program"
+              <div
+                className="group dropdown inline-block relative"
               >
-                <span
-                  className=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md
-  font-medium font-headingStyle"
+                <button
+                  className=" text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 
+  rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default"
                 >
-                  Program
-                </span>
-              </a>
+                  <span
+                    className="mr-1"
+                  >
+                    Program
+                  </span>
+                  <svg
+                    className="fill-current h-4 w-4"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </button>
+                <div
+                  className="dropdown-menu absolute hidden text-gray-800 pt-1 w-60"
+                >
+                  <div
+                    className="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
+                  >
+                    <div
+                      className="max-h-safeHeight overflow-y-auto"
+                    >
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium text-mainPurple"
+                        href="/program/home"
+                        title="Program Home"
+                      >
+                        Program Home
+                        <span
+                          className="font-headingStyle cursor-default text-gray-400 block whitespace-no-wrap text-xs font-normal"
+                        >
+                          Sign in required
+                        </span>
+                      </a>
+                      <div
+                        className="w-full py-1"
+                      >
+                        <div
+                          className="w-full bg-gray-200"
+                          style={
+                            Object {
+                              "height": "1px",
+                            }
+                          }
+                        />
+                      </div>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/conference-keynotes"
+                        title="Conference Keynotes"
+                      >
+                        Conference Keynotes
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div
                 className="group dropdown inline-block relative"
               >
@@ -520,18 +574,25 @@ exports[`Header renders correctly 1`] = `
             />
           </svg>
         </button>
-        <a
-          className="flex item-center w-full"
-          href="/program/home"
-          title="Program"
+        <button
+          className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-headingStyle inline-flex items-center "
+          onClick={[Function]}
         >
           <span
-            className="pl-8 pr-4 py-2 w-full text-white  block rounded-md 
-  text-base font-semibold font-headingStyle"
+            className="mr-1"
           >
             Program
           </span>
-        </a>
+          <svg
+            className="fill-current h-4 w-4"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            />
+          </svg>
+        </button>
         <button
           className="font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-headingStyle inline-flex items-center "
           onClick={[Function]}
