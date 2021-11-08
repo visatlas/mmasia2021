@@ -16,16 +16,16 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
     <strong>Mohan Kankanhalli</strong>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
-    <p>National University of Singapore</p>
+    <p>School of Computing, National University of Singapore</p>
     <p>
-        Professor Mohan Kankanhalli is the Dean of NUS School of Computing where he is the Provost’s Chair Professor of Computer Science. Before becoming the Dean in 2016, He was the NUS Vice Provost (Graduate Education) during 2014-2016 and Associate Provost (Graduate Education) during 2011-2013. Earlier, he was the Vice-Dean for Academic Affairs & Graduate Studies at the NUS School of Computing during 2008-2010 and Vice-Dean for Research during 2001-2007.
+        Mohan Kankanhalli is Provost's Chair Professor of Computer Science at the National University of Singapore (NUS). He is also the Dean of NUS School of Computing. Before becoming the Dean in July 2016, he was the NUS Vice Provost (Graduate Education) during 2014-2016 and Associate Provost during 2011-2013. Mohan obtained his BTech from IIT Kharagpur and MS & PhD from the Rensselaer Polytechnic Institute. Mohan’s research interests are in Multimedia Computing, Computer Vision, Information Security & Privacy and Image/Video Processing. He has made many contributions in the area of multimedia & vision – image and video understanding, data fusion, visual saliency as well as in multimedia security – content authentication and privacy, multi-camera surveillance.
     </p>
     <p>
-        Prof Kankanhalli’s research interests are in Multimedia Computing, Information Security and Privacy, Image/Video Processing and Social Media Analysis. He has made many contributions in the area of multimedia content processing – image and video understanding, data fusion, visual saliency as well as in multimedia security – content authentication and privacy, multi-camera surveillance. He is actively involved in the Multimedia Systems research community and was the Director of Conferences for ACM SIG Multimedia during 2009-2013. He is on the editorial boards of several journals including ACM Transactions on Multimedia Computing, Communications and Applications, Springer Multimedia Systems, IEEE Multimedia, Pattern Recognition, and Journal on Big Data.
+        He directs N-CRiPT (NUS Centre for Research in Privacy Technologies) which conducts research on privacy on structured as well as unstructured (multimedia, sensors, IoT) data. N-CRiPT looks at privacy at both individual and organizational levels along the entire data life cycle. He is personally involved in privacy research related to images, video and social media as well as privacy risk management. N-CRiPT, which has been funded by Singapore’s National Research Foundation, works with many industry, government and academic partners.
     </p>
-    <p>
+    <!-- <p>
         He directs the SeSaMe (Sensor-enhanced Social Media) Centre which does fundamental exploration of social cyber-physical systems which has applications in social sensing, sensor analytics and smart systems. SeSaMe, which has been funded by Singapore’s National Research Foundation, works with many industry and academic partners.
-    </p>
+    </p> -->
 </div>
 
 
