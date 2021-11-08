@@ -5,12 +5,12 @@ dateModified: "2021-11-08"
 description: ACM MM Asia Conference Keynotes have been released. The details will be published later.
 ---
 
-
 ## Keynote 1
+### Presenter
 ![Mohan Kankanhalli](./mohan_.jpg)
 <!-- - **Title**: -->
-### Presenter: 
-**Mohan Kankanhalli** (National University of Singapore)
+**Mohan Kankanhalli**<br/>
+National University of Singapore
 <!-- - **Date**: -->
 <!-- - **Abstract**:  -->
 ### Biography
@@ -22,10 +22,11 @@ He directs the SeSaMe (Sensor-enhanced Social Media) Centre which does fundament
 
 
 ## Keynote 2
+### Presenter
 ![Yong Rui](./yong_.jpg)
 <!-- - **Title**: -->
-### Presenter: 
-**Yong Rui** (Lenovo Group)
+**Yong Rui**<br/>
+Lenovo Group
 <!-- - **Date**: -->
 <!-- - **Abstract**:  -->
 ### Biography
@@ -43,22 +44,23 @@ Dr. Rui received his BS from Southeast University Summa cum laude, his MS from T
 
 
 ## Keynote 3
+### Presenter
 ![Klara Nahrstedt](./klara_.jpg)
 <!-- - **Title**: -->
-### Presenter: 
-**Klara Nahrstedt** (UIUC)
+**Klara Nahrstedt**<br/>
+UIUC
 <!-- - **Date**: -->
 <!-- - **Abstract**:  -->
 ### Biography
 Klara Nahrstedt is the Ralph and Catherine Fisher Professor in the Department of Computer Science Department, and Direct of Coordinated Science Laboratory in the Grainger College of Engineering at the University of Illinois at Urbana- Champaign. Her research interests are directed towards tele-immersive systems, mixed reality video 360 systems, Internet-of-Things systems, and real-time security and privacy in cyber-physical systems such as power-grid. She is the co-author of multimedia books “Multimedia Computing, Communications and Applications”, published by Prentice Hall, and “Multimedia Systems”, published by Springer Verlag. She is the recipient of the IEEE Communication Society Leonard Abraham Award for Research Achievements, Humboldt Research Award, IEEE Computer Society Technical Achievement Award, ACM SIGMM Technical Achievement Award, TU Darmstadt Piloty Prize, and the Grainger College of Engineering Drucker Award. She served as the chair of the ACM SIGMM between 2007-2013, and co-chaired many conferences including ACM International Conference on Multimedia, IEEE Percom, ACM/IEEE IOTDI, IEEE SmartGridComm, and others. Klara Nahrstedt received her Diploma in Mathematics from Humboldt University zu Berlin in 1985, and PhD in Computer and Information Science from University of Pennsylvania in 1995. She is Fellow of ACM, IEEE and AAAS, and member of the German National Academy of Sciences (Leopoldina Society).
 
 
-
 ## Keynote 4
+### Presenter
 ![Divesh Srivastava](./divesh_.jpg)
 <!-- - **Title**: -->
-### Presenter: 
-**Divesh Srivastava** (AT&T Labs-Research)
+**Divesh Srivastava**<br/>
+AT&T Labs-Research
 <!-- - **Date**: -->
 <!-- - **Abstract**:  -->
 ### Biography
