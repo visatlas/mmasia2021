@@ -56,10 +56,14 @@ Klara Nahrstedt is the Ralph and Catherine Fisher Professor in the Department of
 
 ## Keynote 4
 ![Divesh Srivastava](./divesh_.jpg)
-<!-- - **Title**: -->
+<!-- - **Title**: xxx-->
 ### Presenter: 
 **Divesh Srivastava** (AT&T Labs-Research)
 <!-- - **Date**: -->
 <!-- - **Abstract**:  -->
 ### Biography
 Divesh Srivastava is the Head of Database Research at AT&T. He is a Fellow of the Association for Computing Machinery (ACM), the Vice President of the VLDB Endowment, co-chair of the ACM Publications Board, on the Board of Directors of the Computing Research Association (CRA), and an associate editor of the ACM Transactions on Data Science (TDS). He has served as the managing editor of the Proceedings of the VLDB Endowment (PVLDB), as associate editor of the ACM Transactions on Database Systems (TODS), and as associate Editor-in-Chief of the IEEE Transactions on Knowledge and Data Engineering (TKDE). He has presented keynote talks at several international conferences, and his research interests and publications span a variety of topics in data management. He received his Ph.D. from the University of Wisconsin, Madison, USA, and his Bachelor of Technology from the Indian Institute of Technology, Bombay, India.
+
+
+
+
