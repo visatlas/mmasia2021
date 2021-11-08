@@ -41,13 +41,13 @@ const Login = ({ setShowBanner }) => {
 
   return (<>
     <Seo pageMeta={{ title: "Sign In" }} />
-    <div className="w-full h-screen">
+    <div className="w-full h-screen absolute top-0 left-0">
       <StaticImage className="h-full w-full" src="../../images/gold-coast-blur.jpg" alt="Gold Coast Background"
         placeholder="blurred" layout="constrained" objectFit="cover" quality={100} />
-      <div className="absolute top-[64px] left-0 w-full h-full">
+      <div className="absolute w-full h-screen top-0 left-0">
         <div className="max-w-7xl mx-auto px-0 lg:px-12 h-full">
-          <div className="w-full sm:w-148 bg-gray-100 bg-opacity-90 p-8 sm:p-12 pt-16 h-full">
-            <h1 className="text-2xl mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">
+          <div className="w-full sm:w-148 bg-gray-100 bg-opacity-90 p-8 sm:p-12 pt-16 h-full overflow-auto" >
+            <h1 className="text-2xl mb-6 mt-16 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">
               Sign in to MMAsia'21
             </h1>
             <p className="font-medium mb-3">Please sign in to view the program details.</p>

@@ -7,6 +7,7 @@ import MobileNavLink from "./mobile-nav-link";
 import MobileMenuButton from "./mobile-menu-button";
 import PreviewMode from "./preview-mode";
 import DropDownMenu from "./dropdown-menu";
+import { isLoggedIn } from "../../services/auth";
 
 export default function Header({ activePage, themed }) {
   // A separator will be inserted between each array
@@ -30,9 +31,11 @@ export default function Header({ activePage, themed }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showMobileCalls, setShowMobileCalls] = useState(callLinks.includes(activePage));
   const [showMobileAttend, setShowMobileAttend] = useState(["/student-travel-grants", "/carer-award"].includes(activePage));
+  const [showMobileProgram, setShowMobileProgram] = useState(["/program/home"].includes(activePage));
   const mobileBaseStyle = "font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-headingStyle inline-flex items-center";
   const mobileCallsStyle = `${mobileBaseStyle} ${showMobileCalls ? "bg-menuHover" : ""}`;
   const mobileAttendStyle = `${mobileBaseStyle} ${showMobileAttend ? "bg-menuHover" : ""}`;
+  const mobileProgramStyle = `${mobileBaseStyle} ${showMobileProgram ? "bg-menuHover" : ""}`;
 
   const linkStyle = `font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall`;
   const linkStyleMedium = `${linkStyle} font-medium`;
@@ -71,10 +74,17 @@ export default function Header({ activePage, themed }) {
                     </Fragment>)
                     )}
                   </DropDownMenu>
-                  <NavLink to="/program/home" selected={activePage === "/program/home"} title="Program" themed>Program</NavLink>
-                  {/* <DropDownMenu selected={false} name="Program" widthStyle="w-60">
-                    <span className="font-headingStyle cursor-default text-gray-400 py-2 px-4 block whitespace-no-wrap text-sm">Coming Soon..</span>
-                  </DropDownMenu> */}
+                  {/* <NavLink to="/program/home" selected={activePage === "/program/home"} title="Program" themed>Program</NavLink> */}
+                  <DropDownMenu selected={false} name="Program" widthStyle="w-60">
+                    <Link to="/program/home" className={linkStylePurple} title="Program Home">
+                      Program Home
+                      {!isLoggedIn() && (<span className="font-headingStyle cursor-default text-gray-400 block whitespace-no-wrap text-xs font-normal">
+                        Sign in required
+                      </span>)}
+                    </Link>
+                    <Divider />
+                    <Link to="/keynote-speakers" className={linkStyleMedium} title="Keynote Speakers">Keynote Speakers</Link>
+                  </DropDownMenu>
                   <DropDownMenu selected={["/registration", "/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
                     <Link to="/registration" className={linkStylePurple} title="Registration">Registration</Link>
                     <Divider />
@@ -111,7 +121,17 @@ export default function Header({ activePage, themed }) {
                 </Fragment>);
               })}
             </div>)}
-            <MobileNavLink to="/program/home" title="Program" selected={activePage === "/program/home"}>Program</MobileNavLink>
+
+            <button className={mobileProgramStyle} onClick={() => { setShowMobileProgram(!showMobileProgram) }}>
+              <span className="mr-1">Program</span>
+              <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+            </button>
+            {showMobileProgram && (<div>
+              <MobileNavLink to="/program/home" title="Program Home" selected={activePage === "/program/home"} nested>Program Home</MobileNavLink>
+              <MobileNavLink to="/keynote-speakers" title="Keynote Speakers" selected={activePage === "/keynote-speakers"} nested>Keynote Speakers</MobileNavLink>
+            </div>)}
+            {/* <MobileNavLink to="/program/home" title="Program" selected={activePage === "/program/home"}>Program</MobileNavLink> */}
             <button className={mobileAttendStyle} onClick={() => { setShowMobileAttend(!showMobileAttend); }}>
               <span className="mr-1">Attend</span>
               <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
