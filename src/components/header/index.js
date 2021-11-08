@@ -83,7 +83,7 @@ export default function Header({ activePage, themed }) {
                       </span>)}
                     </Link>
                     <Divider />
-                    <Link to="/keynote-speakers" className={linkStyleMedium} title="Keynote Speakers">Keynote Speakers</Link>
+                    <Link to="/conference-keynotes" className={linkStyleMedium} title="Conference Keynotes">Conference Keynotes</Link>
                   </DropDownMenu>
                   <DropDownMenu selected={["/registration", "/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
                     <Link to="/registration" className={linkStylePurple} title="Registration">Registration</Link>
@@ -129,7 +129,7 @@ export default function Header({ activePage, themed }) {
             </button>
             {showMobileProgram && (<div>
               <MobileNavLink to="/program/home" title="Program Home" selected={activePage === "/program/home"} nested>Program Home</MobileNavLink>
-              <MobileNavLink to="/keynote-speakers" title="Keynote Speakers" selected={activePage === "/keynote-speakers"} nested>Keynote Speakers</MobileNavLink>
+              <MobileNavLink to="/conference-keynotes" title="Conference Keynotes" selected={activePage === "/conference-keynotes"} nested>Conference Keynotes</MobileNavLink>
             </div>)}
             {/* <MobileNavLink to="/program/home" title="Program" selected={activePage === "/program/home"}>Program</MobileNavLink> */}
             <button className={mobileAttendStyle} onClick={() => { setShowMobileAttend(!showMobileAttend); }}>
