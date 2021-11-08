@@ -339,3 +339,8 @@ table thead tr th {
     list-style-position: inside;
   }
 }
+
+.gatsby-resp-image-wrapper {
+  width: 100% !important;
+  margin: 0 !important;
+}
