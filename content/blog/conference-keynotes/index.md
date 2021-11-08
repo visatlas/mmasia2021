@@ -23,9 +23,6 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
     <p>
         He directs N-CRiPT (NUS Centre for Research in Privacy Technologies) which conducts research on privacy on structured as well as unstructured (multimedia, sensors, IoT) data. N-CRiPT looks at privacy at both individual and organizational levels along the entire data life cycle. He is personally involved in privacy research related to images, video and social media as well as privacy risk management. N-CRiPT, which has been funded by Singapore’s National Research Foundation, works with many industry, government and academic partners.
     </p>
-    <!-- <p>
-        He directs the SeSaMe (Sensor-enhanced Social Media) Centre which does fundamental exploration of social cyber-physical systems which has applications in social sensing, sensor analytics and smart systems. SeSaMe, which has been funded by Singapore’s National Research Foundation, works with many industry and academic partners.
-    </p> -->
 </div>
 
 
