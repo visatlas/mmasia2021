@@ -14,7 +14,6 @@ const Detail = ({ id }) => {
       headers: { "Authorization": `Bearer ${getUser().token}` }
     }).then(res => res.json())
       .then(data => {
-        console.log(data);
         setSessionData(data);
       })
       .catch(err => console.log(err));
@@ -26,13 +25,13 @@ const Detail = ({ id }) => {
       <Link to="/program/home" className="font-medium hover:underline py-2 pr-2">
         &lsaquo;&nbsp;Back
       </Link>
-      {(sessionData && Object.keys(sessionData).length === 0 && Object.getPrototypeOf(sessionData) === Object.prototype) ? (<>
-        <h3 className="text-xl mt-6 mb-2 font-bold text-semiBlack">Session details not available.</h3>
-        <p>Please try again later.</p>
-      </>) : (<>
-        <h1 className="text-4xl mt-6 mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">{sessionData?.title}</h1>
-        <p>{sessionData?.start} - {sessionData?.end}</p>
-      </>)}
+      <h1 className="text-2xl mt-6 mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">{sessionData?.title}</h1>
+      <div className="max-h-96 overflow-auto border mt-8 text-sm">
+        <p className="whitespace-pre-wrap font-mono">
+          From {`https://mmasia2021.uqcloud.net/api/sessions/${id}`}<br/>
+          {JSON.stringify(sessionData, null, 2)}
+        </p>
+      </div>
     </div>
   </>);
 };

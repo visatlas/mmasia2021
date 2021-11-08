@@ -129,6 +129,10 @@ const Dashboard = () => {
           </div>);
         })}
       </div>
+      <div className="max-h-148 overflow-auto border mt-8 text-sm font-mono">
+        From {`https://mmasia2021.uqcloud.net/api/sessions`}<br />
+        <p className="whitespace-pre-wrap">{JSON.stringify(sessions, null, 2)}</p>
+      </div>
     </div>
   </>);
 };

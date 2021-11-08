@@ -75,10 +75,10 @@ export default function Header({ activePage, themed }) {
                     )}
                   </DropDownMenu>
                   {/* <NavLink to="/program/home" selected={activePage === "/program/home"} title="Program" themed>Program</NavLink> */}
-                  <DropDownMenu selected={false} name="Program" widthStyle="w-60">
+                  <DropDownMenu selected={["/conference-keynotes"].includes(activePage)} name="Program" widthStyle="w-60">
                     <Link to="/program/home" className={linkStylePurple} title="Program Home">
                       Program Home
-                      {!isLoggedIn() && (<span className="font-headingStyle cursor-default text-gray-400 block whitespace-no-wrap text-xs font-normal">
+                      {!isLoggedIn() && (<span className="font-headingStyle text-gray-400 block whitespace-no-wrap text-xs font-normal cursor-pointer">
                         Sign in required
                       </span>)}
                     </Link>
