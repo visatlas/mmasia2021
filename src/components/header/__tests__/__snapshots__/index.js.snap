@@ -387,7 +387,7 @@ exports[`Header renders correctly 1`] = `
                       >
                         Program Home
                         <span
-                          className="font-headingStyle cursor-default text-gray-400 block whitespace-no-wrap text-xs font-normal"
+                          className="font-headingStyle text-gray-400 block whitespace-no-wrap text-xs font-normal cursor-pointer"
                         >
                           Sign in required
                         </span>
