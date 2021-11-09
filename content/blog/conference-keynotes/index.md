@@ -6,14 +6,14 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
 ---
 
 ## Keynote 1
-### Presenter
+<!-- ### Presenter -->
 
 <div class="keynote-text">
     <div class="keynote-img">
         <img src="./mohan_.jpg" alt="Mohan Kankanhalli"/>
     </div>
     <!-- - **Title**: -->
-    <strong>Mohan Kankanhalli</strong>
+    <h3>Mohan Kankanhalli</h3>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
     <p>School of Computing, National University of Singapore</p>
@@ -21,20 +21,23 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
         Mohan Kankanhalli is Provost's Chair Professor of Computer Science at the National University of Singapore (NUS). He is also the Dean of NUS School of Computing. Before becoming the Dean in July 2016, he was the NUS Vice Provost (Graduate Education) during 2014-2016 and Associate Provost during 2011-2013. Mohan obtained his BTech from IIT Kharagpur and MS & PhD from the Rensselaer Polytechnic Institute. Mohan’s research interests are in Multimedia Computing, Computer Vision, Information Security & Privacy and Image/Video Processing. He has made many contributions in the area of multimedia & vision – image and video understanding, data fusion, visual saliency as well as in multimedia security – content authentication and privacy, multi-camera surveillance.
     </p>
     <p>
-        He directs N-CRiPT (NUS Centre for Research in Privacy Technologies) which conducts research on privacy on structured as well as unstructured (multimedia, sensors, IoT) data. N-CRiPT looks at privacy at both individual and organizational levels along the entire data life cycle. He is personally involved in privacy research related to images, video and social media as well as privacy risk management. N-CRiPT, which has been funded by Singapore’s National Research Foundation, works with many industry, government and academic partners.
+        He directs N-CRiPT (NUS Centre for Research in Privacy Technologies) which conducts research on privacy on structured as well as unstructured (multimedia, sensors, IoT) data. N-CRiPT looks at privacy at both individual and organizational levels along the entire data life cycle. He is personally involved in privacy research related to images, video and social media as well as privacy risk management. N-CRiPT, which has been funded by Singapore’s National Research Foundation, works with many industry, government and academic partners. 
+    </p>
+    <p>
+        Mohan is a Fellow of IEEE.
     </p>
 </div>
 
 
 ## Keynote 2
-### Presenter
+<!-- ### Presenter -->
 
 <div class="keynote-text">
     <div class="keynote-img">
         <img src="./yong_.jpg" alt="Yong Rui"/>
     </div>
     <!-- - **Title**: -->
-    <strong>Yong Rui</strong>
+    <h3>Yong Rui</h3>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
     <p>Lenovo Group</p>
@@ -45,7 +48,7 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
         A Fellow of ACM, IEEE, IAPR and SPIE, and a Foreign Member of Academia Europaea and Canadian Academy of Engineering, Dr. Rui is recognized as a leading expert in AI and multimedia analysis. He is a recipient of many awards, including the 2018 ACM SIGMM Technical Achievement Award, the 2017 IEEE SMC Society Andrew P. Sage Best Transactions Paper Award, the 2017 ACM TOMM Nicolas Georganas Best Paper Award, the 2016 IEEE Computer Society Edward J. McCluskey Technical Achievement Award, the 2016 IEEE Signal Processing Society Best Paper Award and the 2010 Most Cited Paper of the Decade Award from Journal of Visual Communication and Image Representation. He holds 70 issued patents, has published 4 books, 12 book chapters, and 200 refereed journal and conference papers. With over 30,000+ citations, and an h-Index of 82, his publications are among the most referenced.
     </p>
     <p>
-        Dr. Rui is an Associate Editor of ACM Trans. on Multimedia Computing, Communication and Applications (TOMM) (2007- ), and a founding Editor of International Journal of Multimedia Information Retrieval (2011- ). He was the Editor-in-Chief of IEEE MultiMedia magazine (2014-2017), and an Associate Editor of IEEE Access (2013-2016), IEEE Trans. on Multimedia (2004-2008), IEEE Trans. on Circuits and Systems for Video Technologies (2006-2010), ACM/Springer Multimedia Systems Journal (2004-2006), and International Journal of Multimedia Tools and Applications (2004-2006). He also served on the Advisory Board of IEEE Trans. on Automation Science and Engineering (2006-2016).
+        Dr. Rui is an Associate Editor of ACM Trans. on Multimedia Computing, Communication and Applications (TOMM)  (2007- ), and a founding Editor of International Journal of Multimedia Information Retrieval (2011- ). He was the Editor-in-Chief of IEEE MultiMedia magazine (2014-2017), and an Associate Editor of IEEE Access (2013-2016), IEEE Trans. on Multimedia (2004-2008), IEEE Trans. on Circuits and Systems for Video Technologies (2006-2010), ACM/Springer Multimedia Systems Journal (2004-2006), and International Journal of Multimedia Tools and Applications (2004-2006). He also served on the Advisory Board of IEEE Trans. on Automation Science and Engineering (2006-2016).
     </p>
     <p>
         Involved in many facets of the field, Dr. Rui is a member of numerous organizing and program committees for conferences including ACM Multimedia, ACM ICMR, IEEE ICME, SPIE ITCom, and ICPR. He is General Co-Chair of ACM Multimedia in 2009 and 2014, ACM ICMR in 2006 and 2012, and ICIMCS in 2010, and Program Co-Chair of ACM Multimedia in 2006, Pacific Rim Multimedia (PCM) in 2006, and IEEE ICME in 2009. He is on the Steering Committees of ACM Multimedia, ACM ICMR, IEEE ICME and PCM. He is an Executive Member of ACM SIGMM (2009-2010, 2013-2016), and the founding Chair of its China Chapter.
@@ -57,14 +60,14 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
 
 
 ## Keynote 3
-### Presenter
+<!-- ### Presenter -->
 
 <div class="keynote-text">
     <div class="keynote-img">
         <img src="./klara_.jpg" alt="Klara Nahrstedt"/>
     </div>
     <!-- - **Title**: -->
-    <strong>Klara Nahrstedt</strong>
+    <h3>Klara Nahrstedt</h3>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
     <p>UIUC</p>
@@ -74,15 +77,15 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
 </div>
 
 
-## Keynote 4
-### Presenter
+## Keynote 4: How to do Research for Fun and Profit
+<!-- ### Presenter -->
 
 <div class="keynote-text">
     <div class="keynote-img">
         <img src="./divesh_.jpg" alt="Divesh Srivastava"/>
     </div>
     <!-- - **Title**: -->
-    <strong>Divesh Srivastava</strong>
+    <h3>Divesh Srivastava</h3>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
     <p>AT&T Labs-Research</p>
