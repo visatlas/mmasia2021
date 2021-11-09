@@ -91,6 +91,10 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
     </p>
 </div>
 
+**Abstract**: Research is characterized as the process of posing new questions, undertaking a creative and systematic inquiry to find answers, and communicating this knowledge to the community.  In this talk, I present a personal perspective to early career researchers and Ph.D. students at various stages in their careers on what they can do to help ensure that their research efforts are successful, and the process is enjoyable.
+
+<!-- **Date**: TBA -->
+
 <style>
     .keynote-text {
         text-align: left;
