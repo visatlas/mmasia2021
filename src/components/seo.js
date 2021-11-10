@@ -163,8 +163,8 @@ const Seo = ({ lang, pageMeta }) => {
     offers: {
       "@type": "Offer",
       "url": "https://mmasia2021.uqcloud.net/registration",
-      // "price": "455",
-      // "priceCurrency": "AUD",
+      "price": "305",
+      "priceCurrency": "AUD",
       "availability": "https://schema.org/InStock",
       "validFrom": "2021-11-01T10:00"
     },
