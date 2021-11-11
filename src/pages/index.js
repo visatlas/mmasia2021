@@ -19,7 +19,18 @@ const Index = ({ data, location }) => {
 
   // get introduction paragraph
   const highlights = data.paragraphsJson.data;
-  const posts = data.allMarkdownRemark.nodes;
+  const posts = data.allMarkdownRemark.nodes.map(post => {
+    return {
+      title: post.frontmatter.title || post.fields.slug,
+      date: post.frontmatter.dateModified,
+      description: post.frontmatter.description || post.excerpt,
+      url: post.fields.slug.slice(0, -1)
+    }
+  })
+  // concat news and formattedPost and sort by date
+  const allPosts = [...data.newsJson.data, ...posts].sort((a, b) => {
+    return new Date(b.date) - new Date(a.date);
+  });
 
   useEffect(() => {
     // set timeout when determine country
@@ -124,24 +135,20 @@ const Index = ({ data, location }) => {
 
         <h2 className="mt-12 pb-3 px-6 sm:px-7 font-titleFont text-3xl text-mainPurple font-extrabold">Latest News</h2>
         <ol className="post-list list-none divide-y divide-gray-200">
-          {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug;
-            const diffDays = Math.ceil(Math.abs(new Date() - new Date(post.frontmatter.dateModified)) / (1000 * 60 * 60 * 24));
+          {allPosts.map((post, index) => {
+            const diffDays = Math.ceil(Math.abs(new Date() - new Date(post.date)) / (1000 * 60 * 60 * 24));
             const dateClass = diffDays <= 7 ? "text-pink-800 font-semibold" : "text-gray-500 font-medium";
 
             return (
-              <li className="bg-gray-50 hover:bg-gray-200 duration-300" key={post.fields.slug}>
-                <Link to={post.fields.slug.slice(0, -1)} itemProp="url" title={title}>
+              <li className="bg-gray-50 hover:bg-gray-200 duration-300" key={index}>
+                <Link to={post.url} itemProp="url" title={post.title}>
                   <article className="post-list-item py-5 px-6 md:px-7" itemScope itemType="http://schema.org/Article">
                     <header className="flex flex-col">
-                      <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide" itemProp="headline">{title}</span>
-                      <small className={dateClass}>{post.frontmatter.dateModified}</small>
+                      <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide" itemProp="headline">{post.title}</span>
+                      <small className={dateClass}>{post.date}</small>
                     </header>
                     <section className="text-gray-700">
-                      <p className="leading-6" itemProp="description" dangerouslySetInnerHTML={{
-                        __html: post.frontmatter.description || post.excerpt,
-                      }}
-                      />
+                      <p className="leading-6" itemProp="description">{post.description}</p>
                     </section>
                   </article>
                 </Link>
@@ -165,6 +172,14 @@ export const pageQuery = graphql`
     }
     paragraphsJson(jsonId: {eq: "highlights"}) {
       data
+    }
+    newsJson(jsonId: {eq: "news"}) {
+      data {
+        title
+        date
+        description
+        url
+      }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___dateModified], order: DESC }, limit: 15) {
       nodes {
