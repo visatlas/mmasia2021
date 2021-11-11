@@ -415,6 +415,13 @@ exports[`Header renders correctly 1`] = `
                       >
                         Presentation Guidelines
                       </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/gather-town"
+                        title="Gather.Town Tutorial"
+                      >
+                        Gather.Town Tutorial
+                      </a>
                     </div>
                   </div>
                 </div>

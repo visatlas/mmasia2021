@@ -25,8 +25,8 @@ const Index = ({ data, location }) => {
       date: post.frontmatter.dateModified,
       description: post.frontmatter.description || post.excerpt,
       url: post.fields.slug.slice(0, -1)
-    }
-  })
+    };
+  });
   // concat news and formattedPost and sort by date
   const allPosts = [...data.newsJson.data, ...posts].sort((a, b) => {
     return new Date(b.date) - new Date(a.date);
