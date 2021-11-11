@@ -411,6 +411,13 @@ exports[`Header renders correctly 1`] = `
                       >
                         Conference Keynotes
                       </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/presentation-guidelines"
+                        title="Presentation Guidelines"
+                      >
+                        Presentation Guidelines
+                      </a>
                     </div>
                   </div>
                 </div>

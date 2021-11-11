@@ -18,12 +18,12 @@ export default function Header({ activePage, themed }) {
     { name: "Brave New Ideas", link: "/call-for-brave-new-ideas", closed: false },
     { name: "Applied Research Track Papers", link: "/call-for-applied-research-track-papers", closed: false },
     { name: "Grand Challenge Submissions", link: "/call-for-grand-challenge-submissions", closed: false },
-    { name: "Regular Papers", link: "/call-for-papers", closed: true },
+    { name: "Regular Papers", link: "/call-for-papers", closed: false },
   ], [
     { name: "Tutorials", link: "/call-for-tutorials", closed: false },
     { name: "PhD School Participants", link: "/call-for-phd-school-participants", closed: false },
-    { name: "Workshops", link: "/call-for-workshops", closed: true },
-    { name: "Grand Challenge Proposals", link: "/call-for-grand-challenge-proposals", closed: true },
+    { name: "Workshops", link: "/call-for-workshops", closed: false },
+    { name: "Grand Challenge Proposals", link: "/call-for-grand-challenge-proposals", closed: false },
   ]];
   const mergedCalls = [].concat.apply([], calls);
   const callLinks = mergedCalls.map(call => call.link);
