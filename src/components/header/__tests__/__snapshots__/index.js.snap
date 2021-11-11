@@ -273,7 +273,7 @@ exports[`Header renders correctly 1`] = `
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                         href="/call-for-papers"
-                        title="Call for Regular Papers (closed)"
+                        title="Call for Regular Papers"
                       >
                         Call for 
                         <span
@@ -281,7 +281,6 @@ exports[`Header renders correctly 1`] = `
                         >
                           Regular Papers
                         </span>
-                         (closed)
                       </a>
                       <div
                         className="w-full py-1"
@@ -322,7 +321,7 @@ exports[`Header renders correctly 1`] = `
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                         href="/call-for-workshops"
-                        title="Call for Workshops (closed)"
+                        title="Call for Workshops"
                       >
                         Call for 
                         <span
@@ -330,12 +329,11 @@ exports[`Header renders correctly 1`] = `
                         >
                           Workshops
                         </span>
-                         (closed)
                       </a>
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
                         href="/call-for-grand-challenge-proposals"
-                        title="Call for Grand Challenge Proposals (closed)"
+                        title="Call for Grand Challenge Proposals"
                       >
                         Call for 
                         <span
@@ -343,7 +341,6 @@ exports[`Header renders correctly 1`] = `
                         >
                           Grand Challenge Proposals
                         </span>
-                         (closed)
                       </a>
                     </div>
                   </div>
