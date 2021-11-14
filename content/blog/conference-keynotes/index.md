@@ -1,8 +1,8 @@
 ---
 title: Conference Keynotes
 datePublished: "2021-11-08"
-dateModified: "2021-11-09"
-description: ACM MM Asia Conference Keynotes have been released. The details will be published later.
+dateModified: "2021-11-14"
+description: ACM MM Asia Conference Keynotes have been updated. More details will be published later.
 ---
 
 ## Keynote 1
@@ -56,25 +56,7 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
 </div>
 
 
-## Keynote 3
-<!-- ### Presenter -->
-
-<div class="keynote-text">
-    <div class="keynote-img">
-        <img src="./klara_.jpg" alt="Klara Nahrstedt"/>
-    </div>
-    <!-- - **Title**: -->
-    <h3>Klara Nahrstedt</h3>
-    <!-- - **Date**: -->
-    <!-- - **Abstract**:  -->
-    <p>UIUC</p>
-    <p>
-        Klara Nahrstedt is the Ralph and Catherine Fisher Professor in the Department of Computer Science Department, and Direct of Coordinated Science Laboratory in the Grainger College of Engineering at the University of Illinois at Urbana-Champaign. Her research interests are directed towards tele-immersive systems, mixed reality video 360 systems, Internet-of-Things systems, and real-time security and privacy in cyber-physical systems such as power-grid. She is the co-author of multimedia books “Multimedia Computing, Communications and Applications”, published by Prentice Hall, and “Multimedia Systems”, published by Springer Verlag. She is the recipient of the IEEE Communication Society Leonard Abraham Award for Research Achievements, Humboldt Research Award, IEEE Computer Society Technical Achievement Award, ACM SIGMM Technical Achievement Award, TU Darmstadt Piloty Prize, and the Grainger College of Engineering Drucker Award. She served as the chair of the ACM SIGMM between 2007-2013, and co-chaired many conferences including ACM International Conference on Multimedia, IEEE Percom, ACM/IEEE IOTDI, IEEE SmartGridComm, and others. Klara Nahrstedt received her Diploma in Mathematics from Humboldt University zu Berlin in 1985, and PhD in Computer and Information Science from University of Pennsylvania in 1995. She is Fellow of ACM, IEEE and AAAS, and member of the German National Academy of Sciences (Leopoldina Society).
-    </p>
-</div>
-
-
-## Keynote 4: How to do Research for Fun and Profit
+## Keynote 3: How to do Research for Fun and Profit
 <!-- ### Presenter -->
 
 <div class="keynote-text">
@@ -95,6 +77,29 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
 
 <!-- **Date**: TBA -->
 
+## Keynote 4: Navigation Models for Interactive 360-Degree Video Streaming Systems
+<!-- ### Presenter -->
+
+<div class="keynote-text">
+    <div class="keynote-img">
+        <img src="./klara_.jpg" alt="Klara Nahrstedt"/>
+    </div>
+    <!-- - **Title**: -->
+    <h3>Klara Nahrstedt</h3>
+    <!-- - **Date**: -->
+    <!-- - **Abstract**:  -->
+    <p>University of Illinois at Urbana-Champaign</p>
+    <p>
+        Klara Nahrstedt is the Grainger Chair in Engineering Professor in the Computer Science Department, and the Director of Coordinated Science Laboratory in the Grainger College of Engineering at the University of Illinois at Urbana-Champaign. Her research interests are directed toward tele-immersive systems, end-to-end Quality of Service (QoS), resource management in large scale distributed systems and networks, and real-time security and privacy in cyber-physical systems. She is the co-author of multimedia books “Multimedia: Computing, Communications and Applications”, published by Prentice Hall, and “Multimedia Systems”, published by Springer Verlag. She is the recipient of the IEEE Communication Society Leonard Abraham Award for Research Achievements, University Scholar, Humboldt Research Award, IEEE Computer Society Technical Achievement Award, ACM SIGMM Technical Achievement Award, TU Darmstadt Piloty Prize, the Grainger College of Engineering Drucker Award. She was the elected chair of the ACM Special Interest Group in Multimedia (SIGMM) from 2007-2013. She was the general co-chair and TPC co-chair of many international conferences including ACM Multimedia, IEEE Percom, IEEE/ACM Internet of Things Design and Implementation (IoTDI), IEEE SmartgridComm and others. Klara Nahrstedt received her Diploma in Mathematics from Humboldt University, Berlin, Germany in 1985. In 1995, she received her PhD from the University of Pennsylvania in the Department of Computer and Information Science. She is ACM Fellow, IEEE Fellow, AAAS Fellow, and Member of the German National Academy of Sciences (Leopoldina Society). 
+    </p>
+</div>
+
+**Abstract**: With the emergence of new 360-degree cameras and VR/AR display devices, more diverse multimedia content has become available and with it the demand for the capability of tile-based streaming 360-degree videos to enhance users’ multimedia experience. In this talk, we will discuss the challenges of 360-degree tile-based video streaming due to its large bandwidth and low latency demands and solutions to satisfy the demands, including semantic-aware description of 360-degree videos’ viewing patterns, rate adaptation of tiled videos and view prediction techniques to enable interactive viewing via Head-Mounted Displays. Especially, we will discuss the concept of navigation graphs to **(a).** capture salient objects and events as well as viewing patterns of users, and **(b).** map them into efficient tile-based streaming and viewing experience. We will show how navigation graphs are serving as models to capture diverse semantic content and viewing behaviors in the temporal and spatial domains. Experimental results show that navigation graphs, provided jointly with Media Presentation Descriptors, can assist in efficient solutions of the bandwidth and latency challenges associated with view prediction and user’s interactive viewing. We will also discuss next challenges that future viewing patterns and streaming paradigms will bring as the integration of 360-degree videos, 2D/3D videos, and volumetric media in augmented reality applications is coming.
+<div class="note">
+    <p>* Joint work with Jounsup Park, Michael Zink, Ramesh Sitaraman, Qian Zhou, Bo Chen, Mingyuan Wu, John Murray, Ayush Sarkar, Eric Lee, Yinjie Zhang </p>
+</div>
+
+
 <style>
     .keynote-text {
         text-align: left;
@@ -105,6 +110,11 @@ description: ACM MM Asia Conference Keynotes have been released. The details wil
         margin-bottom: 1rem;
         width: 250px;
     }
+    .note {
+        font-size: 14px;
+        color: grey;
+    }
+
     @media (min-width: 768px) {
         .keynote-text {
             text-align: justify;
