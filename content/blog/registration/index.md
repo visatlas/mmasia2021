@@ -1,8 +1,8 @@
 ---
 title: Registration Information
 datePublished: "2021-10-18"
-dateModified: "2021-10-19"
-description: ACM MM Asia 2021 registration link is now available.
+dateModified: "2021-11-15"
+description: The deadline for EARLY BIRD Registration has been postponed.
 ---
 
 ## Registration Procedures
@@ -18,7 +18,7 @@ description: ACM MM Asia 2021 registration link is now available.
         <tbody class="border-t text-gray-600 text-sm font-normal">
             <tr class="bg-gray-100">
                 <td rowspan="6" class="font-bold">AUTHOR<br/>Registration<br/><br/>Main +<br/>Workshop +<br/>PhD School</td>
-                <td rowspan="3"><span class="font-bold">EARLY BIRD</span><br/>Until 15 November 2021</td>
+                <td rowspan="3"><span class="font-bold">EARLY BIRD</span><br/>Until 21 November 2021</td>
                 <td class="font-bold">Category – Author</td>
                 <td colspan="2" class="font-bold">Online</td>
             </tr>
@@ -31,7 +31,7 @@ description: ACM MM Asia 2021 registration link is now available.
                 <td colspan="2">AU$455<br/>(US$300)</td>
             </tr>
             <tr class="bg-gray-100">
-                <td rowspan="3"><span class="font-bold">LATE</span><br/>After 15 November 2021</td>
+                <td rowspan="3"><span class="font-bold">LATE</span><br/>After 21 November 2021</td>
                 <td class="font-bold">Category – Author</td>
                 <td colspan="2" class="font-bold">Online</td>
             </tr>
@@ -64,7 +64,7 @@ description: ACM MM Asia 2021 registration link is now available.
 
 - AUD rate is used for all registrants.
 - Full registration includes ACM Member or Non-Member registration rates.
-- Each accepted paper must be covered by at least one full registration **by 15 November**, and one full registration can **cover ONE paper only**.
+- Each accepted paper must be covered by at least one full registration **by 21 November**, and one full registration can **cover ONE paper only**.
 - Each conference registration includes all conference sessions including workshops and PhD School, and one copy of the electronic proceedings.
 - If you register for the ACM discounted rate, you are required to provide valid ACM member number. Please make sure that your membership has been renewed for 2021.
 
@@ -83,8 +83,8 @@ A professional or student membership is required for Registration at the discoun
 - If online payment via credit card is not possible, contact **[mmasia21@itee.uq.edu.au](mailto:mmasia21@itee.uq.edu.au)** to make alternative arrangements.
 
 ## Registration Cancellation Policy
-- Cancellation and refund requests received on or before 15 November 2021 will be refunded at 50% of the registration fee.
-- Cancellation and refund requests received from 16 November 2021 will not be refunded.
+- Cancellation and refund requests received on or before 21 November 2021 will be refunded at 50% of the registration fee.
+- Cancellation and refund requests received from 22 November 2021 will not be refunded.
 - Alternatively, if you cannot attend, your registration may be transferred to a colleague. To organize a registration name transfer, email your request to **[mmasia21@itee.uq.edu.au](mailto:mmasia21@itee.uq.edu.au)**.
 
 
