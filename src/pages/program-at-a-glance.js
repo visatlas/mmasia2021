@@ -47,8 +47,11 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>9:10 - 10:10am</td>
                   <td>11:10 - 12:10pm</td>
                   <td>12:10 - 13:10pm</td>
-                  <td>Keynote 1: Mohan (NUS)</td>
-                  <td colspan="2"></td>
+                  <td>Keynote 1: Mohan Kankanhalli</td>
+                  <td colspan="2">TBA</td>
+                </tr>
+                <tr>
+                  <td colspan="6">5 mins break</td>
                 </tr>
                 <tr>
                   <td rowspan="6">10:15 - 11:45am</td>
@@ -181,7 +184,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td rowspan="5">16:30 - 17:30pm</td>
                   <td rowspan="5">18:30 - 19:30pm</td>
                   <td rowspan="5">19:30 - 20:30pm</td>
-                  <td rowspan="5">Workshop 2: Multi-Modal Embedding and Understanding</td>
+                  <td rowspan="5">Workshop: Multi-Modal Embedding and Understanding</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colspan="2">Focusing Attention across Multiple Images for Multi-Modal Event Detection</td>
                 </tr>
@@ -220,7 +223,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>9 - 9:10am</td>
                   <td>11 - 11:10am</td>
                   <td>12 - 12:10pm</td>
-                  <td>Opening</td>
+                  <td>Best Paper Award Announcement</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -228,7 +231,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>11:10 - 12pm</td>
                   <td>12:10 - 13pm</td>
                   <td>Keynote 2: Yong Rui</td>
-                  <td></td>
+                  <td>TBA</td>
                 </tr>
                 <tr>
                   <td rowspan="2">10 - 10:30am</td>
@@ -306,7 +309,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td rowspan="6">13:40 - 14:55pm</td>
                   <td rowspan="6">15:40 - 16:55pm</td>
                   <td rowspan="6">16:40 - 17:55pm</td>
-                  <td rowspan="6">Workshop 3: Multi-Model Computing of Marine Big Data</td>
+                  <td rowspan="6">Workshop: Multi-Model Computing of Marine Big Data</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Deep Reinforcement Learning and Docking Simulations for autonomous molecule generation in de novo Drug Design</td>
                 </tr>
@@ -400,9 +403,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>12:05 - 14:05pm</td>
                   <td>14:05 - 16:05pm</td>
                   <td>15:05 - 17:05pm</td>
-                  <td>Tutorial - USyd</td>
+                  <td>Tutorial 1:<br/> Recent Advances in Video Summarization: Conventional and Deep Learning based Approaches</td>
                   {/* <!-- <td></td> --> */}
-                  <td className="paper">TBA</td>
+                  <td className="paper">Zhiyong Wang (USyd), Zhou Zhao (ZJU), Xi Li (ZJU), and Fei Wu (ZJU)</td>
                 </tr>
                 <tr>
                   <td colspan="6">10 mins break</td>
@@ -411,9 +414,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>14:15 - 16pm</td>
                   <td>16:15 - 18pm</td>
                   <td>17:15 - 19pm</td>
-                  <td>Tutorial - Tsinghua</td>
+                  <td>Tutorial 2:<br/> Modeling User Behavior for Vertical Search: Images, Apps and Products</td>
                   {/* <!-- <td></td> --> */}
-                  <td className="paper">TBA</td>
+                  <td className="paper">Xiaohui Xie (THU), Jiaxin Mao (THU), Yuqun Liu (THU) and Maarten de Rijke (UvA)</td>
                 </tr>
                 <tr>
                   <td rowspan="3">16 - 16:45pm</td>
@@ -439,7 +442,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td rowspan="4">16:50 - 17:50pm</td>
                   <td rowspan="4">18:50 - 19:50pm</td>
                   <td rowspan="4">19:50 - 20:50pm</td>
-                  <td rowspan="4">Workshop 1: Visual Tasks and Challenges under Low-quality Multimedia Data</td>
+                  <td rowspan="4">Workshop: Visual Tasks and Challenges under Low-quality Multimedia Data</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Local-enhanced Multi-resolution Representation Learning for Vehicle Re-identification</td>
                 </tr>
