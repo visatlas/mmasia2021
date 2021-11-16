@@ -25,7 +25,7 @@ const ProgramAtAGlance = ({ location }) => {
 
         <section className="text-sm">
           <h2 className="text-2xl font-bold mt-4 sm:mt-6 mb-4 text-mainPurple 
-              font-headingStyle tracking-semiWide">Day 1</h2>
+              font-headingStyle tracking-semiWide">1 December, 2021</h2>
           <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden table">
             <table className="table-custom mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
               <tbody className="border-t text-gray-600 table-text font-normal">
@@ -208,7 +208,7 @@ const ProgramAtAGlance = ({ location }) => {
           </div>
 
           <h2 className="text-2xl font-bold mt-8 sm:mt-6 mb-4 text-mainPurple
-              font-headingStyle tracking-semiWide">Day 2</h2>
+              font-headingStyle tracking-semiWide">2 December, 2021</h2>
           <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden table">
             <table className="table-custom mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
               <tbody className="border-t text-gray-600 table-text font-normal">
@@ -363,7 +363,7 @@ const ProgramAtAGlance = ({ location }) => {
           </div>
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-mainPurple 
-              font-headingStyle tracking-semiWide">Day 3</h2>
+              font-headingStyle tracking-semiWide">3 December, 2021</h2>
           <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden table">
             <table className="table-custom mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
               <tbody className="border-t text-gray-600 table-text font-normal">
