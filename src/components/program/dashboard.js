@@ -13,6 +13,7 @@ const Dashboard = () => {
     offset: spacetime.now(Intl.DateTimeFormat().resolvedOptions().timeZone).timezone().current.offset
   });
   const [groupedSessions, setGroupedSessions] = useState([]);  // Processed sessions data with local timezone
+  const [viewDay, setViewDay] = useState("");
 
   useEffect(() => {
     // Fetch sessions data
@@ -42,7 +43,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     // Group sessions by day
-    setGroupedSessions(sessions.reduce((r, a) => {
+    const sessionGroups = sessions.reduce((r, a) => {
       const startTimestamp = convertTimezone(a.start, timezone.offset);
       const startDay = startTimestamp.toLocaleString('default',
         { weekday: 'short', timeZone: "UTC" }
@@ -62,7 +63,9 @@ const Dashboard = () => {
       );
       r[`${startDay}, ${startDate} ${startMonth}`] = [...r[`${startDay}, ${startDate} ${startMonth}`] || [], a];
       return r;
-    }, {}));
+    }, {});
+    setGroupedSessions(sessionGroups);
+    setViewDay(Object.keys(sessionGroups)[0]);
   }, [timezone, sessions]);
 
   useEffect(() => {
@@ -76,10 +79,6 @@ const Dashboard = () => {
       <h1 className="text-4xl mb-10 px-3 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">
         Program
       </h1>
-      <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Announcements</h2>
-      <p className="mb-10 px-3">
-        The program will be updated soon.
-      </p>
       <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Conference Schedule</h2>
       <div className="mb-0 lg:mb-6">
         <p className="px-3 mb-2 font-bold font-headingStyle tracking-semiWide">Please make sure the timezone matches your region:</p>
@@ -99,36 +98,55 @@ const Dashboard = () => {
       </div>
 
       {groupedSessions.length === 0 && (<p className="px-3 font-medium">Loading...</p>)}
-      <div className="flex flex-col lg:flex-row gap-x-5">
+
+      <div className="flex bg-white py-3 sticky top-[64px] gap-x-3">
         {Object.keys(groupedSessions).map((key, index) => {
-          return (<div className="flex-1" key={index}>
-            <h3 className="pl-3 text-lg mb-3 mt-6 lg:mt-0 font-bold font-headingStyle">{key}</h3>
-            <div className="program-list border rounded-md divide-y divide-gray-200">
-              {groupedSessions[key].map((session, index) => {
-                let bgStyle = "";
-                switch (session.type) {
-                  case "red": bgStyle = 'bg-pink-50 hover:bg-pink-100'; break;
-                  case "blue": bgStyle = "bg-sky-50 hover:bg-sky-100"; break;
-                  case "yellow": bgStyle = "bg-yellow-50 hover:bg-yellow-100"; break;
-                  default: bgStyle = "bg-gray-50 hover:bg-gray-200";
-                }
-                const style = `${bgStyle} duration-100`;
-                return (<div className={style} key={index}>
-                  <Link className="" to={`/program/session/${session.id}`}>
-                    <div className="px-3 py-3">
-                      <p className="mb-1 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
-                        {session.startLocalTime} - {session.endLocalTime}
-                      </p>
-                      {session.subtitle && <small className="font-bold">{session.subtitle}</small>}
-                      <p className="mb-0 leading-5">{session.name}</p>
-                    </div>
-                  </Link>
-                </div>);
-              })}
-            </div>
+          const style = `bg-gray-100 border px-3 py-1 rounded-md text-lg lg:mt-0 font-bold font-headingStyle`
+          return (
+            <button className={style} key={index}
+              onClick={() => setViewDay([key])}>
+              {key}
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="program-list border rounded-md divide-y divide-gray-200">
+        {groupedSessions[viewDay]?.map((session, index) => {
+          let bgStyle = "";
+          switch (session.type) {
+            case "zoom": bgStyle = 'bg-pink-50 hover:bg-pink-100'; break;
+            case "video": bgStyle = "bg-sky-50 hover:bg-sky-100"; break;
+            case "link": bgStyle = "bg-yellow-50 hover:bg-yellow-100"; break;
+            default: bgStyle = "bg-gray-50 hover:bg-gray-200";
+          }
+          const style = `${bgStyle} duration-100`;
+          return (<div className={style} key={index}>
+            <Link className="" to={`/program/session/${session.id}`}>
+
+              <div className="px-3 py-3 block md:flex gap-x-8">
+                <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
+                  {session.startLocalTime} - {session.endLocalTime}
+                </p>
+
+                <div>
+                  <p className="leading-5 font-semibold mb-0">{session.name}</p>
+                  {session.subtitle && <p className="mt-1 mb-0 text-sm leading-tight">{session.subtitle}</p>}
+                  {false && (
+                    <ul className="list-inside list-disc mt-1">
+                      {[].map((paper, index) => (
+                        <li className="mb-0 text-xs font-medium" key={index}>Paper {index + 1}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+
+            </Link>
           </div>);
         })}
       </div>
+
       <div className="max-h-148 overflow-auto border mt-8 text-sm font-mono">
         From {`https://mmasia2021.uqcloud.net/api/sessions`}<br />
         <p className="whitespace-pre-wrap">{JSON.stringify(sessions, null, 2)}</p>
