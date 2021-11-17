@@ -122,9 +122,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper" colSpan="2">Score Transformer: Generating Musical Score from Note-level Representation</td>
                 </tr>
                 <tr>
-                  <td rowSpan="6">14 - 15:30 p.m.</td>
-                  <td rowSpan="6">16 - 17:30 p.m.</td>
-                  <td rowSpan="6">17 - 18:30 p.m.</td>
+                  <td rowSpan="6">14:00 - 15:30 p.m.</td>
+                  <td rowSpan="6">16:00 - 17:30 p.m.</td>
+                  <td rowSpan="6">17:00 - 18:30 p.m.</td>
                   <td rowSpan="6">Session 4: Multimodality Learning in Multimedia</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colSpan="2">BRUSH: Label Reconstructing and Similarity Preserving Hashing for Cross-modal Retrieval</td>
@@ -354,7 +354,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>17:05 - 17:40 p.m.</td>
                   <td>19:05 - 19:40 p.m.</td>
                   <td>20:05 - 20:40 p.m.</td>
-                  <td>Social connections on Gather.Town</td>
+                  <td>Social Connections on Gather.Town</td>
                   <td className="paper">Posters and Q&amp;A for all tracks</td>
                 </tr>
               </tbody>
