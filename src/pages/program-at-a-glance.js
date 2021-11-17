@@ -97,9 +97,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper" colspan="2">Latent Pattern Sensing: Deepfake Video Detection via Predictive Representation Learning</td>
                 </tr>
                 <tr>
-                  <td rowspan="6">12:30 - 14 p.m.</td>
-                  <td rowspan="6">14:30 - 16 p.m.</td>
-                  <td rowspan="6">15:30 - 17 p.m.</td>
+                  <td rowspan="6">12:30 - 14:00 p.m.</td>
+                  <td rowspan="6">14:30 - 16:00 p.m.</td>
+                  <td rowspan="6">15:30 - 17:00 p.m.</td>
                   <td rowspan="6">Session 3: Deep Learning for Multimedia</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colspan="2">A Local-Global Commutative Preserving Functional Map for Shape Correspondence</td>
