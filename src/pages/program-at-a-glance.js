@@ -36,16 +36,16 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="font-bold" colSpan="2">Details (Paper List)</td>
                 </tr>
                 <tr>
-                  <td>9 - 9:10am</td>
-                  <td>11am</td>
-                  <td>12pm</td>
+                  <td>9:00 - 9:10 a.m.</td>
+                  <td>11:00 a.m.</td>
+                  <td>12:00 p.m.</td>
                   <td>Opening</td>
                   <td colSpan="2"></td>
                 </tr>
                 <tr>
-                  <td>9:10 - 10:10am</td>
-                  <td>11:10 - 12:10pm</td>
-                  <td>12:10 - 13:10pm</td>
+                  <td>9:10 - 10:10 a.m.</td>
+                  <td>11:10 - 12:10 p.m.</td>
+                  <td>12:10 - 13:10 p.m.</td>
                   <td>Keynote 1: Mohan Kankanhalli</td>
                   <td colSpan="2">TBA</td>
                 </tr>
@@ -53,9 +53,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td colSpan="6">5 mins break</td>
                 </tr>
                 <tr>
-                  <td rowSpan="6">10:15 - 11:45am</td>
-                  <td rowSpan="6">12:15 - 13:45pm</td>
-                  <td rowSpan="6">13:15 - 14:45pm</td>
+                  <td rowSpan="6">10:15 - 11:45 a.m.</td>
+                  <td rowSpan="6">12:15 - 13:45 p.m.</td>
+                  <td rowSpan="6">13:15 - 14:45 p.m.</td>
                   <td rowSpan="6">Session 1: Video Understanding in Multimedia</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colSpan="2">Motion = Video - Content: Towards Unsupervised Learning of Motion Representation from Videos</td>
@@ -79,9 +79,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper" colSpan="2">Intra- and Inter-frame Iterative Temporal Convolutional Networks for Video Stabilization</td>
                 </tr>
                 <tr>
-                  <td rowSpan="3">11:45 - 12:30pm</td>
-                  <td rowSpan="3">13:45 - 14:30pm</td>
-                  <td rowSpan="3">14:45 - 15:30pm</td>
+                  <td rowSpan="3">11:45 - 12:30 p.m.</td>
+                  <td rowSpan="3">13:45 - 14:30 p.m.</td>
+                  <td rowSpan="3">14:45 - 15:30 p.m.</td>
                   <td rowSpan="3">Session 2: Best Paper Candidates</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colSpan="2">Language Based Image Quality Assessment</td>
@@ -96,9 +96,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper" colSpan="2">Latent Pattern Sensing: Deepfake Video Detection via Predictive Representation Learning</td>
                 </tr>
                 <tr>
-                  <td rowSpan="6">12:30 - 14pm</td>
-                  <td rowSpan="6">14:30 - 16pm</td>
-                  <td rowSpan="6">15:30 - 17pm</td>
+                  <td rowSpan="6">12:30 - 14:00 p.m.</td>
+                  <td rowSpan="6">14:30 - 16:00 p.m.</td>
+                  <td rowSpan="6">15:30 - 17:00 p.m.</td>
                   <td rowSpan="6">Session 3: Deep Learning for Multimedia</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colSpan="2">A Local-Global Commutative Preserving Functional Map for Shape Correspondence</td>
@@ -122,9 +122,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper" colSpan="2">Score Transformer: Generating Musical Score from Note-level Representation</td>
                 </tr>
                 <tr>
-                  <td rowSpan="6">14 - 15:30pm</td>
-                  <td rowSpan="6">16 - 17:30pm</td>
-                  <td rowSpan="6">17 - 18:30pm</td>
+                  <td rowSpan="6">14 - 15:30 p.m.</td>
+                  <td rowSpan="6">16 - 17:30 p.m.</td>
+                  <td rowSpan="6">17 - 18:30 p.m.</td>
                   <td rowSpan="6">Session 4: Multimodality Learning in Multimedia</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colSpan="2">BRUSH: Label Reconstructing and Similarity Preserving Hashing for Cross-modal Retrieval</td>
@@ -151,10 +151,10 @@ const ProgramAtAGlance = ({ location }) => {
                   <td colSpan="6">10 minutes break for transition from Zoom to Gather.Town</td>
                 </tr>
                 <tr>
-                  <td rowSpan="7">15:40 - 16:30pm</td>
-                  <td rowSpan="7">17:40 - 18:30pm</td>
-                  <td rowSpan="7">18:40 - 19:30pm</td>
-                  <td rowSpan="7">Lightning talk Session 1</td>
+                  <td rowSpan="7">15:40 - 16:30 p.m.</td>
+                  <td rowSpan="7">17:40 - 18:30 p.m.</td>
+                  <td rowSpan="7">18:40 - 19:30 p.m.</td>
+                  <td rowSpan="7">Lightning Talk Session 1</td>
                   {/* <!-- <td></td> --> */}
                   <td rowSpan="3">Brave New Idea</td>
                   <td className="paper">Discovering Social Connections using Event Images</td>
@@ -166,7 +166,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">Holodeck: Immersive 3D Displays Using Swarms of Flying Light Specks</td>
                 </tr>
                 <tr>
-                  <td rowSpan="3">Demo Paper</td>
+                  <td rowSpan="3">Demo Papers</td>
                   <td className="paper">RoadAtlas: Intelligent Platform for Automated Road Defect Detection and Asset Management</td>
                 </tr>
                 <tr>
@@ -176,13 +176,13 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">An Efficient Bus Crowdedness Classification System</td>
                 </tr>
                 <tr>
-                  <td rowSpan="1">Short Papers (6)</td>
+                  <td rowSpan="1">Short Papers - Part 1</td>
                   <td className="paper">*Paper list is shown on Short Paper List below</td>
                 </tr>
                 <tr>
-                  <td rowSpan="5">16:30 - 17:30pm</td>
-                  <td rowSpan="5">18:30 - 19:30pm</td>
-                  <td rowSpan="5">19:30 - 20:30pm</td>
+                  <td rowSpan="5">16:30 - 17:30 p.m.</td>
+                  <td rowSpan="5">18:30 - 19:30 p.m.</td>
+                  <td rowSpan="5">19:30 - 20:30 p.m.</td>
                   <td rowSpan="5">Workshop: Multi-Modal Embedding and Understanding</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colSpan="2">Focusing Attention across Multiple Images for Multi-Modal Event Detection</td>
@@ -219,37 +219,37 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="font-bold">Details</td>
                 </tr>
                 <tr>
-                  <td>9 - 9:10am</td>
-                  <td>11 - 11:10am</td>
-                  <td>12 - 12:10pm</td>
+                  <td>9:00 - 9:10 a.m.</td>
+                  <td>11:00 - 11:10 a.m.</td>
+                  <td>12:00 - 12:10 p.m.</td>
                   <td>Best Paper Award Announcement</td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td>9:10 - 10am</td>
-                  <td>11:10 - 12pm</td>
-                  <td>12:10 - 13pm</td>
+                  <td>9:10 - 10:00 a.m.</td>
+                  <td>11:10 - 12:00 p.m.</td>
+                  <td>12:10 - 13:00 p.m.</td>
                   <td>Keynote 2: Yong Rui</td>
                   <td>TBA</td>
                 </tr>
                 <tr>
-                  <td rowSpan="2">10 - 10:30am</td>
-                  <td rowSpan="2">12 - 12:30pm</td>
-                  <td rowSpan="2">13 - 13:30pm</td>
+                  <td rowSpan="2">10:00 - 10:30 a.m.</td>
+                  <td rowSpan="2">12:00 - 12:30 p.m.</td>
+                  <td rowSpan="2">13:00 - 13:30 p.m.</td>
                   <td rowSpan="2">Grand Challenges</td>
                   {/* <!-- <td></td> --> */}
-                  <td className="paper">Introduction to two grand challenges</td>
+                  <td className="paper">Introduction to two Grand Challenges</td>
                 </tr>
                 {/* <!-- <tr>
                   <td>Motion = Video - Content: Towards Unsupervised Learning of Motion Representation from Videos</td>
                 </tr> --> */}
                 <tr>
-                  <td className="paper">Hybrid Improvements in Multimodal Analysis for Deep Video Understanding</td>
+                  <td className="paper">Paper: Hybrid Improvements in Multimodal Analysis for Deep Video Understanding</td>
                 </tr>
                 <tr>
-                  <td rowSpan="6">10:30 - 12pm</td>
-                  <td rowSpan="6">12:30 - 14pm</td>
-                  <td rowSpan="6">13:30 - 15pm</td>
+                  <td rowSpan="6">10:30 - 12:00 p.m.</td>
+                  <td rowSpan="6">12:30 - 14:00 p.m.</td>
+                  <td rowSpan="6">13:30 - 15:00 p.m.</td>
                   <td rowSpan="6">Session 5: Vision and Language in Multimedia</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Semantic Enhanced Cross-modal GAN for Zero-shot Learning</td>
@@ -276,9 +276,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td colSpan="6">5 mins break</td>
                 </tr>
                 <tr>
-                  <td rowSpan="6">12:05 - 13:35pm</td>
-                  <td rowSpan="6">14:05 - 15:35pm</td>
-                  <td rowSpan="6">15:05 - 16:35pm</td>
+                  <td rowSpan="6">12:05 - 13:35 p.m.</td>
+                  <td rowSpan="6">14:05 - 15:35 p.m.</td>
+                  <td rowSpan="6">15:05 - 16:35 p.m.</td>
                   <td rowSpan="6">Session 6: Computer Vision in Multimedia</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Source-Style Transferred Mean Teacher for Source-data Free Object Detection</td>
@@ -305,9 +305,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td colSpan="6">5 minutes break for transition from Zoom to Gather.Town</td>
                 </tr>
                 <tr>
-                  <td rowSpan="6">13:40 - 14:55pm</td>
-                  <td rowSpan="6">15:40 - 16:55pm</td>
-                  <td rowSpan="6">16:40 - 17:55pm</td>
+                  <td rowSpan="6">13:40 - 14:55 p.m.</td>
+                  <td rowSpan="6">15:40 - 16:55 p.m.</td>
+                  <td rowSpan="6">16:40 - 17:55 p.m.</td>
                   <td rowSpan="6">Workshop: Multi-Model Computing of Marine Big Data</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Deep Reinforcement Learning and Docking Simulations for autonomous molecule generation in de novo Drug Design</td>
@@ -334,9 +334,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td colSpan="6">5 mins break</td>
                 </tr>
                 <tr>
-                  <td>15 - 16pm</td>
-                  <td>17 - 18pm</td>
-                  <td>18 - 19pm</td>
+                  <td>15:00 - 16:00 p.m.</td>
+                  <td>17:00 - 18:00 p.m.</td>
+                  <td>18:00 - 19:00 p.m.</td>
                   <td>Special Session</td>
                   <td className="paper">Women in Multimedia Roundtable</td>
                 </tr>
@@ -344,16 +344,16 @@ const ProgramAtAGlance = ({ location }) => {
                   <td colSpan="6">5 mins break</td>
                 </tr>
                 <tr>
-                  <td>16:05 - 17:05pm</td>
-                  <td>18:05 - 19:05pm</td>
-                  <td>19:05 - 20:05pm</td>
-                  <td>Lightning Talk Session 2 - Short papers (20)</td>
+                  <td>16:05 - 17:05 p.m.</td>
+                  <td>18:05 - 19:05 p.m.</td>
+                  <td>19:05 - 20:05 p.m.</td>
+                  <td>Lightning Talk Session 2 - Short Papers - Part 2</td>
                   <td className="paper">*Paper list is shown on Short Paper List below</td>
                 </tr>
                 <tr>
-                  <td>17:05 - 17:40pm</td>
-                  <td>19:05 - 19:40pm</td>
-                  <td>20:05 - 20:40pm</td>
+                  <td>17:05 - 17:40 p.m.</td>
+                  <td>19:05 - 19:40 p.m.</td>
+                  <td>20:05 - 20:40 p.m.</td>
                   <td>Social connections on Gather.Town</td>
                   <td className="paper">Posters and Q&amp;A for all tracks</td>
                 </tr>
@@ -374,23 +374,23 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="font-bold">Details</td>
                 </tr>
                 <tr>
-                  <td>9 - 10am</td>
-                  <td>11 - 12pm</td>
-                  <td>12 - 13pm</td>
+                  <td>9:00 - 10:00 a.m.</td>
+                  <td>11:00 - 12:00 p.m.</td>
+                  <td>12:00 - 13:00 p.m.</td>
                   <td>Keynote 3: Divesh Srivastava</td>
                   <td className="paper">How to do Research for Fun and Profit</td>
                 </tr>
                 <tr>
-                  <td>10 - 11pm</td>
-                  <td>12 - 13pm</td>
-                  <td>13 - 14pm</td>
+                  <td>10:00 - 11:00 p.m.</td>
+                  <td>12:00 - 13:00 p.m.</td>
+                  <td>13:00 - 14:00 p.m.</td>
                   <td>HDR Lightning Talks</td>
                   <td className="paper">TBA</td>
                 </tr>
                 <tr>
-                  <td>11 - 12pm</td>
-                  <td>13 - 14pm</td>
-                  <td>14 - 15pm</td>
+                  <td>11:00 - 12:00 p.m.</td>
+                  <td>13:00 - 14:00 p.m.</td>
+                  <td>14:00 - 15:00 p.m.</td>
                   <td>Keynote 4: Klara Nahrstedt</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Navigation Models for Interactive 360-Degree Video Streaming Systems</td>
@@ -399,9 +399,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td colSpan="6">5 mins break</td>
                 </tr>
                 <tr>
-                  <td>12:05 - 14:05pm</td>
-                  <td>14:05 - 16:05pm</td>
-                  <td>15:05 - 17:05pm</td>
+                  <td>12:05 - 14:05 p.m.</td>
+                  <td>14:05 - 16:05 p.m.</td>
+                  <td>15:05 - 17:05 p.m.</td>
                   <td>Tutorial 1:<br/> Recent Advances in Video Summarization: Conventional and Deep Learning based Approaches</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Zhiyong Wang (USyd), Zhou Zhao (ZJU), Xi Li (ZJU), and Fei Wu (ZJU)</td>
@@ -410,17 +410,17 @@ const ProgramAtAGlance = ({ location }) => {
                   <td colSpan="6">10 mins break</td>
                 </tr>
                 <tr>
-                  <td>14:15 - 16pm</td>
-                  <td>16:15 - 18pm</td>
-                  <td>17:15 - 19pm</td>
+                  <td>14:15 - 16:00 p.m.</td>
+                  <td>16:15 - 18:00 p.m.</td>
+                  <td>17:15 - 19:00 p.m.</td>
                   <td>Tutorial 2:<br/> Modeling User Behavior for Vertical Search: Images, Apps and Products</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Xiaohui Xie (THU), Jiaxin Mao (THU), Yuqun Liu (THU) and Maarten de Rijke (UvA)</td>
                 </tr>
                 <tr>
-                  <td rowSpan="3">16 - 16:45pm</td>
-                  <td rowSpan="3">18 - 18:45pm</td>
-                  <td rowSpan="3">19 - 19:45pm</td>
+                  <td rowSpan="3">16:00 - 16:45 p.m.</td>
+                  <td rowSpan="3">18:00 - 18:45 p.m.</td>
+                  <td rowSpan="3">19:00 - 19:45 p.m.</td>
                   <td rowSpan="3">Applied Research Track</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Goldeye: Enhanced Spatial Awareness for the Visually Impaired using Mixed Reality and Vibrotactile Feedback</td>
@@ -438,9 +438,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td colSpan="6">5 minutes break for transition from Zoom to Gather.Town</td>
                 </tr>
                 <tr>
-                  <td rowSpan="4">16:50 - 17:50pm</td>
-                  <td rowSpan="4">18:50 - 19:50pm</td>
-                  <td rowSpan="4">19:50 - 20:50pm</td>
+                  <td rowSpan="4">16:50 - 17:50 p.m.</td>
+                  <td rowSpan="4">18:50 - 19:50 p.m.</td>
+                  <td rowSpan="4">19:50 - 20:50 p.m.</td>
                   <td rowSpan="4">Workshop: Visual Tasks and Challenges under Low-quality Multimedia Data</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Local-enhanced Multi-resolution Representation Learning for Vehicle Re-identification</td>
@@ -458,9 +458,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">Visible-Infrared Cross-Modal Person Re-identification based on Positive Feedback</td>
                 </tr>
                 <tr>
-                  <td>17:50pm</td>
-                  <td>19:50pm</td>
-                  <td>20:50pm</td>
+                  <td>17:50 p.m.</td>
+                  <td>19:50 p.m.</td>
+                  <td>20:50 p.m.</td>
                   <td>Closing</td>
                   <td className="paper"></td>
                 </tr>
@@ -469,7 +469,7 @@ const ProgramAtAGlance = ({ location }) => {
           </div>
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-mainPurple 
-              font-headingStyle tracking-semiWide">*Short Paper List</h2>
+              font-headingStyle tracking-semiWide">*Short Paper List - Part 1</h2>
           <ul className="list-disc list-inside space-y-2 text-base">
             <li>CMRD-Net: An Improved Method for Underwater Image Enhancement</li>
             <li>Deep Multiple Length Hashing via Multi-task Learning</li>
@@ -477,6 +477,10 @@ const ProgramAtAGlance = ({ location }) => {
             <li>Conditioned Image Retrieval for Fashion using Contrastive Learning and CLIP-based Features</li>
             <li>PBNet: Position-specific Text-to-image Generation by Boundary</li>
             <li>An Embarrassingly Simple Approach to Discrete Supervised Hashing</li>
+          </ul>
+          <h2 className="text-2xl font-bold mt-8 mb-4 text-mainPurple 
+              font-headingStyle tracking-semiWide">*Short Paper List - Part 2</h2>
+          <ul className="list-disc list-inside space-y-2 text-base">
             <li>Towards Transferable 3D Adversarial Attack</li>
             <li>Delay-sensitive and Priority-aware Transmission Control for Real-time Multimedia Communications</li>
             <li>Impression of a Job Interview training agent that gives rationalized feedback ~Should Virtual Agent Give Advice with Rationale</li>
