@@ -21,8 +21,7 @@ const ProgramAtAGlance = ({ location }) => {
         <h1 className="text-4xl mb-10 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">
           Program at a Glance
         </h1>
-
-
+        
         <section className="text-sm">
           <h2 className="text-2xl font-bold mt-4 sm:mt-6 mb-4 text-mainPurple 
               font-headingStyle tracking-semiWide">1 December, 2021</h2>
@@ -34,130 +33,130 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="font-bold">AEST (BNE) UTC +10</td>
                   <td className="font-bold">AEDT (SYD) UTC +11</td>
                   <td className="font-bold">Session</td>
-                  <td className="font-bold" colspan="2">Details (Paper List)</td>
+                  <td className="font-bold" colSpan="2">Details (Paper List)</td>
                 </tr>
                 <tr>
                   <td>9 - 9:10am</td>
                   <td>11am</td>
                   <td>12pm</td>
                   <td>Opening</td>
-                  <td colspan="2"></td>
+                  <td colSpan="2"></td>
                 </tr>
                 <tr>
                   <td>9:10 - 10:10am</td>
                   <td>11:10 - 12:10pm</td>
                   <td>12:10 - 13:10pm</td>
                   <td>Keynote 1: Mohan Kankanhalli</td>
-                  <td colspan="2">TBA</td>
+                  <td colSpan="2">TBA</td>
                 </tr>
                 <tr>
-                  <td colspan="6">5 mins break</td>
+                  <td colSpan="6">5 mins break</td>
                 </tr>
                 <tr>
-                  <td rowspan="6">10:15 - 11:45am</td>
-                  <td rowspan="6">12:15 - 13:45pm</td>
-                  <td rowspan="6">13:15 - 14:45pm</td>
-                  <td rowspan="6">Session 1: Video Understanding in Multimedia</td>
+                  <td rowSpan="6">10:15 - 11:45am</td>
+                  <td rowSpan="6">12:15 - 13:45pm</td>
+                  <td rowSpan="6">13:15 - 14:45pm</td>
+                  <td rowSpan="6">Session 1: Video Understanding in Multimedia</td>
                   {/* <!-- <td></td> --> */}
-                  <td className="paper" colspan="2">Motion = Video - Content: Towards Unsupervised Learning of Motion Representation from Videos</td>
+                  <td className="paper" colSpan="2">Motion = Video - Content: Towards Unsupervised Learning of Motion Representation from Videos</td>
                 </tr>
                 {/* <!-- <tr>
                   <td>Motion = Video - Content: Towards Unsupervised Learning of Motion Representation from Videos</td>
                 </tr> --> */}
                 <tr>
-                  <td className="paper" colspan="2">Blindly Predict Image and Video Quality in the Wild</td>
+                  <td className="paper" colSpan="2">Blindly Predict Image and Video Quality in the Wild</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Hierarchical Deep Residual Reasoning for Temporal Moment Localization</td>
+                  <td className="paper" colSpan="2">Hierarchical Deep Residual Reasoning for Temporal Moment Localization</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Video Saliency Prediction via Deep Eye Movement Learning</td>
+                  <td className="paper" colSpan="2">Video Saliency Prediction via Deep Eye Movement Learning</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Conditional Extreme Value Theory for Open Set Video Domain Adaptation</td>
+                  <td className="paper" colSpan="2">Conditional Extreme Value Theory for Open Set Video Domain Adaptation</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Intra- and Inter-frame Iterative Temporal Convolutional Networks for Video Stabilization</td>
+                  <td className="paper" colSpan="2">Intra- and Inter-frame Iterative Temporal Convolutional Networks for Video Stabilization</td>
                 </tr>
                 <tr>
-                  <td rowspan="3">11:45 - 12:30pm</td>
-                  <td rowspan="3">13:45 - 14:30pm</td>
-                  <td rowspan="3">14:45 - 15:30pm</td>
-                  <td rowspan="3">Session 2: Best Paper Candidates</td>
+                  <td rowSpan="3">11:45 - 12:30pm</td>
+                  <td rowSpan="3">13:45 - 14:30pm</td>
+                  <td rowSpan="3">14:45 - 15:30pm</td>
+                  <td rowSpan="3">Session 2: Best Paper Candidates</td>
                   {/* <!-- <td></td> --> */}
-                  <td className="paper" colspan="2">Language Based Image Quality Assessment</td>
+                  <td className="paper" colSpan="2">Language Based Image Quality Assessment</td>
                 </tr>
                 {/* <!-- <tr>
                   <td>Motion = Video - Content: Towards Unsupervised Learning of Motion Representation from Videos</td>
                 </tr> --> */}
                 <tr>
-                  <td className="paper" colspan="2">Towards Discriminative Visual Search via Semantically Cycle-consistent Hashing Networks</td>
+                  <td className="paper" colSpan="2">Towards Discriminative Visual Search via Semantically Cycle-consistent Hashing Networks</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Latent Pattern Sensing: Deepfake Video Detection via Predictive Representation Learning</td>
+                  <td className="paper" colSpan="2">Latent Pattern Sensing: Deepfake Video Detection via Predictive Representation Learning</td>
                 </tr>
                 <tr>
-                  <td rowspan="6">12:30 - 14pm</td>
-                  <td rowspan="6">14:30 - 16pm</td>
-                  <td rowspan="6">15:30 - 17pm</td>
-                  <td rowspan="6">Session 3: Deep Learning for Multimedia</td>
+                  <td rowSpan="6">12:30 - 14pm</td>
+                  <td rowSpan="6">14:30 - 16pm</td>
+                  <td rowSpan="6">15:30 - 17pm</td>
+                  <td rowSpan="6">Session 3: Deep Learning for Multimedia</td>
                   {/* <!-- <td></td> --> */}
-                  <td className="paper" colspan="2">A Local-Global Commutative Preserving Functional Map for Shape Correspondence</td>
+                  <td className="paper" colSpan="2">A Local-Global Commutative Preserving Functional Map for Shape Correspondence</td>
                 </tr>
                 {/* <!-- <tr>
                   <td>Motion = Video - Content: Towards Unsupervised Learning of Motion Representation from Videos</td>
                 </tr> --> */}
                 <tr>
-                  <td className="paper" colspan="2">Differentially Private Learning with Grouped Gradient Clipping</td>
+                  <td className="paper" colSpan="2">Differentially Private Learning with Grouped Gradient Clipping</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Structural Knowledge Organization and Transfer for Class-Incremental Learning</td>
+                  <td className="paper" colSpan="2">Structural Knowledge Organization and Transfer for Class-Incremental Learning</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Improving Hyperspectral Super-Resolution via Heterogeneous Knowledge Distillation</td>
+                  <td className="paper" colSpan="2">Improving Hyperspectral Super-Resolution via Heterogeneous Knowledge Distillation</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Patch-Based Deep Autoencoder for Point Cloud Geometry Compression</td>
+                  <td className="paper" colSpan="2">Patch-Based Deep Autoencoder for Point Cloud Geometry Compression</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Score Transformer: Generating Musical Score from Note-level Representation</td>
+                  <td className="paper" colSpan="2">Score Transformer: Generating Musical Score from Note-level Representation</td>
                 </tr>
                 <tr>
-                  <td rowspan="6">14 - 15:30pm</td>
-                  <td rowspan="6">16 - 17:30pm</td>
-                  <td rowspan="6">17 - 18:30pm</td>
-                  <td rowspan="6">Session 4: Multimodality Learning in Multimedia</td>
+                  <td rowSpan="6">14 - 15:30pm</td>
+                  <td rowSpan="6">16 - 17:30pm</td>
+                  <td rowSpan="6">17 - 18:30pm</td>
+                  <td rowSpan="6">Session 4: Multimodality Learning in Multimedia</td>
                   {/* <!-- <td></td> --> */}
-                  <td className="paper" colspan="2">BRUSH: Label Reconstructing and Similarity Preserving Hashing for Cross-modal Retrieval</td>
+                  <td className="paper" colSpan="2">BRUSH: Label Reconstructing and Similarity Preserving Hashing for Cross-modal Retrieval</td>
                 </tr>
                 {/* <!-- <tr>
                   <td>Motion = Video - Content: Towards Unsupervised Learning of Motion Representation from Videos</td>
                 </tr> --> */}
                 <tr>
-                  <td className="paper" colspan="2">Local Self-Attention on Fine-grained Cross-media Retrieval</td>
+                  <td className="paper" colSpan="2">Local Self-Attention on Fine-grained Cross-media Retrieval</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Self-Adaptive Hashing for Fine-Grained Image Retrieval</td>
+                  <td className="paper" colSpan="2">Self-Adaptive Hashing for Fine-Grained Image Retrieval</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Hierarchical Composition Learning for Composed Query Image Retrieval</td>
+                  <td className="paper" colSpan="2">Hierarchical Composition Learning for Composed Query Image Retrieval</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Few-shot Egocentric Multimodal Activity Recognition</td>
+                  <td className="paper" colSpan="2">Few-shot Egocentric Multimodal Activity Recognition</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Inter-modality Discordance for Multimodal Fake News Detection</td>
+                  <td className="paper" colSpan="2">Inter-modality Discordance for Multimodal Fake News Detection</td>
                 </tr>
                 <tr>
-                  <td colspan="6">10 minutes break for transition from Zoom to Gather.Town</td>
+                  <td colSpan="6">10 minutes break for transition from Zoom to Gather.Town</td>
                 </tr>
                 <tr>
-                  <td rowspan="7">15:40 - 16:30pm</td>
-                  <td rowspan="7">17:40 - 18:30pm</td>
-                  <td rowspan="7">18:40 - 19:30pm</td>
-                  <td rowspan="7">Lightning talk Session 1</td>
+                  <td rowSpan="7">15:40 - 16:30pm</td>
+                  <td rowSpan="7">17:40 - 18:30pm</td>
+                  <td rowSpan="7">18:40 - 19:30pm</td>
+                  <td rowSpan="7">Lightning talk Session 1</td>
                   {/* <!-- <td></td> --> */}
-                  <td rowspan="3">Brave New Idea</td>
+                  <td rowSpan="3">Brave New Idea</td>
                   <td className="paper">Discovering Social Connections using Event Images</td>
                 </tr>
                 <tr>
@@ -167,7 +166,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">Holodeck: Immersive 3D Displays Using Swarms of Flying Light Specks</td>
                 </tr>
                 <tr>
-                  <td rowspan="3">Demo Paper</td>
+                  <td rowSpan="3">Demo Paper</td>
                   <td className="paper">RoadAtlas: Intelligent Platform for Automated Road Defect Detection and Asset Management</td>
                 </tr>
                 <tr>
@@ -177,31 +176,31 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">An Efficient Bus Crowdedness Classification System</td>
                 </tr>
                 <tr>
-                  <td rowspan="1">Short Papers (6)</td>
+                  <td rowSpan="1">Short Papers (6)</td>
                   <td className="paper">*Paper list is shown on Short Paper List below</td>
                 </tr>
                 <tr>
-                  <td rowspan="5">16:30 - 17:30pm</td>
-                  <td rowspan="5">18:30 - 19:30pm</td>
-                  <td rowspan="5">19:30 - 20:30pm</td>
-                  <td rowspan="5">Workshop: Multi-Modal Embedding and Understanding</td>
+                  <td rowSpan="5">16:30 - 17:30pm</td>
+                  <td rowSpan="5">18:30 - 19:30pm</td>
+                  <td rowSpan="5">19:30 - 20:30pm</td>
+                  <td rowSpan="5">Workshop: Multi-Modal Embedding and Understanding</td>
                   {/* <!-- <td></td> --> */}
-                  <td className="paper" colspan="2">Focusing Attention across Multiple Images for Multi-Modal Event Detection</td>
+                  <td className="paper" colSpan="2">Focusing Attention across Multiple Images for Multi-Modal Event Detection</td>
                 </tr>
                 {/* <!-- <tr>
                   <td>Motion = Video - Content: Towards Unsupervised Learning of Motion Representation from Videos</td>
                 </tr> --> */}
                 <tr>
-                  <td className="paper" colspan="2">Adaptive Cross-stitch Graph Convolutional Networks</td>
+                  <td className="paper" colSpan="2">Adaptive Cross-stitch Graph Convolutional Networks</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Generation of Variable-Length Time Series from Text using Dynamic Time Warping-Based Method</td>
+                  <td className="paper" colSpan="2">Generation of Variable-Length Time Series from Text using Dynamic Time Warping-Based Method</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Hierarchical Graph Representation Learning with Local Capsule Pooling</td>
+                  <td className="paper" colSpan="2">Hierarchical Graph Representation Learning with Local Capsule Pooling</td>
                 </tr>
                 <tr>
-                  <td className="paper" colspan="2">Deep Adaptive-Attention Triple Hashing</td>
+                  <td className="paper" colSpan="2">Deep Adaptive-Attention Triple Hashing</td>
                 </tr>
               </tbody>
             </table>
@@ -234,10 +233,10 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>TBA</td>
                 </tr>
                 <tr>
-                  <td rowspan="2">10 - 10:30am</td>
-                  <td rowspan="2">12 - 12:30pm</td>
-                  <td rowspan="2">13 - 13:30pm</td>
-                  <td rowspan="2">Grand Challenges</td>
+                  <td rowSpan="2">10 - 10:30am</td>
+                  <td rowSpan="2">12 - 12:30pm</td>
+                  <td rowSpan="2">13 - 13:30pm</td>
+                  <td rowSpan="2">Grand Challenges</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Introduction to two grand challenges</td>
                 </tr>
@@ -248,10 +247,10 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">Hybrid Improvements in Multimodal Analysis for Deep Video Understanding</td>
                 </tr>
                 <tr>
-                  <td rowspan="6">10:30 - 12pm</td>
-                  <td rowspan="6">12:30 - 14pm</td>
-                  <td rowspan="6">13:30 - 15pm</td>
-                  <td rowspan="6">Session 5: Vision and Language in Multimedia</td>
+                  <td rowSpan="6">10:30 - 12pm</td>
+                  <td rowSpan="6">12:30 - 14pm</td>
+                  <td rowSpan="6">13:30 - 15pm</td>
+                  <td rowSpan="6">Session 5: Vision and Language in Multimedia</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Semantic Enhanced Cross-modal GAN for Zero-shot Learning</td>
                 </tr>
@@ -274,13 +273,13 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">Zero-shot Recognition with Image Attributes Generation using Hierarchical Coupled Dictionary Learning</td>
                 </tr>
                 <tr>
-                  <td colspan="6">5 mins break</td>
+                  <td colSpan="6">5 mins break</td>
                 </tr>
                 <tr>
-                  <td rowspan="6">12:05 - 13:35pm</td>
-                  <td rowspan="6">14:05 - 15:35pm</td>
-                  <td rowspan="6">15:05 - 16:35pm</td>
-                  <td rowspan="6">Session 6: Computer Vision in Multimedia</td>
+                  <td rowSpan="6">12:05 - 13:35pm</td>
+                  <td rowSpan="6">14:05 - 15:35pm</td>
+                  <td rowSpan="6">15:05 - 16:35pm</td>
+                  <td rowSpan="6">Session 6: Computer Vision in Multimedia</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Source-Style Transferred Mean Teacher for Source-data Free Object Detection</td>
                 </tr>
@@ -303,13 +302,13 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">A Model-Guided Unfolding Network for Single Image Reflection Removal</td>
                 </tr>
                 <tr>
-                  <td colspan="6">5 minutes break for transition from Zoom to Gather.Town</td>
+                  <td colSpan="6">5 minutes break for transition from Zoom to Gather.Town</td>
                 </tr>
                 <tr>
-                  <td rowspan="6">13:40 - 14:55pm</td>
-                  <td rowspan="6">15:40 - 16:55pm</td>
-                  <td rowspan="6">16:40 - 17:55pm</td>
-                  <td rowspan="6">Workshop: Multi-Model Computing of Marine Big Data</td>
+                  <td rowSpan="6">13:40 - 14:55pm</td>
+                  <td rowSpan="6">15:40 - 16:55pm</td>
+                  <td rowSpan="6">16:40 - 17:55pm</td>
+                  <td rowSpan="6">Workshop: Multi-Model Computing of Marine Big Data</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Deep Reinforcement Learning and Docking Simulations for autonomous molecule generation in de novo Drug Design</td>
                 </tr>
@@ -332,7 +331,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">Multi-Scale Graph Convolutional Network and Dynamic Iterative Class Loss for Ship Segmentation in Remote Sensing Images</td>
                 </tr>
                 <tr>
-                  <td colspan="6">5 mins break</td>
+                  <td colSpan="6">5 mins break</td>
                 </tr>
                 <tr>
                   <td>15 - 16pm</td>
@@ -342,7 +341,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">Women in Multimedia Roundtable</td>
                 </tr>
                 <tr>
-                  <td colspan="6">5 mins break</td>
+                  <td colSpan="6">5 mins break</td>
                 </tr>
                 <tr>
                   <td>16:05 - 17:05pm</td>
@@ -397,7 +396,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">Navigation Models for Interactive 360-Degree Video Streaming Systems</td>
                 </tr>
                 <tr>
-                  <td colspan="6">5 mins break</td>
+                  <td colSpan="6">5 mins break</td>
                 </tr>
                 <tr>
                   <td>12:05 - 14:05pm</td>
@@ -408,7 +407,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">Zhiyong Wang (USyd), Zhou Zhao (ZJU), Xi Li (ZJU), and Fei Wu (ZJU)</td>
                 </tr>
                 <tr>
-                  <td colspan="6">10 mins break</td>
+                  <td colSpan="6">10 mins break</td>
                 </tr>
                 <tr>
                   <td>14:15 - 16pm</td>
@@ -419,10 +418,10 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">Xiaohui Xie (THU), Jiaxin Mao (THU), Yuqun Liu (THU) and Maarten de Rijke (UvA)</td>
                 </tr>
                 <tr>
-                  <td rowspan="3">16 - 16:45pm</td>
-                  <td rowspan="3">18 - 18:45pm</td>
-                  <td rowspan="3">19 - 19:45pm</td>
-                  <td rowspan="3">Applied Research Track</td>
+                  <td rowSpan="3">16 - 16:45pm</td>
+                  <td rowSpan="3">18 - 18:45pm</td>
+                  <td rowSpan="3">19 - 19:45pm</td>
+                  <td rowSpan="3">Applied Research Track</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Goldeye: Enhanced Spatial Awareness for the Visually Impaired using Mixed Reality and Vibrotactile Feedback</td>
                 </tr>
@@ -436,13 +435,13 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="paper">CFCR: A Convolution and Fusion Model for Cross-platform Recommendation</td>
                 </tr>
                 <tr>
-                  <td colspan="6">5 minutes break for transition from Zoom to Gather.Town</td>
+                  <td colSpan="6">5 minutes break for transition from Zoom to Gather.Town</td>
                 </tr>
                 <tr>
-                  <td rowspan="4">16:50 - 17:50pm</td>
-                  <td rowspan="4">18:50 - 19:50pm</td>
-                  <td rowspan="4">19:50 - 20:50pm</td>
-                  <td rowspan="4">Workshop: Visual Tasks and Challenges under Low-quality Multimedia Data</td>
+                  <td rowSpan="4">16:50 - 17:50pm</td>
+                  <td rowSpan="4">18:50 - 19:50pm</td>
+                  <td rowSpan="4">19:50 - 20:50pm</td>
+                  <td rowSpan="4">Workshop: Visual Tasks and Challenges under Low-quality Multimedia Data</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Local-enhanced Multi-resolution Representation Learning for Vehicle Re-identification</td>
                 </tr>
