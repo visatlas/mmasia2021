@@ -9,7 +9,7 @@ export default function Title({ allowVideo }) {
   useEffect(() => {
     const timer = setInterval(function tick() {
       // calculate countdown time
-      const distance = new Date("2021-12-01T10:00:00+10:00").getTime() - new Date().getTime();
+      const distance = new Date("2021-12-01T11:00:00+10:00").getTime() - new Date().getTime();
       let days = Math.floor(distance / 86400000);  // 1000 * 60 * 60 * 24
       let hours = Math.floor((distance % 86400000) / 3600000);  // 1000 * 60 * 60
       let minutes = Math.floor((distance % 3600000) / 60000);  // 1000 * 60

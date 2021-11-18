@@ -25,7 +25,8 @@ const Detail = ({ id, template=null }) => {
       <Link to="/program/home" className="font-medium hover:underline py-2 pr-2">
         &lsaquo;&nbsp;Back
       </Link>
-      <h1 className="text-2xl mt-6 mb-6 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">{sessionData?.name}</h1>
+      <h1 className="text-2xl mt-6 mb-6 font-bold font-headingStyle tracking-semiWide text-semiBlack">{sessionData?.name}</h1>
+      <p>{sessionData?.subtitle}</p>
       <div className="max-h-96 overflow-auto border mt-8 text-sm">
         <p className="whitespace-pre-wrap font-mono">
           From {`https://mmasia2021.uqcloud.net/api/sessions/${id}`}<br/>

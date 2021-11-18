@@ -76,14 +76,17 @@ const Dashboard = () => {
   return (<>
     <Seo pageMeta={{ title: "Program" }} />
     <div className="max-w-7xl mx-auto py-10 px-5 lg:px-21">
-      <h1 className="text-3xl mb-10 px-3 font-bold font-headingStyle tracking-semiWide text-semiBlack">
+      <h1 className="text-3xl mb-2 px-3 font-bold font-headingStyle tracking-semiWide text-semiBlack">
         Conference Schedule
       </h1>
-      <div className="mb-0">
-        <p className="px-3 mb-2 font-bold font-headingStyle tracking-semiWide">Please make sure the timezone matches your region:</p>
+      <p className="px-3 mb-10">Click on the timetable to see the join links and more.</p>
+      <div className="mb-2">
+        <p className="px-3 mb-2 font-bold text-mainPurple font-headingStyle tracking-semiWide">
+          Select the desired time zone:
+        </p>
         <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone}
           styles={{
-            option: (provided) => ({
+            option: (provided, state) => ({
               ...provided,
               cursor: 'pointer',
             }),
@@ -92,6 +95,7 @@ const Dashboard = () => {
               borderColor: '#F3F4F6',
               backgroundColor: '#F3F4F6',
               cursor: 'pointer',
+              fontWeight: 600,
             })
           }}
         />
