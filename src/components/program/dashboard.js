@@ -103,8 +103,9 @@ const Dashboard = () => {
         <div className="flex bg-gray-100 border-b-mainPurple border-b-2 gap-x-0 md:gap-x-6 rounded-tl-md rounded-tr-md">
           {Object.keys(groupedSessions).map((key, index) => {
             // set active style
-            const active = key === viewDay ? "bg-mainPurple text-gray-200" : "text-mainPurple";
-            const style = `${active} hover:bg-menuSelected hover:text-gray-100 duration-100 px-2 md:px-4 py-2 text-base lg:mt-0 font-bold font-headingStyle rounded-tl-md rounded-tr-md`;
+            const active = key === viewDay ? "bg-mainPurple text-gray-200" : "text-mainPurple hover:bg-menuSelected";
+            const style = `${active} hover:text-gray-100 duration-100 px-2 md:px-4 py-2 
+              text-base lg:mt-0 font-bold font-headingStyle rounded-tl-md rounded-tr-md`;
             return (
               <button className={style} key={key}
                 onClick={() => setViewDay(key)}>
@@ -161,10 +162,10 @@ const Dashboard = () => {
         })}
       </div>
 
-      <div className="max-h-148 overflow-auto border mt-8 text-sm font-mono">
+      {/* <div className="max-h-148 overflow-auto border mt-8 text-sm font-mono">
         From {`https://mmasia2021.uqcloud.net/api/sessions`}<br />
         <p className="whitespace-pre-wrap">{JSON.stringify(sessions, null, 2)}</p>
-      </div>
+      </div> */}
     </div>
   </>);
 };
