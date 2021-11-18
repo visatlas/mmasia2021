@@ -26,7 +26,7 @@ const Admin = () => {
         <div className="max-w-7xl mx-auto py-10 px-8 lg:px-24">
           <h1 className="text-2xl font-semibold mb-6">Admin Dashboard</h1>
           <div className="w-full overflow-scroll">
-            <h2 className="text-xl mb-4">All users</h2>
+            <h2 className="text-xl mb-4">All users ({userInfo.length})</h2>
             <p className="whitespace-pre-wrap">{JSON.stringify(userInfo, null)}</p>
           </div>
         </div>

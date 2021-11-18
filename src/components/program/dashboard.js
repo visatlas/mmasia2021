@@ -45,20 +45,20 @@ const Dashboard = () => {
     // Group sessions by day
     const sessionGroups = sessions.reduce((r, a) => {
       const startTimestamp = convertTimezone(a.start, timezone.offset);
-      const startDay = startTimestamp.toLocaleString('default',
+      const startDay = startTimestamp.toLocaleString('en-AU',
         { weekday: 'short', timeZone: "UTC" }
       );
-      const startDate = startTimestamp.toLocaleString('default',
+      const startDate = startTimestamp.toLocaleString('en-AU',
         { day: 'numeric', timeZone: "UTC" }
       );
-      const startMonth = startTimestamp.toLocaleString('default',
+      const startMonth = startTimestamp.toLocaleString('en-AU',
         { month: 'long', timeZone: "UTC" }
       );
-      a.startLocalTime = startTimestamp.toLocaleString('default',
+      a.startLocalTime = startTimestamp.toLocaleString('en-AU',
         { hour: 'numeric', minute: 'numeric', hourCycle: 'h12', timeZone: "UTC" }
       );
       const endTimestamp = convertTimezone(a.end, timezone.offset);
-      a.endLocalTime = endTimestamp.toLocaleString('default',
+      a.endLocalTime = endTimestamp.toLocaleString('en-AU',
         { hour: 'numeric', minute: 'numeric', hourCycle: 'h12', timeZone: "UTC" }
       );
       r[`${startDay}, ${startDate} ${startMonth}`] = [...r[`${startDay}, ${startDate} ${startMonth}`] || [], a];
@@ -76,11 +76,10 @@ const Dashboard = () => {
   return (<>
     <Seo pageMeta={{ title: "Program" }} />
     <div className="max-w-7xl mx-auto py-10 px-5 lg:px-21">
-      <h1 className="text-4xl mb-10 px-3 font-extrabold font-headingStyle tracking-semiWide text-semiBlack">
-        Program
+      <h1 className="text-3xl mb-10 px-3 font-bold font-headingStyle tracking-semiWide text-semiBlack">
+        Conference Schedule
       </h1>
-      <h2 className="text-2xl mb-6 px-3 font-bold font-headingStyle text-mainPurple">Conference Schedule</h2>
-      <div className="mb-0 lg:mb-6">
+      <div className="mb-0">
         <p className="px-3 mb-2 font-bold font-headingStyle tracking-semiWide">Please make sure the timezone matches your region:</p>
         <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone}
           styles={{
@@ -90,7 +89,8 @@ const Dashboard = () => {
             }),
             control: (provided) => ({
               ...provided,
-              borderColor: '#eaeaea',
+              borderColor: '#F3F4F6',
+              backgroundColor: '#F3F4F6',
               cursor: 'pointer',
             })
           }}
@@ -99,51 +99,65 @@ const Dashboard = () => {
 
       {groupedSessions.length === 0 && (<p className="px-3 font-medium">Loading...</p>)}
 
-      <div className="flex bg-white py-3 sticky top-[64px] gap-x-3">
-        {Object.keys(groupedSessions).map((key, index) => {
-          const style = `bg-gray-100 border px-3 py-1 rounded-md text-lg lg:mt-0 font-bold font-headingStyle`
-          return (
-            <button className={style} key={index}
-              onClick={() => setViewDay([key])}>
-              {key}
-            </button>
-          );
-        })}
+      <div className="bg-white pt-4 sticky top-[64px]">
+        <div className="flex bg-gray-100 border-b-mainPurple border-b-2 gap-x-0 md:gap-x-6 rounded-tl-md rounded-tr-md">
+          {Object.keys(groupedSessions).map((key, index) => {
+            // set active style
+            const active = key === viewDay ? "bg-mainPurple text-gray-200" : "text-mainPurple";
+            const style = `${active} hover:bg-menuSelected hover:text-gray-100 duration-100 px-2 md:px-4 py-2 text-base lg:mt-0 font-bold font-headingStyle rounded-tl-md rounded-tr-md`;
+            return (
+              <button className={style} key={key}
+                onClick={() => setViewDay(key)}>
+                {key}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
-      <div className="program-list border rounded-md divide-y divide-gray-200">
+      <div className="program-list border-gray-200 mt-4 border-2 rounded-bl-md rounded-br-md divide-y divide-gray-200">
         {groupedSessions[viewDay]?.map((session, index) => {
           let bgStyle = "";
           switch (session.type) {
             case "zoom": bgStyle = 'bg-pink-50 hover:bg-pink-100'; break;
             case "video": bgStyle = "bg-sky-50 hover:bg-sky-100"; break;
             case "link": bgStyle = "bg-yellow-50 hover:bg-yellow-100"; break;
-            default: bgStyle = "bg-gray-50 hover:bg-gray-200";
+            default: bgStyle = "bg-gray-50";
           }
           const style = `${bgStyle} duration-100`;
-          return (<div className={style} key={index}>
-            <Link className="" to={`/program/session/${session.id}`}>
-
-              <div className="px-3 py-3 block md:flex gap-x-8">
-                <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
-                  {session.startLocalTime} - {session.endLocalTime}
-                </p>
-
-                <div>
-                  <p className="leading-5 font-semibold mb-0">{session.name}</p>
-                  {session.subtitle && <p className="mt-1 mb-0 text-sm leading-tight">{session.subtitle}</p>}
-                  {false && (
-                    <ul className="list-inside list-disc mt-1">
-                      {[].map((paper, index) => (
-                        <li className="mb-0 text-xs font-medium" key={index}>Paper {index + 1}</li>
-                      ))}
-                    </ul>
-                  )}
+          return (
+            <div className={style} key={index}>
+              {session.type !== "break" ? (
+                <Link to={`/program/session/${session.id}`}>
+                  <div className="px-3 py-3 block md:flex gap-x-8">
+                    <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
+                      {session.startLocalTime} - {session.endLocalTime}
+                    </p>
+                    <div>
+                      <p className="leading-5 font-semibold mb-0">{session.name}</p>
+                      {session.subtitle && <p className="mt-1 mb-0 text-sm leading-tight">{session.subtitle}</p>}
+                      {Array.isArray(session.papers) && (
+                        <ul className="list-inside list-disc mt-1">
+                          {session.papers.map((paper, index) => (
+                            <li className="mb-0 text-xs font-medium" key={index}>{paper.title}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </div>
+                </Link>
+              ) : (
+                <div className="px-3 py-3 block md:flex gap-x-8">
+                  <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
+                    {session.startLocalTime} - {session.endLocalTime}
+                  </p>
+                  <div>
+                    <p className="leading-5 font-semibold mb-0">{session.name}</p>
+                    {session.subtitle && <p className="mt-1 mb-0 text-sm leading-tight">{session.subtitle}</p>}
+                  </div>
                 </div>
-              </div>
-
-            </Link>
-          </div>);
+              )}
+            </div>);
         })}
       </div>
 
