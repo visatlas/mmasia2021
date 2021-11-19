@@ -6,3 +6,10 @@ export const getTimezonePref = () =>
     : null;
 
 export const setTimezonePref = timezone => window.localStorage.setItem("gatsbyTimezone", timezone);
+
+export const getDatePref = () =>
+  isBrowser() && window.localStorage.getItem("gatsbyDateSelect")
+    ? window.localStorage.getItem("gatsbyDateSelect")
+    : null;
+
+export const setDatePref = date => date && window.localStorage.setItem("gatsbyDateSelect", date);

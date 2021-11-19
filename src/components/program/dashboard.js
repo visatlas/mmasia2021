@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import spacetime from "spacetime";
 import { getUser } from "../../services/auth";
 import TimezoneSelect from './timezone';
-import { getTimezonePref, setTimezonePref } from "../../services/preferences";
+import { getTimezonePref, setTimezonePref, getDatePref, setDatePref } from "../../services/preferences";
 import Seo from "../../components/seo";
 
 const Dashboard = () => {
@@ -42,6 +42,7 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
+    if (typeof sessions === 'object' && !Array.isArray(sessions)) return;
     // Group sessions by day
     const sessionGroups = sessions.reduce((r, a) => {
       const startTimestamp = convertTimezone(a.start, timezone.offset);
@@ -65,13 +66,17 @@ const Dashboard = () => {
       return r;
     }, {});
     setGroupedSessions(sessionGroups);
-    setViewDay(Object.keys(sessionGroups)[0]);
+    // Get timezone preference
+    const datePref = getDatePref();
+    setViewDay(sessionGroups.hasOwnProperty(datePref) ? datePref : Object.keys(sessionGroups)[0]);
+
   }, [timezone, sessions]);
 
   useEffect(() => {
-    // Remember user choice of timezone
+    // Remember user choice of timezone and date select
     setTimezonePref(timezone.value);
-  }, [timezone]);
+    setDatePref(viewDay);
+  }, [timezone, viewDay]);
 
   return (<>
     <Seo pageMeta={{ title: "Program" }} />
@@ -86,7 +91,7 @@ const Dashboard = () => {
         </p>
         <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone}
           styles={{
-            option: (provided, state) => ({
+            option: (provided) => ({
               ...provided,
               cursor: 'pointer',
             }),
@@ -101,17 +106,17 @@ const Dashboard = () => {
         />
       </div>
 
-      {groupedSessions.length === 0 && (<p className="px-3 font-medium">Loading...</p>)}
+      {Object.keys(groupedSessions).length === 0 && (<p className="mt-8 px-3 font-medium">Loading data...</p>)}
 
       <div className="bg-white pt-4 sticky top-[64px]">
         <div className="flex bg-gray-100 border-b-mainPurple border-b-2 gap-x-0 md:gap-x-6 rounded-tl-md rounded-tr-md">
           {Object.keys(groupedSessions).map((key, index) => {
             // set active style
             const active = key === viewDay ? "bg-mainPurple text-gray-200" : "text-mainPurple hover:bg-menuSelected";
-            const style = `${active} hover:text-gray-100 duration-100 px-2 md:px-4 py-2 
-              text-base lg:mt-0 font-bold font-headingStyle rounded-tl-md rounded-tr-md`;
+            const style = `${active} hover:text-gray-100 duration-100 px-2 sm:px-4 py-2 
+              text-sm sm:text-base lg:mt-0 font-bold font-headingStyle rounded-tl-md rounded-tr-md`;
             return (
-              <button className={style} key={key}
+              <button className={style} key={index}
                 onClick={() => setViewDay(key)}>
                 {key}
               </button>
@@ -120,7 +125,8 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="program-list border-gray-200 mt-4 border-2 rounded-bl-md rounded-br-md divide-y divide-gray-200">
+      <div className="program-list border-gray-200 bg-gray-100 divide-gray-200 pt-5 border-l-2 
+        border-r-2 border-b-2 rounded-bl-md rounded-br-md divide-y ">
         {groupedSessions[viewDay]?.map((session, index) => {
           let bgStyle = "";
           switch (session.type) {
