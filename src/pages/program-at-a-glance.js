@@ -404,7 +404,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>15:05 - 17:05 p.m.</td>
                   <td>Tutorial 1:<br/> Recent Advances in Video Summarization: Conventional and Deep Learning based Approaches</td>
                   {/* <!-- <td></td> --> */}
-                  <td className="paper">Zhiyong Wang (USyd), Zhou Zhao (ZJU), Xi Li (ZJU), and Fei Wu (ZJU)</td>
+                  <td className="paper">Zhiyong Wang (USyd), Zhou Zhao (ZJU), Xi Li (ZJU), Kun Kuang (ZJU), and Fei Wu (ZJU)</td>
                 </tr>
                 <tr>
                   <td colSpan="6">10 mins break</td>
