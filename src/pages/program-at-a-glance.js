@@ -415,7 +415,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>17:15 - 19:00 p.m.</td>
                   <td>Tutorial 2:<br/> Modeling User Behavior for Vertical Search: Images, Apps and Products</td>
                   {/* <!-- <td></td> --> */}
-                  <td className="paper">Xiaohui Xie (THU), Jiaxin Mao (THU), Yuqun Liu (THU) and Maarten de Rijke (UvA)</td>
+                  <td className="paper">Xiaohui Xie (THU), Jiaxin Mao (THU), Yuqun Liu (THU), and Maarten de Rijke (UvA)</td>
                 </tr>
                 <tr>
                   <td rowSpan="3">16:00 - 16:45 p.m.</td>
