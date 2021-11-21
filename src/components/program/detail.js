@@ -25,14 +25,32 @@ const Detail = ({ id, template=null }) => {
       <Link to="/program/home" className="font-medium hover:underline py-2 pr-2">
         &lsaquo;&nbsp;Back
       </Link>
-      <h1 className="text-2xl mt-6 mb-6 font-bold font-headingStyle tracking-semiWide text-semiBlack">{sessionData?.name}</h1>
+      <h1 className="text-2xl mt-6 mb-3 font-bold font-headingStyle tracking-semiWide text-semiBlack">{sessionData?.name}</h1>
       <p>{sessionData?.subtitle}</p>
-      <div className="max-h-96 overflow-auto border mt-8 text-sm">
+      <p>{sessionData?.start} - {sessionData?.end}</p>
+      <h2 className="text-xl my-6 font-bold font-headingStyle tracking-semiWide text-semiBlack">Type</h2>
+      <p>{sessionData?.type}</p>
+
+      {sessionData.papers && sessionData.papers.length > 0 && (
+        <div className="mt-6">
+          <h2 className="text-xl font-bold font-headingStyle tracking-semiWide text-semiBlack">Papers List</h2>
+          <ul className="list-inside list-disc mt-5">
+            {sessionData.papers.map((paper, index) => (
+              <li className="mb-0 font-medium" key={index}>
+                <span>{paper.title}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6">Links will be available once we have received all submissions.</p>
+        </div>
+      )}
+
+      {/* <div className="max-h-96 overflow-auto border mt-8 text-sm">
         <p className="whitespace-pre-wrap font-mono">
           From {`https://mmasia2021.uqcloud.net/api/sessions/${id}`}<br/>
           {JSON.stringify(sessionData, null, 2)}
         </p>
-      </div>
+      </div> */}
     </div>
   </>);
 };
