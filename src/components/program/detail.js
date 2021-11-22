@@ -6,6 +6,7 @@ import Seo from "../seo";
 
 const Detail = ({ id, template = null }) => {
   const [sessionData, setSessionData] = useState({});
+  const [papers, setPapers] = useState([]);
 
   // fetch session details
   useEffect(() => {
@@ -14,10 +15,25 @@ const Detail = ({ id, template = null }) => {
       headers: { "Authorization": `Bearer ${getUser().token}` }
     }).then(res => res.json())
       .then(data => {
+        // console.log(data);
         setSessionData(data);
       })
       .catch(err => console.log(err));
   }, [id]);
+
+  useEffect(() => {
+    if (sessionData.papers && Array.isArray(sessionData?.papers)) {
+      fetch(`https://mmasia2021.uqcloud.net/api/papers/`, {
+        method: 'POST',
+        headers: { "Authorization": `Bearer ${getUser().token}`, 'Content-Type': 'application/json', },
+        body: JSON.stringify({ ids: sessionData.papers.map(p => p.id) })
+      }).then(res => res.json())
+        .then(data => {
+          // console.log(data);
+          setPapers(data);
+        });
+    }
+  }, [sessionData]);
 
   const [allowVideo, setAllowVideo] = useState(false);
   const [useYouTube, setUseYouTube] = useState(false);
@@ -59,23 +75,8 @@ const Detail = ({ id, template = null }) => {
       <h1 className="text-2xl mt-6 mb-3 font-bold font-headingStyle tracking-semiWide text-semiBlack">{sessionData?.name}</h1>
       <p>{sessionData?.subtitle}</p>
       <p>{sessionData?.start} - {sessionData?.end}</p>
-      <h2 className="text-xl my-6 font-bold font-headingStyle tracking-semiWide text-semiBlack">Type</h2>
-      <p>{sessionData?.type}</p>
-
-      {sessionData.papers && sessionData.papers.length > 0 && (
-        <div className="mt-6">
-          <h2 className="text-xl font-bold font-headingStyle tracking-semiWide text-semiBlack">Papers List</h2>
-          <ul className="list-inside list-disc mt-5">
-            {sessionData.papers.map((paper, index) => (
-              <li className="mb-0 font-medium" key={index}>
-                <span>{paper.title}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-6">Links will be available once we have received all submissions.</p>
-        </div>
-      )}
-
+      {/* <h2 className="text-xl my-6 font-bold font-headingStyle tracking-semiWide text-semiBlack">Type</h2>
+      <p>{sessionData?.type}</p> */}
 
       <div className="flex flex-row justify-between">
         <button onClick={() => { setUseYouTube(true); }} type="button"
@@ -108,42 +109,58 @@ const Detail = ({ id, template = null }) => {
         </button>
       </div>
 
-      {allowVideo && useYouTube ? (
-        <div className="pb-4 mt-2 rounded-lg">
-          <div className="bg-white rounded-lg shadow-md"
-            style={{ position: "relative", padding: "28.1% 45%" }}>
-            <iframe
-              style={{ borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }}
-              src="https://www.youtube.com/embed/ntX2baoIkhQ"
-              title="Gather.Town Tutorial on YouTube"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen>
-            </iframe>
-          </div>
-        </div>
-      ) : (<>
-        <div className="pb-4 player:pb-0 mt-2 rounded-lg">
-          <div className="bg-white rounded-lg"
-            style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
-            <iframe
-              style={{ borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }}
-              src="https://player.bilibili.com/player.html?aid=721540753&bvid=BV1uS4y1d7rz&cid=440405919&page=1&as_wide=1&high_quality=1&danmaku=0"
-              title="Gather.Town Tutorial on Bilibili"
-              frameBorder="no"
-              scrolling="no"
-              border="0"
-              frameSpacing="0"
-              allowFullScreen>
-            </iframe>
-            <div className="hidden player:block bg-white w-full"
-              style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} />
-          </div>
+      {sessionData?.papers && (Array.isArray(sessionData?.papers) && sessionData.papers?.length > 0 ? (
+        <div className="mt-6">
+          <h2 className="text-xl font-bold font-headingStyle tracking-semiWide text-semiBlack">Paper List</h2>
+          <div className="list-inside list-disc mt-5 grid gap-y-8 grid-cols-3 gap-4">
+            {papers?.map((paper, index) => (
+              <div className="bg-gray-100 px-3 rounded-lg">
+                {allowVideo && useYouTube ? (
+                  <div className="pb-4 my-2 rounded-lg">
+                    <div className="bg-white rounded-lg shadow-md"
+                      style={{ position: "relative", padding: "28.1% 45%" }}>
+                      <iframe
+                        style={{ borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }}
+                        src="https://www.youtube.com/embed/ntX2baoIkhQ"
+                        title="Gather.Town Tutorial on YouTube"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
+                      </iframe>
+                    </div>
+                  </div>
+                ) : (<>
+                  <div className="pb-4 player:pb-0 mt-2 rounded-lg">
+                    <div className="bg-white rounded-lg"
+                      style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
+                      <iframe
+                        style={{ borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }}
+                        src="https://player.bilibili.com/player.html?aid=721540753&bvid=BV1uS4y1d7rz&cid=440405919&page=1&as_wide=1&high_quality=1&danmaku=0"
+                        title="Gather.Town Tutorial on Bilibili"
+                        frameBorder="no"
+                        scrolling="no"
+                        border="0"
+                        allowFullScreen>
+                      </iframe>
+                      <div className="hidden player:block bg-white w-full"
+                        style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} />
+                    </div>
 
-        </div>
-        <a className="hover:underline text-blue-600" href="https://www.bilibili.com/video/BV1uS4y1d7rz" target="_blank" rel="noreferrer">Click here to watch on Bilibili site.</a>
-      </>)}
+                  </div>
+                  <a className="hover:underline text-blue-600" href="https://www.bilibili.com/video/BV1uS4y1d7rz" target="_blank" rel="noreferrer">Click here to watch on Bilibili site.</a>
+                </>)}
 
+                <h2 className="px-2 text-lg mb-2 font-bold leading-6">{paper.title}</h2>
+                <p className="px-2 mb-6 text-sm">{paper["Author Names"]}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-6">Links will be available once we have received all submissions.</p>
+        </div>
+      ) : (
+        <></>
+      ))}
+      
       {/* <div className="max-h-96 overflow-auto border mt-8 text-sm">
         <p className="whitespace-pre-wrap font-mono">
           From {`https://mmasia2021.uqcloud.net/api/sessions/${id}`}<br/>

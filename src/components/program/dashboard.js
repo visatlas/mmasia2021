@@ -84,7 +84,16 @@ const Dashboard = () => {
       <h1 className="text-3xl mb-2 px-3 font-bold font-headingStyle tracking-semiWide text-semiBlack">
         Conference Schedule
       </h1>
-      <p className="px-3 mb-10">Click on the timetable to see the join links and more.</p>
+      
+      <p className="px-3 pt-8 mb-4 font-bold text-mainPurple font-headingStyle tracking-semiWide">
+        Common Links
+      </p>
+      <ul className="px-3 mb-2 list-disc list-inside">
+        <li className="font-semibold">Zoom Link:</li>
+        <li className="font-semibold">Gather.Town Link:</li>
+      </ul>
+      <p className="px-3 mb-10">Click on the timetable to see the individual links and more.</p>
+
       <div className="mb-2">
         <p className="px-3 mb-2 font-bold text-mainPurple font-headingStyle tracking-semiWide">
           Select the desired time zone:

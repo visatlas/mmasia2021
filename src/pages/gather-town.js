@@ -109,7 +109,6 @@ const GatherTown = ({ location }) => {
                 frameBorder="no"
                 scrolling="no"
                 border="0"
-                frameSpacing="0"
                 allowFullScreen>
               </iframe>
               <div className="hidden player:block bg-white w-full"
