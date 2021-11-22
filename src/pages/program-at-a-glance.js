@@ -374,9 +374,9 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="font-bold">Details</td>
                 </tr>
                 <tr>
-                  <td>9:00 - 10:00 a.m.</td>
-                  <td>11:00 - 12:00 p.m.</td>
-                  <td>12:00 - 13:00 p.m.</td>
+                  <td>9:10 - 10:00 a.m.</td>
+                  <td>11:10 - 12:00 p.m.</td>
+                  <td>12:10 - 13:00 p.m.</td>
                   <td>Keynote 3: Divesh Srivastava</td>
                   <td className="paper">How to do Research for Fun and Profit</td>
                 </tr>
