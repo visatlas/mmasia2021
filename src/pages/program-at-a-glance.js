@@ -230,7 +230,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>11:10 - 12:00 p.m.</td>
                   <td>12:10 - 13:00 p.m.</td>
                   <td>Keynote 2: Yong Rui</td>
-                  <td>TBA</td>
+                  <td>Artificial Intelligence: Paving a Path to Digital Economy Transformation</td>
                 </tr>
                 <tr>
                   <td rowSpan="2">10:00 - 10:30 a.m.</td>

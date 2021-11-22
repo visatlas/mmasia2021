@@ -26,7 +26,7 @@ description: ACM MM Asia Conference Keynotes have been updated. More details wil
 </div>
 
 
-## Keynote 2
+## Keynote 2: Artificial Intelligence: Paving a Path to Digital Economy Transformation
 <!-- ### Presenter -->
 
 <div class="keynote-text">
@@ -55,6 +55,7 @@ description: ACM MM Asia Conference Keynotes have been updated. More details wil
     </p>
 </div>
 
+**Abstract**: With the rapid growth of digital economy, the world is entering a new era of digital transformation. Technologies like the Artificial Intelligence are changing the way we live and work profoundly as we know it. In his talk, we will demonstrate how Artificial Intelligence is empowering the entire value chain of industrial digitalization, using Lenovo’s own intelligent transformation practices in smart manufacturing as an example.  We will also look into how the three elements of AI (data, algorithm and computing power) will change in future years.
 
 ## Keynote 3: How to do Research for Fun and Profit
 <!-- ### Presenter -->
