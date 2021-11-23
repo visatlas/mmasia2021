@@ -47,7 +47,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>11:10 - 12:10 p.m.</td>
                   <td>12:10 - 13:10 p.m.</td>
                   <td>Keynote 1: Mohan Kankanhalli</td>
-                  <td colSpan="2">TBA</td>
+                  <td colSpan="2">Privacy-aware Multimedia Analytics</td>
                 </tr>
                 <tr>
                   <td colSpan="6">5 mins break</td>

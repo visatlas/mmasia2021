@@ -5,7 +5,7 @@ dateModified: "2021-11-14"
 description: ACM MM Asia Conference Keynotes have been updated. More details will be published later.
 ---
 
-## Keynote 1
+## Keynote 1: Privacy-aware Multimedia Analytics
 <!-- ### Presenter -->
 
 <div class="keynote-text">
@@ -24,6 +24,14 @@ description: ACM MM Asia Conference Keynotes have been updated. More details wil
         He directs N-CRiPT (NUS Centre for Research in Privacy Technologies) which conducts research on privacy on structured as well as unstructured (multimedia, sensors, IoT) data. N-CRiPT looks at privacy at both individual and organizational levels along the entire data life cycle. He is personally involved in privacy research related to images, video and social media as well as privacy risk management. N-CRiPT, which has been funded by Singapore’s National Research Foundation, works with many industry, government and academic partners. Mohan is a Fellow of IEEE.
     </p>
 </div>
+
+**Abstract**: In this talk, we present our research on privacy-aware multimedia analytics. We will present three works covering different aspects of multimedia analytics. 
+
+- The first work is about privacy protection against machines. Utilizing machine learning and big data, algorithms often act as a tool for privacy violation, by automatically selecting content with sensitive information, such as photos that contain faces or vehicle license plates. The key idea is to perturb images using adversarial machine learning to protect image attributes privacy, while ensuring the images are not degraded. We conducted an experimental study to explore factors that influence human sensitivity to visual changes, which led to the concept of a human sensitivity map. Using this map, a human-sensitivity-aware image perturbation model is developed that can subtly alter an image such that sensitive attributes like gender are misclassified. 
+- The second work concerns privacy-preserving analytics on images. Attributes such as emotions, gender and age in images and videos are important for many applications. Existing methods extract this information from faces in the images. However, faces raise serious privacy concerns as they reveal people’s identity. We first did an eye-tracking based human study of age, gender, and emotion prediction of people in images under various identity preserving scenarios - obfuscating eyes, lower face, head or the full face. Motivated by this study, we successfully developed a deep learning model for attributes prediction under privacy-preserving conditions and we present its results. 
+- The third work concerns training machine learning models where data sets cannot be shared due to privacy regulations (e.g., from medical studies). A simple yet unconventional approach for anonymized data synthesis can enable third parties to benefit from such valuable data. We propose learning implicitly from visually unrealistic, task-relevant stimuli, which are synthesized by exciting the neurons of a trained neural network. Neuronal excitation serves as a pseudo-generative model, and can be extended to inhibit representations that are associated with specific individuals, thus providing privacy. The stimuli data is then used to train new classification models. Experiments on MNIST and sleep apnea data show that these models offer protection against adversarial association and membership inference attacks. 
+
+We will end with a general discussion on privacy concerns related to multimedia analytics.
 
 
 ## Keynote 2: Artificial Intelligence: Paving a Path to Digital Economy Transformation
