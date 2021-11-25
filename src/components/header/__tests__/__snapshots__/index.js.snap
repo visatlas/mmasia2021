@@ -403,6 +403,13 @@ exports[`Header renders correctly 1`] = `
                       </div>
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/program-at-a-glance"
+                        title="Program at a Glance"
+                      >
+                        Program at a Glance
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
                         href="/conference-keynotes"
                         title="Conference Keynotes"
                       >
@@ -410,17 +417,29 @@ exports[`Header renders correctly 1`] = `
                       </a>
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/women-in-multimedia"
+                        title="Women in Multimedia"
+                      >
+                        Women in Multimedia
+                      </a>
+                      <div
+                        className="w-full py-1"
+                      >
+                        <div
+                          className="w-full bg-gray-200"
+                          style={
+                            Object {
+                              "height": "1px",
+                            }
+                          }
+                        />
+                      </div>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
                         href="/presentation-guidelines"
                         title="Presentation Guidelines"
                       >
                         Presentation Guidelines
-                      </a>
-                      <a
-                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
-                        href="/program-at-a-glance"
-                        title="Program at a Glance"
-                      >
-                        Program at a Glance
                       </a>
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
