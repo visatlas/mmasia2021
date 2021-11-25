@@ -24,16 +24,8 @@ The length of a presentation is specified as:
 
 **Authors of each accepted paper need to upload their poster and pre-filmed presentation (or a link to the pre-recording for downloading, e.g., Dropbox or Google Drive) as the supplementary files to CMT ([*https://cmt3.research.microsoft.com/MMASIA2021*](https://cmt3.research.microsoft.com/MMASIA2021)) by 5pm 21 Nov 2021 (AEST)**. 
 
-Check the time and access entry for each session from the **Conference Program** (TBA). Join your presentation session 5 - 10 minutes before the session starts. Make sure you know the time duration of the presentation and Q&A.
+Check the time and access entry for each session from the **[*Conference Program*](https://mmasia2021.uqcloud.net/program/home)**. Join your presentation session 5 - 10 minutes before the session starts. Make sure you know the time duration of the presentation and Q&A.
 
-<!-- Paper presentations are organized as:
-
-- Full regular /Applied research / BNI papers: 13-minute pre-recorded presentation and a 2-minute live Q&A (Zoom)
-- Short papers: 3-minute lighting talks (Zoom). Q&A will be offered in Gather.town.
-- Workshop papers: 10-minute pre-recorded presentation and a 2-minute live Q&A in Gather.town.
-- Grand Challenges / Demo papers: 3-minute lighting talks in Gather.town. 
-
-Check the time and access entry for each session from the conference program (TBA). Join your presentation session 5 - 10 minutes before the session starts. Make sure you know the time duration of the presentation and Q&A. -->
 
 ## Guidelines for Session Chairs
 
