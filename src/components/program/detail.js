@@ -119,14 +119,14 @@ const Detail = ({ id, template = null }) => {
           <h2 className="text-xl font-bold font-headingStyle tracking-semiWide text-semiBlack">Paper List</h2>
           <div className="list-inside list-disc mt-5 grid gap-y-8 grid-cols-3 gap-4">
             {papers?.map((paper, index) => (
-              <div className="bg-gray-100 px-3 rounded-lg">
+              <div className="bg-gray-100 px-3 rounded-lg" key={index}>
                 {allowVideo && useYouTube ? (
                   <div className="pb-4 my-2 rounded-lg">
                     <div className="bg-white rounded-lg shadow-md"
                       style={{ position: "relative", padding: "28.1% 45%" }}>
                       <iframe
                         style={{ borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }}
-                        src="https://www.youtube.com/embed/ntX2baoIkhQ"
+                        src={paper.youtube_link_embed || ""}
                         title="Gather.Town Tutorial on YouTube"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -165,13 +165,6 @@ const Detail = ({ id, template = null }) => {
       ) : (
         <></>
       ))}
-      
-      {/* <div className="max-h-96 overflow-auto border mt-8 text-sm">
-        <p className="whitespace-pre-wrap font-mono">
-          From {`https://mmasia2021.uqcloud.net/api/sessions/${id}`}<br/>
-          {JSON.stringify(sessionData, null, 2)}
-        </p>
-      </div> */}
     </div>
   </>);
 };
