@@ -31,7 +31,7 @@ export default function Header({ activePage, themed }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showMobileCalls, setShowMobileCalls] = useState(callLinks.includes(activePage));
   const [showMobileAttend, setShowMobileAttend] = useState(["/student-travel-grants", "/carer-award"].includes(activePage));
-  const [showMobileProgram, setShowMobileProgram] = useState(["/program/home", "/conference-keynotes", "/women-in-multimedia", "/presentation-guidelines", "/gather-town"].includes(activePage));
+  const [showMobileProgram, setShowMobileProgram] = useState(["/program/home", "/conference-keynotes", "/women-in-multimedia", "/phd-school", "/presentation-guidelines", "/gather-town"].includes(activePage));
   const mobileBaseStyle = "font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-headingStyle inline-flex items-center";
   const mobileCallsStyle = `${mobileBaseStyle} ${showMobileCalls ? "bg-menuHover" : ""}`;
   const mobileAttendStyle = `${mobileBaseStyle} ${showMobileAttend ? "bg-menuHover" : ""}`;
@@ -75,7 +75,7 @@ export default function Header({ activePage, themed }) {
                     )}
                   </DropDownMenu>
                   {/* <NavLink to="/program/home" selected={activePage === "/program/home"} title="Program" themed>Program</NavLink> */}
-                  <DropDownMenu selected={["/conference-keynotes", "/women-in-multimedia", "/presentation-guidelines", "/program-at-a-glance", "/gather-town"].includes(activePage)} name="Program" widthStyle="w-60">
+                  <DropDownMenu selected={["/conference-keynotes", "/women-in-multimedia", "/phd-school", "/presentation-guidelines", "/program-at-a-glance", "/gather-town"].includes(activePage)} name="Program" widthStyle="w-60">
                     <Link to="/program/home" className={linkStylePurple} title="Program Home">
                       Program Home
                       {!isLoggedIn() && (<span className="font-headingStyle text-gray-400 block whitespace-no-wrap text-xs font-normal cursor-pointer">
@@ -86,6 +86,8 @@ export default function Header({ activePage, themed }) {
                     <Link to="/program-at-a-glance" className={linkStyleMedium} title="Program at a Glance">Program at a Glance</Link>
                     <Link to="/conference-keynotes" className={linkStyleMedium} title="Conference Keynotes">Conference Keynotes</Link>
                     <Link to="/women-in-multimedia" className={linkStyleMedium} title="Women in Multimedia">Women in Multimedia</Link>
+                    <Link to="/phd-school" className={linkStyleMedium} title="PhD School">PhD School</Link>
+
                     <Divider />
                     <Link to="/presentation-guidelines" className={linkStyleMedium} title="Presentation Guidelines">Presentation Guidelines</Link>
                     <Link to="/gather-town" className={linkStyleMedium} title="Gather.Town Tutorial">Gather.Town Tutorial</Link>
@@ -137,6 +139,7 @@ export default function Header({ activePage, themed }) {
               <MobileNavLink to="/program-at-a-glance" title="Program at a Glance" selected={activePage === "/program-at-a-glance"} nested>Program at a Glance</MobileNavLink>
               <MobileNavLink to="/conference-keynotes" title="Conference Keynotes" selected={activePage === "/conference-keynotes"} nested>Conference Keynotes</MobileNavLink>
               <MobileNavLink to="/women-in-multimedia" title="Women in Multimedia" selected={activePage === "/women-in-multimedia"} nested>Women in Multimedia</MobileNavLink>
+              <MobileNavLink to="/phd-school" title="PhD School" selected={activePage === "/phd-school"} nested>PhD School</MobileNavLink>
               <MobileNavLink to="/presentation-guidelines" title="Presentation Guidelines" selected={activePage === "/presentation-guidelines"} nested>Presentation Guidelines</MobileNavLink>
               <MobileNavLink to="/gather-town" title="Gather.Town Tutorial" selected={activePage === "/gather-town"} nested>Gather.Town Tutorial</MobileNavLink>
             </div>)}
