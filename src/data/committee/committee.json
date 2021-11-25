@@ -237,14 +237,14 @@
       "role": "Applied Research Track Chairs",
       "list": [
         {
+          "name": "Wenbing Huang",
+          "institution": "Tsinghua University, China",
+          "imageUrl": "Wenbing Huang"
+        },
+        {
           "name": "Yong Man Ro",
           "institution": "Korea Advanced Institute of Science and Technology, South Korea",
           "imageUrl": "yongman-ro"
-        },
-        {
-          "name": "Chuang Gan",
-          "institution": "MIT-IBM Watson AI Lab, USA",
-          "imageUrl": "Chuang Gan"
         }
       ]
     },
