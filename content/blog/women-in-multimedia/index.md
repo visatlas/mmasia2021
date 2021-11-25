@@ -15,7 +15,7 @@ ACM Multimedia Asia 2021 is advocating for a better engagement and involvement o
         <img src="./Si.jpg" alt="Si Liu"/>
     </div>
     <!-- - **Title**: -->
-    <h3 class="name">Si Liu</h3>
+    <h3 class="name">Si Liu (Panel Chair)</h3>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
     <p class="subtitle">Beihang University</p>
