@@ -56,7 +56,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td rowSpan="6">10:15 - 11:45 a.m.</td>
                   <td rowSpan="6">12:15 - 13:45 p.m.</td>
                   <td rowSpan="6">13:15 - 14:45 p.m.</td>
-                  <td rowSpan="6">Session 1: Video Understanding in Multimedia</td>
+                  <td rowSpan="6">Session 1: Video Understanding in Multimedia (Chair: Hailin Shi)</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colSpan="2">Motion = Video - Content: Towards Unsupervised Learning of Motion Representation from Videos</td>
                 </tr>
@@ -99,7 +99,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td rowSpan="6">12:30 - 14:00 p.m.</td>
                   <td rowSpan="6">14:30 - 16:00 p.m.</td>
                   <td rowSpan="6">15:30 - 17:00 p.m.</td>
-                  <td rowSpan="6">Session 3: Deep Learning for Multimedia</td>
+                  <td rowSpan="6">Session 3: Deep Learning for Multimedia (Chair: Lu Sheng)</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colSpan="2">A Local-Global Commutative Preserving Functional Map for Shape Correspondence</td>
                 </tr>
@@ -125,7 +125,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td rowSpan="6">14:00 - 15:30 p.m.</td>
                   <td rowSpan="6">16:00 - 17:30 p.m.</td>
                   <td rowSpan="6">17:00 - 18:30 p.m.</td>
-                  <td rowSpan="6">Session 4: Multimodality Learning in Multimedia</td>
+                  <td rowSpan="6">Session 4: Multimodality Learning in Multimedia (Chair: Hongyuan Zhu)</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper" colSpan="2">BRUSH: Label Reconstructing and Similarity Preserving Hashing for Cross-modal Retrieval</td>
                 </tr>
@@ -250,7 +250,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td rowSpan="6">10:30 - 12:00 p.m.</td>
                   <td rowSpan="6">12:30 - 14:00 p.m.</td>
                   <td rowSpan="6">13:30 - 15:00 p.m.</td>
-                  <td rowSpan="6">Session 5: Vision and Language in Multimedia</td>
+                  <td rowSpan="6">Session 5: Vision and Language in Multimedia (Chair: Jing Zhang)</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Semantic Enhanced Cross-modal GAN for Zero-shot Learning</td>
                 </tr>
@@ -279,7 +279,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td rowSpan="6">12:05 - 13:35 p.m.</td>
                   <td rowSpan="6">14:05 - 15:35 p.m.</td>
                   <td rowSpan="6">15:05 - 16:35 p.m.</td>
-                  <td rowSpan="6">Session 6: Computer Vision in Multimedia</td>
+                  <td rowSpan="6">Session 6: Computer Vision in Multimedia (Chair: Tiesong Zhao)</td>
                   {/* <!-- <td></td> --> */}
                   <td className="paper">Source-Style Transferred Mean Teacher for Source-data Free Object Detection</td>
                 </tr>

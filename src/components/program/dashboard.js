@@ -157,7 +157,7 @@ const Dashboard = () => {
                       <p className="leading-5 font-semibold mb-0">{session.name}</p>
                       {session.subtitle && <p className="mt-1 mb-0 text-sm leading-tight">{session.subtitle}</p>}
                       {Array.isArray(session.papers) && (
-                        <ul className="list-inside list-disc mt-1">
+                        <ul className="list-inside list-disc mt-2">
                           {session.papers.map((paper, index) => (
                             <li className="mb-0 text-xs font-medium" key={index}>{paper.title}</li>
                           ))}

@@ -67,7 +67,7 @@ const Detail = ({ id, template = null }) => {
   }, []);
 
   return (<>
-    <Seo pageMeta={{ title: sessionData.title || "Session" }} />
+    <Seo pageMeta={{ title: sessionData.name }} />
     <div className="max-w-7xl px-8 lg:px-24 py-10 mx-auto">
       <Link to="/program/home" className="font-medium hover:underline py-2 pr-2">
         &lsaquo;&nbsp;Back
@@ -77,6 +77,11 @@ const Detail = ({ id, template = null }) => {
       <p>{sessionData?.start} - {sessionData?.end}</p>
       {/* <h2 className="text-xl my-6 font-bold font-headingStyle tracking-semiWide text-semiBlack">Type</h2>
       <p>{sessionData?.type}</p> */}
+
+      {/* <div className="">
+        <p className="text-mainPurple font-bold font-headingStyle tracking-semiWide pl-3 border-l-4 text-lg rounded-sm border-mainPurple">Information</p>
+        <p>Time: 2020</p>
+      </div> */}
 
       <div className="flex flex-row justify-between">
         <button onClick={() => { setUseYouTube(true); }} type="button"
