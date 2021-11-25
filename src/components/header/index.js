@@ -83,10 +83,11 @@ export default function Header({ activePage, themed }) {
                       </span>)}
                     </Link>
                     <Divider />
+                    <Link to="/program-at-a-glance" className={linkStyleMedium} title="Program at a Glance">Program at a Glance</Link>
                     <Link to="/conference-keynotes" className={linkStyleMedium} title="Conference Keynotes">Conference Keynotes</Link>
                     <Link to="/women-in-multimedia" className={linkStyleMedium} title="Women in Multimedia">Women in Multimedia</Link>
+                    <Divider />
                     <Link to="/presentation-guidelines" className={linkStyleMedium} title="Presentation Guidelines">Presentation Guidelines</Link>
-                    <Link to="/program-at-a-glance" className={linkStyleMedium} title="Program at a Glance">Program at a Glance</Link>
                     <Link to="/gather-town" className={linkStyleMedium} title="Gather.Town Tutorial">Gather.Town Tutorial</Link>
                   </DropDownMenu>
                   <DropDownMenu selected={["/registration", "/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
@@ -133,10 +134,10 @@ export default function Header({ activePage, themed }) {
             </button>
             {showMobileProgram && (<div>
               <MobileNavLink to="/program/home" title="Program Home" selected={activePage === "/program/home"} nested>Program Home</MobileNavLink>
+              <MobileNavLink to="/program-at-a-glance" title="Program at a Glance" selected={activePage === "/program-at-a-glance"} nested>Program at a Glance</MobileNavLink>
               <MobileNavLink to="/conference-keynotes" title="Conference Keynotes" selected={activePage === "/conference-keynotes"} nested>Conference Keynotes</MobileNavLink>
               <MobileNavLink to="/women-in-multimedia" title="Women in Multimedia" selected={activePage === "/women-in-multimedia"} nested>Women in Multimedia</MobileNavLink>
               <MobileNavLink to="/presentation-guidelines" title="Presentation Guidelines" selected={activePage === "/presentation-guidelines"} nested>Presentation Guidelines</MobileNavLink>
-              <MobileNavLink to="/program-at-a-glance" title="Program at a Glance" selected={activePage === "/program-at-a-glance"} nested>Program at a Glance</MobileNavLink>
               <MobileNavLink to="/gather-town" title="Gather.Town Tutorial" selected={activePage === "/gather-town"} nested>Gather.Town Tutorial</MobileNavLink>
             </div>)}
             {/* <MobileNavLink to="/program/home" title="Program" selected={activePage === "/program/home"}>Program</MobileNavLink> */}
