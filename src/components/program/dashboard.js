@@ -86,9 +86,9 @@ const Dashboard = () => {
       </h1>
       
       <p className="px-3 pt-8 mb-4 font-bold text-mainPurple font-headingStyle tracking-semiWide">
-        Common Links
+        Conference Main Entry
       </p>
-      <ul className="px-3 mb-2 list-disc list-inside">
+      <ul className="px-3 mb-2 list-disc list-inside space-y-1">
         <li className="font-semibold">Zoom Link:</li>
         <li className="font-semibold">Gather.Town Link:</li>
       </ul>

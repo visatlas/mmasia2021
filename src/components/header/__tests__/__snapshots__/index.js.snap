@@ -422,6 +422,13 @@ exports[`Header renders correctly 1`] = `
                       >
                         Women in Multimedia
                       </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/phd-school"
+                        title="PhD School"
+                      >
+                        PhD School
+                      </a>
                       <div
                         className="w-full py-1"
                       >
