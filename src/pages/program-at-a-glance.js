@@ -28,7 +28,7 @@ const ProgramAtAGlance = ({ location }) => {
           <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden table">
             <table className="table-custom mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
               <tbody className="border-t text-gray-600 table-text font-normal">
-                <tr className="bg-gray-100">
+                <tr className="bg-gray-100 divide">
                   <td className="font-bold">Beijing UTC +8</td>
                   <td className="font-bold">AEST (BNE) UTC +10</td>
                   <td className="font-bold">AEDT (SYD) UTC +11</td>
@@ -211,7 +211,7 @@ const ProgramAtAGlance = ({ location }) => {
           <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden table">
             <table className="table-custom mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
               <tbody className="border-t text-gray-600 table-text font-normal">
-                <tr className="bg-gray-100">
+                <tr className="bg-gray-100 divide">
                   <td className="font-bold">Beijing UTC +8</td>
                   <td className="font-bold">AEST (BNE) UTC +10</td>
                   <td className="font-bold">AEDT (SYD) UTC +11</td>
@@ -366,7 +366,7 @@ const ProgramAtAGlance = ({ location }) => {
           <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden table">
             <table className="table-custom mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
               <tbody className="border-t text-gray-600 table-text font-normal">
-                <tr className="bg-gray-100">
+                <tr className="bg-gray-100 divide">
                   <td className="font-bold">Beijing UTC +8</td>
                   <td className="font-bold">AEST (BNE) UTC +10</td>
                   <td className="font-bold">AEDT (SYD) UTC +11</td>

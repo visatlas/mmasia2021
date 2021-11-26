@@ -302,17 +302,29 @@ table thead tr th {
   margin-bottom: 1em;
 }
 
+.table-custom {
+  border-width: 2px;
+  border-color: #E5E7EB;
+}
+
 .table-custom tr {
   border-width: 1px;
   border-color: rgba(229, 231, 235, 1);
 }
 
-.table-custom td {
+.table-custom td,
+.table-custom th {
   border-width: 1px;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.table-custom th,
+.table-custom tr.divide {
+  border-bottom-width: 2px;
+  border-bottom-color: #E5E7EB;
 }
 
 /* Program list style for propgram/dashboard.js */
