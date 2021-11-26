@@ -7,6 +7,7 @@ import { getTimezonePref, setTimezonePref, getDatePref, setDatePref } from "../.
 import Seo from "../../components/seo";
 
 const Dashboard = () => {
+  const [mainLinks, setMainLinks] = useState({});
   const [sessions, setSessions] = useState([]);  // Fetched sessions data from API
   const [timezone, setTimezone] = useState({
     value: Intl.DateTimeFormat().resolvedOptions().timeZone,
@@ -16,6 +17,15 @@ const Dashboard = () => {
   const [viewDay, setViewDay] = useState("");
 
   useEffect(() => {
+    fetch(`https://mmasia2021.uqcloud.net/api/sessions/getMain`, {
+      method: "GET",
+      headers: { "Authorization": `Bearer ${getUser().token}` }
+    }).then(res => res.json())
+      .then(data => {
+        setMainLinks(data);
+      })
+      .catch(err => console.log(err));
+
     // Fetch sessions data
     fetch(`https://mmasia2021.uqcloud.net/api/sessions`, {
       method: "GET",
@@ -82,20 +92,31 @@ const Dashboard = () => {
     <Seo pageMeta={{ title: "Program" }} />
     <div className="max-w-7xl mx-auto py-10 px-5 lg:px-21">
       <h1 className="text-3xl mb-2 px-3 font-bold font-headingStyle tracking-semiWide text-semiBlack">
-        Conference Schedule
+        ACM Multimedia Asia 2021
       </h1>
-      
-      <p className="px-3 pt-8 mb-4 font-bold text-mainPurple font-headingStyle tracking-semiWide">
+
+      <p className="px-3 pt-8 mb-4 text-xl font-bold text-mainPurple font-headingStyle tracking-semiWide">
         Conference Main Entry
       </p>
-      <ul className="px-3 mb-2 list-disc list-inside space-y-1">
-        <li className="font-semibold">Zoom Link:</li>
-        <li className="font-semibold">Gather.Town Link:</li>
+      <ul className="px-3 mb-4 list-disc list-inside space-y-2">
+        <li className="font-semibold">Zoom Link:&nbsp;&nbsp;
+          <a className="font-medium text-mainPurple underline" href={mainLinks.zoom} target="_blank" rel="noreferrer">
+            {mainLinks.zoom || "Loading..."}
+          </a>
+        </li>
+        <li className="font-semibold">Gather.Town Link:&nbsp;&nbsp;
+          <a className="font-medium text-mainPurple underline" href={mainLinks.gatherTown} target="_blank" rel="noreferrer">
+            {mainLinks.gatherTown || "Loading..."}
+          </a>
+        </li>
       </ul>
-      <p className="px-3 mb-10">Click on the timetable to see the individual links and more.</p>
-
+      
+      <p className="px-3 mt-10 mb-2 text-xl font-bold text-mainPurple font-headingStyle tracking-semiWide">
+        Conference Schedule
+      </p>
+      <p className="px-3 mb-6">Click on the timetable below to see individual links and more details.</p>
       <div className="mb-2">
-        <p className="px-3 mb-2 font-bold text-mainPurple font-headingStyle tracking-semiWide">
+        <p className="px-3 mb-2 font-bold font-headingStyle tracking-semiWide">
           Select the desired time zone:
         </p>
         <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone}
@@ -117,7 +138,7 @@ const Dashboard = () => {
 
       {Object.keys(groupedSessions).length === 0 && (<p className="mt-8 px-3 font-medium">Loading data...</p>)}
 
-      <div className="bg-white pt-4 sticky top-[64px]">
+      <div className="bg-white pt-6 sticky top-[64px]">
         <div className="flex bg-gray-100 border-b-mainPurple border-b-2 gap-x-0 md:gap-x-6 rounded-tl-md rounded-tr-md">
           {Object.keys(groupedSessions).map((key, index) => {
             // set active style
