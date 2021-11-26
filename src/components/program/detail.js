@@ -53,7 +53,7 @@ const Detail = ({ id }) => {
     return (
       <div className="bg-gray-100 px-3 rounded-lg">
         {useYouTube ? (paper.youtube_link_embed && (
-          <div className="my-2 rounded-lg">
+          <div className="my-2 rounded-lg" key={`youtube-${paper.title}`}>
             <div className="bg-white rounded-lg shadow-md"
               style={{ position: "relative", padding: "28.1% 45%" }}>
               <iframe
@@ -67,7 +67,7 @@ const Detail = ({ id }) => {
             </div>
           </div>
         )) : (paper.bilibili_link_embed && (
-          <div className="player:pb-0 mt-2 rounded-lg">
+          <div className="player:pb-0 mt-2 rounded-lg" key={`bilibili-${paper.title}`}>
             <div className="bg-white rounded-lg"
               style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
               <iframe
@@ -76,18 +76,18 @@ const Detail = ({ id }) => {
                 title={paper.title}
                 frameBorder="no"
                 scrolling="no"
-                border="0"
+                // border="0"
                 allowFullScreen>
               </iframe>
-              <div className="hidden player:block bg-white w-full"
-                style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} />
+              {/* <div className="hidden player:block bg-white w-full"
+                style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} /> */}
             </div>
           </div>
         ))}
         <h2 className="px-2 pt-4 text-lg mb-2 font-bold leading-6">{paper.title}</h2>
         <ul className="px-2 list-disc list-inside block mb-4">
-          {paper["Author Names"].split("; ").map(author => (
-            <li className="text-sm leading-5 text-gray-700">{author}</li>
+          {paper["Author Names"].split("; ").map((author, index) => (
+            <li className="text-sm leading-5 text-gray-700" key={index}>{author}</li>
           ))}
         </ul>
         {/* <a className="px-2 pb-4 block" href={paper.youtube_link} target="_blank" rel="noreferrer">View on YouTube</a> */}
@@ -115,11 +115,12 @@ const Detail = ({ id }) => {
           border-l-4 rounded-sm border-mainPurple">
           Presentations
         </h2>
-        <div className="list-inside list-disc mt-5 grid gap-y-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* <p>If videos are not loading, please click here.</p> */}
+        <div className={`list-inside list-disc mt-5 grid gap-y-8 grid-cols-1 ${useYouTube && "md:grid-cols-2 lg:grid-cols-3"} gap-4`}>
           {paperData?.videos.map((paper, index) => {
             return (
-              <Fragment key={index}>
-                <Card paper={paper} key={index} />
+              <Fragment key={`video-${paper.title}`}>
+                <Card paper={paper} />
               </Fragment>
             );
           })}
@@ -131,11 +132,11 @@ const Detail = ({ id }) => {
           border-l-4 rounded-sm border-mainPurple">
           Brave New Ideas
         </h2>
-        <div className="list-inside list-disc mt-5 grid gap-y-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className={`list-inside list-disc mt-5 grid gap-y-8 grid-cols-1 ${useYouTube && "md:grid-cols-2 lg:grid-cols-3"} gap-4`}>
           {paperData["Brave New Idea Papers"].map((paper, index) => {
             return (
               <Fragment key={index}>
-                <Card paper={paper} key={index} />
+                <Card paper={paper} />
               </Fragment>
             );
           })}
@@ -147,11 +148,11 @@ const Detail = ({ id }) => {
           border-l-4 rounded-sm border-mainPurple">
           Demo Papers
         </h2>
-        <div className="list-inside list-disc mt-5 grid gap-y-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className={`list-inside list-disc mt-5 grid gap-y-8 grid-cols-1 ${useYouTube && "md:grid-cols-2 lg:grid-cols-3"} gap-4`}>
           {paperData["Demo Papers"].map((paper, index) => {
             return (
               <Fragment key={index}>
-                <Card paper={paper} key={index} />
+                <Card paper={paper} />
               </Fragment>
             );
           })}
@@ -174,13 +175,20 @@ const Detail = ({ id }) => {
                       <li className="text-sm leading-5 text-gray-700">{author}</li>
                     ))}
                   </ul>
-                  <a className="px-2 block mb-4 text-mainPurple font-semibold" href={paper.youtube_link} target="_blank" rel="noreferrer">{paper.youtube_link}</a>
+                  {useYouTube ? (
+                    <a className="px-2 block mb-4 text-mainPurple font-semibold" href={paper.youtube_link} target="_blank" rel="noreferrer">{paper.youtube_link}</a>
+                  ) : (
+                    <a className="px-2 block mb-4 text-mainPurple font-semibold" href={paper.bilibili_link} target="_blank" rel="noreferrer">{paper.bilibili_link}</a>
+                  )}
+
                 </div>
               </Fragment>
             );
           })}
         </div>
       </>)}
+
+      {/* <button onClick={() => navigate("/")}>Video not working?</button> */}
     </div>
   </>);
 };
