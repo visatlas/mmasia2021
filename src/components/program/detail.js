@@ -154,7 +154,7 @@ const Detail = ({ id }) => {
           {Object.keys(sessionData).length <= 0 ? "Loading..." : sessionData?.name}
         </h1>
         {sessionData?.papers && (
-          <button className="bg-gray-100 px-4 py-2 rounded-md font-medium" onClick={() => setUseYouTube(!useYouTube)}>
+          <button className="bg-gray-100 px-2 sm:px-4 py-2 rounded-md font-medium" onClick={() => setUseYouTube(!useYouTube)}>
             {useYouTube ? "Use Bilibili Sources" : "Use YouTube Sources"}
           </button>
         )}

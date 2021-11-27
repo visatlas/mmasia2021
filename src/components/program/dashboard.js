@@ -100,12 +100,12 @@ const Dashboard = () => {
       </p>
       <ul className="px-3 mb-4 list-disc list-inside space-y-2">
         <li className="font-semibold">Zoom Link:&nbsp;&nbsp;
-          <a className="font-medium text-mainPurple underline" href={mainLinks.zoom} target="_blank" rel="noreferrer">
+          <a className="font-medium text-mainPurple underline break-all" href={mainLinks.zoom} target="_blank" rel="noreferrer">
             {mainLinks.zoom || "Loading..."}
           </a>
         </li>
         <li className="font-semibold">Gather.Town Link:&nbsp;&nbsp;
-          <a className="font-medium text-mainPurple underline" href={mainLinks.gatherTown} target="_blank" rel="noreferrer">
+          <a className="font-medium text-mainPurple underline break-all" href={mainLinks.gatherTown} target="_blank" rel="noreferrer">
             {mainLinks.gatherTown || "Loading..."}
           </a>
         </li>
@@ -156,7 +156,7 @@ const Dashboard = () => {
       </div>
 
       <div className="program-list border-gray-200 bg-gray-100 divide-gray-200 pt-5 border-l-2 
-        border-r-2 border-b-2 rounded-bl-md rounded-br-md divide-y ">
+        border-r-2 border-b-2 rounded-bl-md rounded-br-md divide-y">
         {groupedSessions[viewDay]?.map((session, index) => {
           let bgStyle = "";
           switch (session.type) {

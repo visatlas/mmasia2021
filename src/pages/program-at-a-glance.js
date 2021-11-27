@@ -25,7 +25,8 @@ const ProgramAtAGlance = ({ location }) => {
         <section className="text-sm">
           <h2 className="text-2xl font-bold mt-4 sm:mt-6 mb-4 text-mainPurple 
               font-headingStyle tracking-semiWide">1 December, 2021</h2>
-          <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden table">
+
+          <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden">
             <table className="table-custom mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
               <tbody className="border-t text-gray-600 table-text font-normal">
                 <tr className="bg-gray-100 divide">
@@ -208,7 +209,7 @@ const ProgramAtAGlance = ({ location }) => {
 
           <h2 className="text-2xl font-bold mt-8 sm:mt-6 mb-4 text-mainPurple
               font-headingStyle tracking-semiWide">2 December, 2021</h2>
-          <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden table">
+          <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden">
             <table className="table-custom mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
               <tbody className="border-t text-gray-600 table-text font-normal">
                 <tr className="bg-gray-100 divide">
@@ -363,7 +364,7 @@ const ProgramAtAGlance = ({ location }) => {
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-mainPurple 
               font-headingStyle tracking-semiWide">3 December, 2021</h2>
-          <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden table">
+          <div className="mb-6 w-full overflow-x-scroll md:overflow-hidden">
             <table className="table-custom mb-0 text-center table-auto overflow-x-scroll md:overflow-hidden">
               <tbody className="border-t text-gray-600 table-text font-normal">
                 <tr className="bg-gray-100 divide">
