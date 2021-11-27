@@ -18,7 +18,7 @@ ACM Multimedia Asia 2021 is advocating for a better engagement and involvement o
     <h3 class="name">Si Liu (Panel Chair)</h3>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
-    <p class="subtitle">Beihang University</p>
+    <p class="subtitle">Beihang University, China</p>
     <p>
         Dr. Si Liu is the leader of the CoLab and an associate professor in Beihang University. She was a visiting professor in Microsoft Research Asia. She used to work with Prof. Shuicheng Yan in National University of Singapore. She obtained Ph.D. degree from Institute of Automation, Chinese Academy of Sciences (CASIA), under the supervision of Prof. Hanqing Lu. She obtained Bachelor degree from Advanced Class of Beijing Institute of Technology (BIT).
     </p>
@@ -34,7 +34,7 @@ ACM Multimedia Asia 2021 is advocating for a better engagement and involvement o
     <h3 class="name">Lina Yao</h3>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
-    <p class="subtitle">University of New South Wales</p>
+    <p class="subtitle">University of New South Wales, Australia</p>
     <p>
         Lina Yao is an Associate Professor at School of Computer Science and Engineering at the University of New South Wales (UNSW), Australia. Her research interest lies in machine learning, and its applications in recommender systems, activity modeling and prediction, the Internet of Things, and Brain-Computer Interface. She is serving as the Associate Editor for ACM Transactions on Sensor Networks (ACM TOSN) and Knowledge-based Systems (KNOSYS).
     </p>
@@ -44,13 +44,13 @@ ACM Multimedia Asia 2021 is advocating for a better engagement and involvement o
 
 <div class="keynote-text">
     <div class="keynote-img">
-        <img src="./Lianli.jpg" alt="Lianli Gao"/>
+        <img src="./lianli1.jpg" alt="Lianli Gao"/>
     </div>
     <!-- - **Title**: -->
     <h3 class="name">Lianli Gao</h3>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
-    <p class="subtitle">University of Electronic Science and Technology of China</p>
+    <p class="subtitle">University of Electronic Science and Technology of China, China</p>
     <p>
         Dr. Lianli Gao is a Professor at School of Computer Science and Engineering, UESTC. She is a member of the CFM Lab. She obtained her PhD degree in Information Technology from The University of Queensland (UQ), Australia, under the supervision of  Prof. Jane Hunter and Prof. Michael Bruenig. She received her BS degree in Computer Science from UESTC, in 2009. 
         Her research ranges from Semantic Web, Machine Learning, Deep Learning, Computer Vision (Images and Videos), NLP, Knowledge Reasoning, Knowledge and the related practical applications etc. Specifically, she is mainly focusing on integrating Natural Language for Visual Content Understanding. 
@@ -67,7 +67,7 @@ ACM Multimedia Asia 2021 is advocating for a better engagement and involvement o
     <h3 class="name">Mahsa Baktashmotlagh</h3>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
-    <p class="subtitle">The University of Queensland</p>
+    <p class="subtitle">The University of Queensland, Australia</p>
     <p>
         Mahsa Baktashmotlagh is currently a Lecturer at UQ with a research focus, developing machine learning and datamining techniques applied in: Visual data analysis (Visual domain adaptation, video classification, and animal’s foragingbehavioural analysis), Road traffic networks (Mining large scale road traffic networks and building a road loadbalancing tool to predict congestion on any road in the city) , Biomedical data (Prediction of neonatal sepsis), and Finance (Hedging foreign exchange trading risks).
     </p>
@@ -83,9 +83,25 @@ ACM Multimedia Asia 2021 is advocating for a better engagement and involvement o
     <h3 class="name">Ran Yi</h3>
     <!-- - **Date**: -->
     <!-- - **Abstract**:  -->
-    <p class="subtitle">Shanghai Jiao Tong University</p>
+    <p class="subtitle">Shanghai Jiao Tong University, China</p>
     <p>
         Ran Yi is an Assistant Professor at Shanghai Jiao Tong University (SJTU). She is a member of SJTU Digital Media and Computer Vision Laboratory. She received her Ph.D. degree from CSCG Group, Tsinghua University in 2021, advised by Prof. Yong-Jin Liu. She also closely collaborates with Prof. Yu-Kun Lai, Prof. Paul L. Rosin and Prof. Ying He.
+    </p>
+</div>
+
+---
+
+<div class="keynote-text">
+    <div class="keynote-img">
+    <img src="./lai-kuan.jpg" alt="Lai Kuan Wong"/>
+    </div>
+    <!-- - **Title**: -->
+    <h3 class="name">Lai-Kuan Wong</h3>
+    <!-- - **Date**: -->
+    <!-- - **Abstract**:  -->
+    <p class="subtitle">Multimedia University, Malaysia</p>
+    <p>
+        Lai-Kuan Wong is currently an Associate Professor and Chair of the Centre for Visual Computing (CVC) at Multimedia University, Malaysia, where she also served as the Deputy Dean of Research and Innovation for Faculty of Computing and Informatics in 2018-2021. She received her Ph.D. in Computer Science from National University of Singapore. Her research interests include computational photography and computational aesthetics, 3D scene analysis and understanding, and medical imaging. Lai-Kuan has co-chaired several workshops (Workshops at ACM Multimedia 2020, ACCV 2018, ACPR 2015), and regularly serves as the technical program committee for reputable conferences (CVPR, AAAI, WACV, ACM Multimedia, MMM) and as a reviewer for several IEEE Transactions. She also serves as the organizing committee for several conferences including the upcoming IEEE ICME 2022, IEEE ISPACS 2022, and IEEE ICIP 2023. She is the Technical Committee for APSIPA SPS TC since 2018.
     </p>
 </div>
 
