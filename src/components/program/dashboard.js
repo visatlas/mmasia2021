@@ -110,7 +110,7 @@ const Dashboard = () => {
           </a>
         </li>
       </ul>
-      
+
       <p className="px-3 mt-10 mb-2 text-xl font-bold text-mainPurple font-headingStyle tracking-semiWide">
         Conference Schedule
       </p>
@@ -169,7 +169,7 @@ const Dashboard = () => {
           return (
             <div className={style} key={index}>
               {session.type !== "break" ? (
-                <Link to={`/program/session/${session.id}`}>
+                <Link to={`/program/session/${session.id}`} state={{ time: session.startLocalTime }}>
                   <div className="px-3 py-3 block md:flex gap-x-8">
                     <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
                       {session.startLocalTime} - {session.endLocalTime}
