@@ -13,3 +13,10 @@ export const getDatePref = () =>
     : null;
 
 export const setDatePref = date => date && window.localStorage.setItem("gatsbyDateSelect", date);
+
+export const getVideoPref = () =>
+  isBrowser() && window.localStorage.getItem("gatsbyVideoSource")
+    ? window.localStorage.getItem("gatsbyVideoSource")
+    : null;
+
+export const setVideoPref = source => source && window.localStorage.setItem("gatsbyVideoSource", source);

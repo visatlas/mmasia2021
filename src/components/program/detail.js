@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Link, navigate } from "gatsby";
 import spacetime from "spacetime";
-import { getTimezonePref } from "../../services/preferences";
+import { getTimezonePref, getVideoPref, setVideoPref } from "../../services/preferences";
 
 import { getUser } from "../../services/auth";
 import Seo from "../seo";
@@ -28,6 +28,12 @@ const Detail = ({ id }) => {
         value: timezonePref,
         offset: spacetime.now(timezonePref).timezone().current.offset
       });
+    }
+
+    // Get video source preference
+    const videoPref = getVideoPref();
+    if (videoPref) {
+      setUseYouTube(videoPref === "youtube");
     }
   }, []);
 
@@ -154,7 +160,10 @@ const Detail = ({ id }) => {
           {Object.keys(sessionData).length <= 0 ? "Loading..." : sessionData?.name}
         </h1>
         {sessionData?.papers && (
-          <button className="bg-gray-100 px-2 sm:px-4 py-2 rounded-md font-medium" onClick={() => setUseYouTube(!useYouTube)}>
+          <button className="bg-gray-100 px-2 sm:px-4 py-2 rounded-md font-medium" onClick={() => {
+            setVideoPref(useYouTube ? "bilibili" : "youtube");
+            setUseYouTube(!useYouTube);
+          }}>
             {useYouTube ? "Use Bilibili Sources" : "Use YouTube Sources"}
           </button>
         )}
