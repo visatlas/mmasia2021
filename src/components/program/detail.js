@@ -78,7 +78,7 @@ const Detail = ({ id }) => {
           });
         }
         Object.keys(papers).forEach(key => {
-          fetch(`https://mmasia2021.uqcloud.net/api/papers/`, {
+          fetch(`https://mmasia2021.uqcloud.net/api/papers`, {
             method: 'POST',
             headers: { "Authorization": `Bearer ${getUser().token}`, 'Content-Type': 'application/json', },
             body: JSON.stringify({ ids: papers[key] })
@@ -138,12 +138,16 @@ const Detail = ({ id }) => {
               <li className="text-sm leading-5 text-gray-700" key={index}>{author}</li>
             ))}
           </ul>
-          <a className="px-2 pb-4 text-mainPurple font-semibold flex items-center hover:underline" href={useYouTube ? paper.youtube_link : paper.bilibili_link} target="_blank" rel="noreferrer">
-            {useYouTube ? "Watch on YouTube" : "Watch on Bilibili"}
-            <svg className="h-4 w-4 ml-1 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-            </svg>
-          </a>
+          {((useYouTube && !paper.youtube_link) || (!useYouTube && !paper.bilibili_link)) ? (
+            <p className="text-mainPurple font-medium text-sm pl-2">Video will be available on the first day of the conference.</p>
+          ) : (
+            <a className="px-2 pb-4 text-mainPurple font-semibold flex items-center hover:underline" href={useYouTube ? paper.youtube_link : paper.bilibili_link} target="_blank" rel="noreferrer">
+              {useYouTube ? "Watch on YouTube" : "Watch on Bilibili"}
+              <svg className="h-4 w-4 ml-1 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          )}
         </div>
       </div>
     );
@@ -262,9 +266,12 @@ const Detail = ({ id }) => {
       </>)}
 
       {sessionData?.papers ? (
-        <button className="mt-10" onClick={() => navigate("/")}>
-          Videos not loading? Click here to reload.
-        </button>
+        <>
+          <button className="mt-8 mb-0 text-gray-500 text-sm hover:underline" onClick={() => navigate("/")}>
+            Videos not loading or showing black screens? Click here to reload.
+          </button>
+          <p className="mt-1 mb-0 text-gray-500 text-sm">For further issues and enquires, please contact <a className="hover:underline" href="mailto:mmasia2021@gmail.com">mmasia2021@gmail.com</a>.</p>
+        </>
       ) : (
         <p>Please use the conference main entry links to access.</p>
       )}

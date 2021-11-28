@@ -41,7 +41,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>11:00 a.m.</td>
                   <td>12:00 p.m.</td>
                   <td>Opening</td>
-                  <td colSpan="2"></td>
+                  <td colSpan="2">-</td>
                 </tr>
                 <tr>
                   <td>9:10 - 10:10 a.m.</td>
@@ -375,6 +375,13 @@ const ProgramAtAGlance = ({ location }) => {
                   <td className="font-bold">Details</td>
                 </tr>
                 <tr>
+                  <td>9:00 - 9:10 a.m.</td>
+                  <td>11:00 - 11:10 p.m.</td>
+                  <td>12:00 - 12:10 p.m.</td>
+                  <td>Introduction to ACM Multimedia Asia 2022</td>
+                  <td className="paper">-</td>
+                </tr>
+                <tr>
                   <td>9:10 - 10:00 a.m.</td>
                   <td>11:10 - 12:00 p.m.</td>
                   <td>12:10 - 13:00 p.m.</td>
@@ -463,7 +470,7 @@ const ProgramAtAGlance = ({ location }) => {
                   <td>19:50 p.m.</td>
                   <td>20:50 p.m.</td>
                   <td>Closing</td>
-                  <td className="paper"></td>
+                  <td className="paper">-</td>
                 </tr>
               </tbody>
             </table>

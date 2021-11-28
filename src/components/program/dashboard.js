@@ -101,12 +101,12 @@ const Dashboard = () => {
       <ul className="px-3 mb-4 list-disc list-inside space-y-2">
         <li className="font-semibold">Zoom Link:&nbsp;&nbsp;
           <a className="font-medium text-mainPurple underline break-all" href={mainLinks.zoom} target="_blank" rel="noreferrer">
-            {mainLinks.zoom || "Loading..."}
+            {mainLinks.zoom || "Loading data..."}
           </a>
         </li>
         <li className="font-semibold">Gather.Town Link:&nbsp;&nbsp;
           <a className="font-medium text-mainPurple underline break-all" href={mainLinks.gatherTown} target="_blank" rel="noreferrer">
-            {mainLinks.gatherTown || "Loading..."}
+            {mainLinks.gatherTown || "Loading data..."}
           </a>
         </li>
       </ul>
@@ -136,40 +136,62 @@ const Dashboard = () => {
         />
       </div>
 
-      {Object.keys(groupedSessions).length === 0 && (<p className="mt-8 px-3 font-medium">Loading data...</p>)}
-
-      <div className="bg-white pt-6 sticky top-[64px]">
-        <div className="flex bg-gray-100 border-b-mainPurple border-b-2 gap-x-0 md:gap-x-6 rounded-tl-md rounded-tr-md">
-          {Object.keys(groupedSessions).map((key, index) => {
-            // set active style
-            const active = key === viewDay ? "bg-mainPurple text-gray-200" : "text-mainPurple hover:bg-menuSelected";
-            const style = `${active} hover:text-gray-100 duration-100 px-2 sm:px-4 py-2 
+      {Object.keys(groupedSessions).length <= 0 ? (
+        <p className="mt-8 px-3 font-medium">
+          Loading data...<br />
+          <span className="text-gray-500 text-sm">If the page is not working properly, please try refreshing the page.</span>
+        </p>
+      ) : (<>
+        <div className="bg-white pt-6 sticky top-[64px]">
+          <div className="flex bg-gray-100 border-b-mainPurple border-b-2 gap-x-0 md:gap-x-6 rounded-tl-md rounded-tr-md">
+            {Object.keys(groupedSessions).map((key, index) => {
+              // set active style
+              const active = key === viewDay ? "bg-mainPurple text-gray-200" : "text-mainPurple hover:bg-menuSelected";
+              const style = `${active} hover:text-gray-100 duration-100 px-2 sm:px-4 py-2 
               text-sm sm:text-base lg:mt-0 font-bold font-headingStyle rounded-tl-md rounded-tr-md`;
-            return (
-              <button className={style} key={index}
-                onClick={() => setViewDay(key)}>
-                {key}
-              </button>
-            );
-          })}
+              return (
+                <button className={style} key={index}
+                  onClick={() => setViewDay(key)}>
+                  {key}
+                </button>
+              );
+            })}
+          </div>
         </div>
-      </div>
 
-      <div className="program-list border-gray-200 bg-gray-100 divide-gray-200 pt-5 border-l-2 
+        <div className="program-list border-gray-200 bg-gray-100 divide-gray-200 pt-5 border-l-2 
         border-r-2 border-b-2 rounded-bl-md rounded-br-md divide-y">
-        {groupedSessions[viewDay]?.map((session, index) => {
-          let bgStyle = "";
-          switch (session.type) {
-            case "zoom": bgStyle = 'bg-pink-50 hover:bg-pink-100'; break;
-            case "video": bgStyle = "bg-sky-50 hover:bg-sky-100"; break;
-            case "link": bgStyle = "bg-yellow-50 hover:bg-yellow-100"; break;
-            default: bgStyle = "bg-gray-50";
-          }
-          const style = `${bgStyle} duration-100`;
-          return (
-            <div className={style} key={index}>
-              {session.type !== "break" ? (
-                <Link to={`/program/session/${session.id}`} state={{ time: session.startLocalTime }}>
+          {groupedSessions[viewDay]?.map((session, index) => {
+            let bgStyle = "";
+            switch (session.type) {
+              case "zoom": bgStyle = 'bg-pink-50 hover:bg-pink-100'; break;
+              case "video": bgStyle = "bg-sky-50 hover:bg-sky-100"; break;
+              case "link": bgStyle = "bg-yellow-50 hover:bg-yellow-100"; break;
+              default: bgStyle = "bg-gray-50";
+            }
+            const style = `${bgStyle} duration-100`;
+            return (
+              <div className={style} key={index}>
+                {session.type !== "break" ? (
+                  <Link to={`/program/session/${session.id}`} state={{ time: session.startLocalTime }}>
+                    <div className="px-3 py-3 block md:flex gap-x-8">
+                      <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
+                        {session.startLocalTime} - {session.endLocalTime}
+                      </p>
+                      <div>
+                        <p className="leading-5 font-semibold mb-0">{session.name}</p>
+                        {session.subtitle && <p className="mt-1 mb-0 text-sm leading-tight">{session.subtitle}</p>}
+                        {Array.isArray(session.papers) && (
+                          <ul className="list-inside list-disc mt-2">
+                            {session.papers.map((paper, index) => (
+                              <li className="mb-0 text-xs font-medium" key={index}>{paper.title}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    </div>
+                  </Link>
+                ) : (
                   <div className="px-3 py-3 block md:flex gap-x-8">
                     <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
                       {session.startLocalTime} - {session.endLocalTime}
@@ -177,30 +199,16 @@ const Dashboard = () => {
                     <div>
                       <p className="leading-5 font-semibold mb-0">{session.name}</p>
                       {session.subtitle && <p className="mt-1 mb-0 text-sm leading-tight">{session.subtitle}</p>}
-                      {Array.isArray(session.papers) && (
-                        <ul className="list-inside list-disc mt-2">
-                          {session.papers.map((paper, index) => (
-                            <li className="mb-0 text-xs font-medium" key={index}>{paper.title}</li>
-                          ))}
-                        </ul>
-                      )}
                     </div>
                   </div>
-                </Link>
-              ) : (
-                <div className="px-3 py-3 block md:flex gap-x-8">
-                  <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
-                    {session.startLocalTime} - {session.endLocalTime}
-                  </p>
-                  <div>
-                    <p className="leading-5 font-semibold mb-0">{session.name}</p>
-                    {session.subtitle && <p className="mt-1 mb-0 text-sm leading-tight">{session.subtitle}</p>}
-                  </div>
-                </div>
-              )}
-            </div>);
-        })}
-      </div>
+                )}
+              </div>);
+          })}
+        </div>
+
+        <p className="px-3 mt-8 mb-0 text-gray-500 text-sm">If the page is not showing contents properly, please try refreshing the page.</p>
+        <p className="px-3 mt-1 mb-0 text-gray-500 text-sm">For further issues and enquires, please contact <a className="hover:underline" href="mailto:mmasia2021@gmail.com">mmasia2021@gmail.com</a>.</p>
+      </>)}
 
       {/* <div className="max-h-148 overflow-auto border mt-8 text-sm font-mono">
         From {`https://mmasia2021.uqcloud.net/api/sessions`}<br />
