@@ -18,16 +18,18 @@ Map of Virtual Rooms on Gather.Town can **[*befound here*](https://mmasia2021.uq
 - Authors are required to attend your scheduled sessions on **Webinar** for live Q&As right after each presentation.
 - Authors are required to attend “Social Connections on Gather.Town” session in **Gather.Town** on Day 2 for live Q&As. Please find your poster, stand in front of it, and wait for others to come over for discussions in the Poster Rooms (see the example below). You are suggested to use “Author of $modelname: $yourname” as the ID for being recognised by other attendees.
 
-
-<img src="./ray-at-poster-room.png" alt="at-poster-room" width="50%"/>
+<div style="max-width: 600px;">
+    <img src="./ray-at-poster-room.png" alt="at-poster-room" />
+</div>
 
 ### Short Paper, Demo, Brave New Ideas Tracks
 - Authors are required to attend your scheduled sessions (i.e., Lightning Talk Session 1 on Day 1 and Lightning Talk Session 2 on Day 2) in **Gather.Town** (Exhibition Hall) and prepare to answer questions raised by the audience during playing your presentations. Please sit at front rows as ray did in the example below.
 - Authors are required to attend “Social Connections on Gather.Town” session in **Gather.Town** for live Q&As. Please find your poster, stand in front of it, and wait for others to come over for discussions in the Poster Rooms. You are suggested to use “Author of $modelname: $yourname” as the ID for being recognised by other attendees.
 
-<img src="./ray-at-exibition-hall.png" alt="at-poster-room" width="70%"/>
+<div style="max-width: 600px;">
+    <img src="./ray-at-exibition-hall.png" alt="at-poster-room" />
+</div>
 
 ### Workshops
 - Authors are required to attend your scheduled sessions in **Gather.Town** for live Q&As right after each presentation. 
 - Authors are required to attend “Social Connections on Gather.Town” session in **Gather.Town** on Day 2 for live Q&As. Please find your poster, stand in front of it, and wait for others to come over for discussions in the Poster Rooms. You are suggested to use “Author of $modelname: $yourname” as the ID for being recognised by other attendees.
-
