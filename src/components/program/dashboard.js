@@ -3,7 +3,10 @@ import { Link } from "gatsby";
 import spacetime from "spacetime";
 import { getUser } from "../../services/auth";
 import TimezoneSelect from './timezone';
-import { getTimezonePref, setTimezonePref, getDatePref, setDatePref } from "../../services/preferences";
+import {
+  getTimezonePref, setTimezonePref, getDatePref,
+  setDatePref, getRememberTimezone, setRememberTimezone
+} from "../../services/preferences";
 import Seo from "../../components/seo";
 
 const Dashboard = () => {
@@ -15,6 +18,7 @@ const Dashboard = () => {
   });
   const [groupedSessions, setGroupedSessions] = useState([]);  // Processed sessions data with local timezone
   const [viewDay, setViewDay] = useState("");
+  const [remember, setRemember] = useState(getRememberTimezone() === 'true');
 
   useEffect(() => {
     fetch(`https://mmasia2021.uqcloud.net/api/sessions/getMain`, {
@@ -38,13 +42,13 @@ const Dashboard = () => {
 
     // Get timezone preference
     const timezonePref = getTimezonePref();
-    if (timezonePref) {
+    if (timezonePref && remember) {
       setTimezone({
         value: timezonePref,
         offset: spacetime.now(timezonePref).timezone().current.offset
       });
     }
-  }, []);
+  }, [remember]);
 
   // Convert time given offset
   const convertTimezone = (date, offset) => {
@@ -116,9 +120,21 @@ const Dashboard = () => {
       </p>
       <p className="px-3 mb-6">Click on the timetable below to see individual links and more details.</p>
       <div className="mb-2">
-        <p className="px-3 mb-2 font-bold font-headingStyle tracking-semiWide">
-          Select the desired time zone:
-        </p>
+        <div className="block sm:flex justify-between">
+          <p className="px-3 mb-2 font-bold font-headingStyle tracking-semiWide">
+            Select the desired time zone:
+          </p>
+          <form>
+            <label className="ml-3 flex items-center mb-2">
+              <input
+                name="Remember my choice" type="checkbox"
+                checked={remember}
+                onChange={() => { setRememberTimezone(!remember); setRemember(!remember); }} />
+              <span className="pl-2 font-headingStyle tracking-semiWide">Remember my choice</span>
+            </label>
+          </form>
+        </div>
+
         <TimezoneSelect labelStyle="abbrev" value={timezone} onChange={setTimezone}
           styles={{
             option: (provided) => ({
@@ -134,6 +150,7 @@ const Dashboard = () => {
             })
           }}
         />
+
       </div>
 
       {Object.keys(groupedSessions).length <= 0 ? (

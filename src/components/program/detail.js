@@ -108,7 +108,7 @@ const Detail = ({ id }) => {
           });
         }
         Object.keys(papers).forEach(key => {
-          fetch(`https://mmasia2021.uqcloud.net/api/papers/1`, {
+          fetch(`https://mmasia2021.uqcloud.net/api/papers`, {
             method: 'POST',
             headers: { "Authorization": `Bearer ${getUser().token}`, 'Content-Type': 'application/json', },
             body: JSON.stringify({ ids: papers[key] })
