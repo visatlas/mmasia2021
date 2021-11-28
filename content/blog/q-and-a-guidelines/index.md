@@ -20,3 +20,13 @@ Map of Virtual Rooms on Gather.Town can **[*befound here*](https://mmasia2021.uq
 
 
 <img src="./ray-at-poster-room.png" alt="at-poster-room"/>
+
+### Short Paper, Demo, Brave New Ideas Tracks
+- Authors are required to attend your scheduled sessions (i.e., Lightning Talk Session 1 on Day 1 and Lightning Talk Session 2 on Day 2) in **Gather.Town** (Exhibition Hall) and prepare to answer questions raised by the audience during playing your presentations. Please sit at front rows as ray did in the example below.
+<img src="./ray-at-exibition-hall.png" alt="at-poster-room"/>
+- Authors are required to attend “Social Connections on Gather.Town” session in **Gather.Town** for live Q&As. Please find your poster, stand in front of it, and wait for others to come over for discussions in the Poster Rooms. You are suggested to use “Author of $modelname: $yourname” as the ID for being recognised by other attendees.
+
+### Workshops
+- Authors are required to attend your scheduled sessions in **Gather.Town** for live Q&As right after each presentation. 
+- Authors are required to attend “Social Connections on Gather.Town” session in **Gather.Town** on Day 2 for live Q&As. Please find your poster, stand in front of it, and wait for others to come over for discussions in the Poster Rooms. You are suggested to use “Author of $modelname: $yourname” as the ID for being recognised by other attendees.
+
