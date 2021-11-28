@@ -443,10 +443,24 @@ exports[`Header renders correctly 1`] = `
                       </div>
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/q-and-a-guidelines"
+                        title="Q&A Guidelines"
+                      >
+                        Q&A Guidelines
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
                         href="/presentation-guidelines"
                         title="Presentation Guidelines"
                       >
                         Presentation Guidelines
+                      </a>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/gather-town-map"
+                        title="Gather.Town Map"
+                      >
+                        Gather.Town Map
                       </a>
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"

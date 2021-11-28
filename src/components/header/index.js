@@ -31,7 +31,9 @@ export default function Header({ activePage, themed }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showMobileCalls, setShowMobileCalls] = useState(callLinks.includes(activePage));
   const [showMobileAttend, setShowMobileAttend] = useState(["/student-travel-grants", "/carer-award"].includes(activePage));
-  const [showMobileProgram, setShowMobileProgram] = useState(["/program/home", "/conference-keynotes", "/women-in-multimedia", "/phd-school", "/presentation-guidelines", "/gather-town"].includes(activePage));
+  const [showMobileProgram, setShowMobileProgram] = useState(["/program/home", "/conference-keynotes",
+    "/program-at-a-glance", "/women-in-multimedia", "/phd-school", "/presentation-guidelines", "/gather-town",
+    "/gather-town-map", "/q-and-a-guidelines"].includes(activePage));
   const mobileBaseStyle = "font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-headingStyle inline-flex items-center";
   const mobileCallsStyle = `${mobileBaseStyle} ${showMobileCalls ? "bg-menuHover" : ""}`;
   const mobileAttendStyle = `${mobileBaseStyle} ${showMobileAttend ? "bg-menuHover" : ""}`;
@@ -75,7 +77,9 @@ export default function Header({ activePage, themed }) {
                     )}
                   </DropDownMenu>
                   {/* <NavLink to="/program/home" selected={activePage === "/program/home"} title="Program" themed>Program</NavLink> */}
-                  <DropDownMenu selected={["/conference-keynotes", "/women-in-multimedia", "/phd-school", "/presentation-guidelines", "/program-at-a-glance", "/gather-town"].includes(activePage)} name="Program" widthStyle="w-60">
+                  <DropDownMenu selected={["/program-at-a-glance", "/conference-keynotes", "/women-in-multimedia",
+                    "/phd-school", "/q-and-a-guidelines", "/presentation-guidelines", "/gather-town-map",
+                    "/gather-town"].includes(activePage)} name="Program" widthStyle="w-60">
                     <Link to="/program/home" className={linkStylePurple} title="Program Home">
                       Program Home
                       {!isLoggedIn() && (<span className="font-headingStyle text-gray-400 block whitespace-no-wrap text-xs font-normal cursor-pointer">
@@ -87,9 +91,10 @@ export default function Header({ activePage, themed }) {
                     <Link to="/conference-keynotes" className={linkStyleMedium} title="Conference Keynotes">Conference Keynotes</Link>
                     <Link to="/women-in-multimedia" className={linkStyleMedium} title="Women in Multimedia">Women in Multimedia</Link>
                     <Link to="/phd-school" className={linkStyleMedium} title="PhD School">PhD School</Link>
-
                     <Divider />
+                    <Link to="/q-and-a-guidelines" className={linkStyleMedium} title="Q&amp;A Guidelines">Q&amp;A Guidelines</Link>
                     <Link to="/presentation-guidelines" className={linkStyleMedium} title="Presentation Guidelines">Presentation Guidelines</Link>
+                    <Link to="/gather-town-map" className={linkStyleMedium} title="Gather.Town Map">Gather.Town Map</Link>
                     <Link to="/gather-town" className={linkStyleMedium} title="Gather.Town Tutorial">Gather.Town Tutorial</Link>
                   </DropDownMenu>
                   <DropDownMenu selected={["/registration", "/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
@@ -129,7 +134,7 @@ export default function Header({ activePage, themed }) {
               })}
             </div>)}
 
-            <button className={mobileProgramStyle} onClick={() => { setShowMobileProgram(!showMobileProgram) }}>
+            <button className={mobileProgramStyle} onClick={() => { setShowMobileProgram(!showMobileProgram); }}>
               <span className="mr-1">Program</span>
               <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
@@ -140,7 +145,9 @@ export default function Header({ activePage, themed }) {
               <MobileNavLink to="/conference-keynotes" title="Conference Keynotes" selected={activePage === "/conference-keynotes"} nested>Conference Keynotes</MobileNavLink>
               <MobileNavLink to="/women-in-multimedia" title="Women in Multimedia" selected={activePage === "/women-in-multimedia"} nested>Women in Multimedia</MobileNavLink>
               <MobileNavLink to="/phd-school" title="PhD School" selected={activePage === "/phd-school"} nested>PhD School</MobileNavLink>
+              <MobileNavLink to="/q-and-a-guidelines" title="Q&amp;A Guidelines" selected={activePage === "/q-and-a-guidelines"} nested>Q&amp;A Guidelines</MobileNavLink>
               <MobileNavLink to="/presentation-guidelines" title="Presentation Guidelines" selected={activePage === "/presentation-guidelines"} nested>Presentation Guidelines</MobileNavLink>
+              <MobileNavLink to="/gather-town-map" title="Gather.Town Map" selected={activePage === "/gather-town-map"} nested>Gather.Town Map</MobileNavLink>
               <MobileNavLink to="/gather-town" title="Gather.Town Tutorial" selected={activePage === "/gather-town"} nested>Gather.Town Tutorial</MobileNavLink>
             </div>)}
             {/* <MobileNavLink to="/program/home" title="Program" selected={activePage === "/program/home"}>Program</MobileNavLink> */}
