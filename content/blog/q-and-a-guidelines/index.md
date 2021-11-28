@@ -9,7 +9,7 @@ description: To provide a better Q&A experience for every attendance, we would l
 ## For audience
 Pre-recorded presentations of all accepted papers will be available in the program during the conference period. Audience are welcome to ask questions in running sessions or when joining the session of “Social Connections on Gather.Town”. 
 
-Map of Virtual Rooms on Gather.Town can **[*befound here*](https://mmasia2021.uqcloud.net//gather-town-map)**.
+Map of Virtual Rooms on Gather.Town can **[*be found here*](https://mmasia2021.uqcloud.net//gather-town-map)**.
 
 ## For presenters
 
