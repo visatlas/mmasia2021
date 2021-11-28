@@ -9,7 +9,7 @@ import Seo from "../seo";
 const Detail = ({ id }) => {
   const [sessionData, setSessionData] = useState({});
   const [paperData, setPaperData] = useState({});
-  const [useYouTube, setUseYouTube] = useState(true);
+  const [useYouTube, setUseYouTube] = useState(false);
 
   const [timezone, setTimezone] = useState({
     value: Intl.DateTimeFormat().resolvedOptions().timeZone,
@@ -34,7 +34,37 @@ const Detail = ({ id }) => {
     const videoPref = getVideoPref();
     if (videoPref) {
       setUseYouTube(videoPref === "youtube");
+    } else {
+      // set timeout when determine country
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => {
+        controller.abort();
+        setUseYouTube(false);
+        setVideoPref("bilibili");
+      }, 4000);
+
+      // switch to youtube/bilibili source based on country
+      fetch('https://ipapi.co/json/', { signal: controller.signal })
+        .then(res => res.json())
+        .then(response => {
+          clearTimeout(timeoutId);
+          if (response.country_code !== "CN") {
+            setUseYouTube(true);
+            setVideoPref("youtube");
+          } else {
+            setVideoPref("bilibili");
+          }
+        })
+        .catch(_ => {
+          clearTimeout(timeoutId);
+          setUseYouTube(false);
+          setVideoPref("bilibili");
+        });
     }
+
+    return () => {
+      setUseYouTube(false);
+    };
   }, []);
 
   useEffect(() => {
@@ -78,7 +108,7 @@ const Detail = ({ id }) => {
           });
         }
         Object.keys(papers).forEach(key => {
-          fetch(`https://mmasia2021.uqcloud.net/api/papers`, {
+          fetch(`https://mmasia2021.uqcloud.net/api/papers/1`, {
             method: 'POST',
             headers: { "Authorization": `Bearer ${getUser().token}`, 'Content-Type': 'application/json', },
             body: JSON.stringify({ ids: papers[key] })
@@ -164,11 +194,11 @@ const Detail = ({ id }) => {
           {Object.keys(sessionData).length <= 0 ? "Loading..." : sessionData?.name}
         </h1>
         {sessionData?.papers && (
-          <button className="bg-gray-100 px-2 sm:px-4 py-2 rounded-md font-medium" onClick={() => {
+          <button className="bg-gray-100 hover:bg-gray-300 text-sm duration-100 px-2 sm:px-4 py-2 rounded-md font-medium" onClick={() => {
             setVideoPref(useYouTube ? "bilibili" : "youtube");
             setUseYouTube(!useYouTube);
           }}>
-            {useYouTube ? "Use Bilibili Sources" : "Use YouTube Sources"}
+            {useYouTube ? "Switch to Bilibili Sources" : "Switch to YouTube Sources"}
           </button>
         )}
       </div>
