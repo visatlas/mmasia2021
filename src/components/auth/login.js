@@ -52,7 +52,7 @@ const Login = ({ setShowBanner }) => {
             </h1>
             <p className="font-medium mb-3">Please sign in to view the program details.</p>
             <p className="mt-2 mb-4 text-red-900 text-xs inline-block font-semibold rounded-md leading-5">
-              We have started sending access codes to all registrants' email addresses. If you haven't received the code after 30 November or have trouble logging in, please contact mmasia2021@gmail.com.
+              We have started sending access PIN codes to all registrants' email addresses. If you cannot find it, please check it in your spam folder. If you have not received the code after 30 November or have trouble logging in, please contact mmasia2021@gmail.com.
             </p>
             <form className="pt-3" method="post" onSubmit={handleSubmit}>
               <div className="mb-4">
