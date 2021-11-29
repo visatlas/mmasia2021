@@ -1,7 +1,7 @@
 ---
 title: Map of Virtual Rooms in Gather.Town
 datePublished: "2021-11-28"
-dateModified: "2021-11-28"
+dateModified: "2021-11-29"
 description: The map of virtual rooms in Gather.Town.
 ---
 

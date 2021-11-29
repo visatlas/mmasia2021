@@ -93,7 +93,7 @@ ACM Multimedia Asia 2021 is advocating for a better engagement and involvement o
 
 <div class="keynote-text">
     <div class="keynote-img">
-    <img src="./lai-kuan.jpg" alt="Lai Kuan Wong"/>
+    <img src="./laikuan.jpg" alt="Lai Kuan Wong"/>
     </div>
     <!-- - **Title**: -->
     <h3 class="name">Lai-Kuan Wong</h3>
