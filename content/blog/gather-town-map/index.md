@@ -39,3 +39,19 @@ A number of rooms are set up for displaying posters. **Authors**, please stand i
 <div style="max-width: 800px;">
     <img src="./Poster-Room-1.png" alt="Poster-Room-1" />
 </div>
+
+## Lounge Room
+
+Feel free to chat with each other in the lounge room.
+
+<div style="max-width: 800px;">
+    <img src="./Lounge-Room.png" alt="Lounge-Room" />
+</div>
+
+## Chat Room
+
+If you would like to have a small group discussion with other attendees, feel free to use a chat room as the meeting room.
+
+<div style="max-width: 800px;">
+    <img src="./Chart-Room.png" alt="Chart-Room" />
+</div>
