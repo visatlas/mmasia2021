@@ -32,3 +32,10 @@ This room is to host the special session – Women in Multimedia Roundtable.
     <img src="./Women-in-MM.png" alt="Women-in-MM" />
 </div>
 
+## Poster Rooms
+
+A number of rooms are set up for displaying posters. **Authors**, please stand in front your poster and communicate with visitors.
+
+<div style="max-width: 800px;">
+    <img src="./Poster-Room-1.png" alt="Poster-Room-1" />
+</div>
