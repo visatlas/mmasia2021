@@ -29,5 +29,6 @@ This room is to host the special session – Women in Multimedia Roundtable.
 **Panellists**, please sit around the table and all other attendees can sit on other seats.
 
 <div style="max-width: 800px;">
-    <img src="./Women-in-MM.png-Hall.png" alt="Women-in-MM.png-Hall" />
+    <img src="./Women-in-MM.png" alt="Women-in-MM" />
 </div>
+
