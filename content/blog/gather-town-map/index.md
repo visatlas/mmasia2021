@@ -20,6 +20,14 @@ The tracks of short paper, demo, brave new ideas as well as three workshops will
 We will also be broadcasting all the events on Webinar in the Exhibition Hall simultaneously. Feel free to watch other talks in this room if you prefer. 
 
 <div style="max-width: 800px;">
-    <img src="./Exhibition-Hall.png" alt="Overall Map" />
+    <img src="./Exhibition-Hall.png" alt="Exhibition-Hall" />
 </div>
 
+## Women in Multimedia Roundtable
+
+This room is to host the special session – Women in Multimedia Roundtable.
+**Panellists**, please sit around the table and all other attendees can sit on other seats.
+
+<div style="max-width: 800px;">
+    <img src="./Women-in-MM.png-Hall.png" alt="Women-in-MM.png-Hall" />
+</div>
