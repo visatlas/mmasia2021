@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Link } from 'gatsby';
 
 export default function Title({ allowVideo }) {
   const [playVideo, setPlayVideo] = useState(true);
@@ -56,12 +57,16 @@ export default function Title({ allowVideo }) {
           <p className="mb-4 font-semibold text-titleSmall">Hybrid &bull; Gold Coast, Australia</p>
           <p className="mb-1 font-bold text-mainPurple text-titleMedium tracking-semiWide">1 - 3 December, 2021</p>
           <div className="flex space-x-2 w-full mb-7 h-7">
-            {time && ["days", "hours", "mins", "secs"].map((item, key) => (
+            {time ? ["days", "hours", "mins", "secs"].map((item, key) => (
               <div className="flex items-baseline space-x-1" key={key}>
                 <span className="font-semibold text-lg font-titleFont">{time[item]}</span>
                 <span className="font-semibold text-xs">{time[item] !== 1 ? item : item.slice(0, -1)}</span>
               </div>
-            ))}
+            )) : (
+              <Link to="/program/home" title="Go to program">
+                <span className="font-semibold hover:underline">Go to Program &rsaquo;</span>
+              </Link>
+            )}
           </div>
           <AnchorLink className="font-semibold text-titleSmall hover:underline text-mainPurple" to="/#welcome" title="Learn More.." />
         </div>

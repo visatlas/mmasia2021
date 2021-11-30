@@ -192,7 +192,7 @@ const Dashboard = () => {
                 {session.type !== "break" ? (
                   <Link to={`/program/session/${session.id}`} state={{ time: session.startLocalTime }}>
                     <div className="px-3 py-3 block md:flex gap-x-8">
-                      <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
+                      <p className="flex-shrink-0 w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
                         {session.startLocalTime} - {session.endLocalTime}
                       </p>
                       <div>
