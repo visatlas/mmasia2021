@@ -14,6 +14,9 @@ description: ACM Multimedia Asia 2021 has announced the winners of Best Paper Aw
 - Marco Bertini (University of Florence)
 - Alberto Del Bimbo (University of Florence)
 
+**Message from the authors -** \
+"Thank you for awarding us the best paper prize! It was an honor to present at ACM MMAsia. The work is the result of a coral effort from all the authors in the last year. So my thanks goes to the Award Committee and to my coauthors!"
+
 <br/>
 
 ## ACM Multimedia Asia 2021 Honourable Mention
@@ -35,3 +38,7 @@ description: ACM Multimedia Asia 2021 has announced the winners of Best Paper Aw
 
 ### People’s Choice Award
 - **Why Temporality is important for Knowledge Graph?**, Jiasheng Zhang
+
+
+
+
