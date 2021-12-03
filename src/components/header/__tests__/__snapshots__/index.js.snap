@@ -443,6 +443,25 @@ exports[`Header renders correctly 1`] = `
                       </div>
                       <a
                         className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
+                        href="/awards"
+                        title="Awards"
+                      >
+                        Awards
+                      </a>
+                      <div
+                        className="w-full py-1"
+                      >
+                        <div
+                          className="w-full bg-gray-200"
+                          style={
+                            Object {
+                              "height": "1px",
+                            }
+                          }
+                        />
+                      </div>
+                      <a
+                        className="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall font-medium"
                         href="/q-and-a-guidelines"
                         title="Q&A Guidelines"
                       >
