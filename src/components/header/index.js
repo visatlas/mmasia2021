@@ -30,11 +30,13 @@ export default function Header({ activePage, themed }) {
 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showMobileCalls, setShowMobileCalls] = useState(callLinks.includes(activePage));
-  const [showMobileAttend, setShowMobileAttend] = useState(["/student-travel-grants", "/carer-award"].includes(activePage));
+  const [showMobileAttend, setShowMobileAttend] = useState(["/student-travel-grants",
+    "/carer-award"].includes(activePage));
   const [showMobileProgram, setShowMobileProgram] = useState(["/program/home", "/conference-keynotes",
     "/program-at-a-glance", "/awards", "/women-in-multimedia", "/phd-school", "/presentation-guidelines",
     "/gather-town", "/gather-town-map", "/q-and-a-guidelines"].includes(activePage));
-  const mobileBaseStyle = "font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-headingStyle inline-flex items-center";
+  const mobileBaseStyle = `font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base 
+    font-headingStyle inline-flex items-center`;
   const mobileCallsStyle = `${mobileBaseStyle} ${showMobileCalls ? "bg-menuHover" : ""}`;
   const mobileAttendStyle = `${mobileBaseStyle} ${showMobileAttend ? "bg-menuHover" : ""}`;
   const mobileProgramStyle = `${mobileBaseStyle} ${showMobileProgram ? "bg-menuHover" : ""}`;
@@ -43,7 +45,8 @@ export default function Header({ activePage, themed }) {
   const linkStyleMedium = `${linkStyle} font-medium`;
   const linkStyleWide = `${linkStyleMedium} tracking-semiWide`;
   const linkStylePurple = `${linkStyleMedium} text-mainPurple`;
-  const navStyle = `overflow-y-auto md:overflow-visible bg-mainPurple fixed top-0 z-50 w-full ${themed ? "md:bg-gray-800" : "md:bg-uqStyle"}`;
+  const navStyle = `overflow-y-auto md:overflow-visible bg-mainPurple fixed top-0 z-50 
+    w-full ${themed ? "md:bg-gray-800" : "md:bg-uqStyle"}`;
 
   return (
     <header>
@@ -59,10 +62,13 @@ export default function Header({ activePage, themed }) {
               <div className="hidden md:flex sm:ml-8 items-center">
                 <div className="flex space-x-4">
                   <NavLink to="/" selected={false} title="Home">Home</NavLink>
-                  <DropDownMenu selected={["/important-dates", "/reviewer-guidelines"].concat(callLinks).includes(activePage)}
+                  <DropDownMenu selected={["/important-dates",
+                    "/reviewer-guidelines"].concat(callLinks).includes(activePage)}
                     name="Calls &amp; Dates" widthStyle="w-80">
-                    <Link to="/important-dates" className={linkStyleWide} title="Important Dates">Important Dates</Link>
-                    <Link to="/reviewer-guidelines" className={linkStyleWide} title="Reviewer Guidelines">Reviewer Guidelines</Link>
+                    <Link to="/important-dates" className={linkStyleWide}
+                      title="Important Dates">Important Dates</Link>
+                    <Link to="/reviewer-guidelines" className={linkStyleWide}
+                      title="Reviewer Guidelines">Reviewer Guidelines</Link>
                     {calls.map((group, index) => (<Fragment key={index}>
                       <Divider />
                       {group.map((call, indexCall) => {
@@ -76,37 +82,49 @@ export default function Header({ activePage, themed }) {
                     </Fragment>)
                     )}
                   </DropDownMenu>
-                  {/* <NavLink to="/program/home" selected={activePage === "/program/home"} title="Program" themed>Program</NavLink> */}
                   <DropDownMenu selected={["/program-at-a-glance", "/conference-keynotes", "/women-in-multimedia",
                     "/phd-school", "/awards", "/q-and-a-guidelines", "/presentation-guidelines",
                     "/gather-town-map", "/gather-town"].includes(activePage)} name="Program" widthStyle="w-60">
                     <Link to="/program/home" className={linkStylePurple} title="Program Home">
                       Program Home
-                      {!isLoggedIn() && (<span className="font-headingStyle text-gray-400 block whitespace-no-wrap text-xs font-normal cursor-pointer">
+                      {!isLoggedIn() && (<span className="font-headingStyle text-gray-400 block whitespace-no-wrap 
+                      text-xs font-normal cursor-pointer">
                         Sign in required
                       </span>)}
                     </Link>
                     <Divider />
-                    <Link to="/program-at-a-glance" className={linkStyleMedium} title="Program at a Glance">Program at a Glance</Link>
-                    <Link to="/conference-keynotes" className={linkStyleMedium} title="Conference Keynotes">Conference Keynotes</Link>
-                    <Link to="/women-in-multimedia" className={linkStyleMedium} title="Women in Multimedia">Women in Multimedia</Link>
+                    <Link to="/program-at-a-glance" className={linkStyleMedium}
+                      title="Program at a Glance">Program at a Glance</Link>
+                    <Link to="/conference-keynotes" className={linkStyleMedium}
+                      title="Conference Keynotes">Conference Keynotes</Link>
+                    <Link to="/women-in-multimedia" className={linkStyleMedium}
+                      title="Women in Multimedia">Women in Multimedia</Link>
                     <Link to="/phd-school" className={linkStyleMedium} title="PhD School">PhD School</Link>
                     <Divider />
                     <Link to="/awards" className={linkStyleMedium} title="Awards">Awards</Link>
                     <Divider />
-                    <Link to="/q-and-a-guidelines" className={linkStyleMedium} title="Q&amp;A Guidelines">Q&amp;A Guidelines</Link>
-                    <Link to="/presentation-guidelines" className={linkStyleMedium} title="Presentation Guidelines">Presentation Guidelines</Link>
-                    <Link to="/gather-town-map" className={linkStyleMedium} title="Gather.Town Map">Gather.Town Map</Link>
-                    <Link to="/gather-town" className={linkStyleMedium} title="Gather.Town Tutorial">Gather.Town Tutorial</Link>
+                    <Link to="/q-and-a-guidelines" className={linkStyleMedium}
+                      title="Q&amp;A Guidelines">Q&amp;A Guidelines</Link>
+                    <Link to="/presentation-guidelines" className={linkStyleMedium}
+                      title="Presentation Guidelines">Presentation Guidelines</Link>
+                    <Link to="/gather-town-map" className={linkStyleMedium}
+                      title="Gather.Town Map">Gather.Town Map</Link>
+                    <Link to="/gather-town" className={linkStyleMedium}
+                      title="Gather.Town Tutorial">Gather.Town Tutorial</Link>
                   </DropDownMenu>
-                  <DropDownMenu selected={["/registration", "/student-travel-grants", "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
+                  <DropDownMenu selected={["/registration", "/student-travel-grants",
+                    "/carer-award"].includes(activePage)} name="Attend" widthStyle="w-60">
                     <Link to="/registration" className={linkStylePurple} title="Registration">Registration</Link>
                     <Divider />
-                    <Link to="/student-travel-grants" className={linkStyleMedium} title="Student Travel Grants">Student Travel Grants</Link>
-                    <Link to="/carer-award" className={linkStyleMedium} title="Carer Awards">Carer Awards</Link>
+                    <Link to="/student-travel-grants" className={linkStyleMedium}
+                      title="Student Travel Grants">Student Travel Grants</Link>
+                    <Link to="/carer-award" className={linkStyleMedium}
+                      title="Carer Awards">Carer Awards</Link>
                   </DropDownMenu>
-                  <NavLink to="/organisation" selected={activePage === "/organisation"} title="Organisation">Organisation</NavLink>
-                  <NavLink to="/sponsors" selected={activePage === "/sponsors"} title="Sponsors">Sponsors</NavLink>
+                  <NavLink to="/organisation" selected={activePage === "/organisation"}
+                    title="Organisation">Organisation</NavLink>
+                  <NavLink to="/sponsors" selected={activePage === "/sponsors"}
+                    title="Sponsors">Sponsors</NavLink>
                 </div>
               </div>
             </div>
@@ -117,8 +135,10 @@ export default function Header({ activePage, themed }) {
         <div className={showMobileMenu ? "md:hidden" : "hidden"} id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <MobileNavLink to="/" title="Home" selected={activePage === "/"}>Home</MobileNavLink>
-            <MobileNavLink to="/important-dates" title="Important Dates" selected={activePage === "/important-dates"}>Important Dates</MobileNavLink>
-            <MobileNavLink to="/reviewer-guidelines" title="Reviewer Guidelines" selected={activePage === "/reviewer-guidelines"}>Reviewer Guidelines</MobileNavLink>
+            <MobileNavLink to="/important-dates" title="Important Dates"
+              selected={activePage === "/important-dates"}>Important Dates</MobileNavLink>
+            <MobileNavLink to="/reviewer-guidelines" title="Reviewer Guidelines"
+              selected={activePage === "/reviewer-guidelines"}>Reviewer Guidelines</MobileNavLink>
             <button className={mobileCallsStyle} onClick={() => { setShowMobileCalls(!showMobileCalls); }}>
               <span className="mr-1">Calls</span>
               <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -142,30 +162,44 @@ export default function Header({ activePage, themed }) {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
             </button>
             {showMobileProgram && (<div>
-              <MobileNavLink to="/program/home" title="Program Home" selected={activePage === "/program/home"} nested>Program Home</MobileNavLink>
-              <MobileNavLink to="/program-at-a-glance" title="Program at a Glance" selected={activePage === "/program-at-a-glance"} nested>Program at a Glance</MobileNavLink>
-              <MobileNavLink to="/conference-keynotes" title="Conference Keynotes" selected={activePage === "/conference-keynotes"} nested>Conference Keynotes</MobileNavLink>
-              <MobileNavLink to="/women-in-multimedia" title="Women in Multimedia" selected={activePage === "/women-in-multimedia"} nested>Women in Multimedia</MobileNavLink>
-              <MobileNavLink to="/phd-school" title="PhD School" selected={activePage === "/phd-school"} nested>PhD School</MobileNavLink>
-              <MobileNavLink to="/awards" title="Awards" selected={activePage === "/awards"} nested>Awards</MobileNavLink>
-              <MobileNavLink to="/q-and-a-guidelines" title="Q&amp;A Guidelines" selected={activePage === "/q-and-a-guidelines"} nested>Q&amp;A Guidelines</MobileNavLink>
-              <MobileNavLink to="/presentation-guidelines" title="Presentation Guidelines" selected={activePage === "/presentation-guidelines"} nested>Presentation Guidelines</MobileNavLink>
-              <MobileNavLink to="/gather-town-map" title="Gather.Town Map" selected={activePage === "/gather-town-map"} nested>Gather.Town Map</MobileNavLink>
-              <MobileNavLink to="/gather-town" title="Gather.Town Tutorial" selected={activePage === "/gather-town"} nested>Gather.Town Tutorial</MobileNavLink>
+              <MobileNavLink to="/program/home" title="Program Home"
+                selected={activePage === "/program/home"} nested>Program Home</MobileNavLink>
+              <MobileNavLink to="/program-at-a-glance" title="Program at a Glance"
+                selected={activePage === "/program-at-a-glance"} nested>Program at a Glance</MobileNavLink>
+              <MobileNavLink to="/conference-keynotes" title="Conference Keynotes"
+                selected={activePage === "/conference-keynotes"} nested>Conference Keynotes</MobileNavLink>
+              <MobileNavLink to="/women-in-multimedia" title="Women in Multimedia"
+                selected={activePage === "/women-in-multimedia"} nested>Women in Multimedia</MobileNavLink>
+              <MobileNavLink to="/phd-school" title="PhD School"
+                selected={activePage === "/phd-school"} nested>PhD School</MobileNavLink>
+              <MobileNavLink to="/awards" title="Awards"
+                selected={activePage === "/awards"} nested>Awards</MobileNavLink>
+              <MobileNavLink to="/q-and-a-guidelines" title="Q&amp;A Guidelines"
+                selected={activePage === "/q-and-a-guidelines"} nested>Q&amp;A Guidelines</MobileNavLink>
+              <MobileNavLink to="/presentation-guidelines" title="Presentation Guidelines"
+                selected={activePage === "/presentation-guidelines"} nested>Presentation Guidelines</MobileNavLink>
+              <MobileNavLink to="/gather-town-map" title="Gather.Town Map"
+                selected={activePage === "/gather-town-map"} nested>Gather.Town Map</MobileNavLink>
+              <MobileNavLink to="/gather-town" title="Gather.Town Tutorial"
+                selected={activePage === "/gather-town"} nested>Gather.Town Tutorial</MobileNavLink>
             </div>)}
-            {/* <MobileNavLink to="/program/home" title="Program" selected={activePage === "/program/home"}>Program</MobileNavLink> */}
             <button className={mobileAttendStyle} onClick={() => { setShowMobileAttend(!showMobileAttend); }}>
               <span className="mr-1">Attend</span>
               <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
             </button>
             {showMobileAttend && (<div>
-              <MobileNavLink to="/registration" title="Registration" selected={activePage === "/registration"} nested>Registration</MobileNavLink>
-              <MobileNavLink to="/student-travel-grants" title="Student Travel Grants" selected={activePage === "/student-travel-grants"} nested>Student Travel Grants</MobileNavLink>
-              <MobileNavLink to="/carer-award" title="Carer Awards" selected={activePage === "/carer-award"} nested>Carer Awards</MobileNavLink>
+              <MobileNavLink to="/registration" title="Registration"
+                selected={activePage === "/registration"} nested>Registration</MobileNavLink>
+              <MobileNavLink to="/student-travel-grants" title="Student Travel Grants"
+                selected={activePage === "/student-travel-grants"} nested>Student Travel Grants</MobileNavLink>
+              <MobileNavLink to="/carer-award" title="Carer Awards"
+                selected={activePage === "/carer-award"} nested>Carer Awards</MobileNavLink>
             </div>)}
-            <MobileNavLink to="/organisation" title="Organisation" selected={activePage === "/organisation"}>Organisation</MobileNavLink>
-            <MobileNavLink to="/sponsors" title="Sponsors" selected={activePage === "/sponsors"}>Sponsors</MobileNavLink>
+            <MobileNavLink to="/organisation" title="Organisation"
+              selected={activePage === "/organisation"}>Organisation</MobileNavLink>
+            <MobileNavLink to="/sponsors" title="Sponsors"
+              selected={activePage === "/sponsors"}>Sponsors</MobileNavLink>
           </div>
         </div>
       </nav>

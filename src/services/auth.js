@@ -8,9 +8,8 @@ export const getUser = () =>
 const setUser = user => window.localStorage.setItem("gatsbyUser", JSON.stringify(user));
 
 export const handleLogin = async ({ username, password }) => {
-  // temporary url for testing purposes
   try {
-    const response = await fetch("https://mmasia2021.uqcloud.net/api/users/login", {
+    const response = await fetch(`${process.env.GATSBY_API_URL}/users/login`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',

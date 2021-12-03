@@ -88,7 +88,7 @@ const Detail = ({ id }) => {
 
   // fetch session and paper details
   useEffect(() => {
-    fetch(`https://mmasia2021.uqcloud.net/api/sessions/${id}`, {
+    fetch(`${process.env.GATSBY_API_URL}/sessions/${id}`, {
       method: "GET",
       headers: { "Authorization": `Bearer ${getUser().token}` }
     }).then(res => res.json())
@@ -108,7 +108,7 @@ const Detail = ({ id }) => {
           });
         }
         Object.keys(papers).forEach(key => {
-          fetch(`https://mmasia2021.uqcloud.net/api/papers`, {
+          fetch(`${process.env.GATSBY_API_URL}/papers`, {
             method: 'POST',
             headers: { "Authorization": `Bearer ${getUser().token}`, 'Content-Type': 'application/json', },
             body: JSON.stringify({ ids: papers[key] })
@@ -144,7 +144,8 @@ const Detail = ({ id }) => {
             </div>
           </div>
         )) : (paper.bilibili_link_embed && (
-          <div className="player:pb-0 rounded-lg my-2 flex-shrink-0 flex-grow-0 w-full lg:w-160" key={`bilibili-${paper.title}`}>
+          <div className="player:pb-0 rounded-lg my-2 flex-shrink-0 flex-grow-0 w-full lg:w-160"
+            key={`bilibili-${paper.title}`}>
             <div className="bg-black rounded-lg"
               style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
               <iframe
@@ -156,8 +157,6 @@ const Detail = ({ id }) => {
                 border="0"
                 allowFullScreen>
               </iframe>
-              {/* <div className="hidden player:block bg-gray-100 w-full"
-                style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} /> */}
             </div>
           </div>
         ))}
@@ -169,12 +168,17 @@ const Detail = ({ id }) => {
             ))}
           </ul>
           {((useYouTube && !paper.youtube_link) || (!useYouTube && !paper.bilibili_link)) ? (
-            <p className="text-mainPurple font-medium text-sm pl-2">Video will be available on the first day of the conference.</p>
+            <p className="text-mainPurple font-medium text-sm pl-2">
+              Video will be available on the first day of the conference.
+            </p>
           ) : (
-            <a className="px-2 pb-4 text-mainPurple font-semibold flex items-center hover:underline" href={useYouTube ? paper.youtube_link : paper.bilibili_link} target="_blank" rel="noreferrer">
+            <a className="px-2 pb-4 text-mainPurple font-semibold flex items-center hover:underline"
+              href={useYouTube ? paper.youtube_link : paper.bilibili_link} target="_blank" rel="noreferrer">
               {useYouTube ? "Watch on YouTube" : "Watch on Bilibili"}
-              <svg className="h-4 w-4 ml-1 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              <svg className="h-4 w-4 ml-1 inline" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
               </svg>
             </a>
           )}
@@ -194,10 +198,11 @@ const Detail = ({ id }) => {
           {Object.keys(sessionData).length <= 0 ? "Loading..." : sessionData?.name}
         </h1>
         {sessionData?.papers && (
-          <button className="bg-gray-100 hover:bg-gray-300 text-sm duration-100 px-2 sm:px-4 py-2 rounded-md font-medium" onClick={() => {
-            setVideoPref(useYouTube ? "bilibili" : "youtube");
-            setUseYouTube(!useYouTube);
-          }}>
+          <button className="bg-gray-100 hover:bg-gray-300 text-sm duration-100 px-2 sm:px-4 py-2 
+          rounded-md font-medium" onClick={() => {
+              setVideoPref(useYouTube ? "bilibili" : "youtube");
+              setUseYouTube(!useYouTube);
+            }}>
             {useYouTube ? "Switch to Bilibili Sources" : "Switch to YouTube Sources"}
           </button>
         )}
@@ -211,7 +216,11 @@ const Detail = ({ id }) => {
       <p className="">
         <span className="font-semibold">Time:&nbsp;&nbsp;</span>
         {Object.keys(resolvedTime).length <= 0 ? "Loading..." : (
-          <span>{resolvedTime?.startDate} {resolvedTime?.startMonth}, {resolvedTime?.startLocalTime} - {resolvedTime?.endLocalTime} (UTC{timezone?.offset >= 0 ? `+${timezone?.offset}` : timezone?.offset})</span>
+          <span>
+            {resolvedTime?.startDate} {resolvedTime?.startMonth}, {resolvedTime?.startLocalTime}
+            &nbsp;- {resolvedTime?.endLocalTime} (UTC{timezone?.offset >= 0 ? `+${timezone?.offset}`
+              : timezone?.offset})
+          </span>
         )}
       </p>
 
@@ -273,22 +282,6 @@ const Detail = ({ id }) => {
             return (
               <Fragment key={index}>
                 <Card paper={paper} />
-                {/* <div className="bg-gray-100 px-3 rounded-lg">
-                  <h2 className="px-2 pt-4 text-lg mb-2 font-bold leading-6">{paper.title}</h2>
-                  <ul className="px-2 list-disc list-inside block mb-4">
-                    {paper["Author Names"].split("; ").map(author => (
-                      <li className="text-sm leading-5 text-gray-700">{author}</li>
-                    ))}
-                  </ul>
-                  {useYouTube ? (
-                    <a className="px-2 block mb-4 text-mainPurple font-semibold" href={paper.youtube_link} target="_blank" rel="noreferrer">
-                      Watch on YouTube<br />
-                      <span className="text-sm">({paper.youtube_link})</span></a>
-                  ) : (
-                    <a className="px-2 block mb-4 text-mainPurple font-semibold" href={paper.bilibili_link} target="_blank" rel="noreferrer">
-                      Watch on Bilibili at {paper.bilibili_link}</a>
-                  )}
-                </div> */}
               </Fragment>
             );
           })}
@@ -300,7 +293,9 @@ const Detail = ({ id }) => {
           <button className="mt-8 mb-0 text-gray-500 text-sm hover:underline" onClick={() => navigate("/")}>
             Videos not loading or showing black screens? Click here to reload.
           </button>
-          <p className="mt-1 mb-0 text-gray-500 text-sm">For further issues and enquires, please contact <a className="hover:underline" href="mailto:mmasia2021@gmail.com">mmasia2021@gmail.com</a>.</p>
+          <p className="mt-1 mb-0 text-gray-500 text-sm">For further issues and enquires,
+            please contact <a className="hover:underline" href="mailto:mmasia2021@gmail.com">mmasia2021@gmail.com</a>.
+          </p>
         </>
       ) : (
         <p>Please use the conference main entry links to access.</p>

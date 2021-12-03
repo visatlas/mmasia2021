@@ -3,10 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-
 import Title from "../components/title";
-import UserBanner from "../components/auth/userBanner";
-import { isLoggedIn } from "../services/auth";
 
 const Index = ({ data, location }) => {
   const pageMeta = {
@@ -65,12 +62,23 @@ const Index = ({ data, location }) => {
   return (
     <Layout location={location}>
       <Seo pageMeta={pageMeta} />
-      {allowTitleVideo && isLoggedIn() && <UserBanner />}
+      {/* <div className="text-sm bg-uqStyle text-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-center pl-0 pr-4 sm:pr-6 lg:pl-16 lg:pr-16">
+            <p className="py-1 pl-8 mb-0 font-medium">Thank you for attending ACM Multimedia Asia 2021!</p>
+          </div>
+        </div>
+      </div> */}
       <Title allowVideo={allowTitleVideo} />
       <div className="global-wrapper pb-12" style={{ maxWidth: "59rem" }} id="welcome">
         <header className="px-0 sm:px-7">
-          <h2 className="pt-9 mb-5 font-titleFont text-3xl text-mainPurple font-extrabold">Welcome to ACM MMAsia 2021!</h2>
-          <p className="mb-4"><span className="font-bold">The <a className="text-mainPurple underline hover:underline" href="https://www.acmmmasia.org/" target="_blank" rel="noreferrer">ACM Multimedia Asia</a>,&nbsp;</span>
+          <h2 className="pt-9 mb-5 font-titleFont text-3xl text-mainPurple font-extrabold">
+            Welcome to ACM MMAsia 2021!
+          </h2>
+          <p className="mb-4"><span className="font-bold">The&nbsp;
+            <a className="text-mainPurple underline hover:underline" href="https://www.acmmmasia.org/" target="_blank"
+              rel="noreferrer">ACM Multimedia Asia
+            </a>,&nbsp;</span>
             puts together the long-lasting experience of former PCM and ICIMCS, which both have good history as well as attending experiences.
             It is a newly established international conference to showcase the scientific achievements and industrial innovations in the multimedia field.
             Its mission is to illuminate the state of the art in multimedia computing by bringing together researchers and practitioners in this field.
@@ -78,8 +86,12 @@ const Index = ({ data, location }) => {
           {highlights.map((content, index) => {
             return (<p className="mb-4" key={index}>{content}</p>);
           })}
-          <p className="mb-4 font-bold">You can view the PDF version of the <a className="text-mainPurple underline hover:underline" href="https://mmasia2021.uqcloud.net/uploads/flyer.pdf"
-            target="_blank" rel="noreferrer">ACM Multimedia Asia 2021 flyer here</a>.
+          <p className="mb-4 font-bold">You can view the PDF version of the&nbsp;
+            <a className="text-mainPurple underline hover:underline"
+              href={`${process.env.GATSBY_SITE_URL}/uploads/flyer.pdf`}
+              target="_blank" rel="noreferrer">
+              ACM Multimedia Asia 2021 flyer here
+            </a>.
           </p>
         </header>
 
@@ -88,8 +100,10 @@ const Index = ({ data, location }) => {
             <h2 className="mt-12 mb-5 font-titleFont text-3xl text-mainPurple font-extrabold">Promotional Video</h2>
             <div className="flex flex-row justify-between">
               <button onClick={() => { setUseYouTube(true); }} type="button"
-                className="py-2 px-5 flex-1 space-x-2 mr-1 flex justify-center items-center rounded-md text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
-                <svg width="24px" height="24px" viewBox="0 0 310 310" role="img" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                className="py-2 px-5 flex-1 space-x-2 mr-1 flex justify-center items-center rounded-md text-gray-900 
+                bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
+                <svg width="24px" height="24px" viewBox="0 0 310 310" role="img" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor">
                   <path d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938
                   C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527
 		              C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991
@@ -100,8 +114,10 @@ const Index = ({ data, location }) => {
                 <span className="font-medium">Watch on YouTube</span>
               </button>
               <button onClick={() => { setUseYouTube(false); }} type="button"
-                className="py-2 px-5 flex-1 space-x-2 ml-1 flex justify-center items-center rounded-md text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
-                <svg width="22px" height="22px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                className="py-2 px-5 flex-1 space-x-2 ml-1 flex justify-center items-center rounded-md text-gray-900 
+                bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
+                <svg width="22px" height="22px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor">
                   <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 
                   3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 
                   1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027
@@ -119,21 +135,38 @@ const Index = ({ data, location }) => {
             {useYouTube ? (
               <div className="pb-4 mt-2 rounded-lg">
                 <div className="bg-black rounded-lg" style={{ position: "relative", padding: "28.1% 45%" }}>
-                  <iframe style={{ borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://www.youtube-nocookie.com/embed/dOebaAv8e_4" title="ACM Multimedia Asia 2021 Video on YouTube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                  <iframe style={{
+                    borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%",
+                    left: 0, top: 0
+                  }} src="https://www.youtube-nocookie.com/embed/dOebaAv8e_4"
+                    title="ACM Multimedia Asia 2021 Video on YouTube" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen></iframe>
                 </div>
               </div>
             ) : (
               <div className="pb-4 player:pb-0 mt-2 rounded-lg">
-                <div className="bg-black rounded-lg" style={{ position: "relative", padding: "29% 45%", marginBottom: "0px" }}>
-                  <iframe style={{ borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%", left: 0, top: 0 }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" title="ACM Multimedia Asia 2021 Video on Bilibili" frameBorder="no" scrolling="no" allowFullScreen></iframe>
-                  <div className="hidden player:block bg-white w-full" style={{ position: "absolute", padding: "0 50%", height: "38px", bottom: 0, left: 0 }} />
+                <div className="bg-black rounded-lg" style={{
+                  position: "relative", padding: "29% 45%",
+                  marginBottom: "0px"
+                }}>
+                  <iframe style={{
+                    borderRadius: "0.5em", position: "absolute", width: "100%", height: "100%",
+                    left: 0, top: 0
+                  }} src="https://player.bilibili.com/player.html?aid=417066582&bvid=BV1DV411v733&cid=308690846&page=1&as_wide=1&high_quality=1&danmaku=0" title="ACM Multimedia Asia 2021 Video on Bilibili" frameBorder="no" scrolling="no" allowFullScreen></iframe>
+                  <div className="hidden player:block bg-white w-full" style={{
+                    position: "absolute",
+                    padding: "0 50%", height: "38px", bottom: 0, left: 0
+                  }} />
                 </div>
               </div>
             )}
           </div>
         )}
 
-        <h2 className="mt-12 pb-3 px-6 sm:px-7 font-titleFont text-3xl text-mainPurple font-extrabold">Latest News</h2>
+        <h2 className="mt-12 pb-3 px-6 sm:px-7 font-titleFont text-3xl text-mainPurple font-extrabold">
+          Latest News
+        </h2>
         <ol className="post-list list-none divide-y divide-gray-200">
           {allPosts.map((post, index) => {
             const diffDays = Math.ceil(Math.abs(new Date() - new Date(post.date)) / (1000 * 60 * 60 * 24));
@@ -144,7 +177,9 @@ const Index = ({ data, location }) => {
                 <Link to={post.url} itemProp="url" title={post.title}>
                   <article className="post-list-item py-5 px-6 md:px-7" itemScope itemType="http://schema.org/Article">
                     <header className="flex flex-col">
-                      <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide" itemProp="headline">{post.title}</span>
+                      <span className="w-90 text-xl font-bold font-headingStyle tracking-semiWide" itemProp="headline">
+                        {post.title}
+                      </span>
                       <small className={dateClass}>{post.date}</small>
                     </header>
                     <section className="text-gray-700">

@@ -34,7 +34,8 @@ const PhDSchool = ({ location }) => {
               font-headingStyle tracking-semiWide">Live Lightning Talks</h2>
 
           <div className="mb-4 w-full overflow-x-scroll md:overflow-hidden">
-            <table className="table-auto md:table-fixed table-custom text-center text-gray-700 overflow-x-scroll md:overflow-hidden">
+            <table className="table-auto md:table-fixed table-custom text-center text-gray-700 
+            overflow-x-scroll md:overflow-hidden">
 
               <thead>
                 <tr className="bg-gray-100">

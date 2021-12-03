@@ -21,7 +21,7 @@ const Dashboard = () => {
   const [remember, setRemember] = useState(getRememberTimezone() === 'true');
 
   useEffect(() => {
-    fetch(`https://mmasia2021.uqcloud.net/api/sessions/getMain`, {
+    fetch(`${process.env.GATSBY_API_URL}/sessions/getMain`, {
       method: "GET",
       headers: { "Authorization": `Bearer ${getUser().token}` }
     }).then(res => res.json())
@@ -31,7 +31,7 @@ const Dashboard = () => {
       .catch(err => console.log(err));
 
     // Fetch sessions data
-    fetch(`https://mmasia2021.uqcloud.net/api/sessions`, {
+    fetch(`${process.env.GATSBY_API_URL}/sessions`, {
       method: "GET",
       headers: { "Authorization": `Bearer ${getUser().token}` }
     }).then(res => res.json())
@@ -104,12 +104,14 @@ const Dashboard = () => {
       </p>
       <ul className="px-3 mb-4 list-disc list-inside space-y-2">
         <li className="font-semibold">Zoom Link:&nbsp;&nbsp;
-          <a className="font-medium text-mainPurple underline break-all" href={mainLinks.zoom} target="_blank" rel="noreferrer">
+          <a className="font-medium text-mainPurple underline break-all" href={mainLinks.zoom}
+            target="_blank" rel="noreferrer">
             {mainLinks.zoom || "Loading data..."}
           </a>
         </li>
         <li className="font-semibold">Gather.Town Link:&nbsp;&nbsp;
-          <a className="font-medium text-mainPurple underline break-all" href={mainLinks.gatherTown} target="_blank" rel="noreferrer">
+          <a className="font-medium text-mainPurple underline break-all" href={mainLinks.gatherTown}
+            target="_blank" rel="noreferrer">
             {mainLinks.gatherTown || "Loading data..."}
           </a>
         </li>
@@ -156,11 +158,14 @@ const Dashboard = () => {
       {Object.keys(groupedSessions).length <= 0 ? (
         <p className="mt-8 px-3 font-medium">
           Loading data...<br />
-          <span className="text-gray-500 text-sm">If the page is not working properly, please try refreshing the page.</span>
+          <span className="text-gray-500 text-sm">
+            If the page is not working properly, please try refreshing the page.
+          </span>
         </p>
       ) : (<>
         <div className="bg-white pt-6 sticky top-[64px]">
-          <div className="flex bg-gray-100 border-b-mainPurple border-b-2 gap-x-0 md:gap-x-6 rounded-tl-md rounded-tr-md">
+          <div className="flex bg-gray-100 border-b-mainPurple border-b-2 gap-x-0 md:gap-x-6 
+          rounded-tl-md rounded-tr-md">
             {Object.keys(groupedSessions).map((key, index) => {
               // set active style
               const active = key === viewDay ? "bg-mainPurple text-gray-200" : "text-mainPurple hover:bg-menuSelected";
@@ -192,7 +197,8 @@ const Dashboard = () => {
                 {session.type !== "break" ? (
                   <Link to={`/program/session/${session.id}`} state={{ time: session.startLocalTime }}>
                     <div className="px-3 py-3 block md:flex gap-x-8">
-                      <p className="flex-shrink-0 w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
+                      <p className="flex-shrink-0 w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple 
+                        font-headingStyle tracking-semiWide">
                         {session.startLocalTime} - {session.endLocalTime}
                       </p>
                       <div>
@@ -210,7 +216,8 @@ const Dashboard = () => {
                   </Link>
                 ) : (
                   <div className="px-3 py-3 block md:flex gap-x-8">
-                    <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple font-headingStyle tracking-semiWide">
+                    <p className="w-40 mb-1 md:mb-0 text-sm font-semibold text-mainPurple 
+                      font-headingStyle tracking-semiWide">
                       {session.startLocalTime} - {session.endLocalTime}
                     </p>
                     <div>
@@ -223,14 +230,14 @@ const Dashboard = () => {
           })}
         </div>
 
-        <p className="px-3 mt-8 mb-0 text-gray-500 text-sm">If the page is not showing contents properly, please try refreshing the page.</p>
-        <p className="px-3 mt-1 mb-0 text-gray-500 text-sm">For further issues and enquires, please contact <a className="hover:underline" href="mailto:mmasia2021@gmail.com">mmasia2021@gmail.com</a>.</p>
+        <p className="px-3 mt-8 mb-0 text-gray-500 text-sm">
+          If the page is not showing contents properly, please try refreshing the page.
+        </p>
+        <p className="px-3 mt-1 mb-0 text-gray-500 text-sm">
+          For further issues and enquires, please contact <a className="hover:underline"
+            href="mailto:mmasia2021@gmail.com">mmasia2021@gmail.com</a>.
+        </p>
       </>)}
-
-      {/* <div className="max-h-148 overflow-auto border mt-8 text-sm font-mono">
-        From {`https://mmasia2021.uqcloud.net/api/sessions`}<br />
-        <p className="whitespace-pre-wrap">{JSON.stringify(sessions, null, 2)}</p>
-      </div> */}
     </div>
   </>);
 };

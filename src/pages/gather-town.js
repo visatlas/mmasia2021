@@ -55,7 +55,8 @@ const GatherTown = ({ location }) => {
 
         <div className="flex flex-row justify-between">
           <button onClick={() => { setUseYouTube(true); }} type="button"
-            className="py-2 px-5 flex-1 space-x-2 mr-1 flex justify-center items-center rounded-md text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
+            className="py-2 px-5 flex-1 space-x-2 mr-1 flex justify-center items-center rounded-md text-gray-900 
+            bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
             <svg width="24px" height="24px" viewBox="0 0 310 310" role="img" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
               <path d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938
                   C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527
@@ -67,7 +68,8 @@ const GatherTown = ({ location }) => {
             <span className="font-medium">Watch on YouTube</span>
           </button>
           <button onClick={() => { setUseYouTube(false); }} type="button"
-            className="py-2 px-5 flex-1 space-x-2 ml-1 flex justify-center items-center rounded-md text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
+            className="py-2 px-5 flex-1 space-x-2 ml-1 flex justify-center items-center rounded-md text-gray-900 
+            bg-gray-100 hover:text-gray-900 hover:bg-gray-200 focus:outline-none">
             <svg width="22px" height="22px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
               <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 
                   3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 
@@ -116,7 +118,8 @@ const GatherTown = ({ location }) => {
             </div>
 
           </div>
-          <a className="hover:underline text-blue-600" href="https://www.bilibili.com/video/BV1uS4y1d7rz" target="_blank" rel="noreferrer">Click here to watch on Bilibili site.</a>
+          <a className="hover:underline text-blue-600" href="https://www.bilibili.com/video/BV1uS4y1d7rz"
+            target="_blank" rel="noreferrer">Click here to watch on Bilibili site.</a>
         </>)}
 
         <footer className="pb-0">

@@ -9,12 +9,14 @@
         {
           "name": "Joao Magalhaes",
           "institution": "University of Nova de Lisboa, Portugal",
-          "imageUrl": "joao-megalhaes2"
+          "imageUrl": "joao-megalhaes",
+          "link": "http://ctp.di.fct.unl.pt/~jmag"
         },
         {
           "name": "Heng Tao Shen",
           "institution": "University of Electronic Science and Technology of China, China",
-          "imageUrl": "hengtao"
+          "imageUrl": "hengtao-shen",
+          "link": "https://cfm.uestc.edu.cn/~shenht"
         }
       ]
     },
@@ -24,17 +26,20 @@
         {
           "name": "Chang-wen Chen",
           "institution": "State University of New York at Buffalo, USA",
-          "imageUrl": "changwen-chen"
+          "imageUrl": "changwen-chen",
+          "link": "https://cse.buffalo.edu/faculty/chencw"
         },
         {
           "name": "Helen Huang",
           "institution": "The University of Queensland, Australia",
-          "imageUrl": "Helen"
+          "imageUrl": "helen-huang",
+          "link": "https://staff.itee.uq.edu.au/huang"
         },
         {
           "name": "Jun Zhou",
           "institution": "Griffith University, Australia",
-          "imageUrl": "jun-zhou"
+          "imageUrl": "jun-zhou",
+          "link": "https://experts.griffith.edu.au/7205-jun-zhou"
         }
       ]
     },
@@ -69,7 +74,7 @@
         {
           "name": "Sen Wang",
           "institution": "The University of Queensland, Australia",
-          "imageUrl": "Sen Wang_cropped"
+          "imageUrl": "sen-wang"
         },
         {
           "name": "Tony Chen",
@@ -89,12 +94,13 @@
         {
           "name": "Zixin Wang",
           "institution": "The University of Queensland, Australia",
-          "imageUrl": "Zixin Wang_cropped"
+          "imageUrl": "zixin-wang"
         },
         {
           "name": "Yiyun Zhang",
           "institution": "The University of Queensland, Australia",
-          "imageUrl": "Yiyun"
+          "imageUrl": "yiyun-zhang",
+          "link": "https://www.yiyun.dev"
         }
       ]
     },
@@ -154,17 +160,17 @@
         {
           "name": "Lei Zhu",
           "institution": "Shandong Normal University, China",
-          "imageUrl": "Lei Zhu"
+          "imageUrl": "lei-zhu"
         },
         {
           "name": "Zhineng Chen",
           "institution": "Fudan University, China",
-          "imageUrl": "Zhineng Chen"
+          "imageUrl": "zhineng-chen"
         },
         {
           "name": "Min Xu",
           "institution": "University of Technology Sydney, Australia",
-          "imageUrl": "Min Xu"
+          "imageUrl": "min-xu"
         }
       ]
     },
@@ -179,7 +185,7 @@
         {
           "name": "Zheng Wang",
           "institution": "The University of Tokyo, Japan",
-          "imageUrl": "Zheng Wang"
+          "imageUrl": "zheng-wang"
         }
       ]
     },
@@ -189,12 +195,12 @@
         {
           "name": "Liang Zheng",
           "institution": "Australian National University, Australia",
-          "imageUrl": "Liang Zheng"
+          "imageUrl": "liang-zheng"
         },
         {
           "name": "Xin Yu",
           "institution": "University of Technology Sydney, Australia",
-          "imageUrl": "Xin Yu_cropped"
+          "imageUrl": "xin-yu"
         }
       ]
     },
@@ -209,7 +215,7 @@
         {
           "name": "Ichiro Ide",
           "institution": "Nagoya University, Japan",
-          "imageUrl": "Ichiro_Ide2"
+          "imageUrl": "ichiro-ide"
         },
         {
           "name": "Quanzeng You",
@@ -229,7 +235,7 @@
         {
           "name": "Jingkuan Song",
           "institution": "University of Electronic Science and Technology of China, China",
-          "imageUrl": "Jingkuan Song"
+          "imageUrl": "jingkuan-song"
         }
       ]
     },
@@ -239,7 +245,7 @@
         {
           "name": "Wenbing Huang",
           "institution": "Tsinghua University, China",
-          "imageUrl": "Wenbing Huang"
+          "imageUrl": "wenbing-huang"
         },
         {
           "name": "Yong Man Ro",
@@ -254,17 +260,17 @@
         {
           "name": "Jia Jia",
           "institution": "Tsinghua University, China",
-          "imageUrl": "jiajia2"
+          "imageUrl": "jia-jia"
         },
         {
           "name": "Marie Boden",
           "institution": "The University of Queensland, Australia",
-          "imageUrl": "Marie Boden"
+          "imageUrl": "marie-boden"
         },
         {
           "name": "Si Liu",
           "institution": "Beihang University, China",
-          "imageUrl": "Si Liu"
+          "imageUrl": "si-liu"
         }
       ]
     },
@@ -279,12 +285,12 @@
         {
           "name": "Zheng Zhang",
           "institution": "Harbin Institute of Technology, Shenzhen, China",
-          "imageUrl": "Zheng Zhang"
+          "imageUrl": "zheng-zhang"
         },
         {
           "name": "Tianran Hu",
           "institution": "College of William & Mary, USA",
-          "imageUrl": "Tianran Hu"
+          "imageUrl": "tianran-hu"
         }
       ]
     },
@@ -294,12 +300,12 @@
         {
           "name": "Gunhee Kim",
           "institution": "Seoul National University, South Korea",
-          "imageUrl": "Gunhee Kim"
+          "imageUrl": "gunhee-kim"
         },
         {
           "name": "Xinshun Xu",
           "institution": "Shandong University, China",
-          "imageUrl": "Xinshun Xu"
+          "imageUrl": "xinshun-xu"
         }
       ]
     },
@@ -309,7 +315,7 @@
         {
           "name": "Kathleen Williamson",
           "institution": "The University of Queensland, Australia",
-          "imageUrl": "Kathleen Williamson"
+          "imageUrl": "kathleen-williamson"
         }
       ]
     },
@@ -319,12 +325,12 @@
         {
           "name": "Xiaofang Zhou",
           "institution": "Hong Kong University of Science and Technology, China",
-          "imageUrl": "Xiaofang Zhou"
+          "imageUrl": "xiaofang-zhou"
         },
         {
           "name": "Bing-Kun Bao",
           "institution": "Nanjing University of Posts and Telecommunications, China",
-          "imageUrl": "Bing-Kun Bao"
+          "imageUrl": "bingkun-bao"
         }
       ]
     },
@@ -334,12 +340,12 @@
         {
           "name": "Yadan Luo",
           "institution": "The University of Queensland, Australia",
-          "imageUrl": "Yadan Luo"
+          "imageUrl": "yadan-luo"
         },
         {
           "name": "Ziwei Wang",
           "institution": "CSIRO, Australia",
-          "imageUrl": "Ziwei Wang"
+          "imageUrl": "ziwei-wang"
         }
       ]
     },
@@ -354,7 +360,7 @@
         {
           "name": "Xinchen Liu",
           "institution": "JD AI Research, China",
-          "imageUrl": "Xinchen Liu"
+          "imageUrl": "xinchen-liu"
         }
       ]
     },
@@ -364,12 +370,12 @@
         {
           "name": "Jiaying Liu",
           "institution": "Peking University, China",
-          "imageUrl": "Jiaying Liu"
+          "imageUrl": "jiaying-liu"
         },
         {
           "name": "Yi Yang",
           "institution": "University of Technology Sydney, Australia",
-          "imageUrl": "Yi Yang"
+          "imageUrl": "yi-yang"
         }
       ]
     }

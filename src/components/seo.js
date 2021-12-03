@@ -139,7 +139,7 @@ const Seo = ({ lang, pageMeta }) => {
     eventStatus: "https://schema.org/EventScheduled",
     location: [{
       "@type": "VirtualLocation",
-      url: "https://mmasia2021.uqcloud.net",
+      url: process.env.GATSBY_SITE_URL,
     }, {
       "@type": "Place",
       name: "Griffith University, Gold Coast Campus",
@@ -153,16 +153,17 @@ const Seo = ({ lang, pageMeta }) => {
       }
     }],
     image: [
-      "https://mmasia2021.uqcloud.net/uploads/mmasia-logo.png",
+      `${process.env.GATSBY_SITE_URL}/uploads/mmasia-logo.png`,
     ],
-    description: "ACM Multimedia Asia 2021 Conference will be held in a hybrid mode by offering both online and offline events. A live in-person conference with virtual online component will be enabled.",
+    description: `ACM Multimedia Asia 2021 Conference will be held in a hybrid mode byoffering both online
+      and offline events. A live in-person conference with virtual online component will be enabled.`,
     performer: {
       "@type": "Organization",
       "name": "ACM Multimedia Asia Conference (MM Asia)"
     },
     offers: {
       "@type": "Offer",
-      "url": "https://mmasia2021.uqcloud.net/registration",
+      "url": `${process.env.GATSBY_SITE_URL}/registration`,
       "price": "305",
       "priceCurrency": "AUD",
       "availability": "https://schema.org/InStock",

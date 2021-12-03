@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `ACM Multimedia Asia 2021`,
@@ -6,7 +10,7 @@ module.exports = {
       name: `ACM Multimedia Asia Conference`,
     },
     description: `ACM Multimedia Asia Conference (ACM MM Asia) 2021 will be held from 1 to 3 December, 2021 in Gold Coast, Australia. It will be held in a hybrid mode by offering both online and offline events. A live in-person conference with virtual online component will be enabled.`,
-    siteUrl: process.env.GATSBY_SITE_URL || `https://mmasia2021.uqcloud.net`,
+    siteUrl: process.env.GATSBY_SITE_URL || process.env.GATSBY_PRODUCTION_SITE_URL,
     thumbnail: `/thumbnail.png`,
   },
   plugins: [
@@ -14,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog`,
-        path: `${__dirname}/content/blog`,
+        name: `article`,
+        path: `${__dirname}/content`,
       },
     },
     {
@@ -70,7 +74,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          `G-XSX58G49PD`,
+          `${process.env.GATSBY_GOOGLE_GTAG}`,
         ],
       },
     },
@@ -136,7 +140,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#51247a`,
         display: `fullscreen`,
-        icon: `src/images/mmasia-icon.jpg`,
+        icon: `static/mmasia-icon.jpg`,
         icon_options: {
           purpose: `any maskable`,
         },
@@ -166,6 +170,5 @@ module.exports = {
         }
       }
     },
-    `gatsby-plugin-remove-serviceworker`,
   ],
 };

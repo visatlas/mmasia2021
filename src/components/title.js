@@ -28,15 +28,18 @@ export default function Title({ allowVideo }) {
   return (
     <div>
       <div className="hidden md:block"
-        style={{ position: "relative", minHeight: "min(calc(100vw * 9 / 16), 100vh)", maxHeight: "100vh", overflow: "hidden" }}>
+        style={{
+          position: "relative", minHeight: "min(calc(100vw * 9 / 16), 100vh)", maxHeight: "100vh",
+          overflow: "hidden"
+        }}>
         {allowVideo && (
           // title video
           <video style={{
             position: "absolute", zIndex: "-1", top: "50%", left: "50%", transform: "translate(-50%, -50%)",
             minWidth: "100%", minHeight: "100%", width: "auto", height: "auto"
           }} autoPlay muted loop playsInline id="video">
-            <source src="https://mmasia2021.uqcloud.net/uploads/gold-coast-drone.mp4" type="video/mp4" crossOrigin="anonymous" />
-            {/* <source src="https://mmasia2021.uqcloud.net/uploads/gold-coast-drone.webm" type='video/webm' crossOrigin="anonymous" /> */}
+            <source src={`${process.env.GATSBY_SITE_URL}/uploads/gold-coast-drone.mp4`} type="video/mp4"
+              crossOrigin="anonymous" />
           </video>
         )}
 
@@ -50,9 +53,9 @@ export default function Title({ allowVideo }) {
           position: "absolute", top: "0%", right: "20%",
           backgroundColor: "rgba(236, 231, 241, 0.85)"
         }}>
-          <h1 className="mb-2 relative font-titleFont text-black font-extrabold tracking-wide text-titleBig leading-titleBig">
+          <h1 className="mb-2 relative font-titleFont text-black font-extrabold tracking-wide text-titleBig
+            leading-titleBig">
             <span className="text-mainPurple">ACM</span>&nbsp;<br />Multimedia&nbsp;<br />Asia 2021
-            {/* <span className="absolute bottom-0 right-0 border border-mainPurple text-mainPurple font-semibold mr-6 mb-2 px-1 py-0.5 rounded-sm text-xs tracking-tight font-sans">Hybrid</span> */}
           </h1>
           <p className="mb-4 font-semibold text-titleSmall">Hybrid &bull; Gold Coast, Australia</p>
           <p className="mb-1 font-bold text-mainPurple text-titleMedium tracking-semiWide">1 - 3 December, 2021</p>
@@ -68,7 +71,8 @@ export default function Title({ allowVideo }) {
               </Link>
             )}
           </div>
-          <AnchorLink className="font-semibold text-titleSmall hover:underline text-mainPurple" to="/#welcome" title="Learn More.." />
+          <AnchorLink className="font-semibold text-titleSmall hover:underline text-mainPurple" to="/#welcome"
+            title="Learn More.." />
         </div>
 
         {/* play/pause button */}
@@ -101,9 +105,9 @@ export default function Title({ allowVideo }) {
       <div className="md:hidden">
         <div className="global-wrapper pt-9 bg-purple-50">
           <div className="flex flex-col items-center">
-            <h1 className="mb-2 w-87 relative font-titleFont text-black font-extrabold tracking-wide text-titleBig leading-titleBig text-center">
+            <h1 className="mb-2 w-87 relative font-titleFont text-black font-extrabold tracking-wide text-titleBig
+              leading-titleBig text-center">
               <span className="text-mainPurple">ACM</span>&nbsp;<br />Multimedia&nbsp;<br />Asia 2021
-              {/* <span className="absolute bottom-0 right-0 border border-mainPurple text-mainPurple font-semibold mr-3 mb-2 px-1 py-0.5 rounded-sm text-xs tracking-tight font-sans">Hybrid</span> */}
             </h1>
             <p className="mb-4 font-semibold text-titleSmall">Hybrid &bull; Gold Coast, Australia</p>
             <p className="mb-1 font-bold text-mainPurple text-titleMedium tracking-semiWide">1 - 3 December, 2021</p>

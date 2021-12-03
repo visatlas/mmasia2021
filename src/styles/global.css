@@ -183,10 +183,6 @@ table thead tr th {
   font-size: var(--fontSize-2);
 }
 
-.blog-post-nav ul {
-  margin: var(--spacing-0);
-}
-
 /* Navbar menu drop-down */
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -203,14 +199,14 @@ table thead tr th {
   border-bottom-right-radius: 0.5rem;
 }
 
-/* Article style for blog-post.js */
-.blog-post h1,
-.blog-post h2 {
+/* Article style for article-post.js */
+.article-post h1,
+.article-post h2 {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 0.01em;
 }
 
-.blog-post h1 {
+.article-post h1 {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   font-size: 2.25rem;
@@ -219,11 +215,11 @@ table thead tr th {
   color: #222222;
 }
 
-.blog-post header h1 {
+.article-post header h1 {
   margin-top: 0;
 }
 
-.blog-post h2 {
+.article-post h2 {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -232,7 +228,7 @@ table thead tr th {
   color: #51247a;
 }
 
-.blog-post h3 {
+.article-post h3 {
   margin-top: 1.8rem;
   margin-bottom: 1rem;
   font-size: 1.3rem;
@@ -241,11 +237,11 @@ table thead tr th {
   color: #333333;
 }
 
-.blog-post h2+h4 {
+.article-post h2+h4 {
   margin-top: 1.2rem;
 }
 
-.blog-post h4 {
+.article-post h4 {
   margin-top: 1.6rem;
   margin-bottom: 0.7rem;
   line-height: 1.7rem;
@@ -253,50 +249,50 @@ table thead tr th {
   color: #333333;
 }
 
-.blog-post p {
+.article-post p {
   margin-bottom: 1.3rem;
 }
 
-.blog-post ul {
+.article-post ul {
   list-style-type: disc;
   list-style-position: outside;
   margin-left: 1em;
 }
 
-.blog-post ul>li {
+.article-post ul>li {
   margin-bottom: 0.7em;
 }
 
-.blog-post ol>li {
+.article-post ol>li {
   list-style-type: decimal;
   list-style-position: inside;
   margin: 0;
   margin-bottom: 0.7em;
 }
 
-.blog-post ol.list-bold>li::marker {
+.article-post ol.list-bold>li::marker {
   font-weight: bold;
 }
 
-.blog-post ol ul>li {
+.article-post ol ul>li {
   margin-left: 1.2em;
   margin-bottom: 0.3em;
 }
 
-.blog-post ol ul>li:first-child {
+.article-post ol ul>li:first-child {
   margin-top: 0.3em;
 }
 
-.blog-post ul>li:last-child {
+.article-post ul>li:last-child {
   margin-bottom: 1.3em;
 }
 
-.blog-post a {
+.article-post a {
   color: #2563EB;
   text-decoration: underline;
 }
 
-.blog-post div.wrapper {
+.article-post div.wrapper {
   display: grid;
   grid-template-columns: 70% 5% 25%;
   margin-bottom: 1em;
