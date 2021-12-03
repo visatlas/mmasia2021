@@ -6,6 +6,7 @@ This project is for the ACM MMAsia 2021 main website.
 First, clone the repository and install the Gatsby CLI and project dependencies:
 
 ```
+cp .env.example .env
 npm install -g gatsby-cli
 yarn
 ```
