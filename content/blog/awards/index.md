@@ -1,0 +1,37 @@
+---
+title: Awards
+datePublished: "2021-12-02"
+dateModified: "2021-12-03"
+description: ACM Multimedia Asia 2021 has announced the winners of Best Paper Awards and PhD Lightning Talks Competition.
+---
+
+## ACM Multimedia Asia 2021 Best Paper Awards
+
+### Language Based Image Quality Assessment
+- Lorenzo Seidenari (University of Florence)
+- Leonardo Galteri (University of Florence)
+- Pietro Bongini (University of Florence)
+- Marco Bertini (University of Florence)
+- Alberto Del Bimbo (University of Florence)
+
+<br/>
+
+## ACM Multimedia Asia 2021 Honourable Mention
+ 
+### Towards Discriminative Visual Search via<br/>Semantically Cycle-consistent Hashing Networks
+- Zheng Zhang (Harbin Institute of Technology, Shenzhen)
+- Jianning Wang (Harbin Institute of Technology, Shenzhen)
+- Guangming Lu (Harbin Institute of Technology, Shenzhen)
+
+<br/>
+
+## PhD Lightning Talks Competition 
+### Winner
+- **Learning to Diversify for Single Domain Generalization**, Zijian Wang
+
+### Highly Commended
+- **A Framework of Noisy-Label Learning by Semi-Supervised Learning**, Zhuowei Wang
+- **CausalRec: Causal Inference for Visual Debiasing in Visually-Aware Recommendation**, Ruihong Qiu
+
+### People’s Choice Award
+- **Why Temporality is important for Knowledge Graph?**, Jiasheng Zhang

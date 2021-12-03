@@ -32,7 +32,7 @@ export default function Header({ activePage, themed }) {
   const [showMobileCalls, setShowMobileCalls] = useState(callLinks.includes(activePage));
   const [showMobileAttend, setShowMobileAttend] = useState(["/student-travel-grants", "/carer-award"].includes(activePage));
   const [showMobileProgram, setShowMobileProgram] = useState(["/program/home", "/conference-keynotes",
-    "/program-at-a-glance", "/best-paper-awards", "/women-in-multimedia", "/phd-school", "/presentation-guidelines",
+    "/program-at-a-glance", "/awards", "/women-in-multimedia", "/phd-school", "/presentation-guidelines",
     "/gather-town", "/gather-town-map", "/q-and-a-guidelines"].includes(activePage));
   const mobileBaseStyle = "font-semibold text-left pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-headingStyle inline-flex items-center";
   const mobileCallsStyle = `${mobileBaseStyle} ${showMobileCalls ? "bg-menuHover" : ""}`;
@@ -78,7 +78,7 @@ export default function Header({ activePage, themed }) {
                   </DropDownMenu>
                   {/* <NavLink to="/program/home" selected={activePage === "/program/home"} title="Program" themed>Program</NavLink> */}
                   <DropDownMenu selected={["/program-at-a-glance", "/conference-keynotes", "/women-in-multimedia",
-                    "/phd-school", "/best-paper-awards", "/q-and-a-guidelines", "/presentation-guidelines",
+                    "/phd-school", "/awards", "/q-and-a-guidelines", "/presentation-guidelines",
                     "/gather-town-map", "/gather-town"].includes(activePage)} name="Program" widthStyle="w-60">
                     <Link to="/program/home" className={linkStylePurple} title="Program Home">
                       Program Home
@@ -91,7 +91,8 @@ export default function Header({ activePage, themed }) {
                     <Link to="/conference-keynotes" className={linkStyleMedium} title="Conference Keynotes">Conference Keynotes</Link>
                     <Link to="/women-in-multimedia" className={linkStyleMedium} title="Women in Multimedia">Women in Multimedia</Link>
                     <Link to="/phd-school" className={linkStyleMedium} title="PhD School">PhD School</Link>
-                    <Link to="/best-paper-awards" className={linkStyleMedium} title="Best Paper Awards">Best Paper Awards</Link>
+                    <Divider />
+                    <Link to="/awards" className={linkStyleMedium} title="Awards">Awards</Link>
                     <Divider />
                     <Link to="/q-and-a-guidelines" className={linkStyleMedium} title="Q&amp;A Guidelines">Q&amp;A Guidelines</Link>
                     <Link to="/presentation-guidelines" className={linkStyleMedium} title="Presentation Guidelines">Presentation Guidelines</Link>
@@ -146,7 +147,7 @@ export default function Header({ activePage, themed }) {
               <MobileNavLink to="/conference-keynotes" title="Conference Keynotes" selected={activePage === "/conference-keynotes"} nested>Conference Keynotes</MobileNavLink>
               <MobileNavLink to="/women-in-multimedia" title="Women in Multimedia" selected={activePage === "/women-in-multimedia"} nested>Women in Multimedia</MobileNavLink>
               <MobileNavLink to="/phd-school" title="PhD School" selected={activePage === "/phd-school"} nested>PhD School</MobileNavLink>
-              <MobileNavLink to="/best-paper-awards" title="Best Paper Awards" selected={activePage === "/best-paper-awards"} nested>Best Paper Awards</MobileNavLink>
+              <MobileNavLink to="/awards" title="Awards" selected={activePage === "/awards"} nested>Awards</MobileNavLink>
               <MobileNavLink to="/q-and-a-guidelines" title="Q&amp;A Guidelines" selected={activePage === "/q-and-a-guidelines"} nested>Q&amp;A Guidelines</MobileNavLink>
               <MobileNavLink to="/presentation-guidelines" title="Presentation Guidelines" selected={activePage === "/presentation-guidelines"} nested>Presentation Guidelines</MobileNavLink>
               <MobileNavLink to="/gather-town-map" title="Gather.Town Map" selected={activePage === "/gather-town-map"} nested>Gather.Town Map</MobileNavLink>
