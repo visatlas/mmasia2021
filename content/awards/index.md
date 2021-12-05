@@ -5,7 +5,7 @@ dateModified: "2021-12-03"
 description: ACM Multimedia Asia 2021 has announced the winners of Best Paper Awards and PhD Lightning Talks Competition.
 ---
 
-## ACM Multimedia Asia 2021 Best Paper Awards
+## ACM Multimedia Asia 2021 Best Paper Award
 
 ### Language Based Image Quality Assessment
 - Lorenzo Seidenari (University of Florence)
