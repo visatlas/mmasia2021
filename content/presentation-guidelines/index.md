@@ -42,6 +42,3 @@ At the end of each regular presentation, manage the Q&A time (2 minutes). Questi
 For Regular/Applied Research/Grand Challenge papers, interact with presenters during the Q&A time via Zoom’s chatbox.
 
 For any other papers and the posters of all accepted papers, interact with authors in Gather.Town.
- 
-
-

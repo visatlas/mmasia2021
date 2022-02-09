@@ -44,4 +44,3 @@ For any questions regarding travel grants, please email the Student Travel Grant
 
 - **Gunhee Kim** ([gunhee@snu.ac.kr](mailto:gunhee@snu.ac.kr)), Seoul National University, South Korea 
 - **Xinshun Xu** ([xuxinshun@sdu.edu.cn](mailto:xuxinshun@sdu.edu.cn)), Shandong University, China
-

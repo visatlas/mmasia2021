@@ -38,7 +38,3 @@ description: ACM Multimedia Asia 2021 has announced the winners of Best Paper Aw
 
 ### People’s Choice Award
 - **Why Temporality is important for Knowledge Graph?**, Jiasheng Zhang
-
-
-
-

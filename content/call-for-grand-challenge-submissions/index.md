@@ -62,6 +62,3 @@ Interested participants are invited to apply their approaches and methods on an 
 - Classify scene sentiment.
 
 <!-- **For more information regarding this topic**, please refer to the link: [*https://sites.google.com/view/dvu-asia-challenge-2021*](https://sites.google.com/view/dvu-asia-challenge-2021). -->
-
-
-

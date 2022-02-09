@@ -3,6 +3,8 @@
 .env.production
 .cache/
 public/
+content/**/*.jpg
+src/images/committee/
 
 logs
 *.log

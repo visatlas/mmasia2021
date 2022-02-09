@@ -72,4 +72,3 @@ We consider a “publication” to be a manuscript that has undergone peer revie
 - An Area Chair adheres to the schedule for the review and selection process.
 
 If you have any questions about the guidelines, please contact the Program Chairs.
-
