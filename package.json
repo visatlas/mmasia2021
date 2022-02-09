@@ -21,7 +21,7 @@
     "Zixin Wang <zixin.wang@uq.edu.au>",
     "Zhuoxiao Chen <zhuoxiao.chen@uq.edu.au>"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "gatsby": "^4.3.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
