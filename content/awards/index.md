@@ -1,7 +1,7 @@
 ---
 title: Awards
 datePublished: "2021-12-02"
-dateModified: "2021-12-03"
+dateModified: "2022-02-11"
 description: ACM Multimedia Asia 2021 has announced the winners of Best Paper Awards and PhD Lightning Talks Competition.
 ---
 
@@ -38,3 +38,10 @@ description: ACM Multimedia Asia 2021 has announced the winners of Best Paper Aw
 
 ### People’s Choice Award
 - **Why Temporality is important for Knowledge Graph?**, Jiasheng Zhang
+
+<br/>
+
+## ACM Multimedia Asia 2021 Service Awards
+
+- Workshop Organising Team
+- PC Co-chair Dr. Wu Liu's Team
