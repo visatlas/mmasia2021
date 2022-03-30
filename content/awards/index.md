@@ -43,5 +43,5 @@ description: ACM Multimedia Asia 2021 has announced the winners of Best Paper Aw
 
 ## ACM Multimedia Asia 2021 Service Awards
 
-- Workshop Organising Team
-- PC Co-chair Dr. Wu Liu's Team
+- China Workshops Team (represented by Jiasheng Zhang, UESTC)
+- China Program Team (represented by Kun Liu, JD AI Research)
